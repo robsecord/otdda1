@@ -1,0 +1,169 @@
+<template name="welcome">
+    <div class="component-wrapper welcome-page">
+
+        <div class="top-banner">
+            <h1>{{_ 'welcome.topBanner.title'}}</h1>
+            <p class="sub-title">{{_ 'welcome.topBanner.subtitle'}}</p>
+            <div class="enter-button">
+                <a href="{{getCalendarRoute}}" class="btn btn-primary btn-lg">{{_ 'welcome.topBanner.enterButton'}} &nbsp; <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="welcome-intro padded-section text-section">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>{{_ 'welcome.intro1.titleLine'}}</h3>
+                            <p>{{_ 'welcome.intro1.line1'}}</p>
+                            <p>{{_ 'welcome.intro1.line2'}}</p>
+                            <p>{{_ 'welcome.intro1.line3'}}</p>
+                            <p>{{_ 'welcome.intro1.line4'}}</p>
+                            <p>{{_ 'welcome.intro1.line5'}}</p>
+                            <p><strong>{{_ 'welcome.intro1.line6'}}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-intro padded-section text-section">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="ethereum-logo">
+                        {{{getSvg '/img/eth-purple.svg'}}}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>What Day is Most Important to You?</h3>
+                            <p>Would you like to own your Birthday?  How about an anniversary? Or perhaps you would like to Gift a Day to a special someone?</p>
+                            <p>Our special Day-Collectibles are Ethereum Tokens that can be transferred to friends or loved-ones, making the perfect gift!</p>
+                            <p>Every day on the Calendar is available to be Claimed and Owned! But be careful, as anyone else can claim a day that you own by paying the price!</p>
+                            <p>Many of the Days on the Calendar are specially-marked Holidays which could cause greater desirability.  Which Day will reign supreme as the most desirable Day in the Calendar?  And will be the one who Owns it?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="value-increase-model padded-section text-section">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Greatest Value Increase!</h3>
+                            <p>Own the Day has simply the best value increase model for players, earning you the greatest possible profits for your collectibles.  We achieve this by reserving extremely low commissions for our developers. When compared to other crypto-collectibles that take large commissions on each transaction, it is easy to recognize that Own The Day values the players.</p>
+                            <p>Our Smart Contract is available for anyone to read, and our entire application will be open-sourced for the public during Phase 4 of our road-map!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            {{> priceLevelComponent}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="holidays-intro padded-section text-section">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Introducing Holidays!</h3>
+                            <p>Many of the Calendar-Days are already marked with special Holiday icons, but it gets even more exciting during Phase 3 with the release of the Holiday Token System!</p>
+                            <p>With Holiday Tokens, players will have greater possibilities to earn profits from their Day-Collectibles! And it doesn't end there, all players will have a chance to earn ether without having to own Day-Collectibles!</p>
+                            <p>With exciting new game-play on the horizon, don't forget to keep your eye on your Calendar-Day Collectibles and Own the Day!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roadmap-outline padded-section text-section">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Roadmap</h3>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="panel panel-danger">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Phase 1</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Release of initial MVP!  Live to the world in several languages, we begin with a minimal UI and limited marketing efforts, along with the lowest initial entry prices!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Phase 3</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>During this phase we will see the release of the Holidays system which will add an exciting new game-play with possibilities to earn even greater profits!  This will come along with continued improvements to the UI/UX.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="panel panel-warning">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Phase 2</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Major UI/UX over-haul bringing many enhanced features and showing some much-needed love to the interface!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Phase 4</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>At this point we will be releasing the entire project as open-source. The Decentralized Application along with the Smart Contract source code will be available for everyone to read and learn from! We will also be launching our mainstream marketing campaigns to bring our Calendar to the World!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <p>Will You be Owner of the Greatest Day on Earth?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-outro padded-section text-section">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Own the Day or Get Paid for it!</h3>
+                            <div class="enter-button">
+                                <a href="{{getCalendarRoute}}" class="btn btn-primary btn-lg">{{_ 'welcome.topBanner.enterButton'}} &nbsp; <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{>footerComponent}}
+    </div>
+</template>

@@ -1,0 +1,96 @@
+{
+  "page" : {
+    "title" : "Possédez la journée!",
+    "defaultSuffix" : "Réclamer un jour sur la blockchain!",
+    "desc" : "Possédez votre journée sur la Blockchain Ethereum!"
+  },
+  "body" : {
+    "navbar" : {
+      "title" : "Posséder la journée",
+      "link" : {
+        "calendar" : "Calendrier",
+        "account" : "Mes journées"
+      },
+      "notConnected" : "Vous n'êtes pas connecté"
+    },
+    "warning" : {
+      "noAccount" : {
+        "title" : "Pas de compte!",
+        "message" : "Veuillez connecter un compte Ethereum via MetaMask ou Mist!"
+      },
+      "wrongNetwork" : {
+        "title" : "Wrong Network!",
+        "messageTest" : "Veuillez vous connecter à un réseau de test.",
+        "messageMain" : "Veuillez vous connecter au réseau principal Ethereum."
+      }
+    }
+  },
+  "welcome" : {
+    "pageTitle" : "Bienvenue",
+    "topBanner" : {
+      "title" : "Posséder la journée",
+      "subtitle" : "sur la Blockchain Ethereum",
+      "enterButton" : "Ouvrir le calendrier"
+    },
+    "intro1" : {
+      "titleLine" : "Possédez votre jour préféré sur la Blockchain!",
+      "line1" : "Possédez votre anniversaire, un jour férié ou n'importe quel autre jour que vous voulez!",
+      "line2" : "Achetez n'importe quel jour de l'année sur un contrat Ethereum Smart en utilisant la technologie blockchain et soyez le véritable propriétaire de votre journée!",
+      "line3" : "Vous pourriez être le fier propriétaire de vos vacances préférées telles que le jour de l'an, la fête de l'indépendance ou même l'Halloween!",
+      "line4" : "Own The Day est un jeu interactif et crypto-collectible qui permet à quiconque d'acheter et de posséder des jours de l'année sur l'Ethereum Blockchain. Dès que vous réclamez un jour, vous prenez possession de ce jour et cela augmente automatiquement le prix.",
+      "line5" : "Mais rappelez-vous, toute autre personne peut réclamer votre journée en payant jusqu'à deux fois le prix que vous avez payé. Vous perdrez alors la propriété de ce jour, mais vous recevrez jusqu'à deux fois le prix en ETH automatiquement déposé dans votre portefeuille!",
+      "line6" : "Tu ne peux pas perdre! Posséder la journée ou être payé pour cela!"
+    }
+  },
+  "calendar" : {
+    "pageTitle" : "Calendrier",
+    "title" : "Trouvez un jour et faites-en le vôtre!"
+  },
+  "account" : {
+    "pageTitle" : "Mes journées",
+    "title" : "Mes journées"
+  },
+  "notfound" : {
+    "warning" : {
+      "title" : "404 - introuvable",
+      "body"  : "Aucune ressource trouvée à l'URL demandée."
+    }
+  },
+  "component" : {
+    "calendar" : {
+      "selectMonth" : "Sélectionnez un mois",
+      "nextMonth" : "Le mois prochain",
+      "prevMonth" : "Previous Month"
+    },
+    "account" : {
+      "noDays" : {
+        "title" : "Vous ne possédez aucun jour.",
+        "body" : "Votre anniversaire pourrait être un bon point de départ!"
+      }
+    }
+  },
+  "modal" : {
+    "claim" : {
+      "claimDay" : "Posséder la journée!"
+    },
+    "nickname" : {
+      "title" : "Définissez votre pseudo sur la Blockchain!",
+      "set"   : "Définir le surnom"
+    }
+  },
+  "generic" : {
+    "balance"      : "Équilibre",
+    "cancel"       : "Annuler",
+    "claim"        : "Prétendre",
+    "close"        : "Fermer",
+    "etherUnit"    : "ETH",
+    "loading"      : "Chargement...",
+    "loadingComm"  : "Communiquer avec la blockchain. S'il vous plaît, attendez...",
+    "notice"       : "Remarquer",
+    "owner"        : "Propriétaire",
+    "price"        : "Prix",
+    "priceEther"   : "Prix ​​en ETH",
+    "priceCurrent" : "Prix ​​actuel",
+    "priceNext"    : "Prix ​​suivant"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "page" : {
+    "title" : "擁有一天！",
+    "defaultSuffix" : "在區塊鏈上宣稱一天！",
+    "desc" : "在以太坊區塊鏈上擁有你的一天！"
+  },
+  "body" : {
+    "navbar" : {
+      "title" : "擁有一天",
+      "link" : {
+        "calendar" : "日曆",
+        "account" : "我的日子"
+      },
+      "notConnected" : "你沒有連接"
+    },
+    "warning" : {
+      "noAccount" : {
+        "title" : "沒有賬號！",
+        "message" : "請通過MetaMask或霧連接以太坊帳戶！"
+      },
+      "wrongNetwork" : {
+        "title" : "錯誤的網絡！",
+        "messageTest" : "請連接到測試網絡。",
+        "messageMain" : "請連接到以太坊主網絡。"
+      }
+    }
+  },
+  "welcome" : {
+    "pageTitle" : "歡迎",
+    "topBanner" : {
+      "title" : "擁有一天",
+      "subtitle" : "在以太坊區塊鏈上",
+      "enterButton" : "打開日曆"
+    },
+    "intro1" : {
+      "titleLine" : "在Blockchain上擁有您最喜愛的一天！",
+      "line1" : "擁有你的生日，假期或任何其他你想要的日子！",
+      "line2" : "使用區塊鏈技術在Ethereum智能合約上購買一年中的任何一天，成為您一天的真正擁有者！",
+      "line3" : "您可以成為您喜愛的節日的驕傲主人，如新年，獨立日或甚至萬聖節！",
+      "line4" : "Own The Day是一款互動遊戲和加密收藏品，讓任何人都可以在以太坊區塊鏈上購買並擁有一年的日子。一旦你申請一天，你就會獲得當天的所有權，並自動增加價格。",
+      "line5" : "但請記住，任何人都可以通過支付加倍的價格來支付你的一天。然後您將失去當天的所有權，但您將獲得ETH中自動存入錢包的價格的兩倍！",
+      "line6" : "你不能輸！擁有一天或獲得支付！"
+    }
+  },
+  "calendar" : {
+    "pageTitle" : "日曆",
+    "title" : "尋找一天，讓它成為你的！"
+  },
+  "account" : {
+    "pageTitle" : "我的日子",
+    "title" : "我的日子"
+  },
+  "notfound" : {
+    "warning" : {
+      "title" : "404  - 未找到",
+      "body"  : "在請求的網址找不到資源。"
+    }
+  },
+  "component" : {
+    "calendar" : {
+      "selectMonth" : "選擇一個月",
+      "nextMonth" : "下個月",
+      "prevMonth" : "前一個月"
+    },
+    "account" : {
+      "noDays" : {
+        "title" : "你不擁有任何日子。",
+        "body" : "你的生日可能是一個開始的好地方！"
+      }
+    }
+  },
+  "modal" : {
+    "claim" : {
+      "claimDay" : "擁有一天！"
+    },
+    "nickname" : {
+      "title" : "在區塊鏈上設置你的暱稱！",
+      "set"   : "設置暱稱"
+    }
+  },
+  "generic" : {
+    "balance"      : "平衡",
+    "cancel"       : "取消",
+    "claim"        : "要求",
+    "close"        : "關",
+    "etherUnit"    : "ETH",
+    "loading"      : "載入中...",
+    "loadingComm"  : "與區塊鏈溝通。請稍候...",
+    "notice"       : "注意",
+    "owner"        : "所有者",
+    "price"        : "價錢",
+    "priceEther"   : "價格在ETH",
+    "priceCurrent" : "時價",
+    "priceNext"    : "下一個價格"
+  }
+}

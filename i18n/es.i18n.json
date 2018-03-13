@@ -1,0 +1,99 @@
+{
+  "page" : {
+    "title" : "¡Poseer el día!",
+    "defaultSuffix" : "¡Reclama un día en el blockchain!",
+    "desc" : "¡Posee tu día en el Blockchain de Ethereum!"
+  },
+  "body" : {
+    "navbar" : {
+      "title" : "Poseer el día",
+      "link" : {
+        "calendar" : "Calendar",
+        "account" : "Mis días"
+      },
+      "notConnected" : "Tu no estas conectado"
+    },
+    "warning" : {
+      "noAccount" : {
+        "title" : "Sin cuenta!",
+        "message" : "Por favor, conecta una cuenta Ethereum a través de MetaMask o Mist!"
+      },
+      "wrongNetwork" : {
+        "title" : "¡Red incorrecta!",
+        "messageTest" : "Por favor, conéctese a una red de prueba.",
+        "messageMain" : "Por favor, conéctese a la red principal de Ethereum."
+      }
+    }
+  },
+  "welcome" : {
+    "pageTitle" : "Bienvenido",
+    "topBanner" : {
+      "title" : "Poseer el día",
+      "subtitle" : "en la cadena de bloques de Ethereum",
+      "enterButton" : "Abrir calendario"
+    },
+    "intro1" : {
+      "titleLine" : "¡Consigue tu día favorito en Blockchain!",
+      "line1" : "¡Sea dueño de su cumpleaños, vacaciones o cualquier otro día que desee!",
+      "line2" : "¡Compre cualquier día del año en un Contrato inteligente de Ethereum usando la tecnología blockchain y sea el verdadero dueño de su día!",
+      "line3" : "¡Podrías ser el orgulloso propietario de tus vacaciones favoritas, como el Día de Año Nuevo, el Día de la Independencia o incluso Halloween!",
+      "line4" : "Own The Day es un juego interactivo y criptocobrable que permite a cualquiera comprar y poseer días del año en Ethereum Blockchain. Tan pronto como reclamas un día, tomas posesión de ese día y automáticamente aumenta de precio.",
+      "line5" : "Pero recuerde, cualquier persona puede reclamar su día pagando hasta el doble del precio que pagó. ¡Entonces perderá la propiedad de ese día, pero recibirá hasta el doble del precio en ETH depositado automáticamente en su billetera!",
+      "line6" : "No puedes perder! ¡Poseer el día o ser pagado por ello!"
+    }
+  },
+  "calendar" : {
+    "pageTitle" : "Calendario",
+    "title" : "¡Encuentra un día y hazlo tuyo!"
+  },
+  "account" : {
+    "pageTitle" : "Mis días",
+    "title" : "Mis días"
+  },
+  "notfound" : {
+    "warning" : {
+      "title" : "404 No encontrado",
+      "body"  : "No se encontraron recursos en la URL solicitada."
+    }
+  },
+  "component" : {
+    "calendar" : {
+      "selectMonth" : "Selecciona un mes",
+      "nextMonth" : "Próximo mes",
+      "prevMonth" : "Mes anterior"
+    },
+    "account" : {
+      "noDays" : {
+        "title" : "Usted no posee ningún día.",
+        "body" : "¡Tu cumpleaños podría ser un buen lugar para comenzar!"
+      }
+    }
+  },
+  "modal" : {
+    "claim" : {
+      "claimDay" : "¡Poseer el día!",
+      "claimed"    : "You have successfully claimed __date__.",
+      "claimTitle" : "You Own the Day!"
+    },
+    "nickname" : {
+      "title" : "¡Define tu sobrenombre en Blockchain!",
+      "set"   : "Establecer el sobrenombre",
+      "placeholder" : "Nickname"
+    }
+  },
+  "generic" : {
+    "balance"      : "Equilibrar",
+    "cancel"       : "cancelar",
+    "claim"        : "Reclamación",
+    "close"        : "Cerca",
+    "etherUnit"    : "ETH",
+    "loading"      : "Loading, please wait...",
+    "loadingComm"  : "(communicating with the Ethereum blockchain)",
+    "notice"       : "darse cuenta",
+    "owner"        : "Propietario",
+    "price"        : "Precio",
+    "priceEther"   : "Precio en ETH",
+    "priceCurrent" : "Precio actual",
+    "priceNext"    : "Precio siguiente"
+  }
+}

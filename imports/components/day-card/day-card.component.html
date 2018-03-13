@@ -1,0 +1,20 @@
+<template name="dayCardComponent">
+    <div class="component-wrapper day-card-component">
+
+        <div class="panel panel-default panel-day-card">
+            <div class="panel-heading {{getMonthClass}}">
+                {{getDateLabel 'MMMM' getMonth '1'}}
+            </div>
+            <div class="panel-body">
+                {{#if hasHoliday}}
+                    <div class="holiday-icon" data-toggle="popover" data-container="body" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
+                {{/if}}
+                <div class="day-label">{{getDayLabel}}</div>
+            </div>
+            <div class="panel-footer">
+                <span class="day-price">{{_ 'generic.price'}}: {{getNextPrice}} {{_ 'generic.etherUnit'}}</span>
+            </div>
+        </div>
+
+    </div>
+</template>

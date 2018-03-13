@@ -1,0 +1,22 @@
+<template name="calendar">
+    <div class="component-wrapper calendar-page">
+
+        {{> accountWarningComponent}}
+
+        {{#if hasValidNetwork}}
+            <h3 class="page-header">{{_ 'calendar.title'}}</h3>
+
+            <div class="row">
+                <div class="col-md-10">
+                    {{> calendarComponent}}
+                </div>
+                <div class="col-md-2">
+                    {{> claimComponent}}
+                </div>
+            </div>
+        {{/if}}
+
+    </div>
+
+    {{>footerComponent}}
+</template>

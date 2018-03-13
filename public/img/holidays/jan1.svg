@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="48" height="48">
+<path style="fill:none;stroke:#78909C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M5,43&#10;&#9;c6.151-3.008,1.888-4.481,7.6-7.6"/>
+<polygon style="fill:#FFC107;" points="39.96,24.76 23.24,8.04 43,5 "/>
+<polygon style="fill:#FFB300;" points="39.96,24.76 31.735,16.535 43,5 "/>
+<path style="fill:#FFCCBC;" d="M16.4,39.2l-7.6-7.6c-0.839-0.839-0.839-2.201,0-3.04l17.48-17.48l10.64,10.64L19.44,39.2&#10;&#9;C18.601,40.039,17.239,40.039,16.4,39.2z"/>
+<g>
+	<path style="fill:#F44336;" d="M8.8,31.6l3.04,3.04l9.12,3.04L24,34.64L8.289,29.403C8.04,30.15,8.205,31.005,8.8,31.6z"/>
+	<polygon style="fill:#F44336;" points="26.28,11.08 23.24,14.12 32.36,17.16 &#9;"/>
+	<polygon style="fill:#F44336;" points="17.16,20.2 33.12,25.52 36.16,22.48 20.2,17.16 &#9;"/>
+	<polygon style="fill:#F44336;" points="11.08,26.28 27.04,31.6 30.08,28.56 14.12,23.24 &#9;"/>
+</g>
+</svg>

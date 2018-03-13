@@ -1,0 +1,19 @@
+// Reference Variables & Mixins
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@import (reference) "mixins.less";
+
+// Fix color of AutoComplete Input BG
+input:-webkit-autofill {
+  &, &:hover, &:focus, &:active {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+  }
+}
+
+// Fix default focus style
+*:focus {
+  outline: none !important;
+}
+
+.owner-label {
+  .text-ellipsis;
+}

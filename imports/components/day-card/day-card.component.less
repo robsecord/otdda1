@@ -1,0 +1,59 @@
+// Reference Variables & Mixins
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@import (reference) "/imports/styles/lib/mixins.less";
+
+
+// Day-Card Component
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.component-wrapper {
+  &.day-card-component {
+
+    .panel-day-card {
+      .panel-heading {
+        color: #666;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .panel-body {
+        position: relative;
+        height: 120px;
+
+        .day-label {
+          font-size: 4em;
+          font-weight: bold;
+          text-shadow: 3px 3px #ddd;
+          text-align: center;
+        }
+
+        .holiday-icon {
+          .pos-abs(10px, 10px);
+        }
+      }
+
+      .panel-footer {
+        color: #888;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .panel-day-card {
+      .panel-heading {
+        &.month0  { background-color: @blueBackground; }
+        &.month1  { background-color: @redBackground; }
+        &.month2  { background-color: @orangeBackground; }
+        &.month3  { background-color: @violetBackground; }
+        &.month4  { background-color: @greenBackground; }
+        &.month5  { background-color: @tealBackground; }
+        &.month6  { background-color: @purpleBackground; }
+        &.month7  { background-color: @pinkBackground; }
+        &.month8  { background-color: @brownBackground; }
+        &.month9  { background-color: @redBackground; }
+        &.month10 { background-color: @redBackground; }
+        &.month11 { background-color: @redBackground; }
+      }
+    }
+
+  }
+}
