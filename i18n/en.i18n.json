@@ -317,7 +317,8 @@
     "nickname" : {
       "title"       : "Set your Nickname on the Blockchain!",
       "set"         : "Set Nickname",
-      "placeholder" : "Nickname"
+      "placeholder" : "Nickname",
+      "profanities" : "NOTE: Profanities in your Nickname will be censored so please don't waste your Gas!"
     }
   },
   "generic" : {
