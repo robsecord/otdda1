@@ -2,7 +2,7 @@
   "page" : {
     "title" : "Own the Day!",
     "defaultSuffix" : "ERC20 Tokens on the blockchain!",
-    "desc" : "Own the Day on the Ethereum Blockchain!"
+    "desc" : "Own the Day or Get Paid for it! Only on the Ethereum Blockchain!"
   },
   "body" : {
     "navbar" : {
@@ -19,7 +19,8 @@
     "pageTitle" : "Welcome",
     "topBanner" : {
       "title" : "Own the Day",
-      "subtitle" : "on the Ethereum Blockchain",
+      "tooltip" : "on the Ethereum Blockchain",
+      "subtitle" : "or get Paid for it!",
       "enterButton" : "Open Calendar"
     },
     "intro1" : {
@@ -337,7 +338,11 @@
     "price"        : "Price",
     "priceEther"   : "Price in ETH",
     "priceCurrent" : "Current Price",
-    "priceNext"    : "Next Price"
+    "priceNext"    : "Next Price",
+    "information"  : "Information",
+    "social"       : "Social",
+    "copyright1"   : "Copyright 2018 OwnTheDay.io",
+    "copyright2"   : "All rights reserved."
   },
   "holiday" : {
     "jan1" : {
@@ -553,6 +558,11 @@
     "jun21" : {
       "title" : "Summer Solstice",
       "desc" : "Summer for the year 2018 starts on June 21. Summer provides the warmest weather of the four seasons as the days become hot and often dry (rainy in some Asian areas) with evenings remaining warm to hot depending on your location. In the Northern Hemisphere summer comes in the June, July and August months and in the Southern Hemisphere it comes in the December, January and February months. Summer comes about by the Earth increasing its axis tilt relative to the sun till the Summer Solstice (June 20-22 in Northern Hemisphere) then the sun relative to the earth changes course and starts to move back towards the equator."
+    },
+
+    "jul1" : {
+      "title" : "Canada Day",
+      "desc" : "Canada Day is the national day of Canada. A federal statutory holiday, it celebrates the anniversary of the July 1, 1867, enactment of the Constitution Act, which united the three separate colonies of Canada, Nova Scotia and New Brunswick into a single Dominion within the British Empire called Canada."
     },
 
     "jul4" : {

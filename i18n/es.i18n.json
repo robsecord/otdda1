@@ -2,7 +2,7 @@
   "page" : {
     "title" : "¡Poseer el día!",
     "defaultSuffix" : "ERC20 Tokens en el blockchain!",
-    "desc" : "¡Poseer el día en el Blockchain de Ethereum!"
+    "desc" : "¡Sea el día o reciba un pago! ¡Solo en el Blockchain de Ethereum!"
   },
   "body" : {
     "navbar" : {
@@ -19,7 +19,8 @@
     "pageTitle" : "Bienvenido",
     "topBanner" : {
       "title" : "Poseer el día",
-      "subtitle" : "en la cadena de bloques de Ethereum",
+      "tooltip" : "en la cadena de bloques de Ethereum",
+      "subtitle" : "¡o te pagan por eso!",
       "enterButton" : "Abrir calendario"
     },
     "intro1" : {
@@ -149,7 +150,7 @@
     },
     "intro" : {
       "line1" : "Esta aplicación (& quot; OwnTheDay & quot;) se ejecuta en la red Ethereum y utiliza contrato (s) inteligente (s) para permitir a los usuarios comprar y poseer coleccionables únicos y únicos en el día calendario como tokens compatibles con ERC20 con el símbolo DAYS.",
-      "line2" : "A lo largo de estos Términos de Servicio, los contratos inteligentes y el Sitio que aloja el juego se conocerán como el "Juego". Los tokens de día calendario adquiridos a través del juego se conocerán como & quot; Coleccionables & quot ;.",
+      "line2" : "A lo largo de estos Términos de Servicio, los contratos inteligentes y el Sitio que aloja el juego se conocerán como el 'Juego'. Los tokens de día calendario adquiridos a través del juego se conocerán como & quot; Coleccionables & quot ;.",
       "line3" : "Al elegir usar el Juego, los usuarios pueden comprar y coleccionar objetos del día calendario. OwnTheDay pone el Juego a su disposición. Antes de usar el juego, debe aceptar estos Términos de servicio.",
       "line4" : "Lea cuidadosamente los siguientes Términos de Servicio antes de utilizar el Juego, comprar Coleccionables o usar el Sitio. A menos que tengamos un acuerdo separado por escrito con usted que difiera de los Términos de servicio a continuación, los siguientes Términos de servicio rigen absoluta e inequívocamente su uso del Sitio, así como su compra y propiedad de Collectibles. Solo le permitiremos usar este Sitio, Collectibles propios y / o Comprar coleccionables si acepta todos estos Términos de servicio.",
       "line5" : "Al utilizar este Juego, este Sitio y / o estos Coleccionables, o al hacer clic en & quot; aceptar & quot ;, usted confirma que comprende estos Términos y acepta estos Términos. En el caso de que esté utilizando este Sitio, este Juego o estos Coleccionables en nombre de otra empresa o entidad legal, usted indica que tiene la autoridad legal para aceptar estos Términos en nombre de la otra parte, y que cualquier mención de & quot; tu & quot; en este contrato significa la otra parte que usted representa. Si no tiene la autoridad para representar a otra parte, entonces no tiene permiso para utilizar este Juego, este Sitio o estos Coleccionables."
@@ -337,7 +338,11 @@
     "price"        : "Precio",
     "priceEther"   : "Precio en ETH",
     "priceCurrent" : "Precio en Precio Actual",
-    "priceNext"    : "Precio siguiente"
+    "priceNext"    : "Precio siguiente",
+    "information"  : "Información",
+    "social"       : "Social",
+    "copyright1"   : "Copyright 2018 OwnTheDay.io",
+    "copyright2"   : "Todos los derechos reservados."
   },
   "holiday" : {
     "jan1" : {
@@ -554,6 +559,11 @@
     "jun21" : {
       "title" : "Solsticio de verano",
       "desc" : "El verano del año 2018 comienza el 21 de junio. El verano proporciona el clima más cálido de las cuatro estaciones a medida que los días se calientan y a menudo se secan (llueve en algunas áreas asiáticas) y las noches permanecen cálidas dependiendo de su ubicación. En el hemisferio norte, el verano llega en los meses de junio, julio y agosto, y en el hemisferio sur, en los meses de diciembre, enero y febrero. El verano se produce cuando la Tierra aumenta su inclinación del eje relativa al sol hasta el solsticio de verano (del 20 al 22 de junio en el hemisferio norte), luego el sol en relación con la Tierra cambia de rumbo y comienza a retroceder hacia el ecuador."
+    },
+
+    "jul1" : {
+      "title" : "Dia de Canada",
+      "desc" : "El día de Canadá es el día nacional de Canadá. Una fiesta legal federal, celebra el aniversario de la promulgación del 1 de julio de 1867 de la Ley de la Constitución, que unió las tres colonias separadas de Canadá, Nueva Escocia y Nueva Brunswick en un solo Dominio dentro del Imperio Británico llamado Canadá."
     },
 
     "jul4" : {

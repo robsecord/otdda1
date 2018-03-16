@@ -56,6 +56,7 @@ export const HOLIDAY_ICON_MAP = [
     {dayIndex: 165,  classname: 'jun14',  img: '/img/holidays/jun14.svg',  title: 'holiday.jun14.title',  desc: 'holiday.jun14.desc'},
     {dayIndex: 168,  classname: 'jun17',  img: '/img/holidays/jun17.svg',  title: 'holiday.jun17.title',  desc: 'holiday.jun17.desc'},
     {dayIndex: 172,  classname: 'jun21',  img: '/img/holidays/jun21.svg',  title: 'holiday.jun21.title',  desc: 'holiday.jun21.desc'},
+    {dayIndex: 182,  classname: 'jul1',  img: '/img/holidays/jul1.svg',  title: 'holiday.jul1.title',  desc: 'holiday.jul1.desc'},
     {dayIndex: 185,  classname: 'jul4',  img: '/img/holidays/jul4.svg',  title: 'holiday.jul4.title',  desc: 'holiday.jul4.desc'},
     {dayIndex: 195,  classname: 'jul14',  img: '/img/holidays/jul14.svg',  title: 'holiday.jul14.title',  desc: 'holiday.jul14.desc'},
     {dayIndex: 202,  classname: 'jul21',  img: '/img/holidays/jul21.svg',  title: 'holiday.jul21.title',  desc: 'holiday.jul21.desc'},

@@ -4,26 +4,26 @@
         <div class="footer">
             <div class="row">
                 <div class="col-md-2 col-md-offset-1 links">
-                    <p class="heading">Information</p>
+                    <p class="heading">{{_ 'generic.information'}}</p>
                     <ul>
-                        <li><a href="/">Welcome</a></li>
-                        <li><a href="{{getRoute 'about'}}">About</a></li>
-                        <li><a href="{{getRoute 'faq'}}">FAQ</a></li>
-                        <li><a href="{{getRoute 'terms'}}">Terms of Service</a></li>
+                        <li><a href="/">{{_ 'welcome.pageTitle'}}</a></li>
+                        <li><a href="{{getRoute 'about'}}">{{_ 'about.pageTitle'}}</a></li>
+                        <li><a href="{{getRoute 'faq'}}">{{_ 'faq.pageTitle'}}</a></li>
+                        <li><a href="{{getRoute 'terms'}}">{{_ 'tos.pageTitle'}}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 links">
-                    <p class="heading">Own the Day</p>
+                    <p class="heading">{{_ 'body.navbar.title'}}</p>
                     <ul>
-                        <li><a href="{{getRoute 'calendar'}}">Calendar</a></li>
-                        <li><a href="{{getRoute 'account'}}">My Days</a></li>
+                        <li><a href="{{getRoute 'calendar'}}">{{_ 'body.navbar.link.calendar'}}</a></li>
+                        <li><a href="{{getRoute 'account'}}">{{_ 'body.navbar.link.account'}}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 social">
-                    <p class="heading">Social</p>
+                    <p class="heading">{{_ 'generic.social'}}</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/OwnTheDays/" title="Visit us on Facebook" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/facebook.svg'}}}</a>
-                        <a href="https://twitter.com/OwnTheDayIO" title="Visit us on Twitter" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/twitter.svg'}}}</a>
+                        <a href="https://twitter.com/OwnTheDayDAPP" title="Visit us on Twitter" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/twitter.svg'}}}</a>
                         <a href="https://medium.com/@owntheday.io" title="Visit us on Medium" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/medium.svg'}}}</a>
                         <a href="https://discord.gg/sWmjmfa" title="Visit us on Discord" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/discord.svg'}}}</a>
                         <a href="https://t.me/owntheday" title="Visit us on Telegram" data-toggle="tooltip" data-placement="bottom" target="_new">{{{getSvg '/img/social/telegram.svg'}}}</a>
@@ -39,7 +39,7 @@
                         <a href="https://metamask.io" class="mm" target="_new"><img src="/img/mm.png" /></a>
                     </div>
 
-                    <p>Copyright &copy; 2018 OwnTheDay.io<br>All rights reserved.</p>
+                    <p>&copy; {{_ 'generic.copyright1'}}<br>{{_ 'generic.copyright2'}}</p>
                 </div>
             </div>
         </div>
