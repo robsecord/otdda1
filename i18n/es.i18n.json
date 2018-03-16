@@ -307,8 +307,8 @@
       "claimed"    : "Has reclamado exitosamente __date__.",
       "claimTitle" : "¡Eres el dueño del día!",
       "info" : {
-        "line1" : "Puede solicitar <strong> __ fecha __ </ strong> para <strong> __ precio __ </ strong>",
-        "line2" : "Cualquiera puede reclamar este día de usted al precio de <strong> __ price __ </ strong>.",
+        "line1" : "Puede solicitar <strong>__date__</ strong> para <strong>__price__</ strong>",
+        "line2" : "Cualquiera puede reclamar este día de usted al precio de <strong>__price__</ strong>.",
         "line3" : "Puede pujar más alto que el precio actual para asegurarse de reclamar el día. Si su oferta supera el precio actual, se le reembolsará la diferencia.",
         "line4" : "Su transacción puede fallar si el precio se ha movido por encima de su precio de oferta, en cuyo caso se le reembolsará su oferta.",
         "line5" : "Ajustar el precio del gas (Gwei) puede acelerar su transacción. Consulte su rastreador de gas favorito para obtener el último precio de gas propuesto."

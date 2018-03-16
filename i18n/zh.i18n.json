@@ -307,8 +307,8 @@
       "claimed"    : "您已成功声明__date__。",
       "claimTitle" : "你拥有一天！",
       "info" : {
-        "line1" : "您可以为<strong> __ price __ </strong>声明<strong> __ date __ </strong>",
-        "line2" : "任何人都可以以<strong> __ price __ </ strong>的价格向您索取这一天。",
+        "line1" : "您可以为<strong>__price__</strong>声明<strong>__date__</strong>",
+        "line2" : "任何人都可以以<strong>__price__</ strong>的价格向您索取这一天。",
         "line3" : "您可以出价高于当前价格，以确保您获得当天的优惠。 如果您的出价超过当前价格，您将得到退款。",
         "line4" : "如果价格高于出价，您的交易可能会失败，在这种情况下，您将退还您的出价。",
         "line5" : "调整燃气价格（Gwei）可能会加速您的交易。 请参考您最喜爱的气体追踪器以获取最新的拟议气体价格。"
