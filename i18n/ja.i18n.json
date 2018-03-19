@@ -68,232 +68,232 @@
         "q" : "今日は自分のプレーをするために何が必要ですか？",
         "a" : {
           "l1" : "あなたが必要とするのは、暦日を要求することです。",
-          "l2" : "A Modern Web Browser such as Chrome or Firefox with the MetaMask Extension,",
-          "l3" : "Alternatively, an Ethereum-based browser such as Mist or Bravo,",
-          "l4" : "Ether in your wallet to claim calendar-days!"
+          "l2" : "MetaMask Extensionを搭載したChromeやFirefoxなどの最新のWebブラウザ、",
+          "l3" : "あるいは、MistまたはBravoなどのEthereumベースのブラウザ、",
+          "l4" : "あなたの財布に入れられたエーテルは、暦日を要求します！"
         }
       },
       "section2" : {
-        "q" : "How do I install MetaMask?",
+        "q" : "MetaMaskをインストールするには？",
         "a" : {
-          "l1" : "To buy (and to receive profits from) calendar-day collectibles, you will need to install a browser extension called MetaMask (by MetaCert) in Chrome or Firefox.",
-          "l2" : "Download and install the extension for your browser;",
-          "l3" : "Create a new Account/Wallet in MetaMask,",
-          "l4" : "Metamask will provide you with 12 seed words which you should save some place safe (this is essentially the key to your wallet),",
-          "l5" : "Once you are logged into your account in MetaMask you will have full access to Own the Day!"
+          "l1" : "カレンダーのグッズを購入するには、MetaMaskというMetaMaskというブラウザ拡張機能をChromeまたはFirefoxにインストールする必要があります。",
+          "l2" : "ブラウザの拡張機能をダウンロードしてインストールします。",
+          "l3" : "ブラウザの拡張機能をダウンロードしてインストールします。",
+          "l4" : "Metamaskはあなたに安全な場所を保存しておくべき12のシード語を提供します（これは基本的にあなたの財布の鍵です）。",
+          "l5" : "MetaMaskであなたのアカウントにログインすると、その日を完全に利用できます！"
         }
       },
       "section3" : {
-        "q" : "How do I add ether (ETH) to my wallet?",
+        "q" : "私の財布にエーテル（ETH）を加えるにはどうすればいいですか？",
         "a" : {
-          "l1" : "Through an Exchange: The most popular means of acquiring ether is from an exchange such as Coinbase, Binance, Kraken, and many others. After you have purchased ether from an exchange, you will need to transfer the ether out of the exchange and into your MetaMask wallet.",
-          "l2" : "Through MetaMask: MetaMask gives an option to purchase ether directly through the wallet, but this feature is currently only available for US residents.",
-          "l3" : "If you already own Ether you can transfer funds directly to your MetaMask wallet via the public wallet address.",
-          "l4" : "If you need further assistance in acquiring ether or using MetaMask, there are many great guides &amp; tutorials on Google and YouTube!"
+          "l1" : "交換を通じて：エーテルを得る最も一般的な手段は、Coinbase、Binance、Krakenなどの取引所からです。 交換品からエーテルを購入した後、交換品からエーテルをMetaMaskウォレットに移す必要があります。",
+          "l2" : "MetaMaskを介して：MetaMaskはウォレットを介して直接エーテルを購入するオプションを提供しますが、この機能は現在米国の住民にのみ利用可能です。",
+          "l3" : "MetaMaskを介して：MetaMaskはウォレットを介して直接的なフィールドを購入するオプションを提供しますが、この機能は現在米国の住民にのみ利用可能です。",
+          "l4" : "エーテルの取得やMetaMaskの使用に関するさらなる助けが必要な場合は、多くの素晴らしいガイドとアンプがあります。 GoogleとYouTubeのチュートリアル"
         }
       },
       "section4" : {
-        "q" : "What exactly are we buying?",
+        "q" : "私たちは何を買っていますか？",
         "a" : {
-          "l1" : "Own the Day is a game about collecting and owning your favorite calendar-days on the Ethereum Blockchain. When you buy a day, you are the sole owner of that day until someone claims it from you, at which point you earn ether as the seller of the day.",
-          "l2" : "Calendar-days are crypto-collectibles similar to sports-cards and comic books, only these collectibles always increase in value!  What you own is an ERC20 Token on the Ethereum Blockchain, limited to only 366 DAYS Tokens (we have included the extra day in February for Leap Year). Much like traditional collectibles, their value is directly related to their desirability by other collectors.",
-          "l3" : "The game’s interactive global Calendar will display your Nickname on all of the days that you own and will also be represented by a unique color based on the last six characters of your wallet's public address.",
-          "l4" : "If anyone else decides to claim a day that you own, they will have to pay you up to double the price in ETH which will automatically be transferred into your wallet by the smart contract.",
-          "l5" : "You either own your day as a unique Crypto-Collectible, or you profit from it - you can't lose!  Ultimately, the more you play the more you can earn!"
+          "l1" : "あなたのお気に入りの暦日をEthereum Blockchainで収集して所有することについてのゲームです。 あなたが1日を買うとき、誰かがあなたからそれを請求するまで、あなたはその日の唯一の所有者です。その時点であなたはその日の売り手としてエーテルを獲得します。",
+          "l2" : "カレンダーの日は、スポーツカードや漫画に似た暗号収集品ですが、これらのグッズのみが常に価値が高まります。 あなたが所有しているのは、Ethereumブロックチェーン上のERC20トークンです.366のDAYSトークンに限定されています（閏年の2月の余分な日が含まれています）。 伝統的なグッズと同様、その価値は他のコレクターの望ましさに直接関係しています。",
+          "l3" : "ゲームのインタラクティブなグローバルカレンダーはあなたが所有するすべての日にニックネームを表示し、ウォレットのパブリックアドレスの最後の6文字に基づいてユニークな色で表示されます。",
+          "l4" : "他の誰かがあなたが所有する日を請求することを決めた場合、ETHで2倍の料金を支払わなければなりません。これはスマートな契約によって自動的にあなたの財布に移されます。",
+          "l5" : "一意の暗号コレクティブとしてあなたの一日を所有しているか、それから利益を得ています - あなたは失うことはありません！ 最終的に、より多くのものをプレイするほど、より多くの収益を得ることができます！"
         }
       },
       "section5" : {
-        "q" : "How do I lay claim to a calendar-day?",
+        "q" : "どのように私は暦日に請求するのですか？",
         "a" : {
-          "l1" : "Begin by visiting the global __calendar__ page and find your favorite day of the year. It could be your birthday, an anniversary or your favorite holiday.",
-          "l2" : "Once you have found your desired calendar-day, select it in order to buy it.  The game will prompt you to confirm your purchase and direct you to the MetaMask extension to initiate the transaction.  After the Ethereum Blockchain has confirmed your transaction, you will have successfully claimed that day!  The global Calendar, as well as your Account page will display your ownership of the day."
+          "l1" : "まずグローバルな__calendar__ページにアクセスして、あなたの好きな曜日を見つけてください。 あなたの誕生日、記念日、またはあなたの好きな休日になる可能性があります。",
+          "l2" : "希望の暦日を見つけたら、その日を選択して購入します。 ゲームはあなたの購入を確認し、トランザクションを開始するためにMetaMaskエクステンションに向かいます。 ethereumブロックチェーンがトランザクションを確認した後、あなたはその日をうまく宣言したでしょう！ グローバルカレンダーとアカウントページには、その日のあなたの所有権が表示されます。"
         }
       },
       "section6" : {
-        "q" : "Can I use fiat currency (CAD, USD, etc) to claim a day?",
+        "q" : "一日を請求するために通貨（CAD、USDなど）を使用することはできますか？",
         "a" : {
-          "l1" : "Own the Day is a blockchain-based game which runs on the Ethereum Network, and as such, ether (ETH) is the only way to play.",
-          "l2" : "You will have to use an exchange to acquire ether using your standard currency."
+          "l1" : "その日はエーテルネットワーク上で動作するブロックチェーンベースのゲームであり、エーテル（ETH）だけが遊ぶ方法です。",
+          "l2" : "あなたは標準的な通貨を使用してエーテルを取得するために交換機を使用する必要があります。"
         }
       },
       "section7" : {
-        "q" : "Can I refuse to sell the days that I have collected?",
+        "q" : "あなたは標準的な通貨を使用してエーテルを取得するために交換機を使用する必要があります。",
         "a" : {
-          "l1" : "If someone wants to claim a day that you own they will be able to do so provided that they can pay the price.",
-          "l2" : "However, if you are the owner of the day, that also makes you the seller of the day and you will be paid up to twice the price that you initially paid."
+          "l1" : "誰かがあなたが所有する日を主張したいと思えば、彼らは価格を支払うことができるなら、そうすることができます。",
+          "l2" : "誰かがあなたが所有する日を主張したいと思えば、彼らは価格を支払うことができる、そうすることができます。"
         }
       },
       "section8" : {
-        "q" : "How are you making money?",
+        "q" : "どのようにお金を稼いでいますか？",
         "a" : {
-          "l1" : "A small portion of each transaction is paid out to the developers of the game.  This portion is related to the value of the transaction and is hard-coded into the smart contract (never to be modified).  The smart contract is completely transparent and available online for anyone to read.  You can also visit the __about__ page to view the pricing structure of the game."
+          "l1" : "各取引のわずかな部分がゲームの開発者に支払われます。 この部分はトランザクションの価値に関連し、スマートコントラクト（変更されることはない）にハードコードされています。 スマートな契約は完全に透過的であり、オンラインで誰でも読むことができます。 __about__ページにアクセスして、ゲームの価格構成を表示することもできます。"
         }
       },
       "section9" : {
-        "q" : "How do I view my DAYS Tokens inside of my Wallet?",
+        "q" : "ウォレット内のDAYSトークンを表示するにはどうすればよいですか？",
         "a" : {
-          "l1" : "Custom Ethereum Tokens, such as DAYS Tokens, can be added to most Ethereum-compatible wallets by configuring the wallet to recognize the Token.",
-          "l2" : "In MetaMask, for example, you can select the 'Tokens' tab of your wallet and then select 'Add Token'.  Provide the following details for the Token:",
-          "l3" : "Token Contract Address: 0x16d790ad4e33725d44741251f100e635c323beb9",
-          "l4" : "Token Symbol: DAYS",
-          "l5" : "Decimals of Precision: 0",
-          "l6" : "This will allow your wallet to recognize any DAYS Tokens that you collect through the game -- it will not add new DAYS Tokens to your wallet."
+          "l1" : "DAYSトークンなどのカスタムEthereumトークンは、ウォレットがトークンを認識できるように構成することによって、ほとんどのEthereum互換ウォレットに追加できます。",
+          "l2" : "たとえば、MetaMaskでは、ウォレットの[トークン]タブを選択し、[トークンの追加]を選択できます。 トークンに関する以下の詳細を提供してください。",
+          "l3" : "トークン契約アドレス：0x16d790ad4e33725d44741251f100e635c323beb9 ",
+          "l4" : "トークン記号：DAYS",
+          "l5" : "精度の小数点以下桁数：0",
+          "l6" : "これにより、あなたのウォレットは、あなたがウォーレットに新しいDAYSトークンを追加することはありませんゲームを介して収集するすべてのDAYSトークンを認識することができます。"
         }
       }
     }
   },
   "tos" : {
-    "pageTitle" : "Terms of Service",
+    "pageTitle" : "利用規約",
     "topBanner" : {
-      "title" : "Terms of Service",
+      "title" : "利用規約",
       "subtitle" : ""
     },
     "intro" : {
-      "line1" : "This application (&quot;OwnTheDay&quot;) runs on the Ethereum network and utilizes smart contract(s) to allow users to buy and own unique, one-of-a-kind calendar-day Collectibles as ERC20-compatible Tokens with the symbol DAYS.",
-      "line2" : "Throughout these Terms of Service, the smart contract(s) and the Site hosting the game will be known as the &quot;Game&quot;. The calendar-day tokens purchased through the Game will be known as &quot;Collectibles&quot;.",
-      "line3" : "By choosing to use the Game, users can purchase and own calendar-day Collectibles. OwnTheDay is making the Game available to you. Prior to using the Game, you must agree to these Terms of Service.",
-      "line4" : "Read the following Terms of Service carefully and thoroughly prior to using the Game, purchasing Collectibles, or using the Site. Unless we have a separate, written agreement with you that differs from the below Terms of Service, the following Terms of Service absolutely and unequivocally govern your use of the Site, as well as your purchase and ownership of Collectibles. We will only allow you to use this Site, own Collectibles, and/or purchase Collectibles if you accept all of these Terms of Service.",
-      "line5" : "By using this Game, this Site, and/or these Collectibles, or by clicking &quot;agree&quot;, you confirm that you understand these Terms and accept these Terms. In the event that you are using this Site, this Game, or these Collectibles on behalf of another company or legal entity, you indicate that you have the legal authority to accept these Terms on the other party's behalf, and that any mention of &quot;you&quot; in this contract means the other party that you represent. If you do not have the authority to represent another party, then you do not have permission to use this Game, this Site, or these Collectibles."
+      "line1" : "このアプリケーション（「OwnTheDay」）は、Ethereumネットワーク上で実行され、スマートコントラクトを利用して、ユーザがユニークでユニークなカレンダー日のグッズをシンボル「DAYS」のERC20互換トークンとして購入および所有できるようにする。",
+      "line2" : "これらのサービス期間中、スマート契約とゲームを主催するサイトを「ゲーム」と呼びます。 ゲームを通じて購入された暦日のトークンは、「グッズ」として知られている。.",
+      "line3" : "ゲームを使用することを選択することにより、ユーザは暦日のグッズを購入して所有することができます。 OwnTheDayはあなたにゲームを提供しています。 ゲームを使用する前に、これらの利用規約に同意する必要があります。",
+      "line4" : "ゲームを使用したり、グッズを購入したり、サイトを使用する前に、以下の利用規約を注意深く徹底的にお読みください。 下記の利用規約とは別の書面による別途の契約がない限り、以下の利用規約は、本サイトの使用、ならびに購入品の所有権および所有権を、絶対的かつ明白に管理します。 当社は、これらのすべての利用規約に同意する場合にのみ、本サイト、グッズ、および/またはグッズを使用することを許可します。",
+      "line5" : "ゲームを使用して、グリッドを購入し、サイトを使用する前に、以下の利用規約を注意深く控えてください。下記の利用規約とは別の書面による別途の契約がない限り、以下 の利用規約は、本サイトの使用、そして、購入品の所有権と所有権を、絶対的か、明白に管理します。当社は、これまでの利用規約に同意する場合にのみ、本サイト、グッズ 、または/またははグリッドを使用することを許可します。..."
     },
     "terms" : {
       "section1" : {
-        "title" : "WE DO NOT ACCEPT DEPOSITS",
-        "note" : "OwnTheDay.io is a UI interface which allows you to interact directly with a blockchain smart contract on the Ethereum network using the &quot;Metamask&quot; browser extension. The website and its creators do not accept or hold any payments from players. Any ether transfers done over the website are transferred directly to blockchain contract address: 0xD35eF25873bd9BA3e67dcCd1a5634F49a32E44f0. Any Ether or fiat currency deposited into your Metamask extension is fully owned and controlled by you, the player. The game does not have access to the funds deposited in your Metamask browser extension. Transfers of Ether, are passed directly from your Metamask account to a smart contract on the Ethereum network. Since the game does not accept your deposits and does not have any control over it, the game and it's creators are not liable for any damages or loss of funds."
+        "title" : "私たちは預金を受け入れません",
+        "note" : "私たちは預金を受入れません"
       },
       "section2" : {
-        "title" : "PLAY RESPONSIBLY",
-        "note" : "This game allows you to buy and collect digital assets. There is no guarantee that other players or anyone else will buy these assets from you. While some players speculate about their ability to resell their digital assets for a higher value in the future, there is no guarantee that another person will decide to buy your digital asset. If you choose to transfer ETH in exchange for a Day referred to in the game as Collectibles, you must accept and understand the risk of potentially not being able to sell your Collectibles in the future. The game is designed for collectors who choose to pay for the ownership of digital products referred to as Collectibles. If you choose to speculate over the future value and liquidity of your asset, you must do so at your own risk and not hold the creators of the game or the smart contract liable for any loss or damages. Play responsibly and do not spend more than you feel the digital asset is worth."
+        "title" : "私たちは預金を受入れません...",
+        "note" : "私たちは預金を受入れません..."
       },
       "section3" : {
-        "title" : "SMART CONTRACTS",
-        "note" : "We have used the days of the year to create unique, one-of-a-kind Collectibles represented by ERC20-compatible Tokens on the Ethereum BlockChain. These Collectibles are not endorsed or supported by the person appearing on the calendar. All available days of the year (including February 29) have been released up-front. Each Day Collectible may be purchased by you utilizing ether. You may purchase any day you choose, and any other party may purchase a day that you currently own if the other party is willing to pay a higher sum. The price of the tokens are hard-coded into the smart contract itself and can not be changed by anyone, including the game's creators. You may not stop another party from purchasing a day that you currently own, and no other third party may stop you from purchasing a day that you wish to own. Whichever party is willing to pay the cost of the day may own said Smart Contract after he or she completes the transaction."
+        "title" : "スマート・コントラクター",
+        "note" : "ethereumブロックチェーン上にERC20互換トークンで表されるユニークでユニークなコレクションを作成するために、今年の年を使いました。 これらのグッズは、カレンダーに表示されている人によって裏書されたり、サポートされたりしません。 今年の利用可能なすべての日数（2月29日を含む）は前もってリリースされています。 毎日のコレクターは、あなたがエーテルを利用して購入することができます。 あなたは選択した日を購入することができ、他の当事者は、他の当事者がより高い金額を支払うことを望むなら、あなたが現在所有している日を購入することができる。 トークンの価格はスマートコントラクト自体にハードコードされており、ゲームの作成者を含む誰もが変更することはできません。 あなたは、あなたが現在所有している日の購入を他の当事者に止めることはできません。また、他の第三者は、あなたが所有したい日を購入することを止めることはできません。 どの当事者がその日の費用を支払うことを望んでいるかは、そのスマート契約が取引を完了した後にそのスマート契約を所有する可能性がある。"
       },
       "section4" : {
-        "title" : "THE GAME",
-        "note" : "This Game requires that you utilize a Google Chrome or Firefox web browser that currently has a Metamask browser extension installed. Metamask is an electronic wallet created by a third party that allows you to purchase, store, and engage in transactions using Ethereum cryptocurrency. You may not use any other electronic wallet on the Game other than Metamask; however, you can use other electronic wallets and third-party applications to transfer funds to your Metamask wallet in order to make purchases and receive payment on the Game. If you do not log on to the Game with the correct browser (either Google Chrome or Mozilla Firefox) and/or if the browser does not have the Metamask extension installed, you will be recognized by the Game, but you will not be able to interact with the Game in any way. Any and all transactions that take place in the Game occur via the Ethereum blockchain. You understand that by using the Game, your Ethereum public address will be made visible to other users of the Game as well as third parties each and every time you engage in a transaction on the Game. We do not own and we do not control any of the following third-party products used for the function of this Game: Metamask, Coinbase, Google Chrome, Mozilla Firefox, or the Ethereum network. We do not own and we do not control any other third-party site, product or service that you may choose to access, visit, or use for the purpose of interacting with or using the Game. We will not be held liable, and are not liable, for the acts or omissions by any such third party, nor are we liable, or will we be held liable, for any damage that you may suffer as a result of interacting with or using any of the mentioned or unmentioned third parties. You must provide accurate and complete registration information when you create an account to utilize the Game. You are solely responsible for the safety and security of your Metamask wallet and/or any other electronic wallet you utilize to interact with the Game. You are solely responsible for the safety and security of your account with us. If you become aware of a security breach in regards to your password or your account, you agree to notify us immediately upon discovery at security@owntheday.io."
+        "title" : "ゲーム",
+        "note" : "このゲームでは、現在Metamaskブラウザの拡張機能がインストールされているGoogle ChromeまたはFirefoxのWebブラウザを使用する必要があります。 Metamaskは、第三者によって作成された電子財布で、Ethereum暗号化を使用してトランザクションを購入、保管、取引することができます。 Metamask以外のゲームでは、他の電子ウォレットを使用することはできません。ただし、他の電子ウォレットやサードパーティのアプリケーションを使用してMetamaskウォレットに資金を送金することで、ゲームを購入して支払いを受け取ることができます。正しいブラウザ（Google ChromeまたはMozilla Firefox）でゲームにログオンしていない場合、またはブラウザにMetamaskエクステンションがインストールされていない場合、あなたはゲームによって認識されますが、いかなる方法でもゲームと対話する。ゲームで行われるすべてのトランザクションは、Ethereumブロックチェーンを介して行われます。お客様は、ゲームを使用することにより、ゲームの取引に参加するたびに、ゲームの他のユーザーおよび第三者にEthereumのパブリックアドレスを公開することを理解します。私たちは所有しておらず、Metamask、Coinbase、Google Chrome、Mozilla Firefox、またはEthereumネットワークのこのゲームの機能に使用される以下の第三者の製品を管理していません。私たちは所有しておらず、ゲームとのやりとりや使用の目的でアクセス、訪問、または使用することを選択した第三者のサイト、製品またはサービスを管理していません。当社は、かかる第三者による行為または不作為について、責任を負いませんし、責任を負うものでもなく、また第三者との対話または使用の結果として被る可能性のある損害に対する責任を負いません記載されているまたは記載されていない第三者のいずれか。ゲームを利用するためのアカウントを作成する際には、正確かつ完全な登録情報を提供する必要があります。 Metamask walletおよび/またはお客様がゲームと対話するために使用する他の電子財布の安全性と安全性については、お客様は単独で責任を負うものとします。あなたは私たちとのあなたのアカウントの安全とセキュリティのために単独で責任があります。パスワードまたはアカウントに関してセキュリティ侵害が発生したことに気がついた場合は、security@owntheday.ioですぐに発見時に通知することに同意するものとします。"
       },
       "section5" : {
-        "title" : "FEES AND PAYMENTS",
-        "note" : "If you choose to purchase any days in the Game, any and all transactions will be conducted through the Ethereum network utilizing a Metamask electronic wallet directly tied to a Smart Contract on the blockchain, which is not controlled by the games creators. We will not have any insight into or control over these payments or transactions, nor will we be able to reverse any transaction that occurs. Because of this, we will have no liability to you or any other third party for any claims or damages that may occur due to any transaction that takes place on the Game and/or in regards to any of the country Smart Contracts that we have created. The Ethereum network requires that you pay a transaction fee, commonly known as &quot;Gas&quot;, for every transaction that occurs on the Ethereum network. Gas is intended to fund the hardware and software that runs the Ethereum network, as well as to prevent misuse and spam. If you choose to interact with the Game via our Site or without using the Game or our Site as a portal, you will still need to pay fee for any and every transaction you make on the Ethereum network. The smart contract keeps a 1-5% commission fee on every transaction conducted through it, in addition to the Gas charged by the Ethereum network. The creators of this website and game do not have access or control over these fees, as it is handled directly on the distributed blockchain network. WE DO NOT ACCEPT PAYMENTS DIRECTLY ON OUR WEBSITE."
+        "title" : "手数料と支払い",
+        "note" : "あなたがゲームで任意の日を購入することを選択した場合、ゲームクリエイターによって管理されていないブロックチェーン上のスマート契約に直接結びついたMetamask電子ウォレットを利用して、Ethereumネットワークを介してあらゆる取引が行われます。当社は、これらの支払または取引についていかなる洞察も管理もしませんし、発生した取引も取り消すことはできません。このため、当社は、ゲーム上および/または当社が作成したスマート契約のいずれかに関する取引によって発生する可能性がある請求または損害について、お客様または他の第三者に責任を負うことはありません。 Ethereumネットワークでは、Ethereumネットワーク上で発生するすべての取引に対して、通常「ガス」と呼ばれる取引手数料を支払う必要があります。ガスは、Ethereumネットワークを実行するハードウェアとソフトウェアに資金を提供し、誤用やスパムを防止するためのものです。当社サイトを介してゲームとやりとりすることを選択した場合、またはゲームや当社のサイトをポータルとして使用しない場合でも、Ethereumネットワーク上で行ったすべての取引に対して料金を支払う必要があります。スマート契約は、Ethereumネットワークによって請求されるガスに加えて、それを介して行われるすべての取引に1〜5％の手数料を請求します。このウェブサイトおよびゲームの作成者は、分散型ブロックチェーンネットワーク上で直接処理されるため、これらの料金にアクセスまたは制御することはできません。私たちは私たちのウェブサイト上で直接支払いを受け付けません。"
       },
       "section6" : {
-        "title" : "OWNERSHIP",
-        "note" : "By using this Game, you acknowledge and agree that we and/or our licenses own all legal rights, titles, and interests in and to any and all elements of the Game, including any and all intellectual property. This includes, but is not limited to: graphics, designs, information, systems, computer code, software, services, organization, content, compilation of content, data, design, and any and all other elements of the Game. We retain complete and full ownership of all of these elements, as well as any other element related to the Game not listed in these Terms of Service. Each and every one of these elements is owned by OwnTheDay, and protected by copyright, trade, dress, patent, trademark laws, international conventions, and every other applicable property and proprietary rights laws. Your use of the Game, the Site, or of any and all country Smart Contracts does not grant you ownership of or any rights to the content, code, data, and other materials you may use and see on the Site. Although you own the Smart Contract itself, you do not own the name, likeness, contract design, nor any other elements. Any comments, bug reports, ideas, or any other type of feedback regarding the Game provided by you is welcome by OwnTheDay. However, once you willingly submit such comments, bug reports, ideas, or feedback, you agree that we are free to utilize that information and those ideas in any way we see fit without any compensation to you. We are free to disclose that information and those ideas to any third party we deem necessary. By submitting any comments, bug reports, ideas, or any other type of feedback, you grant us perpetual, irrevocable license to that content and/or ideas, and we immediately retain complete rights to that information, content, and/or ideas. By using this Game and this Site, you agree that you are completely and unequivocally responsible for your conduct during use of this Game and this Site, as well as any repercussions or consequences that occur because of said conduct. By using this Game and this Site, you agree that you will abide by the above and below Terms of Service, any and all applicable laws and regulations, and that you will only use the Game and the Site for legal and proper purposes. In addition to this, you are not allowed to, and may not permit any third party to: upload or distribute any unlawful, defamatory, abusive, fraudulent, obscene, or otherwise objectionable content; distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a damaging or dishonest nature; impersonate another person in any way, shape, or form; upload, post, transmit or otherwise make available through the Game any content that infringes on the intellectual proprietary rights of any party, including OwnTheDay, any third party associated with us, and any user of the Game or the Site; use the Game to violate the legal rights of others or to engage in, promote, or encourage any type of illegal activity; use the Game for any unauthorized commercial purpose, or modify, adapt, translate, or reverse engineer any portion of the Game for any personal or commercial purposes; reformat or frame any portion of the Game, including remove any copyright, trademark or other proprietary rights notices contained in or on the Game; display any content on the Game that contains any hate-related or violent content; use any robot, spider, or other device or program to compile or index any portion of the Game or the content posted on the Game, or to collect information about its users for any purpose; create user accounts by automated means or under false or fraudulent pretences; access or use the Game for the purpose of creating a product or service that is competitive with any of our products or services."
+        "title" : "所有",
+        "note" : "このゲームを使用することにより、お客様は、当社および/または当社のライセンスが、すべての知的財産を含むゲームのすべての要素に対するすべての法的権利、タイトル、および利益を所有していることを認識し、同意するものとします。これには、グラフィックス、デザイン、情報、システム、コンピュータコード、ソフトウェア、サービス、組織、コンテンツ、コンテンツのコンパイル、データ、デザイン、およびゲームのあらゆる要素が含まれます。当社は、これらの要素すべて、および本利用規約に記載されていないゲームに関連するその他の要素の完全かつ完全な所有権を保持します。これらの要素のそれぞれは、OwnTheDayが所有し、著作権、貿易、服装、特許、商標法、国際条約、その他すべての該当する財産権および財産権の法律によって保護されています。ゲーム、サイト、またはすべての国のスマートコントラクトを使用しても、サイト上で使用および閲覧することができるコンテンツ、コード、データ、およびその他の資料の所有権または権利は付与されません。あなたはスマート契約自体を所有していますが、あなたは名前、肖像、契約デザイン、その他の要素を所有していません。 OwnTheDayは、あなたが提供したゲームに関するコメント、バグレポート、アイデア、またはその他のタイプのフィードバックを歓迎します。しかし、そのようなコメント、バグレポート、アイデア、またはフィードバックを喜んで提出すると、あなたは、その情報とそれらのアイデアを、あなたに補償なしに適合する方法で自由に利用できることに同意します。私たちは、必要な情報を第三者に開示することは自由です。コメント、バグレポート、アイデア、またはその他のタイプのフィードバックを提出することにより、そのコンテンツやアイデアに対して永久的で取消不能なライセンスを付与し、その情報、コンテンツ、またはアイデアに対する完全な権利をただちに保持します。このゲームおよび本サイトを使用することにより、本ゲームおよび本サイトの使用中のあなたの行為、ならびに当該行為の結果生じたいかなる影響または影響についても、あなたが完全かつ明白に責任を負うことに同意するものとします。このゲームと本サイトを使用することにより、上記および下記の利用規約、適用されるすべての法律および規制を遵守し、ゲームおよびサイトを合法的かつ適切な目的でのみ使用することに同意するものとします。これに加えて、第三者に違法、名誉毀損、罵倒、不正、猥褻、またはその他好ましくないコンテンツをアップロードまたは配布することを許可することはできません。ウイルス、ワーム、欠陥、トロイの木馬、破損したファイル、悪意のあるもの、またはその他の有害なまたは不誠実な性質のアイテムを配布すること。他の人を何らかの形で偽装する、形を作る、形を作る、 OwnTheDay、当社に関連する第三者、ゲームまたはサイトのユーザーを含む、いかなる当事者の知的財産権を侵害するコンテンツをアップロード、転載、転載、または他の方法で利用可能にすること。ゲームを使用して他人の法的権利を侵害したり、あらゆる種類の違法行為に従事したり、促進したり、奨励したりすること。ゲームのあらゆる部分を個人的または商業目的で改変、改造、翻訳、またはリバースエンジニアリングすること。ゲームに含まれている著作権、商標権またはその他の所有権に関する通知を取り除くことを含む、ゲームの任意の部分の再フォーマットまたは枠組み;あらゆる憎悪関連コンテンツや暴力的コンテンツを含むコンテンツをゲームに表示する。ロボット、スパイダー、その他のデバイスやプログラムを使用して、ゲームまたはゲームに掲載されたコンテンツの一部をコンパイルまたは索引付けしたり、目的に応じてユーザーに関する情報を収集したりできます。自動化された方法で、または虚偽または虚偽の偽りの下でユーザーアカウントを作成する。当社の製品またはサービスと競合する製品またはサービスを作成する目的でゲームにアクセスまたは使用すること。"
       },
       "section7" : {
-        "title" : "TERMINATION OF THESE TERMS",
-        "note" : "The only way to terminate the Terms contained herein is by cancelling your account on the Game and discontinuing any and all use or access to the Game. If you choose to cancel your account, you will not receive any refunds for any transactions made in the Game or any payments made to us. By using this Game, you agree that we have the right to terminate these terms and cancel or suspend your account for any reason we deem necessary. You also agree that we are not required to provide you with any advanced notice of any suspension or termination of your account, and that we are not liable to you or any other third party for any damages or consequences caused by the suspension or termination of your account. In the event that we decide to suspend or terminate your account, or restrict your access to your account or the Game, due to suspected fraud, abuse, or illegal activity on your part, then we may also take any and all actions allowed by law. If your account is suspended or terminated by us or by your choice, you will no longer have access to information that you have posted on the Game or any information that is related to your account. In both events, whether we terminate or suspend your account or you choose to terminate your account, you acknowledge and agree that we are under no obligation to maintain any of your information in our databases, nor are we obligated to forward any of that information to you or to any third party."
+        "title" : "これらの条件の終了",
+        "note" : "ここに記載されている規約を終了させる唯一の方法は、ゲーム上のアカウントをキャンセルし、ゲームへのすべての使用またはアクセスを中止することです。アカウントをキャンセルすることを選択した場合、ゲームで行われた取引や当社への支払いについては払い戻しを受けません。このゲームを使用することにより、お客様は、必要とみなされる理由により、本利用規約を解約し、お客様のアカウントをキャンセルまたは中止する権利を有していることに同意するものとします。お客様は、お客様のアカウントの停止または終了に関する事前通知をお客様に提供する必要はなく、お客様のアカウントの停止または終了による損害または結果について、お客様または他の第三者に責任を負わないことに同意するものとします。アカウント。詐欺、虐待、違法行為の疑いがあるために、お客様のアカウントを中断または終了させたり、お客様のアカウントやゲームへのアクセスを制限したりする場合は、法律で許可されているすべての措置を講じることがあります。当社またはお客様の選択によりお客様のアカウントが中断または停止された場合、ゲームに投稿した情報やお客様のアカウントに関連する情報にアクセスすることはできなくなります。いずれの場合も、お客様のアカウントを解約するか停止するか、またはアカウントを解約するかどうかにかかわらず、当社はお客様の情報をデータベースに保持する義務がないことを認め、同意するものとします。あなたまたは第三者に提供することができます。"
       },
       "section8" : {
-        "title" : "Disclaimer and Warranties",
-        "note" : "By using this Game, you understand and agree that your access to and use of this Game is at your own risk. You acknowledge and accept that this Game is provided on an As-Is and As-Available basis, and that we make no express or implied warranty regarding this Game or access to this Game. We, and any party associated with us, make no warranty and disclaim any and all implied warranties regarding the Game, including the Site and Smart Contracts. This includes any implied warranty regarding product value, fitness for a specific purpose, non-infringement, correctness, and/or reliability. Neither us nor any of our subsidiaries or affiliates guarantee or warrant that your access or use of the Game will meet your requirements and/or expectations; your access to the Game or Site will be uninterrupted, free from error, or secure; or, that any data represented in the content, services, or features are accurate and/or free of viruses or other harmful content or components."
+        "title" : "免責事項と保証",
+        "note" : "このゲームを使用することにより、あなたはこのゲームへのあなたのアクセスと使用が自己責任で行うことを理解し、同意するものとします。 お客様は、本ゲームが現状と現時点で提供され、本ゲームまたは本ゲームへのアクセスに関する明示的または黙示的保証を行わないことを認め、同意します。 当社および当社に関連する当事者は、サイトおよびスマート契約を含む、ゲームに関するすべての黙示的保証を保証せず、放棄します。 これには、製品価値、特定の目的への適合性、非侵害性、正確性、および/または信頼性に関する暗黙の保証が含まれます。 当社および子会社または関連会社は、ゲームのアクセスまたは使用がお客様の要件および/または期待を満たすことを保証または保証するものではありません。 ゲームやサイトへのあなたのアクセスは中断されず、エラーもなく安全です。 またはコンテンツ、サービス、または機能に表現されているすべてのデータが、ウイルスやその他の有害なコンテンツまたはコンポーネントを正確かつ/または無料で提供していること。"
       },
       "section9" : {
-        "title" : "Limitation of Liability",
-        "note" : "By using this Game and this Site, you understand and agree that neither we nor any of our subsidiaries or affiliates are liable to you or any other third party for any indirect, incidental, consequential, or exemplary damages that you may incur, no matter how those damages occurred. We and our subsidiaries and affiliates are also not responsible for any financial loss, loss of goodwill, loss of business reputation, loss of personal reputation, cost of purchasing any substitute goods or services, or any and all other potential intangible losses, even if we had previous knowledge that there was a risk of damages and/or losses. By using this Game and this Site, you agree that our total liability to you for any and all claims arising out of or relating to these Terms or your access to or use of this Game or this Site is limited to the sum of $100. By using this Game and this Site, you understand and agree that we have made this Game available to you and entered into these Terms with you as a way to provide the Game to you. These limitations of liability outlined in these Terms reflect a reasonable and fair allocation of risk between us and you."
+        "title" : "責任の制限",
+        "note" : "本ゲームおよび本サイトを使用することにより、当社および子会社または関連会社のいずれも、いかなる方法であっても発生する可能性のある間接的、偶発的、必然的、模範的な損害について、お客様または他の第三者に責任を負わないことを理解し、それらの損害が発生した。当社および当社の子会社および関連会社は、財務上の損失、のれんの喪失、事業評判の損失、個人的評判の喪失、代用商品またはサービスの購入費用、その他すべての潜在的無形損失の責任も負いません。損害および/または損失のリスクがあるという以前の知識がありました。本ゲームおよび本サイトを使用することにより、お客様は、本利用規約または本ゲームまたは本サイトの利用またはアクセスに起因または関連して発生するすべての申し立てについて、お客様の総責任が$ 100の合計に限定されることに同意するものとします。このゲームと本サイトを使用することにより、お客様は、本ゲームをお客様に提供し、ゲームを提供する方法として、本利用規約を入力したことを理解し、同意するものとします。本規約に記載されている責任の制限は、当社とお客様との間の合理的かつ公正なリスク配分を反映しています。"
       },
       "section10" : {
-        "title" : "Indemnification",
-        "note" : "By using this Game and this Site, you agree to hold OwnTheDay harmless and to indemnify us and any of our subsidiaries and affiliates, as well as any of our officers, agents, employees, advertisers, suppliers, or licensors, from and against any claim, liability, loss, actual damage, and consequential damage of any kind or nature, including suits, judgements, litigation costs, and attorneys' fees that occur or arise due to your breach of these Terms and/or your violation of any applicable laws, rules, and regulations."
+        "title" : "免責",
+        "note" : "このゲームと本サイトを使用することにより、あなたはOwnTheDayを無害に保つこと、および当社ならびに当社の子会社および関連会社、ならびに当社の役員、代理人、従業員、広告主、サプライヤー、またはライセンサーの損害賠償請求 判決、訴訟費用、弁護士費用を含む、あらゆる種類または性質の結果的損害、賠償責任、損失、実際の損害、および結果として生じる損害、 ルールと規則。"
       },
       "section11" : {
-        "title" : "External Sites",
-        "note" : "In some cases, this Game and this Site may contain hyperlinks to other websites and/or resources as a convenience to you and our other users. We have no control over the safety of or content found on these sites. You acknowledge and agree that we are not responsible for the availability of any links to external sites, and that we do not endorse the advertisements on the sites, the products or services made available on those sites, or any other materials found on those sites. You acknowledge and agree that we are not liable for any loss or damage that may be incurred by you or any third party as the result of the availability or lack of availability of these sites, including any reliance placed by you upon the need for those sites and/or for those sites' completeness and/or accuracy."
+        "title" : "外部サイト",
+        "note" : "場合によっては、このゲームとこのサイトには、あなたと他のユーザーの便宜のために、他のウェブサイトやリソースへのハイパーリンクが含まれることがあります。 私たちは、これらのサイトで見つかった安全性やコンテンツを管理することはできません。 お客様は、外部サイトへのリンクの可用性について当社が責任を負うものではなく、当該サイト上の広告、それらのサイト上で利用可能な製品またはサービス、またはそれらのサイト上に見つかったその他の資料を保証するものではないことを認め、同意するものとします。 お客様は、これらのサイトの可用性または不足の結果として、お客様または第三者が負う可能性のある損失を含め、お客様がこれらのサイトの必要性に依拠した場合を含めて、お客様が損失または損害を被った場合の責任は負いかねます および/またはこれらのサイトの完全性および/または正確性について"
       },
       "section12" : {
-        "title" : "Changes to these Terms of Service",
-        "note" : "As we deem necessary, we may make changes to these Terms. When we make these changes, the updated Terms will be available on the Game and on the Site and feature a &quot;Last Updated&quot; date. It is your responsibility to check these Terms periodically for any changes. Your continued access to the Game and the Site will constitute your binding acceptance of the updates. Any and all changes made are applicable on the date that they are made."
+        "title" : "これらの利用規約への変更",
+        "note" : "必要と判断される場合、当社はこれらの利用規約を変更することがあります。 これらの変更を行った場合、更新された利用規約はゲームおよびサイト上で利用可能となり、＆quot;最終更新＆quot; 日付。 変更を定期的に確認するのはお客様の責任です。 ゲームとサイトへのあなたの継続的なアクセスは、あなたの拘束力のあるアップデートの受け入れになります。 行われたすべての変更は、作成された日付に適用されます。"
       },
       "section13" : {
-        "title" : "Changes to the Game",
-        "note" : "We are always working toward improving and expanding the Game in order to provide you and our other users with the best, most robust experience. By using the Game and the Site, you understand and agree that any part of this Game or this Site may change at any time without any prior notice to you. We can and will add new features and alter aspects of the Game or the Site at any time without notice."
+        "title" : "ゲームの変更",
+        "note" : "私たちは、あなたと他のユーザーに最高で最も堅牢な経験を提供するために、ゲームの改善と拡大に常に努めています。 ゲームおよびサイトを使用することにより、本ゲームまたは本サイトのいかなる部分も予告なしにいつでも変更されることを理解し、同意するものとします。 Googleは、いつでも予告なしに新しい機能を追加したり、ゲームやサイトの側面を変更したりすることができます。"
       },
       "section14" : {
-        "title" : "Children",
-        "note" : "By using this Game and this Site, you affirm that you are over the age of 19. This Game and this Site are not intended for use by any child under the age of 19."
+        "title" : "子供",
+        "note" : "子供..."
       },
       "section15" : {
-        "title" : "General",
-        "note" : "These Terms in their entirety constitute the legal agreement between you and OwnTheDay, and govern your access to and use of the Game and the Site. They replace any prior agreements between the parties related to your access to or use of the Game or the Site, whether oral or written. There are no third-party beneficiaries to these terms; any third party is an independent contractor, and these Terms do not form any agency, partnership, or joint venture. You understand and agree that the language in these terms should and will be interpreted as to its fair meaning, and not strictly for or against any party. You may not assign any of your rights or obligations under these Terms without prior written consent from us. However, we may assign our rights and obligations under these Terms to an affiliate or in connection with an acquisition, sale, or merger at our sole discretion. In the event that any part of these Terms be deemed invalid or unenforceable by proper legal authorities, that portion will be struck while the remaining portions remain in full force and effect. Any potential failure on our part to enforce these Terms is not and will not be deemed a waiver of these Terms, in part or in whole. Any legal action or proceeding arising under these Terms will be handled by the courts in Canada, and the parties irrevocably consent to the personal jurisdiction and venue there. Finally, we are not liable and will not be held liable for any failure or delay in performance of our obligation under these Terms that result from any condition beyond our control. This includes government action, acts of terrorism, earthquakes, floods, fire, power failures, internet disturbances, or acts of omission by any third party. You agree that we may provide you with a notice of any changes to these Terms by email, regular mail, or by posting on the Game or the Site. By providing us with your email address, you consent to forgo receiving any notices via postal mail."
+        "title" : "一般",
+        "note" : "本規約は、お客様とOwnTheDayとの間の法的な合意を構成し、ゲームとサイトへのアクセスと使用を管理します。口頭または書面を問わず、ゲームまたはサイトへのアクセスまたは使用に関する当事者間の事前の合意に代わるものです。これらの条件には第三者の受益者はいません。いかなる第三者も独立した契約者であり、これらの規約は代理店、パートナーシップ、または合弁事業を形成しません。あなたは、これらの言葉が公正な意味で解釈されるべきであり、いかなる当事者に対しても厳重に解釈されるべきではないことを理解し、同意するものとします。事前の書面による同意なしに、本利用規約に基づく権利または義務のいずれかを割り当てることはできません。しかし、当社は、本条件に基づく当社の権利と義務を、当社の単独裁量で、関連会社に、または買収、売却、または合併に関連して割り当てることができる。本規約の一部が適切な法的権限によって無効または強制不可能とみなされた場合、残りの部分は完全な効力を持ちますが、その部分は打たれます。本規約を強制するための当社の潜在的な障害は、本規約の一部または全部を放棄したものとみなされるものではありません。本規約に基づいて発生する訴訟または手続きは、カナダの裁判所によって処理され、当事者は個人的な管轄権および会場に取消不能な同意をするものとします。最後に、当社は、当社の支配外の条件に起因する本規約に基づく当社の義務の履行の失敗または遅延について責任を負いません。これには、政府の行為、テロ行為、地震、洪水、火災、停電、インターネット妨害、第三者による行為などが含まれます。あなたは、電子メール、通常の郵便、またはゲームやサイトへの掲示によって、本規約の変更の通知をお客様に提供することに同意するものとします。私達にあなたの電子メールアドレスを提供することによって、あなたは郵便で通知を受け取るのを忘れることに同意します。"
       }
     }
   },
   "notfound" : {
     "warning" : {
-      "title" : "404 - Not Found",
-      "body"  : "No resource found at the requested URL."
+      "title" : "404お探しのページが見つかりませんでした",
+      "body"  : "要求されたURLにリソースが見つかりません."
     }
   },
   "component" : {
     "calendar" : {
-      "selectMonth" : "Select a Month",
-      "nextMonth" : "Next Month",
-      "prevMonth" : "Previous Month"
+      "selectMonth" : "月を選択",
+      "nextMonth" : "来月",
+      "prevMonth" : "前の月"
     },
     "account" : {
       "noDays" : {
-        "title" : "You do not own any days.",
-        "body" : "Your birthday might be a good place to start!"
+        "title" : "あなたは何の日も所有していません。",
+        "body" : "あなたの誕生日は始まるのに良い場所かもしれません！"
       }
     },
     "accountWarning" : {
       "detectingBrowser" : {
-        "title" : "Detecting Browser Capabilities",
-        "message" : "Please wait while we look for Web3 Browser capabilities (MetaMask, Mist, etc.)"
+        "title" : "ブラウザー機能の検出",
+        "message" : "Web3ブラウザ機能（MetaMask、Mistなど）を探しているうちにお待ちください"
       },
       "invalidBrowser" : {
-        "title" : "Non-Web3 Browser",
-        "message" : "You will need an Ethereum-based Web3 Browser such as MetaMask or Mist in order to use this site."
+        "title" : "非Web3ブラウザ",
+        "message" : "このサイトを使用するには、MetaMaskやMistなどのEthereumベースのWeb3ブラウザが必要です。"
       },
       "installMetaMask" : {
-        "title" : "Don't have a Web3 Browser?",
-        "line1" : "Get the MetaMask browser extension by MetaCert and Own the Day!"
+        "title" : "Web3ブラウザを持っていない?",
+        "line1" : "MetaCertによるMetaMaskブラウザー拡張を取得し、その日を所有してください！"
       },
       "wrongNetwork" : {
-        "title" : "Wrong Network!",
-        "messageTest" : "Please connect to a Test Network.",
-        "messageMain" : "Please connect to the Main Ethereum Network."
+        "title" : "間違ったネットワーク！",
+        "messageTest" : "テストネットワークに接続してください。",
+        "messageMain" : "メインEthereumネットワークに接続してください。"
       },
       "noAccount" : {
-        "title" : "No Account!",
-        "message" : "Please login to an Ethereum account using your Web3 Browser (MetaMask, Mist, etc.)"
+        "title" : "アカウントはありません！",
+        "message" : "Web3ブラウザ（MetaMask、Mistなど）を使用してEthereumアカウントにログインしてください"
       }
     },
     "priceLevel" : {
-      "title" : "Price Level Increase",
+      "title" : "価格レベルの引き上げ",
       "table" : {
         "head" : {
-          "col1" : "Level",
-          "col2" : "Price Range (ETH)",
-          "col3" : "Price Increase",
-          "col4" : "Developer Cut"
+          "col1" : "レベル",
+          "col2" : "価格帯（ETH）",
+          "col3" : "価格上昇",
+          "col4" : "開発者カット"
         },
         "row1" : {
-          "col1" : "Level 1",
+          "col1" : "レベル1",
           "col2" : "0.001 - 0.25",
           "col3" : "100%",
           "col4" : "5%"
         },
         "row2" : {
-          "col1" : "Level 2",
+          "col1" : "レベル2...",
           "col2" : "0.25 - 0.5",
           "col3" : "36%",
           "col4" : "4%"
         },
         "row3" : {
-          "col1" : "Level 3",
+          "col1" : "レベル3",
           "col2" : "0.5 - 2.5",
           "col3" : "26%",
           "col4" : "3%"
         },
         "row4" : {
-          "col1" : "Level 4",
+          "col1" : "レベル4",
           "col2" : "2.5 - 5",
           "col3" : "18%",
           "col4" : "3%"
         },
         "row5" : {
-          "col1" : "Level 5",
+          "col1" : "レベル5",
           "col2" : "5 -",
           "col3" : "15%",
           "col4" : "2%"
@@ -303,431 +303,431 @@
   },
   "modal" : {
     "claim" : {
-      "claimDay"   : "Own the Day!",
-      "claimed"    : "You have successfully claimed __date__.",
-      "claimTitle" : "You Own the Day!",
+      "claimDay"   : "自分の日！",
+      "claimed"    : "あなたは__date__を主張しました。",
+      "claimTitle" : "あなたはその日を所有しています！",
       "info" : {
-        "line1" : "You can claim <strong>__date__</strong> for <strong>__price__</strong>",
-        "line2" : "Anyone can claim this day from you at the price of <strong>__price__</strong>.",
-        "line3" : "You may bid higher than the current price to ensure that you claim the day. If your bid is over the current price, you will be refunded the difference.",
-        "line4" : "Your transaction may fail if the price has moved above your bid price, in which case you will be refunded your bid.",
-        "line5" : "Adjusting the Gas Price (Gwei) may speed-up your transaction.  Please refer to your favorite gas tracker to get the latest Proposed Gas Price"
+        "line1" : "<strong> __ price __ </ strong>の[<strong> __ date __ </ strong>]に申し立てることができます",
+        "line2" : "誰でも<strong> __ price __ </ strong>の価格であなたからこの日を請求することができます。",
+        "line3" : "あなたは、今日の請求を確実にするために、現在の価格より高い価格で入札することができます。 入札価格が現在の価格を上回っている場合は、その差額を払い戻します。",
+        "line4" : "価格が入札価格を上回ると、取引が失敗する可能性があります。その場合、入札額を払い戻します。",
+        "line5" : "ガス価格（Gwei）を調整すると、取引がスピードアップする可能性があります。 最新の提案ガス価格を入手するには、お気に入りのガストラッカーを参照してください。"
       },
-      "disclaimer" : "Days are collectibles, and as such, there is no guarantee that other players will claim this collectible from you."
+      "disclaimer" : "日はグッズなので、他のプレイヤーがあなたからこのコレクティブルを請求するという保証はありません。"
     },
     "nickname" : {
-      "title"       : "Set your Nickname on the Blockchain!",
-      "set"         : "Set Nickname",
-      "placeholder" : "Nickname",
-      "profanities" : "NOTE: Profanities in your Nickname will be censored so please don't waste your Gas!"
+      "title"       : "あなたのニックネームをブロックチェーンに設定してください！",
+      "set"         : "ニックネームを設定する",
+      "placeholder" : "ニックネーム",
+          "profanities" : "注：ニックネームの冒涜は検閲されるので、あなたのガスを無駄にしないでください！"
     }
   },
   "generic" : {
-    "balance"      : "Balance",
-    "cancel"       : "cancel",
-    "claim"        : "Claim",
-    "close"        : "Close",
-    "disclaimer"   : "DISCLAIMER",
+    "balance"      : "バランス",
+    "cancel"       : "キャンセル",
+    "claim"        : "請求",
+    "close"        : "閉じる",
+    "disclaimer"   : "免責条項",
     "etherUnit"    : "ETH",
-    "from"         : "from",
-    "loading"      : "Loading, please wait...",
-    "loadingComm"  : "(communicating with the Ethereum blockchain)",
-    "notice"       : "Notice",
-    "own"          : "Own",
-    "owner"        : "Owner",
-    "price"        : "Price",
-    "priceEther"   : "Price in ETH",
-    "priceCurrent" : "Current Price",
-    "priceNext"    : "Next Price",
-    "information"  : "Information",
-    "social"       : "Social",
-    "copyright1"   : "Copyright 2018 OwnTheDay.io",
-    "copyright2"   : "All rights reserved."
+    "from"         : "から",
+    "loading"      : "読み込み中。。。待って下さい...",
+    "loadingComm"  : "（Ethereumブロックチェーンと通信する）",
+    "notice"       : "通知",
+    "own"          : "自分の",
+    "owner"        : "オーナー",
+    "price"        : "価格",
+    "priceEther"   : "ETHの価格",
+    "priceCurrent" : "現在の価格",
+    "priceNext"    : "次の価格",
+    "information"  : "情報",
+    "social"       : "ソーシャル",
+    "copyright1"   : "著作権2018 OwnTheDay.io",
+    "copyright2"   : "全著作権所有"
   },
   "holiday" : {
     "jan1" : {
-      "title" : "New Year's Day",
-      "desc" : "New Year's Day, also called New Year's or New Year, is observed on January 1, the first day of the year on the modern Gregorian calendar as well as the Julian calendar."
+      "title" : "元旦",
+      "desc" : "新年または新年とも呼ばれる旧正月は、現代のグレゴリオ暦およびジュリアン暦の1月1日に観測されます。"
     },
 
     "jan6" : {
-      "title" : "Epiphany",
-      "desc" : "Epiphany for the year 2018 is celebrated/ observed on Saturday, January 6th. Epiphany is a Christian observance celebrated on January 6th each year. The day is also known as Three Kings Day to help us remember the three wise men who visited Jesus as a baby."
+      "title" : "出生",
+      "desc" : "2018年の誕生日は1月6日土曜日に祝われます。 エピファニーは、毎年1月6日に祝われたキリスト教の儀式です。 この日は3人のキングデーとしても知られており、イエスを赤ちゃんとして訪問した3人の賢明な人物を覚えています。"
     },
 
     "jan7" : {
-      "title" : "Orthodox Christmas Day",
-      "desc" : "Orthodox Christmas Day for the year 2018 is celebrated/ observed on Sunday, January 7. Orthodox Christmas Day is observed on or near January 7th each year according to the Gregorian calendar. For Orthodox Christians the day celebrates the birth of Jesus Christ."
+      "title" : "正教会のクリスマスデー",
+      "desc" : "2018年の正教会のクリスマスデーは、1月7日の日曜日に祝われる/観察されます。正教会のクリスマスは、グレゴリオ暦に従って毎年1月7日に、またはその近くで観察されます。 正教会のクリスチャンにとって、その日はイエス・キリストの誕生を祝います。"
     },
 
     "jan14" : {
       "title" : "Makar Sankranti",
-      "desc" : "Makar Sankranti for the year 2018 is celebrated/ observed on Sunday, January 14. Makar Sankranti is celebrated on or near January 14th each year. Hindu's celebrate this time as a harvest festival and marks the arrival of Spring and the end of the Winter season."
+      "desc" : "2018年のMakar Sankrantiは1月14日の日曜日に祝われる/観察されます。Makar Sankrantiは毎年1月14日またはその近くで祝われます。 ヒンドゥー教徒はこの時期を収穫祭として祝い、春の到来と冬季の終わりを告げる。"
     },
 
     "jan15" : {
-      "title" : "Martin Luther King Day",
-      "desc" : "Martin Luther King Day for the year 2018 is celebrated/ observed on Monday, January 15. Martin Luther King Day falls on the third Monday in January each year. The day celebrates Martin Luther Kings role in civil rights and racial equality."
+      "title" : "マーティンルーサーキングデイ",
+      "desc" : "マルティン・ルーサー・キング・デイは、毎年1月の第3月曜日に没する。 この日は、市民権と人種の平等にマーティン・ルーサー・キングスの役割を祝いました。"
     },
 
     "jan30" : {
       "title" : "Tu B’Shevat",
-      "desc" : "Tu B'Shevat for the year 2018 is celebrated/ observed on sundown of January 30 ending at sundown on Wednesday, January 31. Tu B'Shevat is observed on the 15th day of the month of Shevat on the Hebrew calendar. The day is about planting trees and to make the land healthy and more vibrant, similar to Arbor Day."
+      "desc" : "Tu B'Shevat 1月31日の水曜日に終わる1月30日の日没で祝われ/観察されます。ツバシェバットは、ヘブライ語のカレンダーでシェバートの月の15日に観察されます。 この日は、植木の日に似て、木を植え、土地を健康的で活気あふれるものにすることです。"
     },
 
     "feb1" : {
-      "title" : "National Freedom Day",
-      "desc" : "National Freedom Day for the year 2018 is celebrated/ observed on Thursday, February 1. National Freedom Day is observed on February 1st each year honoring the signing of the 13th amendment to outlaw slavery."
+      "title" : "国民の自由の日",
+      "desc" : "2018年の国家自由の日は、2月1日（木）に祝われる/観察されます。国家自由の日は、毎年2月1日に奴隷制を無効にする第13回改正の署名を尊重しています。"
     },
 
     "feb2" : {
-      "title" : "Groundhog Day",
-      "desc" : "Groundhog Day for the year 2018 is celebrated/ observed on Friday, February 2. Groundhog day is observed on the 2nd day of February each year. It is the day where the groundhog predicts if their will be 6 more months of winter."
+      "title" : "マーモットの日",
+      "desc" : "2018年のグラウンドホー・デーは、2月2日金曜日に祝われ/観察されます。グラウンドホーの日は、毎年2月2日に観察されます。 これは、彼らが冬の6ヶ月以上になるかどうかを予測する日です。"
     },
 
     "feb12" : {
-      "title" : "Lincoln’s Birthday",
-      "desc" : "Lincoln's Birthday for the year 2018 is celebrated/ observed on Monday, February 12. Lincoln's Birthday falls on February 12th each year and celebrates the birth of one of our most famous and respected Presidents in the United States."
+      "title" : "リンカーンの誕生日",
+      "desc" : "2018年のリンカーンの誕生日は2月12日の月曜日に祝われます。リンカーンの誕生日は毎年2月12日になり、米国で最も有名で尊敬される大統領の一人の誕生を祝います。"
     },
 
     "feb13" : {
-      "title" : "Mardi Gras",
-      "desc" : "Mardi Gras for the year 2018 is celebrated/ observed on Tuesday, February 13. Mardi Gras or Fat Tuesday or sometimes called Shrove Tuesday falls the day before Ash Wednesday which is the start of Lent for Christians. The day includes festivals with lots of eating prior to the fast starting the next day."
+      "title" : "マルディグラ",
+      "desc" : "20世紀のマルディ・グラスは、2月13日（火）に祝われる/観察されます。マルディ・グラスまたはファット火曜日、時には撃破火曜日と呼ばれる灰水曜日は、クリスチャンのための貸し出しの始まりです。 この日は、翌日の早い出発の前にたくさんの食事をしている祭りが含まれています。"
     },
 
     "feb14" : {
-      "title" : "Valentine's Day",
-      "desc" : "Valentine's Day, also called Saint Valentine's Day or the Feast of Saint Valentine, is celebrated annually on February 14. It is observed by people in many countries; Anglican Communion; Lutheran Church."
+      "title" : "バレンタイン・デー",
+      "desc" : "聖バレンタインデー、または聖バレンタイン祭とも呼ばれるバレンタインデーは、毎年2月14日に祝われます。多くの国の人々によって観察されます。 アングリカンコミュニオン; ルーテル教会。"
     },
 
     "feb16" : {
-      "title" : "Chinese New Year",
-      "desc" : "Chinese New Year for the year 2018 is celebrated/ observed on Friday, February 16. Chinese New Year which is observed on the lunisolar Chinese Calendar falls on the first day of the new moon between January 21st and February 20th each year. The day celebrates that start of the new year and reflection of the year past."
+      "title" : "中国の新年",
+      "desc" : "2018年の中国新年は、2月16日金曜日に祝われる/観察されます。月の中国のカレンダーで観察される旧正月は、毎年1月21日から2月20日の新月の初日になります。 その日は新年の始まりとその年の反映を祝います。"
     },
 
     "mar1" : {
       "title" : "Purim",
-      "desc" : "Purim for the year 2018 is celebrated/ observed on sundown of February 28 ending at sundown on Thursday, March 1. Purim is celebrated on the 14th day in the month of Adar according to the Hebrew calendar. Under the Gregorian calendar the day falls in February or March. The day commemorates back in the 4th century BC, when Jewish people were saved from a death decree according to the book of Esther."
+      "desc" : "Purim 2018年は、3月1日（木）の日没に終わる2月28日の日没で祝われ/観察されます。プーライムはヘブライ語のカレンダーに従ってアダルの月の14日に祝われます。 グレゴリオ暦の下では、1日は2月または3月になります。 この日は紀元前4世紀に復活しました。紀元前4世紀、ユダヤ人はエスターの書に従った死刑判決から救われました。"
     },
 
     "mar2" : {
       "title" : "Holi",
-      "desc" : "Holi for the year 2018 is celebrated/ observed on Friday, March 2. Holi falls in the months of February and March each year. It is a two day Spring festival with the first day called Chhoti or Holika Dahan and the second day called Dhuleti or Rangwali Holi. The festival celebrates sharing and love as well as colors."
+      "desc" : "Holi 2018年は3月2日金曜日に祝われる/観察される。Holiは毎年2月と3月の月に落ちる。 それはChhotiまたはHolika Dahanと呼ばれる最初の日とDhuletiまたはRangwali Holiと呼ばれる2日目と2日間の春祭りです。 この祭りは、色だけでなく、共有や愛を祝います。"
     },
 
     "mar17" : {
-      "title" : "St.Patrick’s Day",
-      "desc" : "St Patrick's Day for the year 2018 is celebrated/ observed on Saturday, March 17. St Patrick's Day is celebrated on March 17th each year. This day honors Irelands patron Saint, St. Patrick and the day marks the death of the saint."
+      "title" : "聖パトリックの日",
+      "desc" : "聖パトリックの日は、毎年3月17日に祝われます。 この日はIrelandsの守護聖人、聖パトリックを讃え、日は聖人の死を記します。"
     },
 
     "mar20" : {
-      "title" : "Spring Equinox",
-      "desc" : "Spring for the year 2018 starts on March 20. Spring is often associated with new growth, plants flowering, snow melting or melted and a new warmth in the air with plants/ animals coming out from the long winter of cold temperatures. In the Northern Hemisphere spring comes in the March, April and June months and in the Southern Hemisphere it comes in the September, October and December months. Spring comes about by the Earth increasing its axis tilt relative to the sun increasing the temperatures (more direct sunlight) and the length of the days."
+      "title" : "春分",
+      "desc" : "2018年の春は3月20日から始まります。春は、寒い冬の長い冬から植物/動物が出てくる新しい成長、植物の開花、融雪または融解、空気中の新しい暖かさと関連付けられることがよくあります。 北半球では春が3月、4月および6月に、南半球では9月、10月および12月に来る。 春は地球が太陽に対して相対的な軸の傾きを増やし、気温（直射日光の直前）と日の長さを増やします。"
     },
 
     "mar25" : {
-      "title" : "Rama Navami",
-      "desc" : "Rama Navami for the year 2018 is celebrated/ observed on Sunday, March 25. Rama Navami is observed on the ninth day of the month of Chaitra which is part of the Navratri spring festival. The day celebrates the birthday of the God Rama."
+      "title" : "ラマナバミ",
+      "desc" : "ラマナナミは、2018年の3月25日（日）に祝われる/観察されます。ラマナナミは、Navratri春祭りの一部であるChaitraの月の9日に観察されます。 その日は神ラーマの誕生日を祝う日です。"
     },
 
     "mar30" : {
-      "title" : "Good Friday",
-      "desc" : "Good Friday for the year 2018 is celebrated/ observed on Friday, March 30. Good Friday is the sixth day of Holy Week for Christians and falls two days prior to Easter Sunday each year. The day commemorates the crucifixion of Jesus Christ."
+      "title" : "良い金曜日",
+      "desc" : "2018年のグッド・フライデーは、3月30日金曜日に祝われる/観察されます。グッド・フライデーは、毎週イースター・サンデーの2日前に落ちる、クリスチャンの聖週間の六日目です。 その日はイエス・キリストの磔刑を記念するものです。"
     },
 
     "apr1" : {
-      "title" : "April Fools’",
-      "desc" : "April Fools' Day for the year 2018 is celebrated/ observed on Sunday, April 1. April Fools day is celebrated on April 1st each year. The day includes practical jokes and hoaxes played one another."
+      "title" : "エイプリルフール'",
+      "desc" : "エイプリルフールズデイは、毎年4月1日に祝われます。 この日には、お互いに演奏される実践的なジョークとフックが含まれています。"
     },
 
     "apr6" : {
-      "title" : "Orthodox Good Friday ",
-      "desc" : "Orthodox Good Friday for the year 2018 is celebrated/ observed on Friday, April 6. Orthodox Good Friday also called Great Friday and Holy Friday is observed two days prior to Orthodox Easter. Orthodox Christians observe and remember Jesus Christs death on the cross on this day."
+      "title" : "正教会",
+      "desc" : "正教会2018年の良い金曜日は4月6日金曜日に祝われ/観察されます。正教会の復活の2日前には、正月金曜日と聖金曜日とも呼ばれる正統派の金曜日が観察されます。 正教会のキリスト教徒は、この日の十字架上のイエス・キリストの死を守り覚えています。"
     },
 
     "apr8" : {
-      "title" : "Orthodox Easter",
-      "desc" : "Orthodox Easter for the year 2018 is celebrated/ observed on Sunday, April 8.The Orthodox Church uses the Julian calendar to determine their holy days. Easter for the Orthodox church will always fall sometime between April 4th and May 8th each year. Orthodox Easter is observed two days after Orthodox Good Friday each year. For Orthodox Christians the day commemorates the crucifixion of Jesus Christ."
+      "title" : "正教会のイースター",
+      "desc" : "2018年の正教会の復活祭は、4月8日の日曜日に祝われる/観察されます。正教会はユリウス暦を使って聖なる日を決定します。 正教会の復活祭は、毎年4月4日から5月8日の間にいつも崩壊するでしょう。 正教会の復活祭は毎年正統派の金曜日の2日後に観察されます。 正教会のキリスト教徒のために、この日はイエス・キリストの磔刑を記念する日です。"
     },
 
     "apr11" : {
-      "title" : "Yom Hashoah",
-      "desc" : "Yom Hashoah for the year 2018 is celebrated/ observed on sundown of April 11 ending at sundown on Thursday, April 12. Yom Hashoah is observed on the 27th day of Nison according to the Hebrew calendar. The day is a remembrance and commemorates the lives of the Jewish people who died in the Holocaust during World War 2."
+      "title" : "ヨムハソア",
+      "desc" : "ヤムハショアは、4月11日の日没で終わり、4月12日木曜日に終わる.2012年のヨムハショアは、ヘブライ暦の27日にニソンの27日に観察される。 この日は記念碑であり、第二次世界大戦中にホロコーストで死亡したユダヤ人の人生を記念しています。"
     },
 
     "apr12" : {
       "title" : "Isra and Mi’raj",
-      "desc" : "Isra and Mi'raj for the year 2018 is celebrated/ observed on sundown of April 12 ending at sundown on Friday, April 13. Isra and Mi'raj is observed on the 27th day of Rajab on the Islamic calendar. The day commemorates Prophet Mohammad's trip from Mecca to Jerusalem and his ascension into heaven."
+      "desc" : "Isra and Mi'raj 2018年は4月12日の日没で終わり、4月13日金曜日に終わる。イスラームとミラジはイスラム暦の27日にラージャブで観察される。 この日は、預言者ムハンマドのメッカからエルサレムへの旅と天国への昇天を記念する日です。"
     },
 
     "apr17" : {
-      "title" : "National Library Workers Day",
-      "desc" : "National Library Workers Day for the year 2018 is celebrated/ observed on Tuesday, April 17. National Library Workers Day is observed every Tuesday annually during National Library Week which is held in April of each year. The day is to recognize the contributions library worker make to our society."
+      "title" : "国立図書館労働者の日",
+      "desc" : "2018年の国立図書館労働者の日は、4月17日（火）に祝われます。国立図書館労働者の日は毎年4月に開催される国立図書館ウィークの毎週火曜日に観察されます。 その日は、図書館員の社会への貢献を認識することです。"
     },
 
     "apr22" : {
-      "title" : "Earth Day",
-      "desc" : "Earth Day for the year 2018 is celebrated/ observed on Sunday, April 22. Earth day is celebrated on April 22nd each year. The day brings awareness to environmental protection of our planet earth."
+      "title" : "アースデー",
+      "desc" : "2018年の地球の日は4月22日の日曜日に祝われ/観察されます。地球の日は毎年4月22日に祝われます。 この日は地球の環境保護への意識を高めます。"
     },
 
     "apr26" : {
-      "title" : "Take your kid to work day",
-      "desc" : "Take our Daughters and Sons to Work Day for the year 2018 is celebrated/ observed onThursday, April 26. Take our Daughters and Sons to Work Day is observed on the fourth Thursday in April. The day is to share with your children your work and what you do each day."
+      "title" : "子供を連れて仕事の日に",
+      "desc" : "私たちの娘と息子を仕事の日に連れて、2018年は4月26日（木曜日）に祝われる/観察されます。 その日はあなたの子供たちとあなたの仕事とあなたが毎日何をするかを分かち合うことです。"
     },
 
     "apr27" : {
-      "title" : "Arbor Day",
-      "desc" : "Arbor Day for the year 2018 is celebrated/ observed on Friday, April 27. Arbor Day is generally observed on the last Friday of April but the dates can vary depending on when Spring arrives in the local region. The day encourages people to plant and care for trees."
+      "title" : "植木の日",
+      "desc" : "Arbor Dayは、4月27日金曜日に開催されます。Arbor Dayは、一般的に4月の最後の金曜日に開催されますが、Springの開催地によって異なります。 この日は人々に木を植え、世話することを奨励しています。"
     },
 
     "may2" : {
       "title" : "Lag BaOmer",
-      "desc" : "Lag BaOmer for the year 2018 is celebrated/ observed on sundown of May 2 ending at sundown on Thursday, May 3. Lag BaOmer falls on the 18th day of Lyar in the Hebrew calendar. The day celebrates the death and life of Rabbi Shimon bar Yochai who was a Mishnaic sage back in the 2nd century."
+      "desc" : "Lag BaOmer 2018年は5月2日の日没で終わり、5月3日（木）に終わる。ラグ・バオマーはリアー日18日にヘブライ暦で登場する。 その日は、2世紀にミシェニック・セージであったラビ・シモン・バー・ヨーチャイの死と命を祝います。"
     },
 
     "may5" : {
-      "title" : "Cinco de Mayo",
-      "desc" : "Cinco de Mayo for the year 2018 is celebrated/ observed on Saturday, May 5. Cinco de Mayo is celebrated on the 5th of May each year and celebrates the defeat of the French Army by the Mexican Army during the Battle of Puebla in Mexico in 1862."
+      "title" : "シンコデマヨ",
+      "desc" : "2018年のCinco de Mayoは5月5日土曜日に祝われる/観察されます。Cinco de Mayoは毎年5月5日に祝われ、1862年にメキシコのプエブラ戦でメキシコ軍によるフランス軍の敗北を祝います 。"
     },
 
     "may6" : {
-      "title" : "National Nurses Day",
-      "desc" : "National Nurses Day for the year 2018 is celebrated/ observed on Sunday, May 6. National Nurses Day is observed on May 6th each year. The day honors the contributions nurses make to our society."
+      "title" : "国民の看護師の日",
+      "desc" : "国家看護師の日は5月6日に祝われます。毎年5月6日に国立看護師の日が祝われます。 この日は、看護師が私たちの社会にもたらす貢献を称えるものです。"
     },
 
     "may10" : {
-      "title" : "Ascension Day",
-      "desc" : "Ascension for the year 2018 is celebrated/ observed on Thursday, May 10. Ascension Day each year is held on a Thursday 39 days after Easter Sunday. This day commemorates Jesus Christs ascension into heaven."
+      "title" : "昇天の日",
+      "desc" : "2018年の昇天は5月10日（木）に祝われます。毎年、復活祭の日は復活祭の日曜日の木曜日の39日に行われます。 この日はイエス・キリストの天国への昇天を記念しています。"
     },
 
     "may13" : {
-      "title" : "Mother’s Day",
-      "desc" : "Mother's Day for the year 2018 is celebrated/ observed on Sunday, May 13. Mother's Day is celebrated on the second Sunday of May each year. The day honors and celebrates mothers, grandmothers and great-grandmothers for their contribution to their families communities and society."
+      "title" : "母の日",
+      "desc" : "2018年の母の日は5月13日（日）に祝われます。母の日は毎年5月の第2日曜日に祝われます。 その日は、母親、おばあちゃん、おばあちゃんたちが家族や地域社会に貢献したことを賞賛し、賞賛します。"
     },
 
     "may15" : {
-      "title" : "Ramadan starts",
-      "desc" : "Ramadan for the year 2018 is celebrated/ observed on sundown of May 15 ending at sundown on Thursday, June 14. Ramadan is observed in the ninth month of the Islamic calendar. It is a month of fasting, prayer, giving and self-evaluation observed by Muslims. The month lasts 29-30 days depending on the sightings of the crescent moon."
+      "title" : "ラマダン開始",
+      "desc" : "2018年のラマダンは、6月14日木曜日の日没で終わる5月15日の日没で祝われ/観察されます。ラマダンはイスラム暦の9月に観察されます。 それは、イスラム教徒が見た断食、祈り、贈与、自己評価の1ヶ月です。 月は三日月の目撃に応じて29〜30日間続きます。"
     },
 
     "may19" : {
-      "title" : "Shavuot ",
-      "desc" : "Shavuot for the year 2018 is celebrated/ observed on sundown of May 19 ending at sundown on Monday, May 21. Shavuot is observed on the 6th or 7th of Sivan on the Hebrew calendar. Shavuot is a two day festival. The festival marks the wheat harvest in Israel and commemorates the day God gave the Torah to Israel on Mount Sinai."
+      "title" : "Shavuot",
+      "desc" : "Shavuotは、5月21日（月曜日）の日没で終わる5月19日の日没で祝われ/観察されます。Shavuotは、シヴァンの6日または7日にヘブライのカレンダーで観察されます。 Shavuotは2日間のフェスティバルです。 このフェスティバルは、イスラエルの小麦の収穫を記し、神がシナイ山でイスラエルに律法を与えた日を記念しています。"
     },
 
     "may20" : {
-      "title" : "Pentecost",
-      "desc" : "Pentecost for the year 2018 is celebrated/ observed on Sunday, May 20. Pentecost also known as Whit Sunday for Christians is celebrated on the seventh Sunday after Easter. The day celebrates the descent of the Holy Spirit on the Apostles of Jesus Christ."
+      "title" : "ペンテコステ",
+      "desc" : "2018年のペンテコステは5月20日（日）に祝われる/観察されます。キリスト教徒のためのウィット・サンデーとも呼ばれるペンテコステは、復活祭の後の第7日曜日に祝われます。 その日は、イエス・キリストの使徒たちの聖霊の降誕を祝います。"
     },
 
     "may21" : {
-      "title" : "Victoria Day",
-      "desc" : "In some cities, fireworks displays or parades are held to mark Victoria Day. One of the most notable parades is held in the city of Victoria, British Columbia, which was named after Queen Victoria. Many people gather in parks to enjoy fireworks displays, which are particularly impressive in Hamilton and Toronto."
+      "title" : "ビクトリアデー",
+      "desc" : "いくつかの都市では、花火大会やパレードが開催され、ビクトリアデーを記録しています。 最も有名なパレードの1つは、ビクトリア女王の名前を冠したブリティッシュコロンビア州のビクトリア州で開催されています。 多くの人々が公園に集まり、ハミルトンやトロントで特に印象的な花火大会を楽しんでいます。"
     },
 
     "may28" : {
-      "title" : "US Memorial Day",
-      "desc" : "Memorial Day for the year 2018 is celebrated/ observed on Monday, May 28. Memorial Day is observed on the last Monday in May each year. The day honors all those who died serving the United States military."
+      "title" : "米国のメモリアルデー",
+      "desc" : "記念日は、毎年5月の最後の月曜日に行われます。 この日は、米軍に奉仕して死んだすべての人々を称えます。"
     },
 
     "may31" : {
-      "title" : "Corpus Christi",
-      "desc" : "Corpus Christi for the year 2018 is celebrated/ observed on Thursday, May 31. Corpus Christi is celebrated on the second Thursday after Whit Sunday each year. For Catholics it is a day for Holy Communion or Eucharist."
+      "title" : "コーパスクリスティ",
+      "desc" : "コーパスクリスティは、2018年に祝われる/ 5月31日木曜日に観察されます。コーパスクリスティは、毎年ウィットサンデーの後の第2木曜日に祝われます。 カトリック教徒にとっては、聖体拝領や聖餐の日です。"
     },
 
     "jun6" : {
-      "title" : "D-Day ",
-      "desc" : "D-Day for the year 2018 is celebrated/ observed on Wednesday, June 6. D-Day is observed on June 6th each year to honor those men and women who fought and made sacrifices on June 6, 1944 in the battle located in Normandy France during World War II."
+      "title" : "D-Day",
+      "desc" : "2018年のD-Dayは6月6日水曜日に祝われる/観察されます。D-Dayは、ノルマンディー・フランスにある戦闘で1944年6月6日に戦い、犠牲を払った男女を称えるため、毎年6月6日に観察されます 第二次世界大戦中に。"
     },
 
     "jun10" : {
       "title" : "Latlat al Qadr",
-      "desc" : "Laylat al Qadr for the year 2018 is celebrated/ observed on sundown of June 10 ending at sundown on Monday, June 11. Laylat al Qadr is one evening of the last 10 days of Ramadan. It observes the night when the Prophet Mohammad received the first versus of the Koran."
+      "desc" : "Laylat al Qadr 2018年は6月10日の月曜日の終わりに終わる6月10日の日没で祝われ/観察されます。レイラット・アル・カドルはラマダンの最後の10日間のある晩です。 それは預言者ムハンマドがコーランの最初の対を受け取った夜を観察します。"
     },
 
     "jun14" : {
       "title" : "Eid al-Fitr",
-      "desc" : "Eid al-Fitr for the year 2018 is celebrated/ observed on sundown of June 14 ending at sundown on Friday, June 15. Eid al-Fitr falls on the 1st day of the month of Shawwal on the Islamic calendar which marks the end of Ramadan and the beginning of the feast that breaks the fast."
+      "desc" : "Eid al-Fitr 2018年は6月14日の日曜日の終わりに祝われ、6月14日の日曜日の終わりに観測されます。イド・アル・フィトールは、イスラム暦のShawwalの月の第1日目で、ラマダンの終わり 高速を壊す饗宴。"
     },
 
     "jun17" : {
-      "title" : "Father’s Day",
-      "desc" : "Father's Day for the year 2018 is celebrated/ observed on Sunday, June 17. Father's Day is celebrated on the third Sunday in June. The day celebrates fatherhood and all the father figures in our lives that help make our lives better."
+      "title" : "父の日",
+      "desc" : "2018年の父の日は6月17日の日曜日に祝われます。父の日は6月の第3日曜日に祝われます。 その日は、私たちの人生をより良くするために役立つ、父親と私たちの人生における父親の人物を祝います。"
     },
 
     "jun21" : {
-      "title" : "Summer Solstice",
-      "desc" : "Summer for the year 2018 starts on June 21. Summer provides the warmest weather of the four seasons as the days become hot and often dry (rainy in some Asian areas) with evenings remaining warm to hot depending on your location. In the Northern Hemisphere summer comes in the June, July and August months and in the Southern Hemisphere it comes in the December, January and February months. Summer comes about by the Earth increasing its axis tilt relative to the sun till the Summer Solstice (June 20-22 in Northern Hemisphere) then the sun relative to the earth changes course and starts to move back towards the equator."
+      "title" : "夏至",
+      "desc" : "2018年の夏は6月21日に始まります。夏は、季節によって暑くて乾燥している（アジアの一部の地域では雨が降っています）季節の最も暖かい天候です。 北半球では夏は6月、7月、8月に、南半球では12月、1月、2月になります。 夏は夏至（北半球で6月20日から22日）まで地球の傾きを太陽に対して相対的に増加させることによってもたらされ、その後、地球に関連する太陽はコースを変え、赤道に向かって後退し始める。"
     },
 
     "jul1" : {
-      "title" : "Canada Day",
-      "desc" : "Canada Day is the national day of Canada. A federal statutory holiday, it celebrates the anniversary of the July 1, 1867, enactment of the Constitution Act, which united the three separate colonies of Canada, Nova Scotia and New Brunswick into a single Dominion within the British Empire called Canada."
+      "title" : "カナダの独立記念日",
+      "desc" : "カナダの日はカナダの国民の日です。 1867年7月1日、カナダ、ノバスコシア、ニューブランズウィックの3つの独立した植民地を結成して憲法を制定し、カナダと呼ばれる大英帝国内の単一の領土となった記念日を祝う。"
     },
 
     "jul4" : {
-      "title" : "Independence Day",
-      "desc" : "4th of July for the year 2018 is celebrated/ observed on Wednesday, July 4. 4th of July or July 4th also called Independence Day always falls on the 4th day of July each year. This is the National Day for America celebrating the adoption of the Declaration of Independence on July 4, 1776 declaring independence from Great Britain"
+      "title" : "独立記念日",
+      "desc" : "7月4日（水）には、2018年の7月4日が祝われます。独立記念日とも呼ばれる7月または4月の4日は、毎年7月の4日になります。 これは1776年7月4日に独立宣言を採択し、英国からの独立宣言を祝いました。"
     },
 
     "jul14" : {
-      "title" : "Rath Yatra ",
-      "desc" : "Rath Yatra for the year 2018 is celebrated/ observed on Thursday, July 14. Rath Yatra is a Hindu festival that is celebrated mid summer each year. The three deities, Jagannath, Subhadra, and Balabhadra are celebrated."
+      "title" : "Rath Yatra",
+      "desc" : "Rath Yatraは2018年に祝われ、7月14日（木）に祝われます。Rath Yatraは毎年夏の夏に祝われるヒンズー教の祭典です。 ヤガナート、サブハドラ、バラブドラの3つの神々が祝われます。"
     },
 
     "jul21" : {
       "title" : "Tisha B’Av",
-      "desc" : "Tisha B'Av is observed on the ninth day of the month of Av on the Hebrew calendar. The day for Jews, brings remembrance to the destruction of the First and Second Temple in Jerusalem"
+      "desc" : "Tisha B'Av ヘブライ語のカレンダーでAvの月の9日目に観察されます。 ユダヤ人の日は、エルサレムの第一と第二の神殿の破壊を思い起こさせる。"
     },
 
     "jul22" : {
-      "title" : "Parent's Day",
-      "desc" : "Parents' Day for the year 2018 is celebrated/ observed on Sunday, July 22. Parents Day is celebrated on the fourth Sunday of July. The day recognizes and celebrates the contributions parents make to their families and communities."
+      "title" : "親の日",
+      "desc" : "2018年の親の日は7月22日（日）に祝われます。親の日は7月の第4日曜日に祝われます。 この日は、両親が家族や地域社会にもたらす貢献を認識し、賞賛します。"
     },
 
     "aug5" : {
-      "title" : "Friendship Day",
-      "desc" : "Friendship Day for the year 2018 is celebrated/ observed on Sunday, August 5. Friendship day in the United States falls on the first Sunday in August. This day falls on different dates around the world and celebrates friendship and encourages one to spend time with friends and show thanks to those they care about."
+      "title" : "友情の日",
+      "desc" : "2018年の友情の日は8月5日（日）に祝われる/観察されます。米国の友情の日は8月の最初の日曜日になります。 この日は世界中のさまざまな日々にあり、友情を祝い、友人と時間を過ごして気になる人に感謝します。"
     },
 
     "aug15" : {
-      "title" : "Assumption of Mary",
-      "desc" : "Assumption of Mary for the year 2018 is celebrated/ observed on Wednesday, August 15. Assumption of Mary falls on the 15th of August each year and celebrates through a feast for Catholics when her spirit and body went to heaven."
+      "title" : "メアリーの仮定",
+      "desc" : "メアリーの推定は、8月15日（水）に行われます。メアリーは、毎年8月15日に落ち、霊と身体が天国になったとき、カトリック教徒の祝宴を祝います。"
     },
 
     "aug19" : {
-      "title" : "National Aviation Day",
-      "desc" : "National Aviation Day for the year 2018 is celebrated/ observed on Sunday, August 19. National Aviation Day is observed on August 19th each year celebrating the development and history of aviation."
+      "title" : "全米航空デイ",
+      "desc" : "2018年の全米航空デーは8月19日（日）に祝われます。毎年8月19日に航空業界の発展と歴史を祝います。"
     },
 
     "aug20" : {
-      "title" : "Day of Arafat",
-      "desc" : "Day of Arafat for the year 2018 is celebrated/ observed on sundown of August 20 ending at sundown on Tuesday, August 21. Day of Arafat falls on the ninth day of the month of Dhul-Hijjah on the lunar Islamic calendar. For Muslims this day is honored by a pilgrimage to Mount Arafat where they gather in prayer waiting for judgment."
+      "title" : "アラファトの日",
+      "desc" : "アラファトの日は、8月20日の日曜日の終わりに、2018年の祝賀/観覧が行われます。アラファトの日は、月のイスラム暦のDhul-Hijjahの月の9日になります。 イスラム教徒にとって、この日は、アラファト山への巡礼によって、彼らが裁きを待つ祈りの中で集まる場所で栄誉を受けています。"
     },
 
     "aug25" : {
       "title" : "Raksha Bandhan",
-      "desc" : "Raksha Bandhan for the year 2018 is celebrated/ observed on Saturday, August 25. Raksha Bandhan also known as Rakhi Purnima or Rakhi is a Hindu festival celebrated in the month of August. The festival emphasizes on the love between brothers and sisters."
+      "desc" : "Raksha Bandhanは、8月25日（土）に開催されます。Rakhi PurnimaまたはRakhiとしても知られるRaksha Bandhanは、8月に祝賀されたヒンズー教の祭典です。 この祭りは、兄弟姉妹の愛に重点を置いています。"
     },
 
     "aug26" : {
-      "title" : "Women’s Equality Day",
-      "desc" : "Women's Equality Day for the year 2018 is celebrated/ observed on Sunday, August 26. Women's Equality Day is observed on August 26th each year and commemorates women's right to vote throughout the United States. This was passed as the 19th amendment to the United States in 1920."
+      "title" : "女性平等の日",
+      "desc" : "2018年の女性平等の日は8月26日の日曜日に祝われる/観察されます。女性の平等の日は毎年8月26日に観察され、米国内での女性の投票権を記念しています。 これは1920年に第19回改正案として米国に渡されました。"
     },
 
     "sept2" : {
       "title" : "Krishna Janmashtami",
-      "desc" : "Krishna Janmashtami for the year 2018 is celebrated/ observed on Sunday, September 2. Krishna Janmashtami is observed on the 8th day of the month of Bhadon on the Hindu calendar which falls in the months of July, August and September for the Gregorian calendar. The day celebrates the birth of Lord Krishna."
+      "desc" : "Krishna Janmashtami 2018年は9月2日の日曜日に祝われる/観察されます。クリシュナ・ジャンマシュタミは、グレゴリオ暦の7月、8月、9月のヒンドゥー・カレンダーでバドン月の8日に観察されます。 その日はクリシュナ卿の誕生を祝います。"
     },
 
     "sept12" : {
-      "title" : "Muharram",
-      "desc" : "Muharram for the year 2018 is celebrated/ observed on Wednesday, September 12. Muharram is the first Month in the Islamic calendar with the first day is Muharram the start of the New Year for Muslims. Some Muslims will fast during the first month of Muharram."
+      "title" : "ムハラム",
+      "desc" : "2018年のムハラムは9月12日水曜日に祝われる/観察される。ムハーラムはイスラム暦の最初の月であり、最初の日はイスラム教徒のための新年の始まりであるムハラムである。 いくつかのイスラム教徒はムハーラムの最初の月の間に断食するでしょう。"
     },
 
     "sept18" : {
       "title" : "Yom Kippur",
-      "desc" : "Yom Kippur for the year 2018 is celebrated/ observed on sundown of September 18 ending at sundown on Wednesday, September 19. Yom Kippur is observed on the tenth day of the month of Tishri on the Hebrew calendar. Also known as the day of Atonement, the day is spent in prayer and fasting among the Jewish people of faith."
+      "desc" : "Yom Kippur 2018年は、9月18日水曜日の日没で終わる9月18日の日没で祝われ/観察されます。ヨム・キプルは、ヘブライ・カレンダーでティシュリの10日の10日に観察されます。 償いの日とも呼ばれるこの日は、信仰のユダヤ人の間で祈りと断食に費やされています。"
     },
 
     "sept20" : {
-      "title" : "Ashura",
-      "desc" : "Ashura for the year 2018 is celebrated/ observed on sundown of September 20 ending at sundown on Friday, September 21. Ashura falls on the 10th day of the 1st month of Muharram on the Islamic lunar calendar. For Shia Muslims the day commemorates the death of Husayn ibn Ali and for Sunni Muslims the day relates to when Moses and his followers fled Egypt and where saved by God separating the Red Sea."
+      "title" : "アシュラ",
+      "desc" : "2018年のアシュラは、9月20日の日曜日の終わりに祝われ、9月20日の日曜日に終わる。アシュラはイスラム暦のムハーラムの1月10日の10日になる。 シーア派イスラム教徒にとって、この日はフセイン・イブン・アリの死を記念しており、スンニ派のイスラム教徒にとっては、モーセとその信者がエジプトから逃げ出し、"
     },
 
     "sept22" : {
-      "title" : "September Equinox",
-      "desc" : "Autumn for the year 2018 starts onSeptember 22. In Autumn the day light gets shorter and evenings become cooler. The plants drop their leaves and animals prepare for the cold winter ahead. In the Northern Hemisphere autumn comes in the September, October and November months and in the Southern Hemisphere it comes in the March, April and May months. Autumn comes about by the Earth decreasing its axis tilt relative to the sun decreasing the temperatures (less direct sunlight) and the shortening of the days."
+      "title" : "9月分け前",
+      "desc" : "2018年の秋は9月22日に始まります。秋の日には、光がより短くなり、夕方はより冷たくなります。 植物は葉を落とし、動物は先の寒い冬に備えます。 北半球では秋は9月、10月、11月に、南半球では3月、4月、5月に来る。 秋は、地球が太陽に対して相対的な軸の傾きを減少させることによって、温度（直射日光のより少ない）および日の短縮を減少させることによって生じる。"
     },
 
     "sept23" : {
-      "title" : "Sukkot",
-      "desc" : "Sukkot for the year 2018 is celebrated/ observed on sundown of September 23 ending at sundown on Sunday, September 30. Sukkot is a seven day Jewish festival with the first day starting on 15th day of the month of Tishri according to the Hebrew Calendar. The day relates to the exodus of the Jewish people from Egypt and their wandering through the desert for 40 years."
+      "title" : "サックコート",
+      "desc" : "Sukkotは9月23日の日曜日に終わる9月23日の日没で祝われ/観察されます。Sukkotは7日のユダヤ人の祭りで、最初の日はTishriの月の15日からヘブライカレンダーに基づいて始まります。 その日はエジプト出身のユダヤ人の離脱と40年間の砂漠をさまようことに関係しています。"
     },
 
     "sept30" : {
       "title" : "Shemini Atzeret",
-      "desc" : "Shemini Atzeret for the year 2018 is celebrated/ observed on sundown of September 31 ending at sundown on Monday, October 1. Shemini Atzeret is observed on the 22nd of Tishrei according to the Hebrew calendar. For many Jewish people this day represents the eighth day of Sukkot and a day to focus on their love for God."
+      "desc" : "2018年のShemini Atzeretは、10月1日月曜日の日没に終わる9月31日の日没で祝われ/観察されます。Shemini Atzeretは、ヘブライ暦に従ってティシュレイの22日に観察されます。 多くのユダヤ人にとって、今日はスコットの8日目であり、神に対する愛に集中する日です。"
     },
 
     "oct1" : {
       "title" : "Simchat Torah",
-      "desc" : "Simchat Torah for the year 2018 is celebrated/ observed on sundown of October 1 ending at sundown on Tuesday, October 2. Simchat Torah which means rejoicing the Torah is observed on 22 of Tishrei in Isreal and 23 of Tishrei outside Isreal. The day celebrates the ending of the reading of the Torah for the year with dancing and singing."
+      "desc" : "2018年のシムチャト・トラは、10月1日火曜日の日没で終わる10月1日の夕暮れに祝われ/観察されます。トーラーを喜ばすことを意味するシムチャト・トラは、イスレアルのティシュレイ22人とイスラエルの外のティシュレイ23人に観察されます。 その日は、踊りと歌をもってその年のトーラーの読書の終わりを祝います。"
     },
 
     "oct8" : {
-      "title" : "Thanksgiving Day - Canada",
-      "desc" : "Many people have a day off work on the second Monday of October. They often use the three-day Thanksgiving weekend to visit family or friends who live far away, or to receive them in their own homes. Many people also prepare a special meal to eat at some point during the long weekend. Traditionally, this included roast turkey and seasonal produce, such as pumpkin, corn ears and pecan nuts. Now, the meal may consist of other foods, particularly if the family is of non-European    descent"
+      "title" : "感謝祭 - カナダ",
+      "desc" : "多くの人は、10月の第2月曜日に休業します。 彼らはしばしば、3日間の感謝祭の週末を利用して、遠くに住む家族や友人を訪問したり、自分の家で受け取ったりします。 長い週末のある時点で、多くの人々が特別な食事を用意して食事をします。 伝統的に、これには、七面鳥とカボチャ、トウモロコシの穂やピーカンナッツなどの季節の生産物が含まれていました。 今や食事は他の食べ物から成っているかもしれません。特に家族がヨーロッパ以外の子孫である場合。"
     },
 
     "oct9" : {
       "title" : "Navratri",
-      "desc" : "Navratri for the year 2018 is celebrated/ observed on Tuesday, October 9. Navratri is a festival that starts on the first day of the Lunar month of Ashwin. The festival lasts 9 nights and is dedicated to the Hindu deity Durga."
+      "desc" : "Navratri 2018年は10月9日火曜日に祝われます.NavratriはAshwinのLunar月の初めに始まる祭りです。 この祭りは9泊続けており、ヒンズー教の神Durgaに捧げられています。"
     },
 
     "oct18" : {
       "title" : "Dussehra",
-      "desc" : "Dussehra for the year 2018 is celebrated/ observed on Thursday, October 18. Dussehra also known as Maha Navami is observed in the month of Ashvin on the 10th day of Shukla Paksha. The day celebrates good over evil."
+      "desc" : "Dussehra 2018年は10月18日木曜日に祝われ/観察されます。マウナナバミとも呼ばれるDussehraは、Shukla Pakshの10日目にAshvinの月に観察されます。 その日は善悪を祝う日です。"
     },
 
     "oct31" : {
-      "title" : "Halloween",
-      "desc" : "Halloween for the year 2018 is celebrated/ observed on Wednesday, October 31. Halloween is celebrated on October 31st each year. Halloween is celebrated yearly on October 31, the eve of the Western Christian feast of All Hallows' Day or more commonly known as All Saints' Day. It is also known as All Halloween, All Hallows' Eve, or All Saints' Day Eve."
+      "title" : "ハロウィン",
+      "desc" : "2018年のハロウィンは10月31日水曜日に祝われます。ハロウィーンは毎年10月31日に祝われます。 ハロウィンは、毎年10月31日に全員の聖誕日の西キリスト教の祝宴の前夜、またはより一般的にはすべての聖徒の日として知られています。 オール・ハロウィン、オール・ハリウズ・イブ、オール・セインツ・デー・イヴとも呼ばれています。"
     },
 
     "nov1" : {
-      "title" : "All Saints’ Day",
-      "desc" : "All Saints' Day for the year 2018 is celebrated/ observed on Thursday, November 1. Always celebrated on the first of November each year, All Saints Day celebrates those Saints who are not honored on a special separate day during the year so that they may be honored on this day."
+      "title" : "すべての聖徒の日",
+      "desc" : "2018年のすべての聖人の日は11月1日（木）に祝われる/観察されます。毎年11月初めに祝われた聖徒の日は、その年の特別な日には賞賛されない聖人たちを祝います。 この日は敬意を表します。"
     },
 
     "nov2" : {
-      "title" : "All Souls’ Day",
-      "desc" : "All Souls' Day for the year 2018 is celebrated/ observed on Friday, November 2. All Souls' Day always falls on the 2nd day of November each year. The day reminds us of those who are dead and those who are in purgatory and for the living to live holy lives for the purification of their soul."
+      "title" : "すべての魂の日",
+      "desc" : "すべての魂の日は、毎年11月2日になります。 この日は、死んでいる人たちと、魂の浄化のために生きるために生きている人たちとを思い起こさせます。"
     },
 
     "nov7" : {
       "title" : "Diwali",
-      "desc" : "Diwali for the year 2018 is celebrated/ observed on Wednesday, November 7. Diwali is observed on the 15th day of the month of Kartika on the Hindu calendar and celebrates the festival of lights."
+      "desc" : "Diwali 2018年は11月7日水曜日に祝われる/観察されます。ディワリは、ヒンズー教のカタルカの月の15日に観察され、ライトのお祭りを祝います。"
     },
 
     "nov11" : {
-      "title" : "Veterans Day",
-      "desc" : "Veterans Day for the year 2018 is celebrated/ observed on Sunday, November 11. Veterans Day is observed on November 11th each year and honors all veterans who have previously served in the United States Armed Forces."
+      "title" : "退役軍人の日",
+      "desc" : "2018年の退役軍人の日は11月11日（日）に祝われる/観察されます。退役軍人の日は毎年11月11日に観察され、以前は米国軍に奉仕していたすべての退役軍人を称えます。"
     },
 
     "nov20" : {
-      "title" : "Prophet’s Birthday",
-      "desc" : "Prophet's Birthday for the year 2018 is celebrated/ observed on sundown of November 20 ending at sundown on Wednesday, November 21. The Prophet's Birthday is celebrated on the 12th or 17th day of the Rabi' al-awwal month of the Islamic calendar. The day marks the birthday celebration of the Prophet Muhammad for Muslims."
+      "title" : "預言者の誕生日",
+      "desc" : "2018年の預言者の誕生日は、11月20日の日曜日に終わる、11月20日の日曜日の終わりに祝われる/観察されます。預言者の誕生日は、ラビのイスラムの暦年の第12または17日に祝われます。 この日はイスラム教徒のための預言者ムハンマドの誕生日記念日です。"
     },
 
     "nov22" : {
-      "title" : "Thanksgiving Day",
-      "desc" : "Thanksgiving Day for the year 2018 is celebrated/ observed on Thursday, November 22. Thanksgiving Day is celebrated on the fourth Thursday of November each year. The day celebrates the harvest and has been celebrated in the United States since 1863."
+      "title" : "感謝祭",
+      "desc" : "2018年の感謝祭は11月22日（木）に祝われます。感謝祭は毎年11月の第4木曜日に祝われます。 その日は収穫を祝い、1863年以来米国で祝われました。"
     },
 
     "dec2" : {
-      "title" : "Hanukkah begins",
-      "desc" : "Hanukkah for the year 2018 is celebrated/ observed on sundown of December 2 ending at sundown on Monday, December 10. Hanukkah falls on the 25th day of Kislev on the Hebrew calendar and between late November and late December on the Gregorian calendar. Hanukkah is a eight day Jewish festival commemorating the Holy Temple rededication in Jerusalem."
+      "title" : "ハヌカが始まる",
+      "desc" : "ハヌカは、12月2日の月曜日の日没で終わる12月2日の日没で祝われ/観察されます。ハヌカはヘブライ暦でキスレフの25日に、そしてグレゴリオ暦で11月下旬から12月下旬に下がります。 ハヌカはエルサレムで聖なる聖礼典を記念する8日間のユダヤ人の祭典です。"
     },
 
     "dec21" : {
-      "title" : "Winter Solstice",
-      "desc" : "Winter for the year 2018 starts on December 21. Winter has the coldest weather of the four seasons as the days become shorter and colder with snow dropping in the coldest areas. In the Northern Hemisphere winter comes in the December, January, and February months and in the Southern Hemisphere it comes in the June, July and August months. Winter comes about by the Earth decreasing its axis tilt relative to the sun till the Winter Solstice (December 20-23 in Northern Hemisphere) then the sun relative to the earth changes course and starts to move back towards the equator."
+      "title" : "冬至",
+      "desc" : "2018年の冬は12月21日に始まります。冬は、寒い地域で雪が降ると日が短く寒くなるにつれて、四季の最も寒い天候です。 北半球では冬は12月、1月、2月に、南半球では6月、7月、8月になります。 冬は、冬至（北半球で12月20日から23日まで）に地球の傾きが太陽に対して相対的に減少すると地球が太陽に変わり、赤道に向かって後退し始めます。"
     },
 
     "dec24" : {
-      "title" : "Christmas Eve",
-      "desc" : "Christmas Eve for the year 2018 is celebrated/ observed on Monday, December 24. Christmas Eve is always celebrated on December 24th each year, the day before Christmas Day. The evening is celebrated in anticipation of the next day with the birth of Jesus Christ."
+      "title" : "クリスマス・イブ",
+      "desc" : "2018年のクリスマスイブは、12月24日（月）に祝われます。クリスマスイブは、毎年12月24日、クリスマスの前日に祝われます。 夜はイエス・キリストの誕生とともに翌日を見越して祝われます。"
     },
 
     "dec25" : {
-      "title" : "Christmas Day",
-      "desc" : "Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world."
+      "title" : "クリスマス",
+      "desc" : "クリスマスは、世界の何十億人もの人々の宗教的、文化的祭典として、12月25日に主に観察された、イエス・キリストの誕生を記念して行われる年次祭典です。"
     },
 
     "dec31" : {
-      "title" : "New Year's Eve",
-      "desc" : "In the Gregorian calendar, New Year's Eve, the last day of the year, is on December 31 which is the seventh day of Christmastide. In many countries, New Year's Eve is celebrated at evening social gatherings, where many people dance, eat, drink alcoholic beverages, and watch or light fireworks to mark the new year."
+      "title" : "大晦日",
+      "desc" : "グレゴリオ暦では、今年の最後の日である大晦日は12月31日にキリスト教の7日目です。 多くの国では、多くの人が踊り、食べたり、飲み物を飲んだり、新年を祝うために花火を見るか照明したりする、夜の社交会で大晦日が祝われます。"
     }
   }
 }
