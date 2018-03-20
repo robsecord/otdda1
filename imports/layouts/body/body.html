@@ -18,7 +18,7 @@
                 </ul>
                 <span class="navbar-right">
                     {{#if hasInvalidAccountOrNetwork}}
-                        <span class="ethereum-offline" data-toggle="tooltip" data-placement="bottom" title="{{getOfflineReason}}"></span>
+                        <span class="ethereum-offline" data-toggle="tooltip" data-placement="bottom" title="{{getOfflineReason}}" data-original-title="{{getOfflineReason}}"></span>
                     {{else}}
                         {{> dapp_identicon identity=getAccountAddress class="dapp-small"}}
                     {{/if}}
