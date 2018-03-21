@@ -1,96 +1,738 @@
 {
   "page" : {
-    "title" : "Собственный день!",
-    "defaultSuffix" : "Заявите день на блокчейне!",
-    "desc" : "Собственный твой день на блоке «Эфириум»!"
+    "title" : "Own the Day!",
+    "defaultSuffix" : "ERC20 Tokens on the blockchain!",
+    "desc" : "Own the Day or Get Paid for it! Only on the Ethereum Blockchain!"
   },
   "body" : {
     "navbar" : {
-      "title" : "Собственный день",
+      "title" : "Own the Day",
       "link" : {
-        "calendar" : "Календарь",
-        "account" : "Мои дни"
+        "calendar" : "Calendar",
+        "account" : "My Days"
       },
-      "notConnected" : "Вы не подключены"
-    },
-    "warning" : {
-      "noAccount" : {
-        "title" : "Нет аккаунта!",
-        "message" : "Подключите счет Ethereum через MetaMask или Mist!"
-      },
-      "wrongNetwork" : {
-        "title" : "Неправильная сеть!",
-        "messageTest" : "Пожалуйста, подключитесь к тестовой сети.",
-        "messageMain" : "Пожалуйста, подключитесь к основной сети Ethereum."
-      }
+      "notConnected" : "You are not logged in",
+      "noNetwork"    : "You are not connected to the network"
     }
   },
   "welcome" : {
-    "pageTitle" : "желанный",
+    "pageTitle" : "Welcome",
     "topBanner" : {
-      "title" : "Собственный день",
-      "subtitle" : "на Эфириум Блокач",
-      "enterButton" : "Открыть календарь"
+      "title" : "Own the Day",
+      "tooltip" : "on the Ethereum Blockchain",
+      "subtitle" : "or get Paid for it!",
+      "enterButton" : "Open Calendar"
     },
     "intro1" : {
-      "titleLine" : "Собственный ваш любимый день на блочной цепи!",
-      "line1" : "Собственный день рождения, праздник или любой другой день, который вы хотите!",
-      "line2" : "Покупайте в любой день года на Smart-контракте Ethereum с использованием технологии blockchain и станьте настоящим владельцем своего дня!",
-      "line3" : "Вы можете быть гордым владельцем своего любимого праздника, такого как Новый год, День независимости или даже Хэллоуин!",
-      "line4" : "Собственный день - это интерактивная игра и крипто-коллекционная, которая позволяет любому покупать и владеть днями года в Ethereum Blockchain. Как только вы потребуете день, вы получаете право собственности на тот день, и он автоматически увеличивается в цене.",
-      "line5" : "Но помните, что кто-то еще может потребовать ваш день, заплатив удвоенную цену, которую вы заплатили. Затем вы потеряете право собственности на тот день, но вы получите удвоенную цену в ETH, автоматически внесенную в ваш кошелек!",
-      "line6" : "Вы не можете проиграть! Собственный день или заплати за это!"
+      "titleLine" : "Own your Favorite Day on the Blockchain!",
+      "line1" : "Own your Birthday, a Holiday or any other day you want!",
+      "line2" : "Buy any day of the year as an Ethereum Token (DAYS) using the blockchain and be the true owner of that day!",
+      "line3" : "You could be the proud owner of your favorite Holiday such as New Year's Day, Independence Day or even Halloween!",
+      "line4" : "Own The Day is an interactive game & crypto-collectible that lets anyone buy and own days of the year as ERC20-compatible Tokens on the Ethereum Blockchain. As soon as you claim a day, you take ownership of the Token for that Day and it automatically increases in value.",
+      "line5" : "But Remember, anyone else can claim your day by paying up to double the price that you paid. You will then lose ownership of that day, but you will receive up to double the price in ETH automatically deposited into your wallet!",
+      "line6" : "You can't lose!  Own The Day or Get Paid for it!"
     }
   },
   "calendar" : {
-    "pageTitle" : "Календарь",
-    "title" : "Найдите день и сделайте его своим!"
+    "pageTitle" : "Calendar",
+    "title" : "Find a Day and make it Yours!"
   },
   "account" : {
-    "pageTitle" : "Мои дни",
-    "title" : "Мои дни"
+    "pageTitle" : "My Days",
+    "title" : "My Days"
+  },
+  "about" : {
+    "pageTitle" : "About",
+    "topBanner" : {
+      "title" : "About",
+      "subtitle" : "What is this site all about?"
+    },
+    "section1" : {
+      "title" : "How to Play",
+      "line1" : "Every available calendar-day is a unique collectible represented by an ERC20-compatible Token on the Ethereum blockchain, and can only be owned by a single person at a time. Once you have claimed a calendar-day, it is yours and yours alone!",
+      "line2" : "The calendar-days that you have claimed will be displayed on the global Calendar along with your Nickname (your nickname by default is the last 6 characters of your public wallet address, but you may change your nickname at anytime).",
+      "line3" : "Since your calendar-day collectibles are Ethereum Tokens, they can also be viewed in your MetaMask wallet under 'Tokens'.  Please see the __faq__ page for more information on displaying DAYS Tokens in your wallet.",
+      "line4" : "You may claim any day on the Calendar, they are all up-for-grabs! This also means that anyone else may claim a calendar-day from you, and in doing so they pay you the increased price of the calendar-day. The price automatically increases every time a day is claimed, which is calculated by the smart contract according to the 'Price Level Increase' table."
+    }
+  },
+  "faq" : {
+    "pageTitle" : "FAQs",
+    "topBanner" : {
+      "title" : "Frequently Asked Questions",
+      "subtitle" : "Got a question? Find an answer!"
+    },
+    "block1" : "Getting Started",
+    "block2" : "Understanding the Game",
+    "questions" : {
+      "section1" : {
+        "q" : "What is needed to play Own the Day?",
+        "a" : {
+          "l1" : "To start claiming calendar-days all you need is:",
+          "l2" : "A Modern Web Browser such as Chrome or Firefox with the MetaMask Extension,",
+          "l3" : "Alternatively, an Ethereum-based browser such as Mist or Bravo,",
+          "l4" : "Ether in your wallet to claim calendar-days!"
+        }
+      },
+      "section2" : {
+        "q" : "How do I install MetaMask?",
+        "a" : {
+          "l1" : "To buy (and to receive profits from) calendar-day collectibles, you will need to install a browser extension called MetaMask (by MetaCert) in Chrome or Firefox.",
+          "l2" : "Download and install the extension for your browser;",
+          "l3" : "Create a new Account/Wallet in MetaMask,",
+          "l4" : "Metamask will provide you with 12 seed words which you should save some place safe (this is essentially the key to your wallet),",
+          "l5" : "Once you are logged into your account in MetaMask you will have full access to Own the Day!"
+        }
+      },
+      "section3" : {
+        "q" : "How do I add ether (ETH) to my wallet?",
+        "a" : {
+          "l1" : "Through an Exchange: The most popular means of acquiring ether is from an exchange such as Coinbase, Binance, Kraken, and many others. After you have purchased ether from an exchange, you will need to transfer the ether out of the exchange and into your MetaMask wallet.",
+          "l2" : "Through MetaMask: MetaMask gives an option to purchase ether directly through the wallet, but this feature is currently only available for US residents.",
+          "l3" : "If you already own Ether you can transfer funds directly to your MetaMask wallet via the public wallet address.",
+          "l4" : "If you need further assistance in acquiring ether or using MetaMask, there are many great guides &amp; tutorials on Google and YouTube!"
+        }
+      },
+      "section4" : {
+        "q" : "What exactly are we buying?",
+        "a" : {
+          "l1" : "Own the Day is a game about collecting and owning your favorite calendar-days on the Ethereum Blockchain. When you buy a day, you are the sole owner of that day until someone claims it from you, at which point you earn ether as the seller of the day.",
+          "l2" : "Calendar-days are crypto-collectibles similar to sports-cards and comic books, only these collectibles always increase in value!  What you own is an ERC20 Token on the Ethereum Blockchain, limited to only 366 DAYS Tokens (we have included the extra day in February for Leap Year). Much like traditional collectibles, their value is directly related to their desirability by other collectors.",
+          "l3" : "The game’s interactive global Calendar will display your Nickname on all of the days that you own and will also be represented by a unique color based on the last six characters of your wallet's public address.",
+          "l4" : "If anyone else decides to claim a day that you own, they will have to pay you up to double the price in ETH which will automatically be transferred into your wallet by the smart contract.",
+          "l5" : "You either own your day as a unique Crypto-Collectible, or you profit from it - you can't lose!  Ultimately, the more you play the more you can earn!"
+        }
+      },
+      "section5" : {
+        "q" : "How do I lay claim to a calendar-day?",
+        "a" : {
+          "l1" : "Begin by visiting the global __calendar__ page and find your favorite day of the year. It could be your birthday, an anniversary or your favorite holiday.",
+          "l2" : "Once you have found your desired calendar-day, select it in order to buy it.  The game will prompt you to confirm your purchase and direct you to the MetaMask extension to initiate the transaction.  After the Ethereum Blockchain has confirmed your transaction, you will have successfully claimed that day!  The global Calendar, as well as your Account page will display your ownership of the day."
+        }
+      },
+      "section6" : {
+        "q" : "Can I use fiat currency (CAD, USD, etc) to claim a day?",
+        "a" : {
+          "l1" : "Own the Day is a blockchain-based game which runs on the Ethereum Network, and as such, ether (ETH) is the only way to play.",
+          "l2" : "You will have to use an exchange to acquire ether using your standard currency."
+        }
+      },
+      "section7" : {
+        "q" : "Can I refuse to sell the days that I have collected?",
+        "a" : {
+          "l1" : "If someone wants to claim a day that you own they will be able to do so provided that they can pay the price.",
+          "l2" : "However, if you are the owner of the day, that also makes you the seller of the day and you will be paid up to twice the price that you initially paid."
+        }
+      },
+      "section8" : {
+        "q" : "How are you making money?",
+        "a" : {
+          "l1" : "A small portion of each transaction is paid out to the developers of the game.  This portion is related to the value of the transaction and is hard-coded into the smart contract (never to be modified).  The smart contract is completely transparent and available online for anyone to read.  You can also visit the __about__ page to view the pricing structure of the game."
+        }
+      },
+      "section9" : {
+        "q" : "How do I view my DAYS Tokens inside of my Wallet?",
+        "a" : {
+          "l1" : "Custom Ethereum Tokens, such as DAYS Tokens, can be added to most Ethereum-compatible wallets by configuring the wallet to recognize the Token.",
+          "l2" : "In MetaMask, for example, you can select the 'Tokens' tab of your wallet and then select 'Add Token'.  Provide the following details for the Token:",
+          "l3" : "Token Contract Address: 0x16d790ad4e33725d44741251f100e635c323beb9",
+          "l4" : "Token Symbol: DAYS",
+          "l5" : "Decimals of Precision: 0",
+          "l6" : "This will allow your wallet to recognize any DAYS Tokens that you collect through the game -- it will not add new DAYS Tokens to your wallet."
+        }
+      }
+    }
+  },
+  "tos" : {
+    "pageTitle" : "Terms of Service",
+    "topBanner" : {
+      "title" : "Terms of Service",
+      "subtitle" : ""
+    },
+    "intro" : {
+      "line1" : "This application (&quot;OwnTheDay&quot;) runs on the Ethereum network and utilizes smart contract(s) to allow users to buy and own unique, one-of-a-kind calendar-day Collectibles as ERC20-compatible Tokens with the symbol DAYS.",
+      "line2" : "Throughout these Terms of Service, the smart contract(s) and the Site hosting the game will be known as the &quot;Game&quot;. The calendar-day tokens purchased through the Game will be known as &quot;Collectibles&quot;.",
+      "line3" : "By choosing to use the Game, users can purchase and own calendar-day Collectibles. OwnTheDay is making the Game available to you. Prior to using the Game, you must agree to these Terms of Service.",
+      "line4" : "Read the following Terms of Service carefully and thoroughly prior to using the Game, purchasing Collectibles, or using the Site. Unless we have a separate, written agreement with you that differs from the below Terms of Service, the following Terms of Service absolutely and unequivocally govern your use of the Site, as well as your purchase and ownership of Collectibles. We will only allow you to use this Site, own Collectibles, and/or purchase Collectibles if you accept all of these Terms of Service.",
+      "line5" : "By using this Game, this Site, and/or these Collectibles, or by clicking &quot;agree&quot;, you confirm that you understand these Terms and accept these Terms. In the event that you are using this Site, this Game, or these Collectibles on behalf of another company or legal entity, you indicate that you have the legal authority to accept these Terms on the other party's behalf, and that any mention of &quot;you&quot; in this contract means the other party that you represent. If you do not have the authority to represent another party, then you do not have permission to use this Game, this Site, or these Collectibles."
+    },
+    "terms" : {
+      "section1" : {
+        "title" : "WE DO NOT ACCEPT DEPOSITS",
+        "note" : "OwnTheDay.io is a UI interface which allows you to interact directly with a blockchain smart contract on the Ethereum network using the &quot;Metamask&quot; browser extension. The website and its creators do not accept or hold any payments from players. Any ether transfers done over the website are transferred directly to blockchain contract address: 0xD35eF25873bd9BA3e67dcCd1a5634F49a32E44f0. Any Ether or fiat currency deposited into your Metamask extension is fully owned and controlled by you, the player. The game does not have access to the funds deposited in your Metamask browser extension. Transfers of Ether, are passed directly from your Metamask account to a smart contract on the Ethereum network. Since the game does not accept your deposits and does not have any control over it, the game and it's creators are not liable for any damages or loss of funds."
+      },
+      "section2" : {
+        "title" : "PLAY RESPONSIBLY",
+        "note" : "This game allows you to buy and collect digital assets. There is no guarantee that other players or anyone else will buy these assets from you. While some players speculate about their ability to resell their digital assets for a higher value in the future, there is no guarantee that another person will decide to buy your digital asset. If you choose to transfer ETH in exchange for a Day referred to in the game as Collectibles, you must accept and understand the risk of potentially not being able to sell your Collectibles in the future. The game is designed for collectors who choose to pay for the ownership of digital products referred to as Collectibles. If you choose to speculate over the future value and liquidity of your asset, you must do so at your own risk and not hold the creators of the game or the smart contract liable for any loss or damages. Play responsibly and do not spend more than you feel the digital asset is worth."
+      },
+      "section3" : {
+        "title" : "SMART CONTRACTS",
+        "note" : "We have used the days of the year to create unique, one-of-a-kind Collectibles represented by ERC20-compatible Tokens on the Ethereum BlockChain. These Collectibles are not endorsed or supported by the person appearing on the calendar. All available days of the year (including February 29) have been released up-front. Each Day Collectible may be purchased by you utilizing ether. You may purchase any day you choose, and any other party may purchase a day that you currently own if the other party is willing to pay a higher sum. The price of the tokens are hard-coded into the smart contract itself and can not be changed by anyone, including the game's creators. You may not stop another party from purchasing a day that you currently own, and no other third party may stop you from purchasing a day that you wish to own. Whichever party is willing to pay the cost of the day may own said Smart Contract after he or she completes the transaction."
+      },
+      "section4" : {
+        "title" : "THE GAME",
+        "note" : "This Game requires that you utilize a Google Chrome or Firefox web browser that currently has a Metamask browser extension installed. Metamask is an electronic wallet created by a third party that allows you to purchase, store, and engage in transactions using Ethereum cryptocurrency. You may not use any other electronic wallet on the Game other than Metamask; however, you can use other electronic wallets and third-party applications to transfer funds to your Metamask wallet in order to make purchases and receive payment on the Game. If you do not log on to the Game with the correct browser (either Google Chrome or Mozilla Firefox) and/or if the browser does not have the Metamask extension installed, you will be recognized by the Game, but you will not be able to interact with the Game in any way. Any and all transactions that take place in the Game occur via the Ethereum blockchain. You understand that by using the Game, your Ethereum public address will be made visible to other users of the Game as well as third parties each and every time you engage in a transaction on the Game. We do not own and we do not control any of the following third-party products used for the function of this Game: Metamask, Coinbase, Google Chrome, Mozilla Firefox, or the Ethereum network. We do not own and we do not control any other third-party site, product or service that you may choose to access, visit, or use for the purpose of interacting with or using the Game. We will not be held liable, and are not liable, for the acts or omissions by any such third party, nor are we liable, or will we be held liable, for any damage that you may suffer as a result of interacting with or using any of the mentioned or unmentioned third parties. You must provide accurate and complete registration information when you create an account to utilize the Game. You are solely responsible for the safety and security of your Metamask wallet and/or any other electronic wallet you utilize to interact with the Game. You are solely responsible for the safety and security of your account with us. If you become aware of a security breach in regards to your password or your account, you agree to notify us immediately upon discovery at security@owntheday.io."
+      },
+      "section5" : {
+        "title" : "FEES AND PAYMENTS",
+        "note" : "If you choose to purchase any days in the Game, any and all transactions will be conducted through the Ethereum network utilizing a Metamask electronic wallet directly tied to a Smart Contract on the blockchain, which is not controlled by the games creators. We will not have any insight into or control over these payments or transactions, nor will we be able to reverse any transaction that occurs. Because of this, we will have no liability to you or any other third party for any claims or damages that may occur due to any transaction that takes place on the Game and/or in regards to any of the country Smart Contracts that we have created. The Ethereum network requires that you pay a transaction fee, commonly known as &quot;Gas&quot;, for every transaction that occurs on the Ethereum network. Gas is intended to fund the hardware and software that runs the Ethereum network, as well as to prevent misuse and spam. If you choose to interact with the Game via our Site or without using the Game or our Site as a portal, you will still need to pay fee for any and every transaction you make on the Ethereum network. The smart contract keeps a 1-5% commission fee on every transaction conducted through it, in addition to the Gas charged by the Ethereum network. The creators of this website and game do not have access or control over these fees, as it is handled directly on the distributed blockchain network. WE DO NOT ACCEPT PAYMENTS DIRECTLY ON OUR WEBSITE."
+      },
+      "section6" : {
+        "title" : "OWNERSHIP",
+        "note" : "By using this Game, you acknowledge and agree that we and/or our licenses own all legal rights, titles, and interests in and to any and all elements of the Game, including any and all intellectual property. This includes, but is not limited to: graphics, designs, information, systems, computer code, software, services, organization, content, compilation of content, data, design, and any and all other elements of the Game. We retain complete and full ownership of all of these elements, as well as any other element related to the Game not listed in these Terms of Service. Each and every one of these elements is owned by OwnTheDay, and protected by copyright, trade, dress, patent, trademark laws, international conventions, and every other applicable property and proprietary rights laws. Your use of the Game, the Site, or of any and all country Smart Contracts does not grant you ownership of or any rights to the content, code, data, and other materials you may use and see on the Site. Although you own the Smart Contract itself, you do not own the name, likeness, contract design, nor any other elements. Any comments, bug reports, ideas, or any other type of feedback regarding the Game provided by you is welcome by OwnTheDay. However, once you willingly submit such comments, bug reports, ideas, or feedback, you agree that we are free to utilize that information and those ideas in any way we see fit without any compensation to you. We are free to disclose that information and those ideas to any third party we deem necessary. By submitting any comments, bug reports, ideas, or any other type of feedback, you grant us perpetual, irrevocable license to that content and/or ideas, and we immediately retain complete rights to that information, content, and/or ideas. By using this Game and this Site, you agree that you are completely and unequivocally responsible for your conduct during use of this Game and this Site, as well as any repercussions or consequences that occur because of said conduct. By using this Game and this Site, you agree that you will abide by the above and below Terms of Service, any and all applicable laws and regulations, and that you will only use the Game and the Site for legal and proper purposes. In addition to this, you are not allowed to, and may not permit any third party to: upload or distribute any unlawful, defamatory, abusive, fraudulent, obscene, or otherwise objectionable content; distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a damaging or dishonest nature; impersonate another person in any way, shape, or form; upload, post, transmit or otherwise make available through the Game any content that infringes on the intellectual proprietary rights of any party, including OwnTheDay, any third party associated with us, and any user of the Game or the Site; use the Game to violate the legal rights of others or to engage in, promote, or encourage any type of illegal activity; use the Game for any unauthorized commercial purpose, or modify, adapt, translate, or reverse engineer any portion of the Game for any personal or commercial purposes; reformat or frame any portion of the Game, including remove any copyright, trademark or other proprietary rights notices contained in or on the Game; display any content on the Game that contains any hate-related or violent content; use any robot, spider, or other device or program to compile or index any portion of the Game or the content posted on the Game, or to collect information about its users for any purpose; create user accounts by automated means or under false or fraudulent pretences; access or use the Game for the purpose of creating a product or service that is competitive with any of our products or services."
+      },
+      "section7" : {
+        "title" : "TERMINATION OF THESE TERMS",
+        "note" : "The only way to terminate the Terms contained herein is by cancelling your account on the Game and discontinuing any and all use or access to the Game. If you choose to cancel your account, you will not receive any refunds for any transactions made in the Game or any payments made to us. By using this Game, you agree that we have the right to terminate these terms and cancel or suspend your account for any reason we deem necessary. You also agree that we are not required to provide you with any advanced notice of any suspension or termination of your account, and that we are not liable to you or any other third party for any damages or consequences caused by the suspension or termination of your account. In the event that we decide to suspend or terminate your account, or restrict your access to your account or the Game, due to suspected fraud, abuse, or illegal activity on your part, then we may also take any and all actions allowed by law. If your account is suspended or terminated by us or by your choice, you will no longer have access to information that you have posted on the Game or any information that is related to your account. In both events, whether we terminate or suspend your account or you choose to terminate your account, you acknowledge and agree that we are under no obligation to maintain any of your information in our databases, nor are we obligated to forward any of that information to you or to any third party."
+      },
+      "section8" : {
+        "title" : "Disclaimer and Warranties",
+        "note" : "By using this Game, you understand and agree that your access to and use of this Game is at your own risk. You acknowledge and accept that this Game is provided on an As-Is and As-Available basis, and that we make no express or implied warranty regarding this Game or access to this Game. We, and any party associated with us, make no warranty and disclaim any and all implied warranties regarding the Game, including the Site and Smart Contracts. This includes any implied warranty regarding product value, fitness for a specific purpose, non-infringement, correctness, and/or reliability. Neither us nor any of our subsidiaries or affiliates guarantee or warrant that your access or use of the Game will meet your requirements and/or expectations; your access to the Game or Site will be uninterrupted, free from error, or secure; or, that any data represented in the content, services, or features are accurate and/or free of viruses or other harmful content or components."
+      },
+      "section9" : {
+        "title" : "Limitation of Liability",
+        "note" : "By using this Game and this Site, you understand and agree that neither we nor any of our subsidiaries or affiliates are liable to you or any other third party for any indirect, incidental, consequential, or exemplary damages that you may incur, no matter how those damages occurred. We and our subsidiaries and affiliates are also not responsible for any financial loss, loss of goodwill, loss of business reputation, loss of personal reputation, cost of purchasing any substitute goods or services, or any and all other potential intangible losses, even if we had previous knowledge that there was a risk of damages and/or losses. By using this Game and this Site, you agree that our total liability to you for any and all claims arising out of or relating to these Terms or your access to or use of this Game or this Site is limited to the sum of $100. By using this Game and this Site, you understand and agree that we have made this Game available to you and entered into these Terms with you as a way to provide the Game to you. These limitations of liability outlined in these Terms reflect a reasonable and fair allocation of risk between us and you."
+      },
+      "section10" : {
+        "title" : "Indemnification",
+        "note" : "By using this Game and this Site, you agree to hold OwnTheDay harmless and to indemnify us and any of our subsidiaries and affiliates, as well as any of our officers, agents, employees, advertisers, suppliers, or licensors, from and against any claim, liability, loss, actual damage, and consequential damage of any kind or nature, including suits, judgements, litigation costs, and attorneys' fees that occur or arise due to your breach of these Terms and/or your violation of any applicable laws, rules, and regulations."
+      },
+      "section11" : {
+        "title" : "External Sites",
+        "note" : "In some cases, this Game and this Site may contain hyperlinks to other websites and/or resources as a convenience to you and our other users. We have no control over the safety of or content found on these sites. You acknowledge and agree that we are not responsible for the availability of any links to external sites, and that we do not endorse the advertisements on the sites, the products or services made available on those sites, or any other materials found on those sites. You acknowledge and agree that we are not liable for any loss or damage that may be incurred by you or any third party as the result of the availability or lack of availability of these sites, including any reliance placed by you upon the need for those sites and/or for those sites' completeness and/or accuracy."
+      },
+      "section12" : {
+        "title" : "Changes to these Terms of Service",
+        "note" : "As we deem necessary, we may make changes to these Terms. When we make these changes, the updated Terms will be available on the Game and on the Site and feature a &quot;Last Updated&quot; date. It is your responsibility to check these Terms periodically for any changes. Your continued access to the Game and the Site will constitute your binding acceptance of the updates. Any and all changes made are applicable on the date that they are made."
+      },
+      "section13" : {
+        "title" : "Changes to the Game",
+        "note" : "We are always working toward improving and expanding the Game in order to provide you and our other users with the best, most robust experience. By using the Game and the Site, you understand and agree that any part of this Game or this Site may change at any time without any prior notice to you. We can and will add new features and alter aspects of the Game or the Site at any time without notice."
+      },
+      "section14" : {
+        "title" : "Children",
+        "note" : "By using this Game and this Site, you affirm that you are over the age of 19. This Game and this Site are not intended for use by any child under the age of 19."
+      },
+      "section15" : {
+        "title" : "General",
+        "note" : "These Terms in their entirety constitute the legal agreement between you and OwnTheDay, and govern your access to and use of the Game and the Site. They replace any prior agreements between the parties related to your access to or use of the Game or the Site, whether oral or written. There are no third-party beneficiaries to these terms; any third party is an independent contractor, and these Terms do not form any agency, partnership, or joint venture. You understand and agree that the language in these terms should and will be interpreted as to its fair meaning, and not strictly for or against any party. You may not assign any of your rights or obligations under these Terms without prior written consent from us. However, we may assign our rights and obligations under these Terms to an affiliate or in connection with an acquisition, sale, or merger at our sole discretion. In the event that any part of these Terms be deemed invalid or unenforceable by proper legal authorities, that portion will be struck while the remaining portions remain in full force and effect. Any potential failure on our part to enforce these Terms is not and will not be deemed a waiver of these Terms, in part or in whole. Any legal action or proceeding arising under these Terms will be handled by the courts in Canada, and the parties irrevocably consent to the personal jurisdiction and venue there. Finally, we are not liable and will not be held liable for any failure or delay in performance of our obligation under these Terms that result from any condition beyond our control. This includes government action, acts of terrorism, earthquakes, floods, fire, power failures, internet disturbances, or acts of omission by any third party. You agree that we may provide you with a notice of any changes to these Terms by email, regular mail, or by posting on the Game or the Site. By providing us with your email address, you consent to forgo receiving any notices via postal mail."
+      }
+    }
   },
   "notfound" : {
     "warning" : {
-      "title" : "404 Не Найдено",
-      "body"  : "Ресурс не найден на запрошенном URL."
+      "title" : "404 - Not Found",
+      "body"  : "No resource found at the requested URL."
     }
   },
   "component" : {
     "calendar" : {
-      "selectMonth" : "Выберите месяц",
-      "nextMonth" : "В следующем месяце",
-      "prevMonth" : "Предыдущий месяц"
+      "selectMonth" : "Select a Month",
+      "nextMonth" : "Next Month",
+      "prevMonth" : "Previous Month"
     },
     "account" : {
       "noDays" : {
-        "title" : "У вас нет никаких дней.",
-        "body" : "Ваш день рождения может стать хорошим местом для начала!"
+        "title" : "You do not own any days.",
+        "body" : "Your birthday might be a good place to start!"
+      }
+    },
+    "accountWarning" : {
+      "detectingBrowser" : {
+        "title" : "Detecting Browser Capabilities",
+        "message" : "Please wait while we look for Web3 Browser capabilities (MetaMask, Mist, etc.)"
+      },
+      "invalidBrowser" : {
+        "title" : "Non-Web3 Browser",
+        "message" : "You will need an Ethereum-based Web3 Browser such as MetaMask or Mist in order to use this site."
+      },
+      "installMetaMask" : {
+        "title" : "Don't have a Web3 Browser?",
+        "line1" : "Get the MetaMask browser extension by MetaCert and Own the Day!"
+      },
+      "wrongNetwork" : {
+        "title" : "Wrong Network!",
+        "messageTest" : "Please connect to a Test Network.",
+        "messageMain" : "Please connect to the Main Ethereum Network."
+      },
+      "noAccount" : {
+        "title" : "No Account!",
+        "message" : "Please login to an Ethereum account using your Web3 Browser (MetaMask, Mist, etc.)"
+      }
+    },
+    "priceLevel" : {
+      "title" : "Price Level Increase",
+      "table" : {
+        "head" : {
+          "col1" : "Level",
+          "col2" : "Price Range (ETH)",
+          "col3" : "Price Increase",
+          "col4" : "Developer Cut"
+        },
+        "row1" : {
+          "col1" : "Level 1",
+          "col2" : "0.001 - 0.25",
+          "col3" : "100%",
+          "col4" : "5%"
+        },
+        "row2" : {
+          "col1" : "Level 2",
+          "col2" : "0.25 - 0.5",
+          "col3" : "36%",
+          "col4" : "4%"
+        },
+        "row3" : {
+          "col1" : "Level 3",
+          "col2" : "0.5 - 2.5",
+          "col3" : "26%",
+          "col4" : "3%"
+        },
+        "row4" : {
+          "col1" : "Level 4",
+          "col2" : "2.5 - 5",
+          "col3" : "18%",
+          "col4" : "3%"
+        },
+        "row5" : {
+          "col1" : "Level 5",
+          "col2" : "5 -",
+          "col3" : "15%",
+          "col4" : "2%"
+        }
       }
     }
   },
   "modal" : {
     "claim" : {
-      "claimDay" : "Собственный день!"
+      "claimDay"   : "Own the Day!",
+      "claimed"    : "You have successfully claimed __date__.",
+      "claimTitle" : "You Own the Day!",
+      "info" : {
+        "line1" : "You can claim <strong>__date__</strong> for <strong>__price__</strong>",
+        "line2" : "Anyone can claim this day from you at the price of <strong>__price__</strong>.",
+        "line3" : "You may bid higher than the current price to ensure that you claim the day. If your bid is over the current price, you will be refunded the difference.",
+        "line4" : "Your transaction may fail if the price has moved above your bid price, in which case you will be refunded your bid.",
+        "line5" : "Adjusting the Gas Price (Gwei) may speed-up your transaction.  Please refer to your favorite gas tracker to get the latest Proposed Gas Price"
+      },
+      "disclaimer" : "Days are collectibles, and as such, there is no guarantee that other players will claim this collectible from you."
     },
     "nickname" : {
-      "title" : "Задайте свой псевдоним на блочной цепочке!",
-      "set"   : "Установить псевдоним"
+      "title"       : "Set your Nickname on the Blockchain!",
+      "set"         : "Set Nickname",
+      "placeholder" : "Nickname",
+      "profanities" : "NOTE: Profanities in your Nickname will be censored so please don't waste your Gas!"
     }
   },
   "generic" : {
-    "balance"      : "Баланс",
-    "cancel"       : "Отмена",
-    "claim"        : "Запрос",
-    "close"        : "Закрыть",
+    "balance"      : "Balance",
+    "cancel"       : "cancel",
+    "claim"        : "Claim",
+    "close"        : "Close",
+    "disclaimer"   : "DISCLAIMER",
     "etherUnit"    : "ETH",
-    "loading"      : "загрузка...",
-    "loadingComm"  : "Общение с блочной цепью. пожалуйста, подождите...",
-    "notice"       : "уведомление",
+    "from"         : "from",
+    "loading"      : "Loading, please wait...",
+    "loadingComm"  : "(communicating with the Ethereum blockchain)",
+    "notice"       : "Notice",
+    "own"          : "Own",
     "owner"        : "Owner",
-    "price"        : "Цена",
-    "priceEther"   : "Цена в ETH",
-    "priceCurrent" : "Текущая цена",
-    "priceNext"    : "Следующая цена"
+    "price"        : "Price",
+    "priceEther"   : "Price in ETH",
+    "priceCurrent" : "Current Price",
+    "priceNext"    : "Next Price",
+    "information"  : "Information",
+    "social"       : "Social",
+    "copyright1"   : "Copyright 2018 OwnTheDay.io",
+    "copyright2"   : "All rights reserved."
+  },
+  "holiday" : {
+    "jan1" : {
+      "title" : "День нового года",
+      "desc" : "Новый год, также называемый Новый год или Новый год, отмечается 1 января, в первый день года по современному григорианскому календарю, а также по юлианскому календарю."
+    },
+
+    "jan6" : {
+      "title" : "Богоявление",
+      "desc" : "Богоявление на 2018 год отмечается / отмечается в субботу, 6 января. Крещение - христианское празднование, которое отмечается 6 января каждого года. День также известен как День Трех Королей, чтобы помочь нам вспомнить трех мудрых людей, которые посетили Иисуса как младенца."
+    },
+
+    "jan7" : {
+      "title" : "Рождество Христово",
+      "desc" : "Православный Рождественский День на 2018 год отмечается / отмечается в воскресенье, 7 января. Православный Рождественский День отмечается 7 января каждого года в соответствии с григорианским календарем. Для православных христиан день рождения Иисуса Христа."
+    },
+
+    "jan14" : {
+      "title" : "Макар Санкранти",
+      "desc" : "Макар Санкранти на 2018 год отмечается в воскресенье, 14 января. Макар Санкранти отмечается 14 января каждого года или около него. На этот раз индуисты празднуют праздник урожая и отмечают приход Весны и конец зимнего сезона."
+    },
+
+    "jan15" : {
+      "title" : "День Мартина Лютера Кинга",
+      "desc" : "День Мартина Лютера Кинга на 2018 год отмечается / отмечается в понедельник, 15 января. День Мартина Лютера Кинга приходится на третий понедельник января каждого года. День празднует роль Мартина Лютера Кингса в гражданских правах и расовом равенстве."
+    },
+
+    "jan30" : {
+      "title" : "Ту Би'Шеват",
+      "desc" : "Ту B'Shevat на 2018 год отмечается / отмечается на закате 30 января, заканчивающемся на закате в среду, 31 января. Ту B'Shevat наблюдается в 15-й день месяца Шевата по еврейскому календарю. День идет о посадке деревьев и сделать землю здоровой и яркой, подобно Дню Арбора."
+    },
+
+    "feb1" : {
+      "title" : "Национальный день свободы",
+      "desc" : "Национальный День Свободы на 2018 год отмечается / отмечается в четверг, 1 февраля. Национальный День Свободы отмечается 1 февраля каждый год в честь подписания 13-й поправки о запрещении рабства."
+    },
+
+    "feb2" : {
+      "title" : "день сурка",
+      "desc" : "День сурка на 2018 год отмечается / отмечается в пятницу, 2 февраля. День сурка наблюдается 2-го февраля февраля каждого года. Это тот день, когда сурок предсказывает, будет ли их еще 6 месяцев зимы."
+    },
+
+    "feb12" : {
+      "title" : "День рождения Линкольна",
+      "desc" : "День рождения Линкольна в 2018 году отмечается / отмечается в понедельник, 12 февраля. День рождения Линкольна приходится на 12 февраля каждый год и празднует рождение одного из наших самых известных и уважаемых президентов в Соединенных Штатах."
+    },
+
+    "feb13" : {
+      "title" : "вторник на масляной неделе",
+      "desc" : "Марди Гра в течение 2018 года отмечается / отмечается во вторник, 13 февраля. Марди Гра или Fat Tuesday, а иногда и называется «Масленица», выпадает за день до Пепельной среды, которая является началом Великого поста для христиан. День включает в себя фестивали с большим количеством еды до быстрого начала следующего дня."
+    },
+
+    "feb14" : {
+      "title" : "День Святого Валентина",
+      "desc" : "День Святого Валентина, также называемый Днем Святого Валентина или Праздником Святого Валентина, отмечается ежегодно 14 февраля. Он наблюдается во многих странах; Англиканское общение; Лютеранская церковь."
+    },
+
+    "feb16" : {
+      "title" : "китайский Новый год",
+      "desc" : "Китайский Новый год на 2018 год отмечается / отмечается в пятницу, 16 февраля. Китайский Новый год, который наблюдается на Лунизолярном китайском календаре, приходится на первый день новолуния с 21 января по 20 февраля каждый год. День празднует начало нового года и отражение прошлого года."
+    },
+
+    "mar1" : {
+      "title" : "Пурим",
+      "desc" : "Пурим на 2018 год отмечается и отмечается на закате 28 февраля, заканчивающемся на закате в четверг, 1 марта. Пурим празднуется на 14-й день месяца Адара в соответствии с еврейским календарем. Под григорианским календарем день выпадает в феврале или марте. День отмечается в 4 веке до н.э., когда еврейский народ был спасен от смертного приказа в соответствии с книгой Эстер."
+    },
+
+    "mar2" : {
+      "title" : "Холи",
+      "desc" : "Холи в 2018 году отмечается в пятницу, 2 марта. Холи приходится на февраль и март каждый год. Это двухдневный весенний фестиваль с первым днем, который называется Chhoti или Holika Dahan, а второй день - Dhuleti или Rangwali Holi. Фестиваль празднует обмен и любовь, а также цвета."
+    },
+
+    "mar17" : {
+      "title" : "День Святого Патрика",
+      "desc" : "День Святого Патрика на 2018 год отмечается / отмечается в субботу, 17 марта. День Святого Патрика отмечается 17 марта каждого года. Этот день почитает святого покровителя Ирландии, Святого Патрика, и этот день знаменует смерть святого."
+    },
+
+    "mar20" : {
+      "title" : "Весеннее равноденствие",
+      "desc" : "Весна на 2018 год начинается 20 марта. Весна часто ассоциируется с новым ростом, цветением растений, таянием или расплавлением снега, а также новым теплом в воздухе с растениями / животными, выходящими из долгой зимы низких температур. В Северном полушарии весна приходит в марте, апреле и июне месяца, а в Южном полушарии - в сентябре, октябре и декабре. Весна возникает благодаря тому, что Земля увеличивает свой угол наклона относительно солнца, увеличивая температуру (более прямой солнечный свет) и продолжительность дней."
+    },
+
+    "mar25" : {
+      "title" : "Рама Навами",
+      "desc" : "Рама Навами на 2018 год отмечается / отмечается в воскресенье, 25 марта. Рама Навами отмечается в девятый день месяца Чайтра, который является частью весеннего фестиваля Навратри. День празднует день рождения Бога Рамы."
+    },
+
+    "mar30" : {
+      "title" : "Хорошая пятница",
+      "desc" : "Страстная пятница на 2018 год отмечается / отмечается в пятницу, 30 марта. Страстная пятница является шестым днем Страстной недели для христиан и падает за два дня до пасхального воскресенья каждый год. День памяти о распятии Иисуса Христа."
+    },
+
+    "apr1" : {
+      "title" : "Первоапрельские розыгрыши'",
+      "desc" : "День первокурсника на 2018 год отмечается / отмечается в воскресенье, 1 апреля. Первый день дураков отмечается 1 апреля каждого года. День включает в себя практические шутки, и мистификации играли друг с другом."
+    },
+
+    "apr6" : {
+      "title" : "Православие",
+      "desc" : "Православная Страстная пятница на 2018 год отмечается / отмечается в пятницу, 6 апреля. Православная Страстная пятница также называется Великой Пятницей, а Святая Пятница - за два дня до православной Пасхи. Православные христиане наблюдают и помнят смерть Иисуса Христа на кресте в этот день."
+    },
+
+    "apr8" : {
+      "title" : "Православная Пасха",
+      "desc" : "Православная Пасха на 2018 год отмечается / отмечается в воскресенье, 8 апреля. Православная церковь использует юлианский календарь для определения своих святых дней. Пасха для православной церкви всегда будет падать с 4 апреля по 8 мая каждый год. Православная Пасха наблюдается через два дня после православной Страстной пятницы каждый год. Православные христиане отмечают распятие Иисуса Христа."
+    },
+
+    "apr11" : {
+      "title" : "Йом Хашоа",
+      "desc" : "Йом-Хашоа на 2018 год отмечается / отмечается на закате 11 апреля, заканчиваясь на закате в четверг, 12 апреля. Йом-Хашоа наблюдается на 27-й день Нисона в соответствии с еврейским календарем. Этот день является воспоминанием и напоминает о жизни еврейского народа, который погиб во время Второй мировой войны во время Холокоста."
+    },
+
+    "apr12" : {
+      "title" : "Исра и Мирайдж",
+      "desc" : "Isra и Mi'raj на 2018 год отмечаются / наблюдаются на закате 12 апреля, заканчиваясь на закате в пятницу, 13 апреля. Исра и Мирай наблюдаются на 27-й день Раджаба в исламском календаре. День памяти о поездке пророка Мухаммеда из Мекки в Иерусалим и его восхождения на небеса."
+    },
+
+    "apr17" : {
+      "title" : "День работников национальной библиотеки",
+      "desc" : "День работников национальной библиотеки на 2018 год отмечается / отмечается во вторник, 17 апреля. День работников национальной библиотеки отмечается каждый вторник ежегодно во время Недели Национальной библиотеки, которая проводится в апреле каждого года. День должен признать, что вклад работника библиотеки внесет в наше общество."
+    },
+
+    "apr22" : {
+      "title" : "день Земли",
+      "desc" : "День Земли на 2018 год отмечается / отмечается в воскресенье, 22 апреля. День Земли отмечается 22 апреля каждого года. День приносит осознание окружающей среде нашей планеты Земля."
+    },
+
+    "apr26" : {
+      "title" : "Возьмите своего ребенка на рабочий день",
+      "desc" : "Возьмите наших дочерей и сыновей к рабочему дню в течение 2018 года, отмечается / отмечается в четверг, 26 апреля. Возьмите наших Дочерей и Сыновья на рабочий день, отмечается в четвертый четверг апреля. День состоит в том, чтобы поделиться с вашими детьми вашей работой и тем, что вы делаете каждый день."
+    },
+
+    "apr27" : {
+      "title" : "День посадки деревьев",
+      "desc" : "В пятницу, 27 апреля, отмечают / отмечают День Арбора на 2018 год. День Арбора обычно наблюдается в последнюю пятницу апреля, но даты могут варьироваться в зависимости от того, когда Весна прибывает в местный регион. Этот день побуждает людей сажать и ухаживать за деревьями."
+    },
+
+    "may2" : {
+      "title" : "Lag BaOmer",
+      "desc" : "Lag BaOmer в течение 2018 года отмечается / отмечается на закате 2 мая, заканчивающемся на закате в четверг, 3 мая. Lag BaOmer падает на 18-й день Ляра в еврейском календаре. День празднует смерть и жизнь бара раввина Шимона Йохая, который был воином Мишнаи еще во втором веке."
+    },
+
+    "may4" : {
+        "title" : "День Звездных Войн",
+        "desc" : "День Звездных Войн, 4 мая, празднует Звездные войны Джорджа Лукаса. Это наблюдают любители медиа-франшизы. Наблюдение за юбилейным днем быстро распространилось по средствам массовой информации и массовым празднованиям. Дата была выбрана для каламбура на фразу «Пусть Сила будет с тобой», как «Может быть, четвертая с тобой». Несмотря на то, что праздник не был создан или объявлен Lucasfilm, многие поклонники Star Wars по всему миру решили отпраздновать праздник."
+    },
+
+    "may5" : {
+      "title" : "Cinco de Mayo",
+      "desc" : "Cinco de Mayo в течение года 2018 года отмечается / отмечается в субботу, 5 мая. Цинко де Майо отмечается 5 мая каждого года и празднует поражение французской армии мексиканской армией во время битвы при Пуэбле в Мексике в 1862 году."
+    },
+
+    "may6" : {
+      "title" : "День национальных медсестер",
+      "desc" : "День национальных медсестер на 2018 год отмечается / отмечается в воскресенье, 6 мая. Национальный день медсестер отмечается 6 мая каждого года. День чествует вклад медсестер в наше общество."
+    },
+
+    "may10" : {
+      "title" : "Вознесение",
+      "desc" : "Вознесение на 2018 год отмечается / отмечается в четверг, 10 мая. День Вознесения каждый год проводится в четверг через 39 дней после Пасхи. Этот день отмечает восстание Иисуса Христа на небеса."
+    },
+
+    "may13" : {
+      "title" : "День матери",
+      "desc" : "День матери на 2018 год отмечается / отмечается в воскресенье, 13 мая. День матери отмечается во второе воскресенье мая каждого года. День чествует и празднует матерей, бабушек и прабабушек за их вклад в их семьи и общество."
+    },
+
+    "may15" : {
+      "title" : "Рамадан начинает",
+      "desc" : "Рамадан на 2018 год отмечается / отмечается на закате 15 мая, заканчивающемся на закате в четверг, 14 июня. Рамадан наблюдается в девятом месяце исламского календаря. Это месяц поста, молитвы, дарования и самооценки, наблюдаемых мусульманами. Месяц длится 29-30 дней в зависимости от наблюдения полумесяца."
+    },
+
+    "may19" : {
+      "title" : "Шавуот",
+      "desc" : "Шавуот на 2018 год отмечается / отмечается на закате 19 мая, заканчиваясь на закате в понедельник, 21 мая. Шавуот наблюдается на 6-м или 7-м Сиване в еврейском календаре. Шавуот - двухдневный фестиваль. Фестиваль отмечает урожай пшеницы в Израиле и отмечает день, когда Бог дал Торе Израилю на горе Синай."
+    },
+
+    "may20" : {
+      "title" : "Троицын день",
+      "desc" : "Пятидесятница на 2018 год отмечается / отмечается в воскресенье, 20 мая. Пятидесятница, также известная как Whit Sunday для христиан, отмечается в седьмое воскресенье после Пасхи. День празднует сошествие Святого Духа на Апостолов Иисуса Христа."
+    },
+
+    "may21" : {
+      "title" : "День Виктории",
+      "desc" : "В некоторых городах для празднования дня Виктории проводятся фейерверки или парады. Один из самых известных парадов проходит в городе Виктория, Британская Колумбия, который был назван в честь королевы Виктории. Многие люди собираются в парках, чтобы насладиться фейерверками, которые особенно впечатляют в Гамильтоне и Торонто."
+    },
+
+    "may28" : {
+      "title" : "День памяти США",
+      "desc" : "День памяти в 2018 году отмечается / отмечается в понедельник, 28 мая. День памяти отмечается в последний понедельник мая каждого года. День награждает всех, кто умер, служил военным США."
+    },
+
+    "may31" : {
+      "title" : "корпус Кристи",
+      "desc" : "Корпус-Кристи на 2018 год отмечается / отмечается в четверг, 31 мая. Корпус-Кристи празднуется во второй четверг после Whit Sunday каждый год. Для католиков это день для Святого Причастия или Евхаристии."
+    },
+
+    "jun6" : {
+      "title" : "D-Day",
+      "desc" : "В среду, 6 июня, отмечается День / День в 2018 году. День 6 отмечается каждый год 6 июня в честь тех мужчин и женщин, которые сражались и приносили жертвы 6 июня 1944 года в битве, расположенной в Нормандии, Франция во время Второй мировой войны."
+    },
+
+    "jun10" : {
+      "title" : "Latlat al Qadr",
+      "desc" : "Лейлат аль-Кадр на 2018 год отмечается / отмечается на закате 10 июня, заканчивающемся на закате в понедельник, 11 июня. Лайлат аль-Кадр - один вечер последних 10 дней Рамадана. Он наблюдает ночь, когда Пророк Мухаммед получил первый по сравнению с Кораном."
+    },
+
+    "jun14" : {
+      "title" : "Eid al-Fitr",
+      "desc" : "Ид аль-Фитр на 2018 год отмечается / отмечается на закате 14 июня, заканчивающемся на закате в пятницу, 15 июня. Ид аль-Фитр падает на 1-й день месяца Шавалла по исламскому календарю, который знаменует собой конец Рамадана и начало праздника, который нарушает пост."
+    },
+
+    "jun17" : {
+      "title" : "День отца",
+      "desc" : "День отца на 2018 год отмечается / отмечается в воскресенье, 17 июня. День отца отмечается в третье воскресенье июня. День празднует отцовство и все фигуры отца в нашей жизни, которые помогают улучшить нашу жизнь."
+    },
+
+    "jun21" : {
+      "title" : "Летнее солнцестояние",
+      "desc" : "Лето 2018 года начинается 21 июня. Лето обеспечивает самую теплую погоду из четырех сезонов, поскольку дни становятся горячими и часто сухими (дождливыми в некоторых азиатских районах), вечерами остаются теплыми до жаркого в зависимости от вашего местоположения. В Северном полушарии лето приходится на июньский, июльский и августовский месяцы, а в Южном полушарии - декабрь, январь и февраль. Лето приходит к тому, что Земля увеличивает свою ось наклона относительно солнца до летнего солнцестояния (20-22 июня в Северном полушарии), затем солнце по отношению к земле меняет курс и начинает двигаться назад к экватору."
+    },
+
+    "jul1" : {
+      "title" : "День Канады",
+      "desc" : "День Канады - национальный день Канады. Федеральный законный праздник, он отмечает годовщину 1 июля 1867 года, принятие Закона о Конституции, который объединил три отдельные колонии Канады, Новой Шотландии и Нью-Брансуика в единый Доминион в Британской империи под названием Канада."
+    },
+
+    "jul4" : {
+      "title" : "День независимости",
+      "desc" : "4 июля 2018 года отмечается / отмечается в среду, 4 июля. 4 июля или 4 июля, также называемый Днем независимости, всегда приходится на 4-й день июля каждого года. Это Национальный день Америки, посвященный принятию Декларации независимости 4 июля 1776 года, объявляющей независимость от Великобритании."
+    },
+
+    "jul14" : {
+      "title" : "Рат Ятра",
+      "desc" : "Рат-Ятра на 2018 год отмечается в четверг, 14 июля. Рат-Ятра - это индуистский фестиваль, который отмечается в середине лета каждый год. Отмечаются три божества: Джаганнатх, Субхадра и Балабхадра."
+    },
+
+    "jul21" : {
+      "title" : "Тиша Б'Ав",
+      "desc" : "Тиша Б'Ав наблюдается в девятый день месяца Ав в еврейском календаре. День для евреев приносит воспоминание об уничтожении Первого и Второго Храма в Иерусалиме."
+    },
+
+    "jul22" : {
+      "title" : "День родителей",
+      "desc" : "День родителей на 2018 год отмечается / отмечается в воскресенье, 22 июля. День родителей отмечается в четвертое воскресенье июля. День признает и празднует вклад родителей в их семьи и общины."
+    },
+
+    "aug5" : {
+      "title" : "День дружбы",
+      "desc" : "День дружбы на 2018 год отмечается / отмечается в воскресенье, 5 августа. День дружбы в США приходится на первое воскресенье августа. Этот день выпадает на разные даты по всему миру и празднует дружбу и побуждает к тому, чтобы проводить время с друзьями и проявлять благодарность тем, кого они волнуют."
+    },
+
+    "aug15" : {
+      "title" : "Успение Марии",
+      "desc" : "Успение Марии на 2018 год отмечается / отмечается в среду, 15 августа. Успение Марии приходится на 15 августа каждого года и празднует праздник для католиков, когда ее дух и тело ушли на небеса."
+    },
+
+    "aug19" : {
+      "title" : "Национальный день авиации",
+      "desc" : "Национальный День авиации на 2018 год отмечается / отмечается в воскресенье, 19 августа. Национальный день авиации отмечается 19 августа каждый год, отмечая развитие и историю авиации."
+    },
+
+    "aug20" : {
+      "title" : "День Арафата",
+      "desc" : "День Арафата на 2018 год отмечается / отмечается на закате 20 августа, заканчивающемся на закате во вторник, 21 августа. День Арафата приходится на девятый день месяца Дхул-Хиджа на лунный исламский календарь. Для мусульман этот день удостоен паломничества на гору Арафат, где они собираются в молитве, ожидая суда."
+    },
+
+    "aug25" : {
+      "title" : "Ракша Бандхан",
+      "desc" : "Ракша Бандхан на 2018 год отмечается в субботу, 25 августа. Ракша Бандхан, также известный как Рахи Пурнима или Рахи, является праздником индусов, который отмечается в августе. Фестиваль подчеркивает любовь между братьями и сестрами."
+    },
+
+    "aug26" : {
+      "title" : "День равенства женщин",
+      "desc" : "День защиты женщин на 2018 год отмечается / отмечается в воскресенье, 26 августа. День равенства женщин отмечается 26 августа каждого года и отмечает право женщин на голосование по всей территории Соединенных Штатов. Это было принято в 19-й поправкой к Соединенным Штатам в 1920 году."
+    },
+
+    "sept2" : {
+      "title" : "Кришна Джанмаштами",
+      "desc" : "Кришна Джанмаштами на 2018 год отмечается / отмечается в воскресенье, 2 сентября. Кришна Джанмаштами отмечается в 8-й день месяца Бхадона в индуистском календаре, который приходится на июль, август и сентябрь для григорианского календаря. День празднует рождение Господа Кришны."
+    },
+
+    "sept12" : {
+      "title" : "Мухаррам",
+      "desc" : "Мухаррам на 2018 год отмечается / отмечается в среду, 12 сентября. Мухаррам - первый месяц в исламском календаре, с первого дня Мухаррам - начало Нового года для мусульман. Некоторые мусульмане будут стремиться в течение первого месяца Мухаррама."
+    },
+
+    "sept18" : {
+      "title" : "Yom Kippur",
+      "desc" : "Yom Kippur на 2018 год отмечается / отмечается на закате 18 сентября, заканчивающемся на закате в среду, 19 сентября. Йом Киппур наблюдается в десятый день месяца Тишри в еврейском календаре. Также известный как день Искупления, день проводится в молитве и постом среди еврейского народа веры."
+    },
+
+    "sept20" : {
+      "title" : "Ашура",
+      "desc" : "Ашура на 2018 год отмечается / отмечается на закате 20 сентября, заканчиваясь на закате в пятницу, 21 сентября. Ашура падает на 10-й день 1-го месяца Мухаррама в исламском лунном календаре. Для мусульман-шиитов в этот день отмечается смерть Хусайна ибн Али и мусульман-суннитов, к которому относится день, когда Моисей и его последователи бежали из Египта и где спасен Бог, отделяющий Красное море."
+    },
+
+    "sept22" : {
+      "title" : "Сентябрьское равноденствие",
+      "desc" : "Autumn for the year 2018 starts onSeptember 22. In Autumn the day light gets shorter and evenings become cooler. The plants drop their leaves and animals prepare for the cold winter ahead. In the Northern Hemisphere autumn comes in the September, October and November months and in the Southern Hemisphere it comes in the March, April and May months. Autumn comes about by the Earth decreasing its axis tilt relative to the sun decreasing the temperatures (less direct sunlight) and the shortening of the days."
+    },
+
+    "sept23" : {
+      "title" : "Суккот",
+      "desc" : "Суккот на 2018 год отмечается / отмечается на закате 23 сентября, заканчивающемся на закате в воскресенье, 30 сентября. Суккот - семидневный еврейский праздник с первого дня, начинающегося 15-го числа месяца Тишри в соответствии с еврейским календарем. Этот день относится к исходу еврейского народа из Египта и их странствий через пустыню в течение 40 лет."
+    },
+
+    "sept30" : {
+      "title" : "Шемини Ацерет",
+      "desc" : "Шемини Ацерет на 2018 год отмечается / отмечается на закате 31 сентября, заканчивающемся на закате в понедельник, 1 октября. Шемини Ацерет наблюдается на 22-м Тишрей в соответствии с еврейским календарем. Для многих еврейских людей этот день представляет собой восьмой день Суккота и день, чтобы сосредоточиться на их любви к Богу."
+    },
+
+    "oct1" : {
+      "title" : "Симхат Тора",
+      "desc" : "Симхат Тора на 2018 год отмечается / отмечается на закате 1 октября, заканчивающемся на закате во вторник, 2 октября. Симхат Тора, что означает ликовать Тору, наблюдается у 22 Тишрей в Иреаль и 23 Тишрей за пределами Иреаль. День празднует окончание чтения Торы за год танцами и пением."
+    },
+
+    "oct8" : {
+      "title" : "День благодарения - Канада",
+      "desc" : "Во второй понедельник октября у многих людей выходной день. Они часто используют трехдневные выходные в День благодарения, чтобы посетить семью или друзей, которые живут далеко, или получить их в своих домах. Многие люди также готовят специальную еду в какой-то момент в течение долгих выходных. Традиционно это включало обжаренную индейку и сезонные продукты, такие как тыква, кукурузные уши и орехи пекана. Теперь еда может состоять из других продуктов, особенно если семья неевропейского происхождения."
+    },
+
+    "oct9" : {
+      "title" : "Navratri",
+      "desc" : "Navratri в течение 2018 года отмечается / отмечается во вторник, 9 октября. Навратри - это фестиваль, который начинается в первый день лунного месяца Ашвина. Фестиваль длится 9 ночей и посвящен индуистскому божеству Дурга."
+    },
+
+    "oct18" : {
+      "title" : "Dussehra",
+      "desc" : "Dussehra в течение 2018 года отмечается в четверг, 18 октября. Дуссехра, также известный как Маха Навами, наблюдается в месяце Ашвин на 10-й день Шукла-Пакши. День празднует добро над злом."
+    },
+
+    "oct31" : {
+      "title" : "Хэллоуин",
+      "desc" : "Хэллоуин на 2018 год отмечается / отмечается в среду, 31 октября. Хэллоуин отмечается 31 октября каждого года. Хэллоуин отмечается ежегодно 31 октября, в канун западного христианского праздника Дня всех даров или более известного как День всех святых. Он также известен как «Все Хэллоуин», «Канун всех даров» или День всех святых."
+    },
+
+    "nov1" : {
+      "title" : "День всех святых",
+      "desc" : "День всех святых на 2018 год отмечается / отмечается в четверг, 1 ноября. Всегда отмечаемый с первого ноября каждого года, День всех святых празднует тех Святых, которые не соблюдаются в особый отдельный день в течение года, чтобы они могли быть честным в этот день."
+    },
+
+    "nov2" : {
+      "title" : "День мертвых",
+      "desc" : "День всех душ на 2018 год отмечается / отмечается в пятницу, 2 ноября. День всех душ всегда приходится на 2-й день ноября каждого года. День напоминает нам о погибших и тех, кто находится в чистилище, и для живых жить святыми жизнями для очищения их души."
+    },
+
+    "nov7" : {
+      "title" : "Дивали",
+      "desc" : "Дивали на 2018 год отмечается в среду, 7 ноября. Дивали отмечается в 15-й день месяца Картика в индуистском календаре и празднует праздник огней."
+    },
+
+    "nov11" : {
+      "title" : "День ветеранов",
+      "desc" : "День ветеранов на 2018 год отмечается / отмечается в воскресенье, 11 ноября. День ветеранов отмечается 11 ноября каждого года и чтит всех ветеранов, которые ранее служили в Вооруженных Силах Соединенных Штатов."
+    },
+
+    "nov20" : {
+      "title" : "День рождения Пророка",
+      "desc" : "День рождения Пророка на 2018 год отмечается / отмечается на закате 20 ноября, заканчивающемся на закате в среду, 21 ноября. День рождения Пророка отмечается на 12-м или 17-м днях рабианского месяца исламского календаря. День отмечает празднование дня рождения Пророка Мухаммада для мусульман."
+    },
+
+    "nov22" : {
+      "title" : "День Благодарения",
+      "desc" : "День благодарения на 2018 год отмечается / отмечается в четверг, 22 ноября. День благодарения отмечается в четвертый четверг ноября каждого года. День празднует урожай и отмечается в Соединенных Штатах с 1863 года."
+    },
+
+    "dec2" : {
+      "title" : "Ханука начинается",
+      "desc" : "Ханука на 2018 год отмечается / отмечается на закате 2 декабря, заканчивающемся на закате в понедельник, 10 декабря. Ханука падает на 25-й день Кислева по еврейскому календарю и в конце ноября и в конце декабря по григорианскому календарю. Ханука - это восьмидневный еврейский праздник, посвященный восстановлению Святого Храма в Иерусалиме."
+    },
+
+    "dec21" : {
+      "title" : "Зимнее солнцестояние",
+      "desc" : "Зима в 2018 году начинается 21 декабря. Зима имеет самую холодную погоду из четырех сезонов, так как дни становятся короче и холоднее, когда снег падает в самых холодных районах. В северном полушарии зима приходит в декабрьские, январские и февральские месяцы, а в Южном полушарии - в июне, июле и августе. Зима опускается вокруг Земли, уменьшая ее наклонение оси относительно солнца до зимнего солнцестояния (20-23 декабря в Северном полушарии), затем солнце по отношению к земле меняет курс и начинает двигаться назад к экватору."
+    },
+
+    "dec24" : {
+      "title" : "канун Рождества",
+      "desc" : "Сочельник в течение 2018 года отмечается / отмечается в понедельник, 24 декабря. Сочельник всегда отмечается 24 декабря каждый год, за день до Рождества. Вечер отмечается в ожидании следующего дня с рождением Иисуса Христа."
+    },
+
+    "dec25" : {
+      "title" : "Рождество",
+      "desc" : "Рождество - это ежегодный фестиваль, посвященный рождению Иисуса Христа, который в основном отмечается 25 декабря как религиозное и культурное празднование среди миллиардов людей во всем мире."
+    },
+
+    "dec31" : {
+      "title" : "Канун Нового года",
+      "desc" : "В григорианском календаре, в Новый год, в последний день года, 31 декабря, который является седьмым днем Рождества Христова. Во многих странах канун Нового года отмечается на вечерних общественных собраниях, где многие люди танцуют, едят, пьют алкогольные напитки, а также смотрят или светят фейерверки, чтобы отметить новый год."
+    }
   }
 }
