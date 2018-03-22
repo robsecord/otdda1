@@ -1,299 +1,299 @@
 {
   "page" : {
-    "title" : "Own the Day!",
-    "defaultSuffix" : "ERC20 Tokens on the blockchain!",
-    "desc" : "Own the Day or Get Paid for it! Only on the Ethereum Blockchain!"
+    "title" : "Собственный день!",
+    "defaultSuffix" : "ERC20 Токены на цепочке!",
+    "desc" : "Соберите День или получите оплату за это! Только на Эфириуме Блокачей!"
   },
   "body" : {
     "navbar" : {
-      "title" : "Own the Day",
+      "title" : "Собственный день",
       "link" : {
-        "calendar" : "Calendar",
-        "account" : "My Days"
+        "calendar" : "Календарь",
+        "account" : "Мои дни"
       },
-      "notConnected" : "You are not logged in",
-      "noNetwork"    : "You are not connected to the network"
+      "notConnected" : "вы не авторизованы",
+      "noNetwork"    : "Вы не подключены к сети"
     }
   },
   "welcome" : {
-    "pageTitle" : "Welcome",
+    "pageTitle" : "желанный",
     "topBanner" : {
-      "title" : "Own the Day",
-      "tooltip" : "on the Ethereum Blockchain",
-      "subtitle" : "or get Paid for it!",
-      "enterButton" : "Open Calendar"
+      "title" : "Собственный день",
+      "tooltip" : "на Эфириум Блокач",
+      "subtitle" : "или платите за это!",
+      "enterButton" : "Открыть календарь"
     },
     "intro1" : {
-      "titleLine" : "Own your Favorite Day on the Blockchain!",
-      "line1" : "Own your Birthday, a Holiday or any other day you want!",
-      "line2" : "Buy any day of the year as an Ethereum Token (DAYS) using the blockchain and be the true owner of that day!",
-      "line3" : "You could be the proud owner of your favorite Holiday such as New Year's Day, Independence Day or even Halloween!",
-      "line4" : "Own The Day is an interactive game & crypto-collectible that lets anyone buy and own days of the year as ERC20-compatible Tokens on the Ethereum Blockchain. As soon as you claim a day, you take ownership of the Token for that Day and it automatically increases in value.",
-      "line5" : "But Remember, anyone else can claim your day by paying up to double the price that you paid. You will then lose ownership of that day, but you will receive up to double the price in ETH automatically deposited into your wallet!",
-      "line6" : "You can't lose!  Own The Day or Get Paid for it!"
+      "titleLine" : "Собственный ваш любимый день на блочной цепи!",
+      "line1" : "Собственный день рождения, праздник или любой другой день, который вы хотите!",
+      "line2" : "Покупайте в любой день года в качестве танка Ethereum (DAYS), используя блокчейн и станьте настоящим владельцем того дня!",
+      "line3" : "Покупайте в любой день года в качестве танка Ethereum (DAYS), используя блокчейн и станьте настоящим владельцем того дня!",
+      "line4" : "«Собственный день» - это интерактивная игра и крипто-коллекционная, которая позволяет любому покупать и владеть днями года как совместимые с ERC20 токены на блоке Ethereum Blockchain. Как только вы потребуете день, вы берете на себя ответственность за токен за этот день, и он автоматически увеличивается в стоимости.",
+      "line5" : "Но помните, что кто-то еще может потребовать ваш день, заплатив удвоенную цену, которую вы заплатили. Затем вы потеряете право собственности на тот день, но вы получите удвоенную цену в ETH, автоматически внесенную в ваш кошелек!",
+      "line6" : "Вы не можете проиграть! Собственный день или заплати за это!"
     }
   },
   "calendar" : {
-    "pageTitle" : "Calendar",
-    "title" : "Find a Day and make it Yours!"
+    "pageTitle" : "Календарь",
+    "title" : "Найдите день и сделайте его своим!"
   },
   "account" : {
-    "pageTitle" : "My Days",
-    "title" : "My Days"
+    "pageTitle" : "Мои дни",
+    "title" : "Мои дни"
   },
   "about" : {
-    "pageTitle" : "About",
+    "pageTitle" : "Около",
     "topBanner" : {
-      "title" : "About",
-      "subtitle" : "What is this site all about?"
+      "title" : "Около",
+      "subtitle" : "О чем этот сайт?"
     },
     "section1" : {
-      "title" : "How to Play",
-      "line1" : "Every available calendar-day is a unique collectible represented by an ERC20-compatible Token on the Ethereum blockchain, and can only be owned by a single person at a time. Once you have claimed a calendar-day, it is yours and yours alone!",
-      "line2" : "The calendar-days that you have claimed will be displayed on the global Calendar along with your Nickname (your nickname by default is the last 6 characters of your public wallet address, but you may change your nickname at anytime).",
-      "line3" : "Since your calendar-day collectibles are Ethereum Tokens, they can also be viewed in your MetaMask wallet under 'Tokens'.  Please see the __faq__ page for more information on displaying DAYS Tokens in your wallet.",
-      "line4" : "You may claim any day on the Calendar, they are all up-for-grabs! This also means that anyone else may claim a calendar-day from you, and in doing so they pay you the increased price of the calendar-day. The price automatically increases every time a day is claimed, which is calculated by the smart contract according to the 'Price Level Increase' table."
+      "title" : "Как играть",
+      "line1" : "Каждый доступный календарный день является уникальным коллекционным продуктом, представленным совместимым с ERC20 Token на блокчейке Ethereum и может принадлежать только одному человеку за раз. Как только вы заявите календарный день, он ваш и ваш один!",
+      "line2" : "Заявленные календарные дни будут отображаться в глобальном календаре вместе с вашим псевдонимом (ваш ник по умолчанию является последним 6 символами вашего общего кошелька, но вы можете в любое время изменить свой ник).",
+      "line3" : "Поскольку ваши календарные предметы коллекционирования - это теги Ethereum, их также можно просмотреть в кошельке MetaMask в разделе «Токены». Дополнительную информацию об отображении токенов DAYS в кошельке см. На странице __faq__. ",
+      "line4" : "Вы можете требовать любой день в календаре, они все готовы к захвату! Это также означает, что кто-либо еще может потребовать от вас календарный день, и при этом они платят вам увеличенную цену календарного дня. Цена автоматически увеличивается каждый раз, когда заявляется день, который рассчитывается по интеллектуальному контракту в соответствии с таблицей «Повышение уровня цен»."
     }
   },
   "faq" : {
     "pageTitle" : "FAQs",
     "topBanner" : {
-      "title" : "Frequently Asked Questions",
-      "subtitle" : "Got a question? Find an answer!"
+      "title" : "Часто задаваемые вопросы",
+      "subtitle" : "У меня вопрос? Найти ответ!"
     },
-    "block1" : "Getting Started",
-    "block2" : "Understanding the Game",
+    "block1" : "Начиная",
+    "block2" : "Понимание игры",
     "questions" : {
       "section1" : {
-        "q" : "What is needed to play Own the Day?",
+        "q" : "Что нужно, чтобы сыграть «Собственный день»?",
         "a" : {
-          "l1" : "To start claiming calendar-days all you need is:",
-          "l2" : "A Modern Web Browser such as Chrome or Firefox with the MetaMask Extension,",
-          "l3" : "Alternatively, an Ethereum-based browser such as Mist or Bravo,",
-          "l4" : "Ether in your wallet to claim calendar-days!"
+          "l1" : "Чтобы начать требовать календарные дни, вам нужно:",
+          "l2" : "Современный веб-браузер, такой как Chrome или Firefox с расширением MetaMask,",
+          "l3" : "Альтернативно, браузер, основанный на Ethereum, такой как Mist или Bravo,",
+          "l4" : "Эфир в вашем кошельке требует календарных дней!"
         }
       },
       "section2" : {
-        "q" : "How do I install MetaMask?",
+        "q" : "Как установить MetaMask?",
         "a" : {
-          "l1" : "To buy (and to receive profits from) calendar-day collectibles, you will need to install a browser extension called MetaMask (by MetaCert) in Chrome or Firefox.",
-          "l2" : "Download and install the extension for your browser;",
-          "l3" : "Create a new Account/Wallet in MetaMask,",
-          "l4" : "Metamask will provide you with 12 seed words which you should save some place safe (this is essentially the key to your wallet),",
-          "l5" : "Once you are logged into your account in MetaMask you will have full access to Own the Day!"
+          "l1" : "Чтобы купить (и получать прибыль от) коллекционных предметов календаря, вам потребуется установить расширение браузера MetaMask (по MetaCert) в Chrome или Firefox.",
+          "l2" : "Загрузите и установите расширение для своего браузера;",
+          "l3" : "Создайте новую учетную запись / кошелек в MetaMask,",
+          "l4" : "Metamask предоставит вам 12 семенных слов, которые вы должны сохранить в определенном месте (это, по сути, ключ к вашему кошельку),",
+          "l5" : "Как только вы войдете в свою учетную запись в MetaMask, у вас будет полный доступ к собственному дню!"
         }
       },
       "section3" : {
-        "q" : "How do I add ether (ETH) to my wallet?",
+        "q" : "Как добавить эфир (ETH) в мой кошелек?",
         "a" : {
-          "l1" : "Through an Exchange: The most popular means of acquiring ether is from an exchange such as Coinbase, Binance, Kraken, and many others. After you have purchased ether from an exchange, you will need to transfer the ether out of the exchange and into your MetaMask wallet.",
-          "l2" : "Through MetaMask: MetaMask gives an option to purchase ether directly through the wallet, but this feature is currently only available for US residents.",
-          "l3" : "If you already own Ether you can transfer funds directly to your MetaMask wallet via the public wallet address.",
-          "l4" : "If you need further assistance in acquiring ether or using MetaMask, there are many great guides &amp; tutorials on Google and YouTube!"
+          "l1" : "Через биржу: самым популярным средством приобретения эфира является обмен, такой как Coinbase, Binance, Kraken и многие другие. После того, как вы приобрели эфир из биржи, вам нужно будет перевести эфир из биржи и в ваш кошелек MetaMask.",
+          "l2" : "Через MetaMask: MetaMask дает возможность приобретать эфир непосредственно через кошелек, но эта функция доступна только для жителей США.",
+          "l3" : "Если вы уже владеете эфиром, вы можете переводить средства непосредственно в свой кошелек MetaMask через общедоступный кошелек.",
+          "l4" : "Если вам нужна дополнительная помощь в приобретении эфира или использовании MetaMask, есть много отличных руководств и amp; учебники по Google и YouTube!"
         }
       },
       "section4" : {
-        "q" : "What exactly are we buying?",
+        "q" : "Что именно мы покупаем?",
         "a" : {
-          "l1" : "Own the Day is a game about collecting and owning your favorite calendar-days on the Ethereum Blockchain. When you buy a day, you are the sole owner of that day until someone claims it from you, at which point you earn ether as the seller of the day.",
-          "l2" : "Calendar-days are crypto-collectibles similar to sports-cards and comic books, only these collectibles always increase in value!  What you own is an ERC20 Token on the Ethereum Blockchain, limited to only 366 DAYS Tokens (we have included the extra day in February for Leap Year). Much like traditional collectibles, their value is directly related to their desirability by other collectors.",
-          "l3" : "The game’s interactive global Calendar will display your Nickname on all of the days that you own and will also be represented by a unique color based on the last six characters of your wallet's public address.",
-          "l4" : "If anyone else decides to claim a day that you own, they will have to pay you up to double the price in ETH which will automatically be transferred into your wallet by the smart contract.",
-          "l5" : "You either own your day as a unique Crypto-Collectible, or you profit from it - you can't lose!  Ultimately, the more you play the more you can earn!"
+          "l1" : "«Собственный день» - это игра о сборе и хранении ваших любимых календарных дней в блоке «Ethereum Blockchain». Когда вы покупаете день, вы являетесь единственным владельцем того дня, пока кто-то не заявит об этом от вас, и в этот момент вы получаете эфира в качестве продавца дня.",
+          "l2" : "Календарные дни - это крипто-предметы коллекционирования, похожие на спортивные карты и комиксы, только эти предметы коллекционирования всегда повышают ценность! То, что у вас есть, - это токен ERC20 в блок-цепочке Ethereum, ограниченный только 366 DAYS Tokens (мы включили дополнительный день в феврале для високосного года). Как и традиционные предметы коллекционирования, их ценность напрямую связана с их желательностью другими коллекционерами.",
+          "l3" : "В интерактивном глобальном календаре игры будет отображаться ваш Ник в течение всех ваших дней, а также будет представлен уникальный цвет, основанный на последних шести символах общего адреса вашего кошелька.",
+          "l4" : "Если кто-либо другой решит претендовать на день, который у вас есть, им придется заплатить вам, чтобы удвоить цену в ETH, которая автоматически будет переведена в ваш кошелек по разумному контракту.",
+          "l5" : "Вы либо владеете своим днем, как уникальным Crypto-Collectible, либо получаете от него прибыль - вы не можете проиграть! В конечном счете, чем больше вы играете, тем больше сможете зарабатывать!"
         }
       },
       "section5" : {
-        "q" : "How do I lay claim to a calendar-day?",
+        "q" : "Как я могу претендовать на календарный день?",
         "a" : {
-          "l1" : "Begin by visiting the global __calendar__ page and find your favorite day of the year. It could be your birthday, an anniversary or your favorite holiday.",
-          "l2" : "Once you have found your desired calendar-day, select it in order to buy it.  The game will prompt you to confirm your purchase and direct you to the MetaMask extension to initiate the transaction.  After the Ethereum Blockchain has confirmed your transaction, you will have successfully claimed that day!  The global Calendar, as well as your Account page will display your ownership of the day."
+          "l1" : "Начните с посещения глобальной страницы __calendar__ и найдите свой любимый день в году. Это может быть ваш день рождения, юбилей или ваш любимый праздник.",
+          "l2" : "Как только вы найдете нужный календарный день, выберите его, чтобы купить его. В игре вам будет предложено подтвердить свою покупку и направить вас к расширению MetaMask, чтобы начать транзакцию. После того, как Ethereum Blockchain подтвердит вашу транзакцию, вы успешно заявите этот день! В глобальном календаре, а также на странице вашего аккаунта будет отображаться ваше право собственности на день."
         }
       },
       "section6" : {
-        "q" : "Can I use fiat currency (CAD, USD, etc) to claim a day?",
+        "q" : "Могу ли я использовать валюту fiat (CAD, USD и т. Д.), Чтобы требовать день?",
         "a" : {
-          "l1" : "Own the Day is a blockchain-based game which runs on the Ethereum Network, and as such, ether (ETH) is the only way to play.",
-          "l2" : "You will have to use an exchange to acquire ether using your standard currency."
+          "l1" : "Собственный день - это игра на основе блокчейнов, которая работает в сети Ethereum, и, таким образом, эфир (ETH) - единственный способ играть.",
+          "l2" : "Вам придется использовать обмен для приобретения эфира, используя стандартную валюту."
         }
       },
       "section7" : {
-        "q" : "Can I refuse to sell the days that I have collected?",
+        "q" : "Могу ли я отказаться от продажи дней, которые я собрал?",
         "a" : {
-          "l1" : "If someone wants to claim a day that you own they will be able to do so provided that they can pay the price.",
-          "l2" : "However, if you are the owner of the day, that also makes you the seller of the day and you will be paid up to twice the price that you initially paid."
+          "l1" : "Если кто-то хочет заявить, что вы владеете, они смогут это сделать, если они могут заплатить цену.",
+          "l2" : "Однако, если вы являетесь владельцем дня, это также делает вас продавцом дня, и вам будет выплачена до двух раз выше, чем вы первоначально заплатили."
         }
       },
       "section8" : {
-        "q" : "How are you making money?",
+        "q" : "Как вы зарабатываете деньги?",
         "a" : {
-          "l1" : "A small portion of each transaction is paid out to the developers of the game.  This portion is related to the value of the transaction and is hard-coded into the smart contract (never to be modified).  The smart contract is completely transparent and available online for anyone to read.  You can also visit the __about__ page to view the pricing structure of the game."
+          "l1" : "Небольшая часть каждой транзакции выплачивается разработчикам игры. Эта часть связана со значением транзакции и жестко закодирована в смарт-контракте (никогда не изменяться). Умный контракт полностью прозрачен и доступен онлайн для тех, кто читает. Вы также можете посетить страницу __about__, чтобы просмотреть структуру ценообразования в игре."
         }
       },
       "section9" : {
-        "q" : "How do I view my DAYS Tokens inside of my Wallet?",
+        "q" : "Как просмотреть мои токены в моем кошельке?",
         "a" : {
-          "l1" : "Custom Ethereum Tokens, such as DAYS Tokens, can be added to most Ethereum-compatible wallets by configuring the wallet to recognize the Token.",
-          "l2" : "In MetaMask, for example, you can select the 'Tokens' tab of your wallet and then select 'Add Token'.  Provide the following details for the Token:",
+          "l1" : "Пользовательские тарелки Ethereum, такие как токены DAYS, могут быть добавлены в большинство кошельков, совместимых с Ethereum, путем настройки кошелька для распознавания Token.",
+          "l2" : "Например, в MetaMask вы можете выбрать вкладку «Токены» вашего кошелька, а затем выбрать «Добавить токен». Предоставьте следующие данные для токена:",
           "l3" : "Token Contract Address: 0x16d790ad4e33725d44741251f100e635c323beb9",
-          "l4" : "Token Symbol: DAYS",
-          "l5" : "Decimals of Precision: 0",
-          "l6" : "This will allow your wallet to recognize any DAYS Tokens that you collect through the game -- it will not add new DAYS Tokens to your wallet."
+          "l4" : "Символ токена: DAYS",
+          "l5" : "Десятичные цифры точности: 0",
+          "l6" : "Это позволит вашему кошельку распознать любые токены DAYS, которые вы собираете в игре, - это не добавит новые токены DAYS к вашему кошельку."
         }
       }
     }
   },
   "tos" : {
-    "pageTitle" : "Terms of Service",
+    "pageTitle" : "Условия использования",
     "topBanner" : {
-      "title" : "Terms of Service",
+      "title" : "Условия использования",
       "subtitle" : ""
     },
     "intro" : {
-      "line1" : "This application (&quot;OwnTheDay&quot;) runs on the Ethereum network and utilizes smart contract(s) to allow users to buy and own unique, one-of-a-kind calendar-day Collectibles as ERC20-compatible Tokens with the symbol DAYS.",
-      "line2" : "Throughout these Terms of Service, the smart contract(s) and the Site hosting the game will be known as the &quot;Game&quot;. The calendar-day tokens purchased through the Game will be known as &quot;Collectibles&quot;.",
-      "line3" : "By choosing to use the Game, users can purchase and own calendar-day Collectibles. OwnTheDay is making the Game available to you. Prior to using the Game, you must agree to these Terms of Service.",
-      "line4" : "Read the following Terms of Service carefully and thoroughly prior to using the Game, purchasing Collectibles, or using the Site. Unless we have a separate, written agreement with you that differs from the below Terms of Service, the following Terms of Service absolutely and unequivocally govern your use of the Site, as well as your purchase and ownership of Collectibles. We will only allow you to use this Site, own Collectibles, and/or purchase Collectibles if you accept all of these Terms of Service.",
-      "line5" : "By using this Game, this Site, and/or these Collectibles, or by clicking &quot;agree&quot;, you confirm that you understand these Terms and accept these Terms. In the event that you are using this Site, this Game, or these Collectibles on behalf of another company or legal entity, you indicate that you have the legal authority to accept these Terms on the other party's behalf, and that any mention of &quot;you&quot; in this contract means the other party that you represent. If you do not have the authority to represent another party, then you do not have permission to use this Game, this Site, or these Collectibles."
+      "line1" : "Это приложение («OwnTheDay») работает в сети Ethereum и использует смарт-контракт (ы), чтобы позволить пользователям покупать и иметь уникальный, единственный в своем роде календарный день коллекционирования как совместимые с ERC20 токены с символом DAYS.",
+      "line2" : "На протяжении этих Условий обслуживания смарт-контракт (ы) и Сайт, на котором размещена игра, будут известны как «Игра». Идентификаторы календаря, купленные в игре, будут известны как «Коллекционные предметы».",
+      "line3" : "Выбирая использование игры, пользователи могут приобретать и хранить коллекционные предметы календаря. OwnTheDay делает игру доступной для вас. Перед использованием игры вы должны согласиться с настоящими Условиями обслуживания.",
+      "line4" : "Прочтите следующие Условия обслуживания тщательно и тщательно перед использованием Игры, приобретением коллекционирования или использованием Сайта. Если у нас нет отдельного письменного соглашения с вами, которое отличается от нижеследующих Условий обслуживания, следующие Условия обслуживания абсолютно и недвусмысленно регулируют ваше использование Сайта, а также вашу покупку и владение Коллекционными предметами. Мы разрешим вам использовать этот Сайт, собственные Коллекционные предметы и / или приобретать Коллекционные предметы, если вы принимаете все настоящие Условия обслуживания.",
+      "line5" : "Используя эту Игру, этот Сайт и / или эти Коллекционные предметы, или щелкнув «согласен», вы подтверждаете, что понимаете настоящие Условия и принимаете настоящие Условия. В случае, если вы используете этот Сайт, эту Игру или эти Коллекционные предметы от имени другой компании или юридического лица, вы указываете, что у вас есть законные полномочия принимать настоящие Условия от имени другой стороны и что любое упоминание о & quot; вы & Quot; в этом договоре означает другую сторону, которую вы представляете. Если у вас нет полномочий представлять другую сторону, у вас нет разрешения на использование этой игры, этого сайта или этих коллекций."
     },
     "terms" : {
       "section1" : {
-        "title" : "WE DO NOT ACCEPT DEPOSITS",
-        "note" : "OwnTheDay.io is a UI interface which allows you to interact directly with a blockchain smart contract on the Ethereum network using the &quot;Metamask&quot; browser extension. The website and its creators do not accept or hold any payments from players. Any ether transfers done over the website are transferred directly to blockchain contract address: 0xD35eF25873bd9BA3e67dcCd1a5634F49a32E44f0. Any Ether or fiat currency deposited into your Metamask extension is fully owned and controlled by you, the player. The game does not have access to the funds deposited in your Metamask browser extension. Transfers of Ether, are passed directly from your Metamask account to a smart contract on the Ethereum network. Since the game does not accept your deposits and does not have any control over it, the game and it's creators are not liable for any damages or loss of funds."
+        "title" : "МЫ НЕ ПРИНИМАЕМ ДЕПОЗИТЫ",
+        "note" : "OwnTheDay.io - интерфейс интерфейса, который позволяет вам напрямую взаимодействовать с блочным интеллектуальным контрактом в сети Ethereum, используя «Metamask». расширение браузера. Веб-сайт и его создатели не принимают или не удерживают никаких платежей от игроков. Любые передачи эфира, сделанные через веб-сайт, передаются непосредственно на адрес цепи цепочки: 0xD35eF25873bd9BA3e67dcCd1a5634F49a32E44f0. Любая эфир или валюта fiat, внесенная в ваше расширение Metamask, полностью принадлежит вам и контролируется вами игроком. В игре нет доступа к средствам, внесенным в расширение браузера Metamask. Передачи эфира передаются непосредственно из вашей учетной записи Metamask в смарт-контракт в сети Ethereum. Поскольку игра не принимает ваши депозиты и не имеет никакого контроля над ней, игра и ее создатели не несут ответственности за любой ущерб или потерю средств."
       },
       "section2" : {
-        "title" : "PLAY RESPONSIBLY",
-        "note" : "This game allows you to buy and collect digital assets. There is no guarantee that other players or anyone else will buy these assets from you. While some players speculate about their ability to resell their digital assets for a higher value in the future, there is no guarantee that another person will decide to buy your digital asset. If you choose to transfer ETH in exchange for a Day referred to in the game as Collectibles, you must accept and understand the risk of potentially not being able to sell your Collectibles in the future. The game is designed for collectors who choose to pay for the ownership of digital products referred to as Collectibles. If you choose to speculate over the future value and liquidity of your asset, you must do so at your own risk and not hold the creators of the game or the smart contract liable for any loss or damages. Play responsibly and do not spend more than you feel the digital asset is worth."
+        "title" : "ИГРАТЬ ОТВЕТСТВЕННОСТЬ",
+        "note" : "Эта игра позволяет вам покупать и собирать цифровые активы. Нет никакой гарантии, что другие игроки или кто-то еще купят эти активы у вас. В то время как некоторые игроки спекулируют о возможности перепродать свои цифровые активы для более высокой стоимости в будущем, нет гарантии, что другой человек решит купить ваш цифровой актив. Если вы решите перевести ETH в обмен на День, упомянутый в игре как Collectibles, вы должны принять и понять риск потенциально неспособности продать свои Коллекции в будущем. Игра предназначена для коллекционеров, которые предпочитают оплачивать права собственности на цифровые продукты, называемые коллекционными. Если вы решите размышлять над будущей ценностью и ликвидностью своего актива, вы должны сделать это на свой страх и риск и не заставлять создателей игры или интеллектуального контракта отвечать за любые убытки или убытки. Играйте ответственно и не тратите больше, чем считаете, что цифровой актив стоит."
       },
       "section3" : {
-        "title" : "SMART CONTRACTS",
-        "note" : "We have used the days of the year to create unique, one-of-a-kind Collectibles represented by ERC20-compatible Tokens on the Ethereum BlockChain. These Collectibles are not endorsed or supported by the person appearing on the calendar. All available days of the year (including February 29) have been released up-front. Each Day Collectible may be purchased by you utilizing ether. You may purchase any day you choose, and any other party may purchase a day that you currently own if the other party is willing to pay a higher sum. The price of the tokens are hard-coded into the smart contract itself and can not be changed by anyone, including the game's creators. You may not stop another party from purchasing a day that you currently own, and no other third party may stop you from purchasing a day that you wish to own. Whichever party is willing to pay the cost of the day may own said Smart Contract after he or she completes the transaction."
+        "title" : "УМНЫЕ КОНТРАКТЫ",
+        "note" : "Мы использовали дни года для создания уникальных, единственных в своем роде коллекций, представленных совместимыми с ERC20 токенами в Ethereum BlockChain. Эти предметы коллекционирования не поддерживаются или не поддерживаются лицом, появляющимся в календаре. Все доступные дни года (включая 29 февраля) были выпущены на фронт. Каждый день Коллекционер может быть куплен вами с использованием эфира. Вы можете купить любой день, который вы выберете, и любая другая сторона может купить тот день, который у вас есть сейчас, если другая сторона готова заплатить более высокую сумму. Цена жетонов жестко закодирована в смарт-контракте и не может быть изменена никем, включая создателей игры. Вы не можете запретить другой стороне покупать тот день, который у вас есть в настоящее время, и никакая другая третья сторона не может остановить вас от покупки того дня, который вы хотите приобрести. Сторона, желающая оплатить стоимость дня, может владеть УФ-контрактом после завершения транзакции."
       },
       "section4" : {
-        "title" : "THE GAME",
-        "note" : "This Game requires that you utilize a Google Chrome or Firefox web browser that currently has a Metamask browser extension installed. Metamask is an electronic wallet created by a third party that allows you to purchase, store, and engage in transactions using Ethereum cryptocurrency. You may not use any other electronic wallet on the Game other than Metamask; however, you can use other electronic wallets and third-party applications to transfer funds to your Metamask wallet in order to make purchases and receive payment on the Game. If you do not log on to the Game with the correct browser (either Google Chrome or Mozilla Firefox) and/or if the browser does not have the Metamask extension installed, you will be recognized by the Game, but you will not be able to interact with the Game in any way. Any and all transactions that take place in the Game occur via the Ethereum blockchain. You understand that by using the Game, your Ethereum public address will be made visible to other users of the Game as well as third parties each and every time you engage in a transaction on the Game. We do not own and we do not control any of the following third-party products used for the function of this Game: Metamask, Coinbase, Google Chrome, Mozilla Firefox, or the Ethereum network. We do not own and we do not control any other third-party site, product or service that you may choose to access, visit, or use for the purpose of interacting with or using the Game. We will not be held liable, and are not liable, for the acts or omissions by any such third party, nor are we liable, or will we be held liable, for any damage that you may suffer as a result of interacting with or using any of the mentioned or unmentioned third parties. You must provide accurate and complete registration information when you create an account to utilize the Game. You are solely responsible for the safety and security of your Metamask wallet and/or any other electronic wallet you utilize to interact with the Game. You are solely responsible for the safety and security of your account with us. If you become aware of a security breach in regards to your password or your account, you agree to notify us immediately upon discovery at security@owntheday.io."
+        "title" : "ИГРА",
+        "note" : "Для этой игры вам необходимо использовать браузер Google Chrome или Firefox, в котором в настоящее время установлено расширение браузера Metamask. Metamask - это электронный кошелек, созданный третьей стороной, который позволяет вам покупать, хранить и участвовать в транзакциях, используя криптовалютность Ethereum. Вы не можете использовать какой-либо другой электронный кошелек в игре, кроме Metamask; однако вы можете использовать другие электронные кошельки и сторонние приложения для перевода средств в кошелек Metamask, чтобы совершать покупки и получать оплату в игре. Если вы не входите в игру с правильным браузером (Google Chrome или Mozilla Firefox) и / или если в браузере не установлено расширение Metamask, вы будете распознаны игрой, но вы не сможете взаимодействовать с игрой в любом случае. Все транзакции, которые происходят в игре, происходят через блок-цепочку Ethereum. Вы понимаете, что с помощью игры ваш общий адрес Ethereum будет отображаться для других пользователей игры, а также для третьих сторон каждый раз, когда вы совершаете транзакцию в игре. Мы не владеем, и мы не контролируем ни один из следующих сторонних продуктов, используемых для функции этой игры: Metamask, Coinbase, Google Chrome, Mozilla Firefox или сети Ethereum. Мы не владеем, и мы не контролируем какой-либо другой сторонний сайт, продукт или услугу, которые вы можете выбрать для доступа, посещения или использования для взаимодействия с или использования игры. Мы не несем ответственности и не несем ответственности за действия или бездействие любой такой третьей стороны, равно как и мы не несем ответственности или будем нести ответственность за любой ущерб, который вы можете понести в результате взаимодействия или использования любой из упомянутых или не упомянутых третьих сторон. Вы должны предоставить точную и полную регистрационную информацию при создании учетной записи для использования Игры. Вы несете единоличную ответственность за безопасность и безопасность вашего кошелька Metamask и / или любого другого электронного кошелька, который вы используете для взаимодействия с Играми. Вы несете единоличную ответственность за безопасность своей учетной записи. Если вам стало известно о нарушении безопасности в отношении вашего пароля или вашей учетной записи, вы соглашаетесь немедленно уведомить нас об этом на сайте security@owntheday.io."
       },
       "section5" : {
-        "title" : "FEES AND PAYMENTS",
-        "note" : "If you choose to purchase any days in the Game, any and all transactions will be conducted through the Ethereum network utilizing a Metamask electronic wallet directly tied to a Smart Contract on the blockchain, which is not controlled by the games creators. We will not have any insight into or control over these payments or transactions, nor will we be able to reverse any transaction that occurs. Because of this, we will have no liability to you or any other third party for any claims or damages that may occur due to any transaction that takes place on the Game and/or in regards to any of the country Smart Contracts that we have created. The Ethereum network requires that you pay a transaction fee, commonly known as &quot;Gas&quot;, for every transaction that occurs on the Ethereum network. Gas is intended to fund the hardware and software that runs the Ethereum network, as well as to prevent misuse and spam. If you choose to interact with the Game via our Site or without using the Game or our Site as a portal, you will still need to pay fee for any and every transaction you make on the Ethereum network. The smart contract keeps a 1-5% commission fee on every transaction conducted through it, in addition to the Gas charged by the Ethereum network. The creators of this website and game do not have access or control over these fees, as it is handled directly on the distributed blockchain network. WE DO NOT ACCEPT PAYMENTS DIRECTLY ON OUR WEBSITE."
+        "title" : "ПЛАТЫ И ПЛАТЕЖИ",
+        "note" : "Если вы решите приобрести какие-либо дни в игре, любые транзакции будут проводиться через сеть Ethereum, используя электронный кошелек Metamask, который напрямую привязан к Smart-контракту на блок-цепочке, который не контролируется создателями игр. У нас не будет никакого понимания или контроля над этими платежами или транзакциями, и мы не сможем отменить любую транзакцию, которая произошла. В связи с этим мы не несем никакой ответственности перед вами или любой другой третьей стороной за любые претензии или убытки, которые могут возникнуть в результате любой транзакции, имеющей место в игре, и / или в отношении любого из франчайзинговых договоров, которые мы создали , Сеть Ethereum требует, чтобы вы платили комиссию за транзакцию, обычно известную как «Газ», для каждой транзакции, которая происходит в сети Ethereum. Газ предназначен для финансирования аппаратного и программного обеспечения, которое управляет сетью Ethereum, а также для предотвращения злоупотребления и спама. Если вы решили взаимодействовать с игрой через наш сайт или без использования игры или нашего сайта в качестве портала, вам все равно придется платить за любую транзакцию, которую вы совершаете в сети Ethereum. Умный контракт удерживает комиссионный сбор в размере 1-5% при каждой транзакции, проводимой через него, в дополнение к Газу, взимаемому сетью Ethereum. Создатели этого веб-сайта и игры не имеют доступа или контроля над этими сборами, так как они обрабатываются непосредственно в распределенной сети цепочки. МЫ НЕ ПРИНИМАЕМ ПЛАТЕЖИ НА НАШЕМ ВЕБ-САЙТЕ."
       },
       "section6" : {
-        "title" : "OWNERSHIP",
-        "note" : "By using this Game, you acknowledge and agree that we and/or our licenses own all legal rights, titles, and interests in and to any and all elements of the Game, including any and all intellectual property. This includes, but is not limited to: graphics, designs, information, systems, computer code, software, services, organization, content, compilation of content, data, design, and any and all other elements of the Game. We retain complete and full ownership of all of these elements, as well as any other element related to the Game not listed in these Terms of Service. Each and every one of these elements is owned by OwnTheDay, and protected by copyright, trade, dress, patent, trademark laws, international conventions, and every other applicable property and proprietary rights laws. Your use of the Game, the Site, or of any and all country Smart Contracts does not grant you ownership of or any rights to the content, code, data, and other materials you may use and see on the Site. Although you own the Smart Contract itself, you do not own the name, likeness, contract design, nor any other elements. Any comments, bug reports, ideas, or any other type of feedback regarding the Game provided by you is welcome by OwnTheDay. However, once you willingly submit such comments, bug reports, ideas, or feedback, you agree that we are free to utilize that information and those ideas in any way we see fit without any compensation to you. We are free to disclose that information and those ideas to any third party we deem necessary. By submitting any comments, bug reports, ideas, or any other type of feedback, you grant us perpetual, irrevocable license to that content and/or ideas, and we immediately retain complete rights to that information, content, and/or ideas. By using this Game and this Site, you agree that you are completely and unequivocally responsible for your conduct during use of this Game and this Site, as well as any repercussions or consequences that occur because of said conduct. By using this Game and this Site, you agree that you will abide by the above and below Terms of Service, any and all applicable laws and regulations, and that you will only use the Game and the Site for legal and proper purposes. In addition to this, you are not allowed to, and may not permit any third party to: upload or distribute any unlawful, defamatory, abusive, fraudulent, obscene, or otherwise objectionable content; distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a damaging or dishonest nature; impersonate another person in any way, shape, or form; upload, post, transmit or otherwise make available through the Game any content that infringes on the intellectual proprietary rights of any party, including OwnTheDay, any third party associated with us, and any user of the Game or the Site; use the Game to violate the legal rights of others or to engage in, promote, or encourage any type of illegal activity; use the Game for any unauthorized commercial purpose, or modify, adapt, translate, or reverse engineer any portion of the Game for any personal or commercial purposes; reformat or frame any portion of the Game, including remove any copyright, trademark or other proprietary rights notices contained in or on the Game; display any content on the Game that contains any hate-related or violent content; use any robot, spider, or other device or program to compile or index any portion of the Game or the content posted on the Game, or to collect information about its users for any purpose; create user accounts by automated means or under false or fraudulent pretences; access or use the Game for the purpose of creating a product or service that is competitive with any of our products or services."
+        "title" : "ВЛАДЕНИЕ",
+        "note" : "Используя эту Игру, вы признаете и соглашаетесь с тем, что мы и / или наши лицензии владеем всеми законными правами, названиями и интересами в любом и любом элементе игры, включая любую интеллектуальную собственность. Это включает, но не ограничивается: графику, дизайн, информацию, системы, компьютерный код, программное обеспечение, услуги, организацию, контент, компиляцию контента, данных, дизайна и любых других элементов игры. Мы сохраняем полное и полное владение всеми этими элементами, а также любым другим элементом, связанным с игрой, не указанной в настоящих Условиях обслуживания. Каждый из этих элементов принадлежит OwnTheDay и защищен законами об авторском праве, торговле, одежде, патентах, товарных знаках, международными конвенциями и всеми другими применимыми законами о собственности и правах собственности. Использование вами игры, сайта или любых франчайзинговых договоров любой страны и всей страны не дает вам права собственности или каких-либо прав на контент, код, данные и другие материалы, которые вы можете использовать, и видеть на Сайте. Хотя у вас есть сам Smart Contract, вы не владеете именем, подобием, дизайном контракта и другими элементами. Любые комментарии, сообщения об ошибках, идеи или любые другие отзывы об игре, предоставленные вами, приветствуются OwnTheDay. Однако, как только вы добровольно отправляете такие комментарии, сообщения об ошибках, идеи или отзывы, вы соглашаетесь с тем, что мы вправе использовать эту информацию и эти идеи любым способом, который мы считаем нужным без какой-либо компенсации вам. Мы вправе раскрыть эту информацию и эти идеи любой третьей стороне, которую считаем необходимой. Предоставляя любые комментарии, сообщения об ошибках, идеи или любые другие обратные связи, вы предоставляете нам бессрочную, безотзывную лицензию на этот контент и / или идеи, и мы немедленно сохраняем полные права на эту информацию, контент и / или идеи. Используя эту Игру и этот Сайт, вы соглашаетесь с тем, что вы полностью и недвусмысленно отвечаете за свое поведение во время использования этой Игры и этого Сайта, а также за любые последствия или последствия, которые происходят из-за указанного поведения. Используя эту Игру и этот Сайт, вы соглашаетесь с тем, что вы будете соблюдать приведенные выше и ниже Условия обслуживания, любые и все применимые законы и правила, и что вы будете использовать игру и сайт только в законных и надлежащих целях. В дополнение к этому вам не разрешается и не может разрешать третьим лицам: загружать или распространять любые незаконные, дискредитирующие, оскорбительные, мошеннические, непристойные или иным образом нежелательные материалы; распространять вирусы, черви, дефекты, троянские кони, поврежденные файлы, мистификации или любые другие предметы, наносящие ущерб или нечестный характер; олицетворять другого человека каким-либо образом, формой или формой; загружать, публиковать, передавать или иным образом предоставлять через Игру любой контент, который нарушает интеллектуальные права собственности любой стороны, включая OwnTheDay, любую третью сторону, связанную с нами, и любого пользователя Игры или Сайта; использовать Игру, чтобы нарушать законные права других лиц или заниматься, поощрять или поощрять любые виды незаконной деятельности; использовать Игру для любых несанкционированных коммерческих целей или модифицировать, адаптировать, переводить или реконструировать любую часть Игры в любых личных или коммерческих целях; переформатировать или кадрировать любую часть Игры, в том числе удалить любые уведомления об авторских правах, товарных знаках или других правах собственности, содержащиеся в или в игре; показывать любой контент в игре, содержащий любой контент, связанный с ненавистью или жестоким обращением; использовать любого робота, паука или другого устройства или программы для компиляции или индексирования любой части Игры или контента, размещенного в игре, или для сбора информации о своих пользователях в любых целях; создавать учетные записи пользователей автоматическими средствами или под ложными или мошенническими предлогами; доступ или использование Игры с целью создания продукта или услуги, конкурентоспособных с любым из наших продуктов или услуг."
       },
       "section7" : {
-        "title" : "TERMINATION OF THESE TERMS",
-        "note" : "The only way to terminate the Terms contained herein is by cancelling your account on the Game and discontinuing any and all use or access to the Game. If you choose to cancel your account, you will not receive any refunds for any transactions made in the Game or any payments made to us. By using this Game, you agree that we have the right to terminate these terms and cancel or suspend your account for any reason we deem necessary. You also agree that we are not required to provide you with any advanced notice of any suspension or termination of your account, and that we are not liable to you or any other third party for any damages or consequences caused by the suspension or termination of your account. In the event that we decide to suspend or terminate your account, or restrict your access to your account or the Game, due to suspected fraud, abuse, or illegal activity on your part, then we may also take any and all actions allowed by law. If your account is suspended or terminated by us or by your choice, you will no longer have access to information that you have posted on the Game or any information that is related to your account. In both events, whether we terminate or suspend your account or you choose to terminate your account, you acknowledge and agree that we are under no obligation to maintain any of your information in our databases, nor are we obligated to forward any of that information to you or to any third party."
+        "title" : "ПРЕКРАЩЕНИЕ ЭТИХ УСЛОВИЙ",
+        "note" : "Единственный способ прекратить действие Условий, изложенных в данном документе, заключается в том, что вы отменили свою учетную запись в игре и прекратили любое использование или доступ к игре. Если вы решите отменить свою учетную запись, вы не получите никаких возмещений за транзакции, совершенные в игре, или любые сделанные нами платежи. Используя эту Игру, вы соглашаетесь с тем, что мы имеем право расторгнуть эти условия и отменить или приостановить действие вашей учетной записи по любой причине, которую мы считаем необходимой. Вы также соглашаетесь с тем, что мы не обязаны предоставлять вам какое-либо предварительное уведомление о любом приостановлении или прекращении действия вашей учетной записи и что мы не несем ответственности перед вами или какой-либо третьей стороной за любые убытки или последствия, вызванные приостановлением или прекращением действия вашей учетной записи Счет. В случае, если мы решили приостановить или прекратить действие вашей учетной записи или ограничить доступ к вашей учетной записи или игре из-за подозрения в мошенничестве, злоупотреблении или незаконной деятельности с вашей стороны, мы также можем принять любые и все действия, разрешенные законом , Если ваша учетная запись приостановлена ​​или прекращена нами или по вашему выбору, у вас больше не будет доступа к информации, которую вы отправили в игре, или к любой информации, связанной с вашей учетной записью. В обоих случаях, прекращаем ли мы или приостанавливаем вашу учетную запись или вы хотите прекратить действие своей учетной записи, вы подтверждаете и соглашаетесь с тем, что мы не обязаны поддерживать какую-либо вашу информацию в наших базах данных, и мы не обязаны передавать какую-либо из этих данных вы или какой-либо третьей стороне."
       },
       "section8" : {
-        "title" : "Disclaimer and Warranties",
-        "note" : "By using this Game, you understand and agree that your access to and use of this Game is at your own risk. You acknowledge and accept that this Game is provided on an As-Is and As-Available basis, and that we make no express or implied warranty regarding this Game or access to this Game. We, and any party associated with us, make no warranty and disclaim any and all implied warranties regarding the Game, including the Site and Smart Contracts. This includes any implied warranty regarding product value, fitness for a specific purpose, non-infringement, correctness, and/or reliability. Neither us nor any of our subsidiaries or affiliates guarantee or warrant that your access or use of the Game will meet your requirements and/or expectations; your access to the Game or Site will be uninterrupted, free from error, or secure; or, that any data represented in the content, services, or features are accurate and/or free of viruses or other harmful content or components."
+        "title" : "Отказ от ответственности и гарантии",
+        "note" : "Используя эту Игру, вы понимаете и соглашаетесь с тем, что ваш доступ к этой игре и ее использование на ваш страх и риск. Вы признаете и соглашаетесь с тем, что эта игра предоставляется на основе As-Is и As-Available и что мы не даем никакой явной или подразумеваемой гарантии относительно этой игры или доступа к этой игре. Мы и любая связанная с нами сторона не предоставляем никаких гарантий и не отказываемся от каких-либо подразумеваемых гарантий в отношении Игры, включая сайт и смарт-контракты. Это включает в себя любую подразумеваемую гарантию на стоимость продукта, пригодность для конкретной цели, ненарушение, правильность и / или надежность. Ни мы, ни наши дочерние компании или филиалы не гарантируем или не гарантируем, что ваш доступ или использование Игры будут соответствовать вашим требованиям и / или ожиданиям; ваш доступ к игре или сайту будет непрерывным, свободным от ошибок или безопасным; или, что любые данные, представленные в контенте, услугах или функциях, являются точными и / или свободными от вирусов или другого вредного контента или компонентов."
       },
       "section9" : {
-        "title" : "Limitation of Liability",
-        "note" : "By using this Game and this Site, you understand and agree that neither we nor any of our subsidiaries or affiliates are liable to you or any other third party for any indirect, incidental, consequential, or exemplary damages that you may incur, no matter how those damages occurred. We and our subsidiaries and affiliates are also not responsible for any financial loss, loss of goodwill, loss of business reputation, loss of personal reputation, cost of purchasing any substitute goods or services, or any and all other potential intangible losses, even if we had previous knowledge that there was a risk of damages and/or losses. By using this Game and this Site, you agree that our total liability to you for any and all claims arising out of or relating to these Terms or your access to or use of this Game or this Site is limited to the sum of $100. By using this Game and this Site, you understand and agree that we have made this Game available to you and entered into these Terms with you as a way to provide the Game to you. These limitations of liability outlined in these Terms reflect a reasonable and fair allocation of risk between us and you."
+        "title" : "Ограничение ответственности",
+        "note" : "Используя эту Игру и этот Сайт, вы понимаете и соглашаетесь с тем, что ни мы, ни какие-либо из наших дочерних компаний или филиалов не несут ответственности перед вами или любой другой третьей стороной за любые косвенные, случайные, косвенные или иллюстративные убытки, которые могут возникнуть, независимо от того, как эти убытки произошли. Мы и наши дочерние и зависимые общества также не несем ответственности за любые финансовые убытки, потерю деловой репутации, потерю деловой репутации, потерю личной репутации, стоимость покупки каких-либо заменяющих товаров или услуг или любые другие потенциальные нематериальные потери, даже если мы ранее знал, что существует риск ущерба и / или потерь. Используя эту Игру и этот Сайт, вы соглашаетесь с тем, что наша общая ответственность перед вами за любые и все претензии, вытекающие из настоящих Условий или относящиеся к этим Условиям, или ваш доступ к этой игре или данному сайту или ее использование ограничивается суммой в размере 100 долларов США. Используя эту Игру и этот Сайт, вы понимаете и соглашаетесь с тем, что мы сделали эту Игру доступной для вас и ввели в эти Условия с вами, как способ предоставить вам Игру. Эти ограничения ответственности, изложенные в настоящих Условиях, отражают разумное и справедливое распределение риска между нами и вами."
       },
       "section10" : {
-        "title" : "Indemnification",
-        "note" : "By using this Game and this Site, you agree to hold OwnTheDay harmless and to indemnify us and any of our subsidiaries and affiliates, as well as any of our officers, agents, employees, advertisers, suppliers, or licensors, from and against any claim, liability, loss, actual damage, and consequential damage of any kind or nature, including suits, judgements, litigation costs, and attorneys' fees that occur or arise due to your breach of these Terms and/or your violation of any applicable laws, rules, and regulations."
+        "title" : "возмещение убытков",
+        "note" : "Используя эту Игру и этот Сайт, вы соглашаетесь на то, чтобы OwnEDay был безвреден и возместил нам и любым нашим дочерним и зависимым компаниям, а также любым нашим сотрудникам, агентам, сотрудникам, рекламодателям, поставщикам или лицензиарам, , ответственность, убытки, фактический ущерб и косвенный ущерб любого рода или характера, включая иски, суждения, судебные издержки и гонорары адвокатов, которые возникают или возникают из-за вашего нарушения этих Условий и / или вашего нарушения любых применимых законов, правил и правил."
       },
       "section11" : {
-        "title" : "External Sites",
-        "note" : "In some cases, this Game and this Site may contain hyperlinks to other websites and/or resources as a convenience to you and our other users. We have no control over the safety of or content found on these sites. You acknowledge and agree that we are not responsible for the availability of any links to external sites, and that we do not endorse the advertisements on the sites, the products or services made available on those sites, or any other materials found on those sites. You acknowledge and agree that we are not liable for any loss or damage that may be incurred by you or any third party as the result of the availability or lack of availability of these sites, including any reliance placed by you upon the need for those sites and/or for those sites' completeness and/or accuracy."
+        "title" : "Внешние сайты",
+        "note" : "В некоторых случаях эта игра и этот сайт могут содержать гиперссылки на другие веб-сайты и / или ресурсы в качестве удобства для вас и других наших пользователей. Мы не контролируем безопасность или содержание, найденное на этих сайтах. Вы признаете и соглашаетесь с тем, что мы не несем ответственности за доступность любых ссылок на внешние сайты и что мы не поддерживаем рекламу на сайтах, продуктах или услугах, предоставляемых на этих сайтах, или любых других материалах, найденных на этих сайтах. Вы признаете и соглашаетесь с тем, что мы не несем ответственности за любые убытки или ущерб, которые могут быть понесены вами или какой-либо третьей стороной в результате наличия или отсутствия доступа к этим сайтам, включая любую уверенность, оказанную вами в случае необходимости для этих сайтов и / или для полноты и / или точности этих сайтов."
       },
       "section12" : {
-        "title" : "Changes to these Terms of Service",
-        "note" : "As we deem necessary, we may make changes to these Terms. When we make these changes, the updated Terms will be available on the Game and on the Site and feature a &quot;Last Updated&quot; date. It is your responsibility to check these Terms periodically for any changes. Your continued access to the Game and the Site will constitute your binding acceptance of the updates. Any and all changes made are applicable on the date that they are made."
+        "title" : "Изменения в настоящих Условиях обслуживания",
+        "note" : "По нашему мнению, мы можем внести изменения в настоящие Условия. Когда мы вносим эти изменения, обновленные Условия будут доступны в игре и на Сайте, а также в «Последнее обновление», Дата. Вы обязаны периодически проверять эти Условия на предмет любых изменений. Ваш постоянный доступ к игре и сайту будет означать ваше обязательное принятие обновлений. Все внесенные изменения применяются к дате их изготовления."
       },
       "section13" : {
-        "title" : "Changes to the Game",
-        "note" : "We are always working toward improving and expanding the Game in order to provide you and our other users with the best, most robust experience. By using the Game and the Site, you understand and agree that any part of this Game or this Site may change at any time without any prior notice to you. We can and will add new features and alter aspects of the Game or the Site at any time without notice."
+        "title" : "Изменения в игре",
+        "note" : "Мы всегда работаем над улучшением и расширением игры, чтобы предоставить вам и нашим другим пользователям лучший, самый надежный опыт. Используя игру и сайт, вы понимаете и соглашаетесь с тем, что любая часть этой игры или этого сайта может измениться в любое время без предварительного уведомления. Мы можем и будем добавлять новые функции и изменять аспекты Игры или Сайта в любое время без предварительного уведомления."
       },
       "section14" : {
-        "title" : "Children",
-        "note" : "By using this Game and this Site, you affirm that you are over the age of 19. This Game and this Site are not intended for use by any child under the age of 19."
+        "title" : "Дети",
+        "note" : "Используя эту игру и этот сайт, вы подтверждаете, что вам исполнилось 19 лет. Эта игра и этот сайт не предназначены для использования ни одним ребенком в возрасте до 19 лет."
       },
       "section15" : {
-        "title" : "General",
-        "note" : "These Terms in their entirety constitute the legal agreement between you and OwnTheDay, and govern your access to and use of the Game and the Site. They replace any prior agreements between the parties related to your access to or use of the Game or the Site, whether oral or written. There are no third-party beneficiaries to these terms; any third party is an independent contractor, and these Terms do not form any agency, partnership, or joint venture. You understand and agree that the language in these terms should and will be interpreted as to its fair meaning, and not strictly for or against any party. You may not assign any of your rights or obligations under these Terms without prior written consent from us. However, we may assign our rights and obligations under these Terms to an affiliate or in connection with an acquisition, sale, or merger at our sole discretion. In the event that any part of these Terms be deemed invalid or unenforceable by proper legal authorities, that portion will be struck while the remaining portions remain in full force and effect. Any potential failure on our part to enforce these Terms is not and will not be deemed a waiver of these Terms, in part or in whole. Any legal action or proceeding arising under these Terms will be handled by the courts in Canada, and the parties irrevocably consent to the personal jurisdiction and venue there. Finally, we are not liable and will not be held liable for any failure or delay in performance of our obligation under these Terms that result from any condition beyond our control. This includes government action, acts of terrorism, earthquakes, floods, fire, power failures, internet disturbances, or acts of omission by any third party. You agree that we may provide you with a notice of any changes to these Terms by email, regular mail, or by posting on the Game or the Site. By providing us with your email address, you consent to forgo receiving any notices via postal mail."
+        "title" : "Генеральная",
+        "note" : "Настоящие Условия в совокупности составляют юридическое соглашение между вами и OwnTheDay и регулируют ваш доступ к игре и сайту и ее использование. Они заменяют любые предыдущие соглашения между сторонами, связанные с вашим доступом к игре или сайту или ее использованием, будь то устные или письменные. На эти условия нет сторонних бенефициаров; любая третья сторона является независимым подрядчиком, и настоящие Условия не образуют какого-либо агентства, партнерства или совместного предприятия. Вы понимаете и соглашаетесь с тем, что язык в этих терминах должен и будет интерпретироваться в отношении его справедливого значения, а не строго для любой стороны или против нее. Вы не можете передавать какие-либо из ваших прав или обязательств в соответствии с настоящими Условиями без предварительного письменного согласия от нас. Однако мы можем передавать наши права и обязанности в соответствии с настоящими Условиями аффилированному лицу или в связи с приобретением, продажей или слиянием по нашему собственному усмотрению. В случае, если какая-либо часть этих Условий будет признана недействительной или не имеющей законной силы соответствующими юридическими лицами, эта часть будет удалена, а остальные части останутся в полной силе и действии. Любой потенциальный сбой с нашей стороны для обеспечения соблюдения настоящих Условий не является и не будет считаться отказом от настоящих Условий, частично или полностью. Любое судебное разбирательство или судебное разбирательство, возникающее в соответствии с настоящими Условиями, будет рассматриваться судами Канады, и стороны безоговорочно соглашаются на личную юрисдикцию и место проведения там. Наконец, мы не несем ответственности и не будем нести ответственность за любой сбой или задержку в выполнении нашего обязательства в соответствии с настоящими Условиями, которые вытекают из любых условий, находящихся вне нашего контроля. Это включает в себя действия правительства, террористические акты, землетрясения, наводнения, пожары, сбои в электроснабжении, интернет-беспорядки или действия бездействия любой третьей стороны. Вы соглашаетесь с тем, что мы можем предоставить вам уведомление о любых изменениях в этих Условиях по электронной почте, обычной почте или путем публикации в игре или на Сайте. Предоставляя нам свой адрес электронной почты, вы соглашаетесь отказаться от получения каких-либо уведомлений через почтовую почту."
       }
     }
   },
   "notfound" : {
     "warning" : {
-      "title" : "404 - Not Found",
-      "body"  : "No resource found at the requested URL."
+      "title" : "404 - не обнаружена",
+      "body"  : "Ресурс не найден на запрошенном URL."
     }
   },
   "component" : {
     "calendar" : {
-      "selectMonth" : "Select a Month",
-      "nextMonth" : "Next Month",
-      "prevMonth" : "Previous Month"
+      "selectMonth" : "Выберите месяц",
+      "nextMonth" : "В следующем месяце",
+      "prevMonth" : "Предыдущий месяц"
     },
     "account" : {
       "noDays" : {
-        "title" : "You do not own any days.",
-        "body" : "Your birthday might be a good place to start!"
+        "title" : "У вас нет никаких дней.",
+        "body" : "Ваш день рождения может стать хорошим местом для начала!"
       }
     },
     "accountWarning" : {
       "detectingBrowser" : {
-        "title" : "Detecting Browser Capabilities",
-        "message" : "Please wait while we look for Web3 Browser capabilities (MetaMask, Mist, etc.)"
+        "title" : "Обнаружение возможностей браузера",
+        "message" : "Подождите, пока мы ищем возможности браузера Web3 (MetaMask, Mist и т. Д.)."
       },
       "invalidBrowser" : {
-        "title" : "Non-Web3 Browser",
-        "message" : "You will need an Ethereum-based Web3 Browser such as MetaMask or Mist in order to use this site."
+        "title" : "Браузер не-Web3",
+        "message" : "Для использования этого сайта вам понадобится браузер Web3, основанный на Ethereum, такой как MetaMask или Mist."
       },
       "installMetaMask" : {
-        "title" : "Don't have a Web3 Browser?",
-        "line1" : "Get the MetaMask browser extension by MetaCert and Own the Day!"
+        "title" : "У вас нет браузера Web3?",
+        "line1" : "Получите расширение браузера MetaMask от MetaCert и Own the Day!"
       },
       "wrongNetwork" : {
-        "title" : "Wrong Network!",
-        "messageTest" : "Please connect to a Test Network.",
-        "messageMain" : "Please connect to the Main Ethereum Network."
+        "title" : "Неправильная сеть!",
+        "messageTest" : "Неправильная сеть!...",
+        "messageMain" : "Пожалуйста, подключитесь к основной сети Ethereum."
       },
       "noAccount" : {
-        "title" : "No Account!",
-        "message" : "Please login to an Ethereum account using your Web3 Browser (MetaMask, Mist, etc.)"
+        "title" : "Нет аккаунта!",
+        "message" : "Войдите в аккаунт Ethereum, используя браузер Web3 (MetaMask, Mist и т. Д.)."
       }
     },
     "priceLevel" : {
-      "title" : "Price Level Increase",
+      "title" : "Повышение уровня цен",
       "table" : {
         "head" : {
-          "col1" : "Level",
-          "col2" : "Price Range (ETH)",
-          "col3" : "Price Increase",
-          "col4" : "Developer Cut"
+          "col1" : "уровень",
+          "col2" : "Ценовой диапазон(ETH)",
+          "col3" : "Увеличение цены",
+          "col4" : "Разработчик Cut"
         },
         "row1" : {
-          "col1" : "Level 1",
+          "col1" : "уровень 1",
           "col2" : "0.001 - 0.25",
           "col3" : "100%",
           "col4" : "5%"
         },
         "row2" : {
-          "col1" : "Level 2",
+          "col1" : "уровень 2",
           "col2" : "0.25 - 0.5",
           "col3" : "36%",
           "col4" : "4%"
         },
         "row3" : {
-          "col1" : "Level 3",
+          "col1" : "уровень 3",
           "col2" : "0.5 - 2.5",
           "col3" : "26%",
           "col4" : "3%"
         },
         "row4" : {
-          "col1" : "Level 4",
+          "col1" : "уровень 4",
           "col2" : "2.5 - 5",
           "col3" : "18%",
           "col4" : "3%"
         },
         "row5" : {
-          "col1" : "Level 5",
+          "col1" : "уровень 5",
           "col2" : "5 -",
           "col3" : "15%",
           "col4" : "2%"
@@ -303,46 +303,46 @@
   },
   "modal" : {
     "claim" : {
-      "claimDay"   : "Own the Day!",
-      "claimed"    : "You have successfully claimed __date__.",
+      "claimDay"   : "Собственный день!",
+      "claimed"    : "Вы успешно заявили __date__.",
       "claimTitle" : "You Own the Day!",
       "info" : {
-        "line1" : "You can claim <strong>__date__</strong> for <strong>__price__</strong>",
-        "line2" : "Anyone can claim this day from you at the price of <strong>__price__</strong>.",
-        "line3" : "You may bid higher than the current price to ensure that you claim the day. If your bid is over the current price, you will be refunded the difference.",
-        "line4" : "Your transaction may fail if the price has moved above your bid price, in which case you will be refunded your bid.",
-        "line5" : "Adjusting the Gas Price (Gwei) may speed-up your transaction.  Please refer to your favorite gas tracker to get the latest Proposed Gas Price"
+        "line1" : "Вы можете требовать <strong> __ дату __ </ strong> для <strong> __ цены __ </ strong>",
+        "line2" : "Любой человек может претендовать на этот день от вас по цене <strong> __ цена __ </ strong>.",
+        "line3" : "Вы можете сделать ставку выше текущей цены, чтобы гарантировать, что вы заявите день. Если ваша ставка превышает текущую цену, вам будет возмещена разница.",
+        "line4" : "Ваша транзакция может выйти из строя, если цена переместилась выше вашей цены предложения, и в этом случае вам будет возвращена ваша ставка.",
+        "line5" : "Регулировка цены на газ (Gwei) может ускорить транзакцию. Пожалуйста, обратитесь к своему любимому газовому трекеру, чтобы получить последнюю предлагаемую цену на газ."
       },
-      "disclaimer" : "Days are collectibles, and as such, there is no guarantee that other players will claim this collectible from you."
+      "disclaimer" : "Дни - это предметы коллекционирования, и поэтому нет гарантии, что другие игроки будут требовать от вас эту коллекцию."
     },
     "nickname" : {
-      "title"       : "Set your Nickname on the Blockchain!",
-      "set"         : "Set Nickname",
-      "placeholder" : "Nickname",
-      "profanities" : "NOTE: Profanities in your Nickname will be censored so please don't waste your Gas!"
+      "title"       : "Задайте свой псевдоним на блочной цепочке!",
+      "set"         : "Установить псевдоним",
+      "placeholder" : "кличка",
+      "profanities" : "ПРИМЕЧАНИЕ. Проценты в вашем Псевдониме будут подвергнуты цензуре, поэтому, пожалуйста, не тратьте свой газ!"
     }
   },
   "generic" : {
-    "balance"      : "Balance",
-    "cancel"       : "cancel",
-    "claim"        : "Claim",
-    "close"        : "Close",
-    "disclaimer"   : "DISCLAIMER",
+    "balance"      : "Баланс",
+    "cancel"       : "Отмена",
+    "claim"        : "Запрос",
+    "close"        : "Закрыть",
+    "disclaimer"   : "ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ",
     "etherUnit"    : "ETH",
-    "from"         : "from",
-    "loading"      : "Loading, please wait...",
-    "loadingComm"  : "(communicating with the Ethereum blockchain)",
-    "notice"       : "Notice",
-    "own"          : "Own",
-    "owner"        : "Owner",
-    "price"        : "Price",
-    "priceEther"   : "Price in ETH",
-    "priceCurrent" : "Current Price",
-    "priceNext"    : "Next Price",
-    "information"  : "Information",
-    "social"       : "Social",
-    "copyright1"   : "Copyright 2018 OwnTheDay.io",
-    "copyright2"   : "All rights reserved."
+    "from"         : "из",
+    "loading"      : "Загрузка, пожалуйста подождите...",
+    "loadingComm"  : "(связь с блок-цепью Ethereum)",
+    "notice"       : "уведомление",
+    "own"          : "Своя",
+    "owner"        : "владелец",
+    "price"        : "Цена",
+    "priceEther"   : "Цена в ETH",
+    "priceCurrent" : "Текущая цена",
+    "priceNext"    : "Следующая цена",
+    "information"  : "Информация",
+    "social"       : "Социальное",
+    "copyright1"   : "Авторские права 2018 OwnTheDay.io",
+    "copyright2"   : "Все права защищены."
   },
   "holiday" : {
     "jan1" : {
