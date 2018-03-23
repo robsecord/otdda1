@@ -41,7 +41,7 @@ Meteor.startup(() => {
     var constructedCsp = BrowserPolicy.content._constructCsp();
     BrowserPolicy.content.setPolicy(`${constructedCsp} font-src data:;`);
 
-    // The disallowConnect statement will prevent us from using Meteor’s DDP connection,
+    // The disallowConnect statement will prevent us from using Meteor's DDP connection,
     // so we should also add the following rules:
     var rootUrl = __meteor_runtime_config__.ROOT_URL;
     BrowserPolicy.content.allowConnectOrigin(rootUrl);

@@ -62,7 +62,6 @@ Template.calendarDayComponent.helpers({
     getCurrentPrice() {
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
-        console.log('Calendar-Day-Component helper - getCurrentPrice');
         DayPrices.prices[instance.dayIndex].changed.get();
         //Session.get('latestClaim'); // Day Claimed; Price/Owner changed
 
@@ -73,7 +72,6 @@ Template.calendarDayComponent.helpers({
     getCurrentOwner() {
         const instance = Template.instance();
         const ownerName = instance.ownerName.get();
-        console.log('Calendar-Day-Component helper - getCurrentOwner');
         const address = DayPrices.owners[instance.dayIndex].address;
         if (Helpers.isAddressZero(address)) { return ''; }
         return ownerName;

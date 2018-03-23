@@ -9,7 +9,8 @@
       "title" : "Own the Day",
       "link" : {
         "calendar" : "Calendar",
-        "account" : "My Days"
+        "account" : "My Days",
+        "pendingTxs" : "Pending Transactions"
       },
       "notConnected" : "You are not logged in",
       "noNetwork"    : "You are not connected to the network"
@@ -97,7 +98,7 @@
         "a" : {
           "l1" : "Own the Day is a game about collecting and owning your favorite calendar-days on the Ethereum Blockchain. When you buy a day, you are the sole owner of that day until someone claims it from you, at which point you earn ether as the seller of the day.",
           "l2" : "Calendar-days are crypto-collectibles similar to sports-cards and comic books, only these collectibles always increase in value!  What you own is an ERC20 Token on the Ethereum Blockchain, limited to only 366 DAYS Tokens (we have included the extra day in February for Leap Year). Much like traditional collectibles, their value is directly related to their desirability by other collectors.",
-          "l3" : "The game’s interactive global Calendar will display your Nickname on all of the days that you own and will also be represented by a unique color based on the last six characters of your wallet's public address.",
+          "l3" : "The game's interactive global Calendar will display your Nickname on all of the days that you own and will also be represented by a unique color based on the last six characters of your wallet's public address.",
           "l4" : "If anyone else decides to claim a day that you own, they will have to pay you up to double the price in ETH which will automatically be transferred into your wallet by the smart contract.",
           "l5" : "You either own your day as a unique Crypto-Collectible, or you profit from it - you can't lose!  Ultimately, the more you play the more you can earn!"
         }
@@ -299,6 +300,14 @@
           "col4" : "2%"
         }
       }
+    },
+    "mostPopularDays" : {
+      "title" : "Most Popular Days"
+    },
+    "footer" : {
+      "social" : {
+        "visitUs" : "Visit us on __social__"
+      }
     }
   },
   "modal" : {
@@ -371,7 +380,7 @@
     },
 
     "jan30" : {
-      "title" : "Tu B’Shevat",
+      "title" : "Tu B'Shevat",
       "desc" : "Tu B'Shevat for the year 2018 is celebrated/ observed on sundown of January 30 ending at sundown on Wednesday, January 31. Tu B'Shevat is observed on the 15th day of the month of Shevat on the Hebrew calendar. The day is about planting trees and to make the land healthy and more vibrant, similar to Arbor Day."
     },
 
@@ -386,7 +395,7 @@
     },
 
     "feb12" : {
-      "title" : "Lincoln’s Birthday",
+      "title" : "Lincoln's Birthday",
       "desc" : "Lincoln's Birthday for the year 2018 is celebrated/ observed on Monday, February 12. Lincoln's Birthday falls on February 12th each year and celebrates the birth of one of our most famous and respected Presidents in the United States."
     },
 
@@ -416,7 +425,7 @@
     },
 
     "mar17" : {
-      "title" : "St.Patrick’s Day",
+      "title" : "St.Patrick's Day",
       "desc" : "St Patrick's Day for the year 2018 is celebrated/ observed on Saturday, March 17. St Patrick's Day is celebrated on March 17th each year. This day honors Irelands patron Saint, St. Patrick and the day marks the death of the saint."
     },
 
@@ -436,7 +445,7 @@
     },
 
     "apr1" : {
-      "title" : "April Fools’",
+      "title" : "April Fools'",
       "desc" : "April Fools' Day for the year 2018 is celebrated/ observed on Sunday, April 1. April Fools day is celebrated on April 1st each year. The day includes practical jokes and hoaxes played one another."
     },
 
@@ -456,7 +465,7 @@
     },
 
     "apr12" : {
-      "title" : "Isra and Mi’raj",
+      "title" : "Isra and Mi'raj",
       "desc" : "Isra and Mi'raj for the year 2018 is celebrated/ observed on sundown of April 12 ending at sundown on Friday, April 13. Isra and Mi'raj is observed on the 27th day of Rajab on the Islamic calendar. The day commemorates Prophet Mohammad's trip from Mecca to Jerusalem and his ascension into heaven."
     },
 
@@ -501,7 +510,7 @@
     },
 
     "may13" : {
-      "title" : "Mother’s Day",
+      "title" : "Mother's Day",
       "desc" : "Mother's Day for the year 2018 is celebrated/ observed on Sunday, May 13. Mother's Day is celebrated on the second Sunday of May each year. The day honors and celebrates mothers, grandmothers and great-grandmothers for their contribution to their families communities and society."
     },
 
@@ -551,7 +560,7 @@
     },
 
     "jun17" : {
-      "title" : "Father’s Day",
+      "title" : "Father's Day",
       "desc" : "Father's Day for the year 2018 is celebrated/ observed on Sunday, June 17. Father's Day is celebrated on the third Sunday in June. The day celebrates fatherhood and all the father figures in our lives that help make our lives better."
     },
 
@@ -576,7 +585,7 @@
     },
 
     "jul21" : {
-      "title" : "Tisha B’Av",
+      "title" : "Tisha B'Av",
       "desc" : "Tisha B'Av is observed on the ninth day of the month of Av on the Hebrew calendar. The day for Jews, brings remembrance to the destruction of the First and Second Temple in Jerusalem"
     },
 
@@ -611,7 +620,7 @@
     },
 
     "aug26" : {
-      "title" : "Women’s Equality Day",
+      "title" : "Women's Equality Day",
       "desc" : "Women's Equality Day for the year 2018 is celebrated/ observed on Sunday, August 26. Women's Equality Day is observed on August 26th each year and commemorates women's right to vote throughout the United States. This was passed as the 19th amendment to the United States in 1920."
     },
 
@@ -676,12 +685,12 @@
     },
 
     "nov1" : {
-      "title" : "All Saints’ Day",
+      "title" : "All Saints' Day",
       "desc" : "All Saints' Day for the year 2018 is celebrated/ observed on Thursday, November 1. Always celebrated on the first of November each year, All Saints Day celebrates those Saints who are not honored on a special separate day during the year so that they may be honored on this day."
     },
 
     "nov2" : {
-      "title" : "All Souls’ Day",
+      "title" : "All Souls' Day",
       "desc" : "All Souls' Day for the year 2018 is celebrated/ observed on Friday, November 2. All Souls' Day always falls on the 2nd day of November each year. The day reminds us of those who are dead and those who are in purgatory and for the living to live holy lives for the purification of their soul."
     },
 
@@ -696,7 +705,7 @@
     },
 
     "nov20" : {
-      "title" : "Prophet’s Birthday",
+      "title" : "Prophet's Birthday",
       "desc" : "Prophet's Birthday for the year 2018 is celebrated/ observed on sundown of November 20 ending at sundown on Wednesday, November 21. The Prophet's Birthday is celebrated on the 12th or 17th day of the Rabi' al-awwal month of the Islamic calendar. The day marks the birthday celebration of the Prophet Muhammad for Muslims."
     },
 

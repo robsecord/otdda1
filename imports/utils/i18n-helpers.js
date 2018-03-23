@@ -6,6 +6,7 @@ import * as fr from 'date-fns/locale/fr';
 import * as de from 'date-fns/locale/de';
 import * as es from 'date-fns/locale/es';
 import * as ru from 'date-fns/locale/ru';
+import * as ko from 'date-fns/locale/ko';
 import * as ja from 'date-fns/locale/ja';
 import * as zh_cn from 'date-fns/locale/zh_cn';
 import { _ } from 'lodash';
@@ -13,7 +14,7 @@ import { _ } from 'lodash';
 // App Components
 import { log } from '/imports/utils/logging';
 
-const _locales = {fr, de, es, ru, ja, zh: zh_cn};
+const _locales = {fr, de, es, ru, ja, ko, zh: zh_cn};
 
 
 export class LocaleHelpers {
@@ -30,7 +31,7 @@ export class LocaleHelpers {
             .done(() => {
                 LocaleHelpers.localeDep.changed();
                 localStorage.setItem('OTDi18n', userLang);
-                log.info(`TAPi18n - Language Set to "${userLang}"`);
+                //log.info(`TAPi18n - Language Set to "${userLang}"`);
             })
             .fail((err) => {
                 log.error(`TAPi18n.setLanguage Failed; ${err}`);

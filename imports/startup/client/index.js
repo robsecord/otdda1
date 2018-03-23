@@ -21,6 +21,7 @@ import '/imports/utils/template-helpers';
 import './routes';
 import './ethereum';
 import './spinner';
+import { log } from '/imports/utils/logging';
 
 
 // Disconnect any Meteor Server
@@ -32,5 +33,7 @@ if (location.host !== 'localhost:3000' && location.host !== '127.0.0.1:3000' && 
 // Client Startup - Equivalent to DOMReady event
 //
 Meteor.startup(function clientIndexStartup() {
-
+    log.log('OwnTheDay Version 1.4.7');
+    log.log('Check out our Ethereum Contract here: https://etherscan.io/address/0x16d790ad4e33725d44741251f100e635c323beb9#code');
+    log.log('Have a great Day!');
 });

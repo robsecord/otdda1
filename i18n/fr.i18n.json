@@ -51,7 +51,7 @@
       "title" : "Comment jouer",
       "line1" : "Chaque jour de calendrier disponible est un objet de collection unique représenté par un jeton compatible ERC20 sur la chaîne de blocs Ethereum, et ne peut appartenir qu'à une seule personne à la fois. Une fois que vous avez réclamé un jour de calendrier, c'est le vôtre et le vôtre seul!",
       "line2" : "Les jours calendaires que vous avez réclamés seront affichés sur le Calendrier global avec votre Pseudo (votre surnom par défaut est les 6 derniers caractères de votre adresse de portefeuille publique, mais vous pouvez changer votre pseudo à tout moment).",
-      "line3" : "Comme les objets de collection de votre calendrier sont des jetons Ethereum, ils peuvent également être consultés dans votre portefeuille MetaMask sous la rubrique "Jetons". Veuillez consulter la page __faq__ pour plus d'informations sur l'affichage des jetons DAYS dans votre portefeuille.",
+      "line3" : "Comme les objets de collection de votre calendrier sont des jetons Ethereum, ils peuvent également être consultés dans votre portefeuille MetaMask sous la rubrique \"Jetons\". Veuillez consulter la page __faq__ pour plus d'informations sur l'affichage des jetons DAYS dans votre portefeuille.",
       "line4" : "Vous pouvez réclamer n'importe quel jour sur le calendrier, ils sont tous à la clé! Cela signifie également que quelqu'un d'autre peut réclamer un jour de calendrier de votre part, et ce faisant, ils vous payent le prix accru du jour civil. Le prix augmente automatiquement chaque fois qu'un jour est réclamé, ce qui est calculé par le contrat smart en fonction du tableau 'Price Level Increase'."
     }
   },
@@ -299,6 +299,14 @@
           "col4" : "2%"
         }
       }
+    },
+    "mostPopularDays" : {
+      "title" : "Most Popular Days"
+    },
+    "footer" : {
+      "social" : {
+        "visitUs" : "Visit us on __social__"
+      }
     }
   },
   "modal" : {
@@ -307,8 +315,8 @@
       "claimed"    : "Vous avez revendiqué avec succès __date__.",
       "claimTitle" : "Vous possédez la journée!",
       "info" : {
-        "line1" : "Vous pouvez demander <strong> __ date __ </ strong> pour <strong> __ prix __ </ strong>",
-        "line2" : "Tout le monde peut réclamer cette journée auprès de vous au prix de <strong> __ prix __ </ strong>.",
+        "line1" : "Vous pouvez demander <strong>__date__</strong> pour <strong>__prix__</strong>",
+        "line2" : "Tout le monde peut réclamer cette journée auprès de vous au prix de <strong>__prix__</strong>.",
         "line3" : "Vous pouvez enchérir plus haut que le prix actuel pour vous assurer que vous réclamez le jour. Si votre offre dépasse le prix actuel, la différence vous sera remboursée.",
         "line4" : "Votre transaction peut échouer si le prix a dépassé le prix de votre offre, auquel cas vous serez remboursé de votre enchère.",
         "line5" : "Ajuster le prix du gaz (Gwei) peut accélérer votre transaction. S'il vous plaît se référer à votre pisteur de gaz préféré pour obtenir le dernier prix du gaz proposé."
@@ -371,7 +379,7 @@
     },
 
     "jan30" : {
-      "title" : "Tu B’Shevat",
+      "title" : "Tu B'Shevat",
       "desc" : "Tu B'Shevat pour l'année 2018 est célébré / observé le dimanche 30 janvier se terminant au coucher du soleil le mercredi 31 janvier. Tu B'Shevat est observé le 15 du mois de Shevat sur le calendrier hébreu. La journée consiste à planter des arbres et à rendre la terre plus saine et plus dynamique, semblable à la Journée de l'arbre."
     },
 
@@ -486,9 +494,8 @@
     },
 
     "may4" : {
-        "title" : "Journée Star Wars",
-        "desc" : "La Star Wars Day, le 4 mai, célèbre la Star Wars de George Lucas. Il est observé par les fans de la franchise des médias. L'observation de la journée commémorative s'est rapidement répandue à travers les célébrations médiatiques et populaires.
-             La date a été choisie pour le jeu de mots sur le slogan 'Que la Force soit avec vous' comme 'Que le Quatrième soit avec vous'. Même si la fête n'a pas été créée ou déclarée par Lucasfilm, de nombreux fans de Star Wars à travers le monde ont choisi de célébrer cette fête."
+      "title" : "Journée Star Wars",
+      "desc" : "La Star Wars Day, le 4 mai, célèbre la Star Wars de George Lucas. Il est observé par les fans de la franchise des médias. L'observation de la journée commémorative s'est rapidement répandue à travers les célébrations médiatiques et populaires. La date a été choisie pour le jeu de mots sur le slogan 'Que la Force soit avec vous' comme 'Que le Quatrième soit avec vous'. Même si la fête n'a pas été créée ou déclarée par Lucasfilm, de nombreux fans de Star Wars à travers le monde ont choisi de célébrer cette fête."
     },
 
     "may5" : {
@@ -582,7 +589,7 @@
     },
 
     "jul21" : {
-      "title" : "Tisha B’Av",
+      "title" : "Tisha B'Av",
       "desc" : "Tisha B'Av est observé le neuvième jour du mois d'Av sur le calendrier hébreu. Le jour pour les Juifs, apporte le souvenir de la destruction du Premier et Deuxième Temple à Jérusalem."
     },
 

@@ -6,7 +6,7 @@
   },
   "body" : {
     "navbar" : {
-          "title" : "Poseer el día",
+      "title" : "Poseer el día",
       "link" : {
         "calendar" : "Calendario",
         "account" : "Mis días"
@@ -299,6 +299,14 @@
           "col4" : "2%"
         }
       }
+    },
+    "mostPopularDays" : {
+      "title" : "Most Popular Days"
+    },
+    "footer" : {
+      "social" : {
+        "visitUs" : "Visit us on __social__"
+      }
     }
   },
   "modal" : {
@@ -307,8 +315,8 @@
       "claimed"    : "Has reclamado exitosamente __date__.",
       "claimTitle" : "¡Eres el dueño del día!",
       "info" : {
-        "line1" : "Puede solicitar <strong>__date__</ strong> para <strong>__price__</ strong>",
-        "line2" : "Cualquiera puede reclamar este día de usted al precio de <strong>__price__</ strong>.",
+        "line1" : "Puede solicitar <strong>__date__</strong> para <strong>__price__</strong>",
+        "line2" : "Cualquiera puede reclamar este día de usted al precio de <strong>__price__</strong>.",
         "line3" : "Puede pujar más alto que el precio actual para asegurarse de reclamar el día. Si su oferta supera el precio actual, se le reembolsará la diferencia.",
         "line4" : "Su transacción puede fallar si el precio se ha movido por encima de su precio de oferta, en cuyo caso se le reembolsará su oferta.",
         "line5" : "Ajustar el precio del gas (Gwei) puede acelerar su transacción. Consulte su rastreador de gas favorito para obtener el último precio de gas propuesto."
@@ -371,7 +379,7 @@
     },
 
     "jan30" : {
-      "title" : "Tu B’Shevat",
+      "title" : "Tu B'Shevat",
       "desc" : "Tu B'Shevat para el año 2018 se celebra / observa al atardecer del 30 de enero y termina al ponerse el sol el miércoles 31 de enero. Tu B'Shevat se observa el día 15 del mes de Shevat en el calendario hebreo. El día es sobre plantar árboles y hacer que la tierra sea más saludable y vibrante, similar al Día del Árbol."
     },
 
@@ -452,8 +460,7 @@
 
     "apr11" : {
       "title" : "Yom Hashoah",
-      "desc" : "Yom Hashoah para el año 2018 se celebra / observa al atardecer del 11 de abril y termina al atardecer del jueves 12 de abril. Yom Hashoah se observa el día 27 de Nison según el calendario hebreo. El día es un recuerdo y conmemora las vidas de los judíos que murieron en el Holocausto durante la Segunda Guerra Mundial.
-      "
+      "desc" : "Yom Hashoah para el año 2018 se celebra / observa al atardecer del 11 de abril y termina al atardecer del jueves 12 de abril. Yom Hashoah se observa el día 27 de Nison según el calendario hebreo. El día es un recuerdo y conmemora las vidas de los judíos que murieron en el Holocausto durante la Segunda Guerra Mundial."
     },
 
     "apr12" : {
@@ -577,7 +584,7 @@
     },
 
     "jul21" : {
-      "title" : "Tisha B’Av",
+      "title" : "Tisha B'Av",
       "desc" : "Tisha B'Av se observa en el noveno día del mes de Av en el calendario hebreo. El día para los judíos trae recuerdos de la destrucción del Primer y Segundo Templo en Jerusalén."
     },
 

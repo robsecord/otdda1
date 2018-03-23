@@ -241,7 +241,7 @@ const _getIndicesOf = (prices, priceToFind) => {
  * @private
  */
 const _getMaxPriceBy = (prices, isGreaterCallback) => {
-    let maxPrice = prices[0];
+    let maxPrice = {price: new BigNumber(0)};
     _.forEach(prices, (priceObj) => {
         if (isGreaterCallback(priceObj.price, maxPrice.price)) {
             maxPrice = priceObj;
@@ -254,7 +254,7 @@ const _updateLeaders = () => {
     // Get Leading Prices
     const firstHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.gt(max));
     const secondHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.eq(firstHigh.price) ? false : price.gt(max));
-    const thirdHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.eq(firstHigh.price) || price.eq(secondHigh.price) ? false : price.gt(max));
+    const thirdHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => (price.eq(firstHigh.price) || price.eq(secondHigh.price)) ? false : price.gt(max));
 
     // Get Indices of Leading Prices
     const firstHighDays = _getIndicesOf(DayPrices.prices, firstHigh.price);

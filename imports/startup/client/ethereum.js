@@ -13,7 +13,7 @@ function _loadWeb3() {
     let web3Injected = window.web3;
 
     if (!_.isUndefined(web3Injected)) {
-        log.log('Using Injected Web3 Provider');
+        //log.log('Using Injected Web3 Provider');
         eth.web3 = new Web3(web3Injected.currentProvider);
     // } else {
     //     console.log('No Web3 detected, using HTTP Provider');

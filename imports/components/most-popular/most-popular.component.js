@@ -55,6 +55,11 @@ Template.mostPopularDayComponent.helpers({
     getHighestDayIndex(rank) {
         const instance = Template.instance();
         return instance.highestDayIndices.get()[rank];
+    },
+
+    getTipPlacement() {
+        const tplData = Template.currentData();
+        return tplData.tipPlacement || 'right';
     }
 
 });
