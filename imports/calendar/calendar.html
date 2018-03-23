@@ -4,8 +4,14 @@
         {{> accountWarningComponent}}
 
         {{#if hasValidNetwork}}
-            <h3 class="page-header">{{_ 'calendar.title'}}</h3>
-
+            <div class="row">
+                <div class="col-md-6">
+                    {{> mostPopularDayComponent}}
+                </div>
+                <div class="col-md-6">
+                    &nbsp;
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-10">
                     {{> calendarComponent}}

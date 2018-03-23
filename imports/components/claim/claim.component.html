@@ -7,7 +7,7 @@
             </div>
             <div class="panel-body">
                 {{#if hasHoliday}}
-                    <div class="holiday-icon" data-toggle="popover" data-container="body" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
+                    <div class="holiday-icon" data-toggle="popover" data-container="body" data-original-title="{{getHolidayTitle}}" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
                 {{/if}}
 
                 <div class="day-label">{{getDayLabel}}</div>

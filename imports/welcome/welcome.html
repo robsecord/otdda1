@@ -11,7 +11,7 @@
 
         <div class="welcome-intro padded-section text-section">
             <div class="row">
-                <div class="col-md-5 col-md-offset-2">
+                <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <h3>{{_ 'welcome.intro1.titleLine'}}</h3>
@@ -23,6 +23,9 @@
                             <p><strong>{{_ 'welcome.intro1.line6'}}</strong></p>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    {{> mostPopularDayComponent showLoading=true}}
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import { _ } from 'lodash';
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
 import { Contract } from '/imports/contract/contract-interface';
 import { CurrentClaim } from '/imports/utils/current-claim';
+import { DayPrices } from '/imports/utils/day-prices';
 import { Helpers } from '/imports/utils/common';
 import { log } from '/imports/utils/logging';
 
@@ -24,11 +25,15 @@ Template.dayCardComponent.onCreated(function Template_dayCardComponent_onCreated
 
     instance.dayIndex = new ReactiveVar(instance.data.day);
     instance.dayPrice = new ReactiveVar('');
+    instance.ownerAddress = new ReactiveVar('');
+    instance.ownerName = new ReactiveVar('');
+    instance.displayOwner = new ReactiveVar(instance.data.displayOwner);
 
     instance.autorun(() => {
         const tplData = Template.currentData();
         Session.get('accountNickname');
         instance.dayIndex.set(tplData.day);
+        instance.displayOwner.set(tplData.displayOwner);
     });
 
     instance.autorun(() => {
@@ -42,6 +47,21 @@ Template.dayCardComponent.onCreated(function Template_dayCardComponent_onCreated
             .then(result => instance.dayPrice.set(String(result)))
             .catch(log.error);
     });
+
+    instance.autorun(() => {
+        const tplData = Template.currentData();
+        const dayIndex = tplData.day;
+        if (DayPrices.initialLoad.get()) { return; }
+
+        // Watch for changes to current owner
+        DayPrices.owners[dayIndex].changed.get();
+        if (DayPrices.owners[dayIndex].address) {
+            instance.ownerAddress.set(DayPrices.owners[dayIndex].address);
+            Helpers.getFriendlyOwnerName(instance.contract, DayPrices.owners[dayIndex].address)
+                .then(name => instance.ownerName.set(name))
+                .catch(log.error);
+        }
+    });
 });
 
 Template.dayCardComponent.onRendered(function Template_dayCardComponent_onRendered() {
@@ -51,16 +71,26 @@ Template.dayCardComponent.onRendered(function Template_dayCardComponent_onRender
         CurrentClaim.changeTrigger.get();
         TAPi18n.getLanguage();
 
-        Meteor.defer(() => $('[data-toggle="popover"]').popover({trigger: 'hover', placement: 'bottom'}));
+        Meteor.defer(() => $('[data-toggle="popover"]').popover({trigger: 'hover', placement: instance.data.tipPlacement || 'right'}));
     });
 });
 
 Template.dayCardComponent.helpers({
 
+    getDayIndex() {
+        const instance = Template.instance();
+        return instance.dayIndex.get();
+    },
+
     getMonth() {
         const instance = Template.instance();
         const dayIndex = instance.dayIndex.get();
         return Helpers.getMonthDayFromIndex(dayIndex).month;
+    },
+
+    getSizeClass() {
+        const tplData = Template.currentData();
+        return tplData.size || 'normal';
     },
 
     hasHoliday() {
@@ -107,6 +137,34 @@ Template.dayCardComponent.helpers({
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
         return instance.eth.web3.fromWei(instance.dayPrice.get(), 'ether').toString(10);
+    },
+
+    shouldDisplayOwner() {
+        const instance = Template.instance();
+        return instance.displayOwner.get();
+    },
+
+    getCurrentOwner() {
+        const instance = Template.instance();
+        return instance.ownerName.get();
+    },
+
+    getColorFromAddress() {
+        const instance = Template.instance();
+        const address = instance.ownerAddress.get();
+        return Helpers.getStylesForAddress(address);
+    },
+
+});
+
+Template.dayCardComponent.events({
+
+    'click [data-jump]' : (event, instance) => {
+        const $target = $(event.currentTarget);
+        const dayIndex = $target.attr('data-jump');
+        const {month, day} = Helpers.getMonthDayFromIndex(dayIndex);
+        Session.setPersistent('selectedMonth', month);
+        Session.setPersistent('selectedDay', day);
     }
 
 });

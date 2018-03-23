@@ -5,6 +5,7 @@ import { _ } from 'lodash';
 
 
 // Template Components
+import '/imports/components/most-popular/most-popular.component';
 import '/imports/components/price-level/price-level.component';
 import '/imports/components/footer/footer.component';
 import './welcome.html';

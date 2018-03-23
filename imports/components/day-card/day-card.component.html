@@ -1,15 +1,18 @@
 <template name="dayCardComponent">
-    <div class="component-wrapper day-card-component">
+    <div class="component-wrapper day-card-component size-{{getSizeClass}}">
 
-        <div class="panel panel-default panel-day-card">
+        <div class="panel panel-default panel-day-card" data-jump="{{getDayIndex}}">
             <div class="panel-heading {{getMonthClass}}">
                 {{getDateLabel 'MMMM' getMonth '1'}}
             </div>
             <div class="panel-body">
                 {{#if hasHoliday}}
-                    <div class="holiday-icon" data-toggle="popover" data-container="body" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
+                    <div class="holiday-icon" data-toggle="popover" data-container="body" data-original-title="{{getHolidayTitle}}" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
                 {{/if}}
                 <div class="day-label">{{getDayLabel}}</div>
+                {{#if shouldDisplayOwner}}
+                    <div class="owner-label" style="{{getColorFromAddress}}"><strong>{{getCurrentOwner}}</strong></div>
+                {{/if}}
             </div>
             <div class="panel-footer">
                 <span class="day-price">{{_ 'generic.price'}}: {{getNextPrice}} {{_ 'generic.etherUnit'}}</span>

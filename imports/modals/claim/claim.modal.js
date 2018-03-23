@@ -5,10 +5,9 @@ import { _ } from 'lodash';
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
 import { Contract } from '/imports/contract/contract-interface';
 import { CurrentClaim } from '/imports/utils/current-claim';
+import { PendingTransactions } from '/imports/utils/pending-transactions';
 import { LocaleHelpers } from '/imports/utils/i18n-helpers';
 import { Helpers } from '/imports/utils/common';
-import { Notify } from '/imports/utils/notify';
-import { log } from '/imports/utils/logging';
 
 // Template Components
 import './claim.modal.html';
@@ -124,17 +123,9 @@ Template.claimModal.events({
         };
         const latestClaim = _.omit(CurrentClaim, 'changeTrigger');
         const dayIndex = CurrentClaim.day;
-        const month = Session.get('selectedMonth');
-        const day = Session.get('selectedDay');
-        const date = LocaleHelpers.formatDate('MMMM Do', month, day);
         instance.contract.claimDay(dayIndex, tx)
             .then(hash => {
-                log.log('Transaction sent;', hash);
-                instance.contract.waitForReceipt(hash, function (receipt) {
-                    log.log('Transaction succeeded;', receipt);
-                    Session.set('latestClaim', latestClaim);
-                    Notify.success(TAPi18n.__('modal.claim.claimed', {date}), TAPi18n.__('modal.claim.claimTitle'));
-                });
+                PendingTransactions.addTransaction(instance.contract, hash, latestClaim);
             })
             .catch(Helpers.displayFriendlyErrorAlert);
 

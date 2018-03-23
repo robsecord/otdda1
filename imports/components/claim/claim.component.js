@@ -48,7 +48,7 @@ Template.claimComponent.helpers({
 
         // Watch for changes to Current Claim and Update Price
         CurrentClaim.changeTrigger.get();
-        Session.get('latestClaim');
+        //Session.get('latestClaim');
         return (CurrentClaim.ownerAddress !== instance.eth.coinbase);
     },
 
@@ -89,28 +89,26 @@ Template.claimComponent.helpers({
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
 
-        // Watch for changes to Current Claim and Update Price
-        CurrentClaim.changeTrigger.get();
-        Session.get('latestClaim');
+        CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
+        Session.get('latestClaim'); // Day Claimed; Price/Owner changed
         return instance.eth.web3.fromWei(CurrentClaim.price, 'ether').toString(10);
     },
 
     hasCurrentOwner() {
-        CurrentClaim.changeTrigger.get();
-        Session.get('latestClaim');
+        CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
+        Session.get('latestClaim'); // Day Claimed; Price/Owner changed
         return !_.isEmpty(CurrentClaim.owner) && !Helpers.isAddressZero(CurrentClaim.owner);
     },
 
     getCurrentOwner() {
-        // Watch for changes to Current Claim and Update Owner
-        CurrentClaim.changeTrigger.get();
-        Session.get('latestClaim');
+        CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
+        Session.get('latestClaim'); // Day Claimed; Price/Owner changed
         return CurrentClaim.owner;
     },
 
     getColorFromAddress() {
-        CurrentClaim.changeTrigger.get();
-        Session.get('latestClaim');
+        CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
+        Session.get('latestClaim'); // Day Claimed; Price/Owner changed
         return Helpers.getStylesForAddress(CurrentClaim.ownerAddress);
     },
 

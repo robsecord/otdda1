@@ -30,7 +30,7 @@
                                 {{#each col in getCalendarColumns}}
                                     {{#if isValidDay row col}}
                                         <td data-select-cell="{{getCalendarDay row col}}" class="{{getSelectedCellClass row col}}">
-                                            {{> calendarDateSquare data=(getDateSquareData row col)}}
+                                            {{> calendarDayComponent data=(getCalendarDayData row col)}}
                                         </td>
                                     {{/if}}
                                 {{/each}}
@@ -43,17 +43,5 @@
             {{/if}}
         </div>
 
-    </div>
-</template>
-
-<template name="calendarDateSquare">
-    <div class="component-wrapper calendar-date-square-component">
-        {{#if hasHoliday}}
-            <div class="holiday-icon" data-toggle="popover" data-container="body" title="{{getHolidayTitle}}" data-content="{{getHolidayDesc}}">{{{getSvg getHolidayIcon}}}</div>
-        {{/if}}
-        <div class="day-label">{{getDay}}</div>
-
-        <div class="owner-label" style="{{getColorFromAddress}}"><strong>{{getCurrentOwner}}</strong></div>
-        <div class="price-label">{{_ 'generic.etherUnit'}}: {{getCurrentPrice}}</div>
     </div>
 </template>
