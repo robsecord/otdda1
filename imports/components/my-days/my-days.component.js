@@ -21,7 +21,7 @@ let _daysMonitorId;
 let _lastKnownAccount = '';
 
 
-Template.myDaysComponent.onCreated(function Template_myDaysComponent_onCreated(){
+Template.myDaysComponent.onCreated(function Template_myDaysComponent_onCreated() {
     const instance = this;
     instance.eth = MeteorEthereum.instance();
     instance.contract = Contract.instance();

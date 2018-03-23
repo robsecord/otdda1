@@ -21,7 +21,11 @@
       "title" : "나만의 날",
       "tooltip" : "에 에테르 블록 크로",
       "subtitle" : "또는 그것을 위해 돈을받습니다!",
-      "enterButton" : "캘린더 열기"
+      "enterButton" : "캘린더 열기",
+      "productHunt" : {
+        "title" : "Welcome Product Hunters!",
+        "content" : "Holiday Token System coming soon with a special, limited-time reward for Product Hunters -- Stay tuned!"
+      }
     },
     "intro1" : {
       "titleLine" : "블록 체인에서 가장 좋아하는 날을 즐겨보세요!",
@@ -250,9 +254,9 @@
         "line1" : "MetaCert로 MetaMask 브라우저 확장을 가져오고 자신의 날을 만드십시오!"
       },
       "wrongNetwork" : {
-        "title" : "잘못된 네트워크!",
-        "messageTest" : "테스트 네트워크에 연결하십시오.",
-        "messageMain" : "메인 에테르 네트워크에 연결하십시오."
+        "title" : "Wrong Ethereum Network!",
+        "messageTest" : "Please connect your browser (or extension) to a Custom Test Network.",
+        "messageMain" : "Please connect your browser (or extension) to the Main Ethereum Network."
       },
       "noAccount" : {
         "title" : "계정 없음!",
@@ -302,6 +306,14 @@
     },
     "mostPopularDays" : {
       "title" : "Most Popular Days"
+    },
+    "quickInstructions" : {
+      "title" : "How to Play",
+      "metamask" : "MetaMask Browser Extension",
+      "ethereum" : "Ethereum",
+      "line1" : "To play OwnTheDay, you will need to install the __mmbeLink__ for your browser. This will allow you to execute in-browser purchases using the __ethLink__ crypto-currency.",
+      "line2" : "Next, you will want to Purchase Ethereum and Transfer it to your MetaMask digital wallet. A popular place to purchase Ethereum (instantly) is at __coinbase__.",
+      "line3" : "See our __faq__ page for more details!"
     },
     "footer" : {
       "social" : {

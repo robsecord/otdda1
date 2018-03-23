@@ -69,6 +69,14 @@ Template.registerHelpers({
         return '';
     },
 
+    getCorrectNetworkName() {
+        const env = process.env.NODE_ENV;
+        const msg = (env === 'development')
+            ? 'component.accountWarning.wrongNetwork.messageTest'
+            : 'component.accountWarning.wrongNetwork.messageMain';
+        return TAPi18n.__(msg);
+    },
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Language Helpers
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -21,7 +21,11 @@
       "title" : "拥有一天",
       "tooltip" : "在以太坊区块链上",
       "subtitle" : "或得到它的支付！",
-      "enterButton" : "打开日历"
+      "enterButton" : "打开日历",
+      "productHunt" : {
+        "title" : "Welcome Product Hunters!",
+        "content" : "Holiday Token System coming soon with a special, limited-time reward for Product Hunters -- Stay tuned!"
+      }
     },
     "intro1" : {
       "titleLine" : "在区块链上拥有您最喜爱的一天！",
@@ -250,9 +254,9 @@
         "line1" : "MetaCert获得MetaMask浏览器扩展并拥有一天！"
       },
       "wrongNetwork" : {
-        "title" : "错误的网络！",
-        "messageTest" : "请连接到测试网络。",
-        "messageMain" : "请连接到以太坊主网络。"
+        "title" : "Wrong Ethereum Network!",
+        "messageTest" : "Please connect your browser (or extension) to a Custom Test Network.",
+        "messageMain" : "Please connect your browser (or extension) to the Main Ethereum Network."
       },
       "noAccount" : {
         "title" : "没有账号！",
@@ -302,6 +306,14 @@
     },
     "mostPopularDays" : {
       "title" : "Most Popular Days"
+    },
+    "quickInstructions" : {
+      "title" : "How to Play",
+      "metamask" : "MetaMask Browser Extension",
+      "ethereum" : "Ethereum",
+      "line1" : "To play OwnTheDay, you will need to install the __mmbeLink__ for your browser. This will allow you to execute in-browser purchases using the __ethLink__ crypto-currency.",
+      "line2" : "Next, you will want to Purchase Ethereum and Transfer it to your MetaMask digital wallet. A popular place to purchase Ethereum (instantly) is at __coinbase__.",
+      "line3" : "See our __faq__ page for more details!"
     },
     "footer" : {
       "social" : {

@@ -9,6 +9,7 @@
   &.welcome-page {
 
     .top-banner {
+      position: relative;
       height: 550px;
       margin: -30px -20px 0 -20px;
       box-shadow: 0 0 15px 3px #aaa;
@@ -26,6 +27,7 @@
         text-shadow: 3px 3px #ddd;
       }
       .sub-title {
+        position: relative;
         text-align: center;
         margin-top: 0;
         padding-top: 0;
@@ -38,6 +40,14 @@
         margin-top: 40px;
         text-align: center;
         font-style: italic;
+      }
+
+      .product-hunt-logo {
+        display: block;
+        .pos-abs(auto, 20px, 20px);
+        .square(200px);
+        border: 0 none;
+        background: transparent url("/img/social/product-hunt.png") no-repeat center;
       }
     }
 

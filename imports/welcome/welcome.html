@@ -2,8 +2,13 @@
     <div class="component-wrapper welcome-page">
 
         <div class="top-banner">
+            {{#if isFromProductHunt}}
+                <a href="https://www.producthunt.com/" class="product-hunt-logo" data-toggle="popover" title="{{_ 'welcome.topBanner.productHunt.title'}}" data-content="{{_ 'welcome.topBanner.productHunt.content'}}">&nbsp;</a>
+            {{/if}}
             <h1>{{_ 'welcome.topBanner.title'}}</h1>
-            <p class="sub-title">{{_ 'welcome.topBanner.subtitle'}}</p>
+            <p class="sub-title">
+                {{_ 'welcome.topBanner.subtitle'}}
+            </p>
             <div class="enter-button">
                 <a href="{{getCalendarRoute}}" class="btn btn-primary btn-lg">{{_ 'welcome.topBanner.enterButton'}} &nbsp; <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -25,7 +30,27 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    {{> mostPopularDayComponent showLoading=true tipPlacement="bottom"}}
+                    {{#if isReady}}
+                        {{#if hasInvalidBrowser}}
+                            {{> quickInstructionsComponent}}
+                        {{else}}
+                            {{#if hasInvalidNetwork}}
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{_ 'component.accountWarning.wrongNetwork.title'}}</strong><br>
+                                    {{_ getCorrectNetworkName}}
+                                </div>
+                                {{> quickInstructionsComponent}}
+                            {{else}}
+                                {{> mostPopularDayComponent showLoading=true tipPlacement="bottom"}}
+                            {{/if}}
+                        {{/if}}
+                    {{else}}
+                        <div class="alert alert-info" role="alert">
+                            <strong>{{_ 'component.accountWarning.detectingBrowser.title'}}</strong><br>
+                            {{_ 'component.accountWarning.detectingBrowser.message'}}
+                        </div>
+                    {{/if}}
+
                 </div>
             </div>
         </div>

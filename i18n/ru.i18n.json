@@ -21,7 +21,11 @@
       "title" : "Собственный день",
       "tooltip" : "на Эфириум Блокач",
       "subtitle" : "или платите за это!",
-      "enterButton" : "Открыть календарь"
+      "enterButton" : "Открыть календарь",
+      "productHunt" : {
+        "title" : "Welcome Product Hunters!",
+        "content" : "Holiday Token System coming soon with a special, limited-time reward for Product Hunters -- Stay tuned!"
+      }
     },
     "intro1" : {
       "titleLine" : "Собственный ваш любимый день на блочной цепи!",
@@ -250,9 +254,9 @@
         "line1" : "Получите расширение браузера MetaMask от MetaCert и Own the Day!"
       },
       "wrongNetwork" : {
-        "title" : "Неправильная сеть!",
-        "messageTest" : "Неправильная сеть!...",
-        "messageMain" : "Пожалуйста, подключитесь к основной сети Ethereum."
+        "title" : "Wrong Ethereum Network!",
+        "messageTest" : "Please connect your browser (or extension) to a Custom Test Network.",
+        "messageMain" : "Please connect your browser (or extension) to the Main Ethereum Network."
       },
       "noAccount" : {
         "title" : "Нет аккаунта!",
@@ -302,6 +306,14 @@
     },
     "mostPopularDays" : {
       "title" : "Most Popular Days"
+    },
+    "quickInstructions" : {
+      "title" : "How to Play",
+      "metamask" : "MetaMask Browser Extension",
+      "ethereum" : "Ethereum",
+      "line1" : "To play OwnTheDay, you will need to install the __mmbeLink__ for your browser. This will allow you to execute in-browser purchases using the __ethLink__ crypto-currency.",
+      "line2" : "Next, you will want to Purchase Ethereum and Transfer it to your MetaMask digital wallet. A popular place to purchase Ethereum (instantly) is at __coinbase__.",
+      "line3" : "See our __faq__ page for more details!"
     },
     "footer" : {
       "social" : {
