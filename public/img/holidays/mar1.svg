@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
 <path style="fill:#FFEED1;" d="M400.339,0h-290.7C86.968,0,68.411,18.557,68.411,41.228v267c0,5.668,4.639,10.307,10.307,10.307
 	h10.307l30.921-153.6l160.811,33.537l160.81-33.537V41.228C441.567,18.557,423.01,0,400.339,0z"/>
 <path style="fill:#FFD66E;" d="M104.485,41.228c-8.541,0-15.461,6.931-15.461,15.472v261.835h30.921V56.7
@@ -21,7 +21,7 @@
 	<path style="fill:#33A6F2;" d="M420.021,402.657v100.4c0,4.939,4.004,8.943,8.943,8.943s8.943-4.004,8.943-8.943v-100.4H420.021z"
 		/>
 </g>
-<polygon style="fill:#FFEED1;" points="441.567,278.325 441.567,349.781 280.757,372.139 119.946,349.781 119.946,318.536 
+<polygon style="fill:#FFEED1;" points="441.567,278.325 441.567,349.781 280.757,372.139 119.946,349.781 119.946,318.536
 	119.946,278.325 "/>
 <polygon style="fill:#33A6F2;" points="441.567,349.781 441.567,383.776 280.757,406.134 119.946,383.776 119.946,349.781 "/>
 <path style="fill:#2A4B66;" d="M441.567,383.776v30.932c0,5.668-4.639,10.307-10.307,10.307H130.253
