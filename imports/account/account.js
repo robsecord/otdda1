@@ -14,8 +14,8 @@ Template.account.onRendered(function Template_account_onRendered() {
 
 Template.account.helpers({
 
-    // getAccountId() {
-    //     return FlowRouter.getParam('accountId') || '';
-    // }
+    getAccountId() {
+        return FlowRouter.getParam('accountId') || false;
+    }
 
 });

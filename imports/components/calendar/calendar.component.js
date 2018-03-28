@@ -1,18 +1,16 @@
 // Meteor Components
 import { Random } from 'meteor/random';
+import { TAPi18n } from 'meteor/tap:i18n';
 import { _ } from 'lodash';
 
 // App Components
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
 import { Contract } from '/imports/contract/contract-interface';
-import { CurrentClaim } from '/imports/utils/current-claim';
 import { Helpers } from '/imports/utils/common';
 import { DayPrices } from '/imports/utils/day-prices';
-import { log } from '/imports/utils/logging';
 
 // Globals
 import {
-    CLAIM_WATCH_INTERVAL,
     DAYS_IN_MONTH
 } from '/imports/utils/global-constants';
 
@@ -21,7 +19,6 @@ import '/imports/components/loading/loading.component';
 import '/imports/components/calendar-day/calendar-day.component';
 import './calendar.component.html';
 
-let _claimMonitorId;
 
 Template.calendarComponent.onCreated(function Template_calendarComponent_onCreated() {
     const instance = this;
@@ -33,7 +30,9 @@ Template.calendarComponent.onCreated(function Template_calendarComponent_onCreat
 
     // Watch changes to Calendar Month
     instance.autorun(() => {
+        // Triggers
         const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
 
         // Ensure Valid Day Selected
         let day;
@@ -44,29 +43,27 @@ Template.calendarComponent.onCreated(function Template_calendarComponent_onCreat
         // Get Day-Index Range for Selected Month
         instance.dayIndexRange = Helpers.getDayIndexRange(selectedMonth);
     });
-
-    // Watch changes to Selected Day for Current-Claim
-    instance.autorun(() => {
-        const selectedMonth = Session.get('selectedMonth');
-        const selectedDay = Session.get('selectedDay');
-
-        // Get Day-Index Range for Selected Month
-        const range = Helpers.getDayIndexRange(selectedMonth);
-        instance.selectedDayIndex = range[0] + selectedDay - 1;
-        _monitorClaimPriceAndOwner(instance);
-    });
 });
 
-Template.calendarComponent.onDestroyed(function Template_calendarComponent_onDestroyed() {
-    if (_claimMonitorId) {
-        Meteor.clearTimeout(_claimMonitorId);
-    }
+Template.calendarComponent.onRendered(function Template_calendarComponent_onRendered() {
+    const instance = this;
+    instance.autorun(() => {
+        const selectedMonth = Session.get('selectedMonth');
+        Meteor.setTimeout(() => {
+            const $popovers = $('.calendar-day-icon[data-toggle="popover"]');
+            $popovers.popover('destroy');
+            $popovers.popover({
+                trigger: 'hover',
+                viewport: '#calendarViewport',
+                container: 'body'
+            })
+        }, 500);
+    });
 });
 
 Template.calendarComponent.helpers({
 
     isLoaded() {
-        const instance = Template.instance();
         return !DayPrices.initialLoad.get();
     },
 
@@ -99,7 +96,39 @@ Template.calendarComponent.helpers({
             day : day <= maxDays ? day : false,
             month : Session.get('selectedMonth')
         };
-    }
+    },
+
+    hasMonthDominator() {
+        const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
+        const dominator = DayPrices.leaders.monthDominators[selectedMonth] || {};
+        return !_.isUndefined(dominator.owner);
+    },
+
+    getDominatorAddress() {
+        const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
+        const dominator = DayPrices.leaders.monthDominators[selectedMonth] || {};
+        if (_.isUndefined(dominator.owner)) { return ''; }
+        return dominator.owner;
+    },
+
+    getDominatorNickname() {
+        const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
+        const dominator = DayPrices.leaders.monthDominators[selectedMonth] || {};
+        const ownerObj = _.find(DayPrices.owners, {address: dominator.owner}) || {};
+        ownerObj.changed.get();
+        return ownerObj.name || '';
+    },
+
+    getColorFromAddress() {
+        const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
+        const dominator = DayPrices.leaders.monthDominators[selectedMonth] || {};
+        if (_.isUndefined(dominator.owner)) { return ''; }
+        return Helpers.getStylesForAddress(dominator.owner);
+    },
 
 });
 
@@ -127,42 +156,3 @@ Template.calendarComponent.events({
     }
 
 });
-
-function _monitorClaimPriceAndOwner(instance) {
-    if (!instance.eth.hasNetwork || instance.view.isDestroyed) { return; }
-    if (_claimMonitorId) { Meteor.clearTimeout(_claimMonitorId); }
-
-    // Update Current Claim Data
-    CurrentClaim.month = Session.get('selectedMonth');
-    CurrentClaim.day = instance.selectedDayIndex;
-
-    const start = (new Date).getTime();
-    instance.contract.getDayPrice(instance.selectedDayIndex)
-        .then(result => {
-            CurrentClaim.price = result;
-            return instance.contract.getDayOwner(instance.selectedDayIndex);
-        })
-        .then(result => {
-            CurrentClaim.ownerAddress = result;
-            return Helpers.getFriendlyOwnerName(instance.contract, result);
-        })
-        .then(result => {
-            CurrentClaim.owner = result;
-            return instance.contract.getPriceIncrease(CurrentClaim.price);
-        })
-        .then(result => {
-            CurrentClaim.nextPrice = result.add(CurrentClaim.price);
-            CurrentClaim.changeTrigger.set(Random.id());
-
-            const timeTaken = (new Date).getTime() - start;
-            if (timeTaken < CLAIM_WATCH_INTERVAL) {
-                _claimMonitorId = Meteor.setTimeout(() => _monitorClaimPriceAndOwner(instance), CLAIM_WATCH_INTERVAL - timeTaken);
-            } else {
-                _monitorClaimPriceAndOwner(instance);
-            }
-        })
-        .catch(err => {
-            log.error(err);
-            _monitorClaimPriceAndOwner(instance);
-        });
-}

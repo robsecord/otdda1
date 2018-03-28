@@ -2,6 +2,10 @@
     <div class="component-wrapper calendar-component">
 
         <div class="row month-selection">
+            {{#if hasMonthDominator}}
+                <h4 class="month-dominator">{{_ 'component.calendar.monthDominator'}}: <span class="label label-default owner-label" data-goto="{{getDominatorAddress}}" style="{{getColorFromAddress}}">{{getDominatorNickname}}</span></h4>
+            {{/if}}
+
             <div class="btn-group btn-group-lg" role="group" aria-label="{{_ 'component.calendar.selectMonth'}}">
                 <button type="button" class="btn btn-default" data-select-month="prev" title="{{_ 'component.calendar.prevMonth'}}"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
                 <div class="btn-group btn-group-lg" role="group">
@@ -21,7 +25,7 @@
             </div>
         </div>
 
-        <div class="table-responsive">
+        <div class="table-responsive" id="calendarViewport">
             {{#if isLoaded}}
                 <table class="table table-bordered">
                     <tbody>

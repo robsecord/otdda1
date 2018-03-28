@@ -266,14 +266,19 @@
   },
   "component" : {
     "calendar" : {
-      "selectMonth" : "Select a Month",
-      "nextMonth" : "Next Month",
-      "prevMonth" : "Previous Month"
+      "selectMonth"    : "Select a Month",
+      "nextMonth"      : "Next Month",
+      "prevMonth"      : "Previous Month",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "You do not own any days.",
         "body" : "Your birthday might be a good place to start!"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -391,10 +396,12 @@
     "cancel"       : "cancel",
     "claim"        : "Claim",
     "close"        : "Close",
+    "days"         : "Days",
     "disclaimer"   : "DISCLAIMER",
     "etherUnit"    : "ETH",
     "from"         : "from",
     "loading"      : "Loading, please wait...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "(communicating with the Ethereum blockchain)",
     "notice"       : "Notice",
     "own"          : "Own",

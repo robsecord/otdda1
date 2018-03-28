@@ -5,7 +5,9 @@ import { _ } from 'lodash';
 
 // App Components
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
+import { Contract } from '/imports/contract/contract-interface';
 import { CurrentClaim } from '/imports/utils/current-claim';
+import { DayPrices } from '/imports/utils/day-prices';
 import { Helpers } from '/imports/utils/common';
 
 // Globals
@@ -20,6 +22,7 @@ import './claim.component.html';
 Template.claimComponent.onCreated(function Template_claimComponent_onCreated() {
     const instance = this;
     instance.eth = MeteorEthereum.instance();
+    instance.contract = Contract.instance();
 
     instance.dayIndex = new ReactiveVar(0);
 
@@ -30,7 +33,23 @@ Template.claimComponent.onCreated(function Template_claimComponent_onCreated() {
 
         // Get Day-Index Range for Selected Month
         const range = Helpers.getDayIndexRange(selectedMonth);
-        instance.dayIndex.set(range[0] + selectedDay - 1);
+        const dayIndex = range[0] + selectedDay - 1;
+        instance.dayIndex.set(dayIndex);
+
+        // Update Current Claim
+        CurrentClaim.month = selectedMonth;
+        CurrentClaim.day = dayIndex;
+
+        const priceObj = DayPrices.prices[dayIndex];
+        if (priceObj) {
+            CurrentClaim.price = priceObj.price;
+            priceObj.changed.get();
+
+            const ownerObj = DayPrices.owners[dayIndex];
+            CurrentClaim.owner = ownerObj.name;
+            CurrentClaim.ownerAddress = ownerObj.address;
+        }
+        CurrentClaim.changeTrigger.set(Random.id());
 
         // Update DOM Elements
         Meteor.defer(() => {
@@ -48,7 +67,6 @@ Template.claimComponent.helpers({
 
         // Watch for changes to Current Claim and Update Price
         CurrentClaim.changeTrigger.get();
-        //Session.get('latestClaim');
         return (CurrentClaim.ownerAddress !== instance.eth.coinbase);
     },
 

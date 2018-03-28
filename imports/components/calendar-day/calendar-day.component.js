@@ -7,7 +7,6 @@ import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
 import { Contract } from '/imports/contract/contract-interface';
 import { Helpers } from '/imports/utils/common';
 import { DayPrices } from '/imports/utils/day-prices';
-import { log } from '/imports/utils/logging';
 
 // Globals
 import {
@@ -22,29 +21,21 @@ Template.calendarDayComponent.onCreated(function Template_calendarDayComponent_o
     instance.eth = MeteorEthereum.instance();
     instance.contract = Contract.instance();
 
+    // Get Index of Day
+    let range = Helpers.getDayIndexRange(instance.data.data.month);
+
     instance.standalone = instance.data.data.standalone || false;
     instance.dayToDisplay = new ReactiveVar(instance.data.data.day);
-    instance.ownerName = new ReactiveVar('');
+    instance.dayIndex = new ReactiveVar(range[0] + instance.data.data.day - 1);
 
     instance.autorun(() => {
         const tplData = Template.currentData();
+        Session.get('accountNickname');
+
+        range = Helpers.getDayIndexRange(tplData.data.month);
         instance.dayToDisplay.set(tplData.data.day);
-
-        // Get Index of Day
-        const range = Helpers.getDayIndexRange(tplData.data.month);
-        instance.dayIndex = range[0] + tplData.data.day - 1;
-
-        DayPrices.owners[instance.dayIndex].changed.get();
-        if (DayPrices.owners[instance.dayIndex].address) {
-            Helpers.getFriendlyOwnerName(instance.contract, DayPrices.owners[instance.dayIndex].address)
-                .then(name => instance.ownerName.set(name))
-                .catch(log.error);
-        }
+        instance.dayIndex.set(range[0] + tplData.data.day - 1);
     });
-});
-
-Template.calendarDayComponent.onRendered(function Template_calendarDayComponent_onRendered() {
-    Meteor.defer(() => $('[data-toggle="popover"]').popover({trigger: 'hover'}));
 });
 
 Template.calendarDayComponent.helpers({
@@ -62,37 +53,35 @@ Template.calendarDayComponent.helpers({
     getCurrentPrice() {
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
-        DayPrices.prices[instance.dayIndex].changed.get();
-        //Session.get('latestClaim'); // Day Claimed; Price/Owner changed
-
-        const priceObj = DayPrices.prices[instance.dayIndex].price;
-        return instance.eth.web3.fromWei(priceObj, 'ether').toString(10);
+        const priceObj = DayPrices.prices[instance.dayIndex.get()];
+        priceObj.changed.get(); // Trigger
+        return instance.eth.web3.fromWei(priceObj.price, 'ether').toString(10);
     },
 
     getCurrentOwner() {
         const instance = Template.instance();
-        const ownerName = instance.ownerName.get();
-        const address = DayPrices.owners[instance.dayIndex].address;
-        if (Helpers.isAddressZero(address)) { return ''; }
-        return ownerName;
+        const ownerObj = DayPrices.owners[instance.dayIndex.get()];
+        ownerObj.changed.get(); // Trigger
+        if (Helpers.isAddressZero(ownerObj.address)) { return ''; }
+        return ownerObj.name;
     },
 
     getColorFromAddress() {
         const instance = Template.instance();
-        const ownerName = instance.ownerName.get();
-        const address = DayPrices.owners[instance.dayIndex].address;
-        return Helpers.getStylesForAddress(address);
+        const ownerObj = DayPrices.owners[instance.dayIndex.get()];
+        ownerObj.changed.get(); // Trigger
+        return Helpers.getStylesForAddress(ownerObj.address);
     },
 
     hasHoliday() {
         const instance = Template.instance();
-        const dayIndex = instance.dayIndex;
+        const dayIndex = instance.dayIndex.get();
         return !_.isUndefined(_.find(HOLIDAY_ICON_MAP, {dayIndex}));
     },
 
     getHolidayIcon() {
         const instance = Template.instance();
-        const dayIndex = instance.dayIndex;
+        const dayIndex = instance.dayIndex.get();
         const holiday = _.find(HOLIDAY_ICON_MAP, {dayIndex}) || {};
         return holiday.img;
     },
@@ -100,7 +89,7 @@ Template.calendarDayComponent.helpers({
     getHolidayTitle() {
         const instance = Template.instance();
         TAPi18n.getLanguage();
-        const dayIndex = instance.dayIndex;
+        const dayIndex = instance.dayIndex.get();
         const holiday = _.find(HOLIDAY_ICON_MAP, {dayIndex}) || {};
         return TAPi18n.__(holiday.title);
     },
@@ -108,7 +97,7 @@ Template.calendarDayComponent.helpers({
     getHolidayDesc() {
         const instance = Template.instance();
         TAPi18n.getLanguage();
-        const dayIndex = instance.dayIndex;
+        const dayIndex = instance.dayIndex.get();
         const holiday = _.find(HOLIDAY_ICON_MAP, {dayIndex}) || {};
         return TAPi18n.__(holiday.desc);
     }

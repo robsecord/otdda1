@@ -2,8 +2,6 @@
 import { _ } from 'lodash';
 
 // App Components
-import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
-import { Contract } from '/imports/contract/contract-interface';
 import { Helpers } from '/imports/utils/common';
 import { DayPrices } from '/imports/utils/day-prices';
 
@@ -11,37 +9,6 @@ import { DayPrices } from '/imports/utils/day-prices';
 import '/imports/components/loading/loading.component';
 import './most-days.component.html';
 
-
-Template.mostDaysComponent.onCreated(function Template_mostDaysComponent_onCreated() {
-    const instance = this;
-    instance.eth = MeteorEthereum.instance();
-    instance.contract = Contract.instance();
-
-    const _updateOwnerNames = () => {
-        _.forEach(DayPrices.leaders.mostDays, (leader, idx) => {
-            if (!leader.owner) { return; }
-            Helpers.getFriendlyOwnerName(instance.contract, leader.owner)
-                .then(name => instance.ownerNames[idx].set(name))
-                .catch(log.error);
-        });
-    };
-
-    instance.mostDays = new ReactiveVar([{}, {}, {}]);
-    instance.ownerNames = [
-        new ReactiveVar(''),
-        new ReactiveVar(''),
-        new ReactiveVar('')
-    ];
-    instance.autorun(() => {
-        DayPrices.leaders.changed.get();
-        instance.mostDays.set(DayPrices.leaders.mostDays);
-        _updateOwnerNames()
-    });
-    instance.autorun(() => {
-        Session.get('accountNickname');
-        Meteor.setTimeout(_updateOwnerNames, 1000);
-    });
-});
 
 Template.mostDaysComponent.helpers({
 
@@ -54,29 +21,41 @@ Template.mostDaysComponent.helpers({
         return tplData.showLoading || false;
     },
 
+    hasOwnerAtIndex(index) {
+        DayPrices.leaders.changed.get();
+        const address = _.get(DayPrices.leaders.mostDays[index], 'owner', false);
+        return (address && !Helpers.isAddressZero(address));
+    },
+
+    getAddressAtIndex(index) {
+        DayPrices.leaders.changed.get();
+        const address = _.get(DayPrices.leaders.mostDays[index], 'owner', false);
+        if (!address || Helpers.isAddressZero(address)) { return ''; }
+        return address;
+    },
+
     getMostDaysAtIndex(index) {
-        const instance = Template.instance();
-        const leaders = instance.mostDays.get();
-        return _.isUndefined(leaders[index]) ? '' : leaders[index].count;
+        DayPrices.leaders.changed.get();
+        return _.get(DayPrices.leaders.mostDays[index], 'count', '');
     },
 
     getMostDaysOwnerAtIndex(index) {
-        const instance = Template.instance();
-        const ownerName = instance.ownerNames[index].get();
-        return ownerName || '';
+        DayPrices.leaders.changed.get();
+        const address = _.get(DayPrices.leaders.mostDays[index], 'owner') || '';
+        const ownerObj = _.find(DayPrices.owners, {address}) || {};
+        if (!_.isEmpty(ownerObj)) { ownerObj.changed.get(); }
+        return ownerObj.name || '';
     },
 
     getColorFromAddress(index) {
-        const instance = Template.instance();
-        const ownerName = instance.ownerNames[index].get();
+        DayPrices.leaders.changed.get();
         const address = _.get(DayPrices.leaders.mostDays[index], 'owner', false);
         if (!address || Helpers.isAddressZero(address)) { return ''; }
         return Helpers.getStylesForAddress(address);
     },
 
     getBorderColorFromAddress(index) {
-        const instance = Template.instance();
-        const ownerName = instance.ownerNames[index].get();
+        DayPrices.leaders.changed.get();
         const address = _.get(DayPrices.leaders.mostDays[index], 'owner', false);
         if (!address || Helpers.isAddressZero(address)) { return ''; }
         return Helpers.getStylesForAddress(address, 'border');

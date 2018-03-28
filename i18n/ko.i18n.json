@@ -267,12 +267,17 @@
     "calendar" : {
       "selectMonth" : "한 달 선택",
       "nextMonth" : "다음 달",
-      "prevMonth" : "지난달"
+      "prevMonth" : "지난달",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "당신은 어떤 날도 소유하고 있지 않습니다.",
         "body" : "당신의 생일이 시작하기에 좋은 장소일지도 모릅니다!"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -382,10 +387,12 @@
     "cancel"       : "취소",
     "claim"        : "청구",
     "close"        : "닫기",
+    "days"         : "Days",
     "disclaimer"   : "부인 성명",
     "etherUnit"    : "ETH",
     "from"         : "...에서",
     "loading"      : "로딩 중 기다려주세요...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "로딩 중급 생각주세요 ...",
     "notice"       : "주의",
     "own"          : "개인적인",

@@ -10,6 +10,7 @@ import { LocaleHelpers } from '/imports/utils/i18n-helpers';
 import { Helpers } from '/imports/utils/common';
 
 // Template Components
+import '/imports/components/loading/loading.component';
 import './claim.modal.html';
 
 
@@ -17,9 +18,36 @@ Template.claimModal.onCreated(function Template_claimModal_onCreated() {
     const instance = this;
     instance.eth = MeteorEthereum.instance();
     instance.contract = Contract.instance();
+
+    instance.loading = new ReactiveVar(false);
+    instance.nextPrice = new ReactiveVar(0);
+
+    instance.autorun(() => {
+        CurrentClaim.changeTrigger.get();
+        instance.loading.set(true);
+
+        if (instance.timerId) {
+            Meteor.clearTimeout(instance.timerId);
+        }
+        instance.timerId = Meteor.setTimeout(() => {
+            instance.contract.getPriceIncrease(CurrentClaim.price)
+                .then(priceIncrease => {
+                    const nextPrice = priceIncrease.add(CurrentClaim.price);
+                    CurrentClaim.nextPrice = nextPrice;
+                    instance.nextPrice.set(nextPrice);
+                    instance.loading.set(false);
+                })
+                .catch(log.error);
+        }, 750);
+    });
 });
 
 Template.claimModal.helpers({
+
+    isLoading() {
+        const instance = Template.instance();
+        return instance.loading.get();
+    },
 
     getDayIndex() {
         const instance = Template.instance();
@@ -47,7 +75,7 @@ Template.claimModal.helpers({
 
         // Watch for changes to Current Claim and Update Price
         CurrentClaim.changeTrigger.get();
-        return !_.isEmpty(CurrentClaim.owner) && !Helpers.isAddressZero(CurrentClaim.owner);
+        return !_.isEmpty(CurrentClaim.owner) && !Helpers.isAddressZero(CurrentClaim.ownerAddress);
     },
 
     getCurrentOwner() {
@@ -71,11 +99,7 @@ Template.claimModal.helpers({
     getNextPrice() {
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
-
-        // Watch for changes to Current Claim and Update Owner
-        CurrentClaim.changeTrigger.get();
-
-        return instance.eth.web3.fromWei(CurrentClaim.nextPrice, 'ether').toString(10);
+        return instance.eth.web3.fromWei(instance.nextPrice.get(), 'ether').toString(10);
     },
 
     getColorFromAddress() {

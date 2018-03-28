@@ -10,8 +10,21 @@
     margin-bottom: 30px;
 
     .month-selection {
+      position: relative;
       padding-bottom: 10px;
       text-align: center;
+
+      .month-dominator {
+        .pos-abs(auto, auto, 10px);
+        margin-left: 20px;
+
+        .owner-label {
+          display: inline-block;
+          .pos-rel(5px);
+          max-width: 200px;
+          cursor: pointer;
+        }
+      }
 
       > .btn-group {
         > .btn {

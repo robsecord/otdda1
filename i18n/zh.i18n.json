@@ -267,12 +267,17 @@
     "calendar" : {
       "selectMonth" : "选择一个月",
       "nextMonth" : "下个月",
-      "prevMonth" : "前一个月"
+      "prevMonth" : "前一个月",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "你不拥有任何日子。",
         "body" : "你的生日可能是一个开始的好地方！"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -382,10 +387,12 @@
     "cancel"       : "取消",
     "claim"        : "要求",
     "close"        : "关",
+    "days"         : "Days",
     "disclaimer"   : "免责声明",
     "etherUnit"    : "ETH",
     "from"         : "从",
     "loading"      : "加载请稍候...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "（与以太坊区块链进行沟通）",
     "notice"       : "注意",
     "own"          : "拥有",
