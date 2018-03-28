@@ -2,10 +2,12 @@
 export const TOTAL_DAYS = 366;
 
 export const ACCOUNT_WATCH_INTERVAL = 1000;
-export const PRICE_WATCH_INTERVAL   = 2000;
 export const CLAIM_WATCH_INTERVAL   = 1000;
-export const DAYS_WATCH_INTERVAL    = 5000;
 export const RECEIPT_WATCH_INTERVAL = 1000;
+export const PRICE_WATCH_INTERVAL   = 3000;
+export const DAYS_WATCH_INTERVAL    = 30000;
+
+export const MAX_LEADER_COUNT = 3;
 
 export const MONTH_INDICES    = [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11];
 export const DAYS_IN_MONTH    = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];

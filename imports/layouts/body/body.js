@@ -16,8 +16,10 @@ import { log } from '/imports/utils/logging';
 // Globals
 import {
     TOTAL_DAYS,
+    DAYS_IN_MONTH,
     PRICE_WATCH_INTERVAL,
-    ACCOUNT_WATCH_INTERVAL
+    ACCOUNT_WATCH_INTERVAL,
+    MAX_LEADER_COUNT
 } from '/imports/utils/global-constants';
 
 // Template Components
@@ -28,6 +30,7 @@ import './body.html';
 
 let _priceMonitorId;
 let _accountMonitorId;
+let _currentInterval = 0;
 
 Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     const instance = this;
@@ -38,6 +41,9 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     Session.setDefaultPersistent('selectedDay', 1);
     Session.setDefault('accountNickname', '');
     Session.setDefault('latestClaim', {});
+
+    instance.lastMostDaysLeaders = [];
+    instance.lastMonthDominators = [];
 
     // Monitor Existing Transactions
     instance.autorun(computation => {
@@ -250,7 +256,9 @@ const _getMaxPriceBy = (prices, isGreaterCallback) => {
     return maxPrice;
 };
 
-const _updateLeaders = () => {
+const _updateLeaders = (instance) => {
+    console.log('_updateLeaders - DayPrices', DayPrices);
+
     // Get Leading Prices
     const firstHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.gt(max));
     const secondHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.eq(firstHigh.price) ? false : price.gt(max));
@@ -261,7 +269,45 @@ const _updateLeaders = () => {
     const secondHighDays = _getIndicesOf(DayPrices.prices, secondHigh.price);
     const thirdHighDays = _getIndicesOf(DayPrices.prices, thirdHigh.price);
 
+    // Get Most-Days Owners
+    DayPrices.leaders.mostDays = _.chain(DayPrices.owners)
+        .groupBy(owner => owner.address)
+        .map((val, key) => ({owner: key, count: val.length}))
+        .orderBy('count', ['desc'])
+        .filter(obj => !Helpers.isAddressZero(obj.owner))
+        .take(MAX_LEADER_COUNT)
+        .value();
+
+    // Get Month Dominators
+    let dayOwner;
+    let dayIndex = 0;
+    const monthDominators = [];
+    for (let m = 0; m < DAYS_IN_MONTH.length; m++) {
+        monthDominators[m] = monthDominators[m] || {};
+
+        // Determine count of all owners in month
+        for (let d = 0; d < DAYS_IN_MONTH[m]; d++, dayIndex++) {
+            dayOwner = DayPrices.owners[dayIndex].address;
+            monthDominators[m][dayOwner] = monthDominators[m][dayOwner] || {count: 0};
+            monthDominators[m][dayOwner].count++;
+        }
+
+        // Determine month dominator
+        monthDominators[m] = _.chain(monthDominators[m])
+            .map((val, key) => ({month: m, owner: key, count: val.count}))
+            .orderBy('count', ['desc'])
+            .filter(obj => !Helpers.isAddressZero(obj.owner))
+            .get('[0]', {month: m, count: 0})
+            .value();
+    }
+    DayPrices.leaders.monthDominators = monthDominators;
+    DayPrices.leaders.monthDomLeaders = _.take(_.orderBy(monthDominators, 'count', ['desc']), MAX_LEADER_COUNT);
+
     // Check if Leaders have changed
+    if (_currentInterval++ > 50) {
+        _currentInterval = 0;
+        return true;
+    }
     let hasChanges = false;
     if (!DayPrices.leaders.first.price || !DayPrices.leaders.first.price.eq(firstHigh.price)) { hasChanges = true; }
     if (!DayPrices.leaders.second.price || !DayPrices.leaders.second.price.eq(secondHigh.price)) { hasChanges = true; }
@@ -269,6 +315,24 @@ const _updateLeaders = () => {
     if (DayPrices.leaders.first.days.length !== firstHighDays.length) { hasChanges = true; }
     if (DayPrices.leaders.second.days.length !== secondHighDays.length) { hasChanges = true; }
     if (DayPrices.leaders.third.days.length !== thirdHighDays.length) { hasChanges = true; }
+
+    // Changes to Most-Days Leaders?
+    _.forEach(DayPrices.leaders.mostDays, (leader, idx) => {
+        if (leader.owner !== instance.lastMostDaysLeaders[idx]) {
+            instance.lastMostDaysLeaders[idx] = leader.owner;
+            hasChanges = true;
+        }
+    });
+
+    // Changes to Month Dominators?
+    _.forEach(DayPrices.leaders.monthDominators, (leader, idx) => {
+        if (!leader) { return; }
+        if (leader.owner !== instance.lastMonthDominators[idx]) {
+            instance.lastMonthDominators[idx] = leader.owner;
+            hasChanges = true;
+        }
+    });
+
 
     // Store Leading Prices and Indices
     DayPrices.leaders.first.price = firstHigh.price;
@@ -298,7 +362,7 @@ function _monitorPrices(instance) {
     Promise.all(promises)
         .then(result => {
             // Check if Leaders have changed
-            let hasChanges = _updateLeaders();
+            let hasChanges = _updateLeaders(instance);
 
             // Finished Initial Load
             DayPrices.initialLoad.set(false);
@@ -335,7 +399,7 @@ function _updatePriceAfterClaim(instance, latestClaim) {
     instance.contract.getDayPrice(latestClaim.day)
         .then(_addPrice(instance, latestClaim.day))
         .then(() => {
-            if (_updateLeaders()) {
+            if (_updateLeaders(instance)) {
                 DayPrices.leaders.changed.set(Random.id());
             }
         })

@@ -29,9 +29,11 @@ Template.nicknameModal.onCreated(function Template_nicknameModal_onCreated() {
         instance.contract.setNickname(newNickname, tx)
             .then(hash => {
                 log.log('Transaction sent;', hash);
-                instance.contract.waitForReceipt(hash, function (receipt) {
-                    log.log('Transaction succeeded;', receipt);
-                    Session.set('accountNickname', newNickname);
+                instance.contract.waitForReceipt(hash, function (err, receipt) {
+                    if (!err) {
+                        log.log('Transaction succeeded;', receipt);
+                        Session.set('accountNickname', newNickname);
+                    }
                 });
             })
             .catch(Helpers.displayFriendlyErrorAlert);

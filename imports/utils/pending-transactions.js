@@ -41,18 +41,28 @@ export const PendingTransactions = {
     },
 
     handleReceipt({hash, claimData}) {
-        return (receipt) => {
-            log.log('Transaction succeeded;', receipt, hash, claimData);
+        return (err, receipt) => {
+            if (err) {
+                log.log('Transaction failed;', err, hash, claimData);
+            } else {
+                log.log('Transaction succeeded;', receipt, hash, claimData);
+            }
 
             // Transaction Complete; remove from Watch List
             _.remove(this.transactions, (tx) => tx.hash === hash);
             this.txTracker.changed();
             this.serialize();
 
-            // Notify User of Transaction and Trigger Updates
-            Session.set('latestClaim', claimData);
+            // Get Date being Claimed
             const {month, day} = Helpers.getMonthDayFromIndex(claimData.day);
             const date = LocaleHelpers.formatDate('MMMM Do', month, day);
+
+            // Notify User of Transaction and Trigger Updates
+            if (err) {
+                Notify.warning(TAPi18n.__('modal.claim.failed', {date}), TAPi18n.__('modal.claim.errorTitle'));
+                return;
+            }
+            Session.set('latestClaim', claimData);
             Notify.success(TAPi18n.__('modal.claim.claimed', {date}), TAPi18n.__('modal.claim.claimTitle'));
         };
     },

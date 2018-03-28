@@ -11,7 +11,6 @@ import {
 
 // Template Components
 import '/imports/components/loading/loading.component';
-import '/imports/components/calendar-day/calendar-day.component';
 import '/imports/components/day-card/day-card.component';
 import './most-popular.component.html';
 
@@ -23,6 +22,7 @@ Template.mostPopularDayComponent.onCreated(function Template_mostPopularDayCompo
     instance.highestDayIndices = new ReactiveVar([0, 0, 0]);
     instance.autorun(() => {
         DayPrices.leaders.changed.get();
+        Session.get('accountNickname');
 
         let highestIndices = [];
         const grouped = [];

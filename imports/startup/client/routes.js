@@ -57,7 +57,7 @@ publicRoutes.route('/calendar', {
 });
 
 // Account
-publicRoutes.route('/account', {
+publicRoutes.route('/account/:accountId?', {
     name: 'app.account',
     action() {
         BlazeLayout.render('bodyLayout', { main: 'account', componentData: {} });

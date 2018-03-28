@@ -1,0 +1,38 @@
+<template name="monthDominatorsComponent">
+    <div class="component-wrapper month-dominators-component">
+        <h3 class="page-header">{{_ 'component.monthDominators.title'}}</h3>
+
+        {{#if isLoaded}}
+            <div class="month-dominators display-inputs">
+                <div class="input-group input-group-lg" style="{{getBorderColorFromAddress 0}}">
+                    <span class="input-group-addon" id="sizing-addon1" style="{{getColorFromAddress 0}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMonthDominatorsMonthAtIndex 0}}</span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMonthDominatorsOwnerAtIndex 0}}" aria-describedby="sizing-addon1" disabled>
+                </div>
+
+                <div class="input-group" style="{{getBorderColorFromAddress 1}}">
+                    <span class="input-group-addon" id="sizing-addon2" style="{{getColorFromAddress 1}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMonthDominatorsMonthAtIndex 1}}</span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMonthDominatorsOwnerAtIndex 1}}" aria-describedby="sizing-addon2" disabled>
+                </div>
+
+                <div class="input-group input-group-sm" style="{{getBorderColorFromAddress 2}}">
+                    <span class="input-group-addon" id="sizing-addon3" style="{{getColorFromAddress 2}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMonthDominatorsMonthAtIndex 2}}</span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMonthDominatorsOwnerAtIndex 2}}" aria-describedby="sizing-addon3" disabled>
+                </div>
+            </div>
+        {{else}}
+            {{#if showLoading}}
+                {{> loading}}
+            {{/if}}
+        {{/if}}
+
+    </div>
+</template>

@@ -17,3 +17,67 @@ input:-webkit-autofill {
 .owner-label {
   .text-ellipsis;
 }
+
+.display-inputs {
+  .input-group {
+    margin-bottom: 20px;
+    border-color: @gray-lighter;
+    cursor: pointer;
+
+    .input-group-addon {
+      position: relative;
+      border-color: inherit;
+
+      .shading {
+        display: block;
+        .pos-abs(0, 0, 0, 0);
+        background: rgba(255, 255, 255, 0.3);
+        border-top-left-radius: @border-radius-base;
+        border-bottom-left-radius: @border-radius-base;
+        z-index: 1;
+      }
+
+      .fixed-label {
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        z-index: 2;
+
+        .text-muted {
+          color: inherit;
+          font-size: 0.6em;
+        }
+      }
+    }
+
+    &.input-group-sm {
+      .input-group-addon {
+        .shading {
+          border-top-left-radius: @border-radius-small;
+          border-bottom-left-radius: @border-radius-small;
+        }
+      }
+    }
+
+    &.input-group-lg {
+      .input-group-addon {
+        .shading {
+          border-top-left-radius: @border-radius-large;
+          border-bottom-left-radius: @border-radius-large;
+        }
+      }
+    }
+
+    .form-control {
+      text-align: center;
+      box-shadow: none;
+      border-color: inherit;
+
+      &[disabled] {
+        background: @white;
+        cursor: inherit;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+<template name="mostDaysComponent">
+    <div class="component-wrapper most-days-component">
+        <h3 class="page-header">{{_ 'component.mostDays.title'}}</h3>
+
+        {{#if isLoaded}}
+            <div class="most-days display-inputs">
+                <div class="input-group input-group-lg" style="{{getBorderColorFromAddress 0}}">
+                    <span class="input-group-addon" id="sizing-addon1" style="{{getColorFromAddress 0}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMostDaysAtIndex 0}} <span class="text-muted">DAYS</span></span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMostDaysOwnerAtIndex 0}}" aria-describedby="sizing-addon1" disabled>
+                </div>
+
+                <div class="input-group" style="{{getBorderColorFromAddress 1}}">
+                    <span class="input-group-addon" id="sizing-addon2" style="{{getColorFromAddress 1}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMostDaysAtIndex 1}} <span class="text-muted">DAYS</span></span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMostDaysOwnerAtIndex 1}}" aria-describedby="sizing-addon2" disabled>
+                </div>
+
+                <div class="input-group input-group-sm" style="{{getBorderColorFromAddress 2}}">
+                    <span class="input-group-addon" id="sizing-addon3" style="{{getColorFromAddress 2}}">
+                        <span class="shading"></span>
+                        <span class="fixed-label">{{getMostDaysAtIndex 2}} <span class="text-muted">DAYS</span></span>
+                    </span>
+                    <input class="form-control disabled" value="{{getMostDaysOwnerAtIndex 2}}" aria-describedby="sizing-addon3" disabled>
+                </div>
+            </div>
+        {{else}}
+            {{#if showLoading}}
+                {{> loading}}
+            {{/if}}
+        {{/if}}
+
+    </div>
+</template>

@@ -343,6 +343,12 @@
     "mostPopularDays" : {
       "title" : "Most Popular Days"
     },
+    "mostDays" : {
+      "title" : "Most Days Owned"
+    },
+    "monthDominators" : {
+      "title" : "Month Dominators"
+    },
     "quickInstructions" : {
       "title" : "How to Play",
       "metamask" : "MetaMask Browser Extension",
@@ -362,6 +368,8 @@
       "claimDay"   : "Own the Day!",
       "claimed"    : "You have successfully claimed __date__.",
       "claimTitle" : "You Own the Day!",
+      "errorTitle" : "Claim Failed",
+      "failed"     : "Your transaction failed for __date__.",
       "info" : {
         "line1" : "You can claim <strong>__date__</strong> for <strong>__price__</strong>",
         "line2" : "Anyone can claim this day from you at the price of <strong>__price__</strong>.",

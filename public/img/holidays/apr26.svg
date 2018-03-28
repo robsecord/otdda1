@@ -1,17 +1,4 @@
-<<<<<<< Updated upstream
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
-<polygon fill="#FFCA28" points="24,4 31,17 45,19 35,29 37,44 24,37 11,44 13,29 3,19 17,17 "/>
-<g>
-	<polygon fill="#F9A825" points="24,25 31,17 24,4 &#9;"/>
-	<polygon fill="#F9A825" points="45,19 24,25 35,29 &#9;"/>
-	<polygon fill="#F9A825" points="37,44 24,25 24,37 &#9;"/>
-	<polygon fill="#F9A825" points="13,29 11,44 24,25 &#9;"/>
-	<polygon fill="#F9A825" points="3,19 24,25 17,17 &#9;"/>
-</g>
-</svg>
-=======
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <path style="fill:#85453D;" d="M239.763,91.338c-4.204,0-7.611,3.408-7.611,7.611v11.671c0,42.53-34.6,77.13-77.13,77.13h-30.446
@@ -78,36 +65,4 @@
 	<path style="fill:#FFCB63;" d="M224.425,74.985c-1.948,0-3.896-0.743-5.382-2.23L208.28,61.992c-2.973-2.973-2.973-7.792,0-10.764
 		c2.973-2.973,7.792-2.973,10.764,0l10.764,10.764c2.973,2.973,2.973,7.792,0,10.764C228.321,74.242,226.374,74.985,224.425,74.985z
 		"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
->>>>>>> Stashed changes
+</g></svg>

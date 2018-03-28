@@ -1,17 +1,4 @@
-<<<<<<< Updated upstream
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
-<polygon fill="#FFCA28" points="24,4 31,17 45,19 35,29 37,44 24,37 11,44 13,29 3,19 17,17 "/>
-<g>
-	<polygon fill="#F9A825" points="24,25 31,17 24,4 &#9;"/>
-	<polygon fill="#F9A825" points="45,19 24,25 35,29 &#9;"/>
-	<polygon fill="#F9A825" points="37,44 24,25 24,37 &#9;"/>
-	<polygon fill="#F9A825" points="13,29 11,44 24,25 &#9;"/>
-	<polygon fill="#F9A825" points="3,19 24,25 17,17 &#9;"/>
-</g>
-</svg>
-=======
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
 <circle style="fill:#324A5E;" cx="256.001" cy="256" r="256"/>
@@ -55,9 +42,9 @@
 	c63.019-28.455,135.23-28.455,198.249,0C342.574,127.11,331.746,151.092,320.918,175.073z"/>
 <path style="fill:#E6F3FF;" d="M253.703,81.796v78.938c22.919-0.081,45.852,4.694,67.215,14.339
 	c10.828-23.981,21.656-47.963,32.484-71.944C321.714,88.821,287.702,81.715,253.703,81.796z"/>
-<polygon style="fill:#FC6F58;" points="279.853,115.686 262.803,115.686 262.803,98.637 245.752,98.637 245.752,115.686 
+<polygon style="fill:#FC6F58;" points="279.853,115.686 262.803,115.686 262.803,98.637 245.752,98.637 245.752,115.686
 	228.703,115.686 228.703,132.736 245.752,132.736 245.752,149.785 262.803,149.785 262.803,132.736 279.853,132.736 "/>
-<polygon style="fill:#F1543F;" points="262.803,115.686 262.803,98.637 253.703,98.637 253.703,149.785 262.803,149.785 
+<polygon style="fill:#F1543F;" points="262.803,115.686 262.803,98.637 253.703,98.637 253.703,149.785 262.803,149.785
 	262.803,132.736 279.853,132.736 279.853,115.686 "/>
 <rect x="404.688" y="311.165" style="fill:#CFDBE6;" width="15.515" height="62.061"/>
 <rect x="412.738" y="311.165" style="fill:#B8C9D9;" width="7.47" height="62.061"/>
@@ -68,35 +55,4 @@
 <rect x="412.738" y="256" style="fill:#CFDBE6;" width="13.929" height="85.333"/>
 <rect x="398.223" y="370.64" style="fill:#E6F3FF;" width="28.444" height="5.172"/>
 <rect x="412.738" y="370.64" style="fill:#CFDBE6;" width="13.929" height="5.172"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>
->>>>>>> Stashed changes

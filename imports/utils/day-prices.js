@@ -1,5 +1,5 @@
 
-export const DayPrices = {
+export const  DayPrices = {
     initialLoad : new ReactiveVar(true),
     prices      : [],
     owners      : [],
@@ -17,6 +17,12 @@ export const DayPrices = {
             price: 0,
             days: []
         },
+
+        mostDays: [],
+
+        monthDominators: [],
+        monthDomLeaders: [],
+
         changed: new ReactiveVar('')
     }
 };

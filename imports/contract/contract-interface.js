@@ -93,7 +93,7 @@ export class Contract {
                 if (receipt !== null) {
                     // Transaction went through
                     if (cb) {
-                        cb(receipt);
+                        cb(null, receipt);
                     }
                 } else {
                     // Try again in 1 second
@@ -102,7 +102,10 @@ export class Contract {
                     }, RECEIPT_WATCH_INTERVAL);
                 }
             })
-            .catch(log.error);
+            .catch(err => {
+                log.error(err);
+                cb(err);
+            });
     }
 }
 //

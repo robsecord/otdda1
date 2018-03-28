@@ -49,15 +49,15 @@ Helpers.shortAddress = (address) => {
     return _.toUpper(_.slice(address, address.length-6).join(''));
 };
 
-Helpers.isAddressZero = (address) => (Helpers.shortAddress(address) === '000000');
+Helpers.isAddressZero = (address) => (!address || /^0$|^0x0$/i.test(address) || Helpers.shortAddress(address) === '000000');
 
 Helpers.isInitialPrice = (price) => price.toString(10) === '1000000000000000';
 
-Helpers.getStylesForAddress = (address) => {
+Helpers.getStylesForAddress = (address, styleType = 'background') => {
     if (Helpers.isAddressZero(address)) { return ''; }
     const addressColor = Helpers.shortAddress(address);
     const textColor = Helpers.getTextColorForAddress(address);
-    return `background-color:#${addressColor};color:#${textColor};`;
+    return `${styleType}-color:#${addressColor};color:#${textColor};`;
 };
 
 Helpers.getTextColorForAddress = (address) => {
