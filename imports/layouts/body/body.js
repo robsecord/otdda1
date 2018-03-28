@@ -263,8 +263,6 @@ const _getMaxPriceBy = (prices, isGreaterCallback) => {
 };
 
 const _updateLeaders = (instance) => {
-    console.log('_updateLeaders - DayPrices', DayPrices);
-
     // Get Leading Prices
     const firstHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.gt(max));
     const secondHigh = _getMaxPriceBy(DayPrices.prices, (price, max) => price.eq(firstHigh.price) ? false : price.gt(max));
