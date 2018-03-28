@@ -55,6 +55,14 @@ Template.monthDominatorsComponent.helpers({
         return tplData.showLoading || false;
     },
 
+    getAddressAtIndex(index) {
+        const instance = Template.instance();
+        const ownerName = instance.ownerNames[index].get();
+        const address = _.get(DayPrices.leaders.monthDomLeaders[index], 'owner', false);
+        if (!address || Helpers.isAddressZero(address)) { return ''; }
+        return address;
+    },
+
     getMonthDominatorsAtIndex(index) {
         const instance = Template.instance();
         const leaders = instance.monthDominators.get();

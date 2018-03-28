@@ -175,6 +175,12 @@ Template.bodyLayout.events({
     'click [data-action="change-lang"]' : event => {
         const $target = $(event.currentTarget);
         LocaleHelpers.setLanguage($target.attr('data-lang') || 'en');
+    },
+
+    'click [data-goto]': (event, instance) => {
+        event.stopPropagation();
+        event.preventDefault();
+        Helpers.gotoAccount($(event.currentTarget).attr('data-goto'));
     }
 
 });

@@ -27,17 +27,24 @@ Template.myDaysComponent.onCreated(function Template_myDaysComponent_onCreated()
     instance.contract = Contract.instance();
     instance.loading = new ReactiveVar(true);
 
+    let accountId = instance.data.accountId || instance.eth.coinbase || '';
+    instance.accountId = new ReactiveVar(accountId);
     instance.ownedDays = new ReactiveVar([]);
 
     // Begin Monitoring Days Owned
     instance.autorun(() => {
-        if (_.isEmpty(_lastKnownAccount) || _lastKnownAccount !== instance.eth.coinbase) {
-            _lastKnownAccount = instance.eth.coinbase;
+        const hasAccount = instance.eth.hasAccount; // used to trigger autorun
+        const coinbase = instance.eth.coinbase;
+        accountId = Template.currentData().accountId || coinbase;
+
+        if (_.isEmpty(_lastKnownAccount) || _lastKnownAccount !== accountId) {
+            _lastKnownAccount = accountId;
             instance.loading.set(true);
         }
-        if (!instance.eth.hasAccount) { return; }
+        if (_.isEmpty(accountId)) { return; }
+        instance.accountId.set(accountId);
         Meteor.defer(() => {
-            _monitorDaysOwned(instance);
+            _monitorDaysOwned(instance, accountId);
         });
     });
 });
@@ -55,6 +62,11 @@ Template.myDaysComponent.helpers({
         return instance.loading.get();
     },
 
+    isCurrentUser() {
+        const instance = Template.instance();
+        return instance.accountId.get() === instance.eth.coinbase;
+    },
+
     ownsDays() {
         const instance = Template.instance();
         return instance.ownedDays.get().length > 0;
@@ -68,8 +80,8 @@ Template.myDaysComponent.helpers({
 });
 
 
-function _monitorDaysOwned(instance) {
-    if (!instance.eth.hasAccount || instance.view.isDestroyed) { return; }
+function _monitorDaysOwned(instance, accountId) {
+    if (_.isEmpty(accountId) || instance.view.isDestroyed) { return; }
     if (_daysMonitorId) { Meteor.clearTimeout(_daysMonitorId); }
 
     const days = [];
@@ -78,7 +90,7 @@ function _monitorDaysOwned(instance) {
 
     const _checkOwner = (owner, dayIndex) => {
         responseCount++;
-        if (!_.isEqual(owner, instance.eth.coinbase)) { return; }
+        if (!_.isEqual(owner, accountId)) { return; }
         days.push(dayIndex);
     };
 
@@ -98,9 +110,9 @@ function _monitorDaysOwned(instance) {
         // Continue Watching
         const timeTaken = (new Date).getTime() - start;
         if (timeTaken < DAYS_WATCH_INTERVAL) {
-            _daysMonitorId = Meteor.setTimeout(() => _monitorDaysOwned(instance), DAYS_WATCH_INTERVAL - timeTaken);
+            _daysMonitorId = Meteor.setTimeout(() => _monitorDaysOwned(instance, accountId), DAYS_WATCH_INTERVAL - timeTaken);
         } else {
-            _monitorDaysOwned(instance);
+            _monitorDaysOwned(instance, accountId);
         }
     };
 

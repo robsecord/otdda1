@@ -267,12 +267,17 @@
     "calendar" : {
       "selectMonth" : "Выберите месяц",
       "nextMonth" : "В следующем месяце",
-      "prevMonth" : "Предыдущий месяц"
+      "prevMonth" : "Предыдущий месяц",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "У вас нет никаких дней.",
         "body" : "Ваш день рождения может стать хорошим местом для начала!"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -382,10 +387,12 @@
     "cancel"       : "Отмена",
     "claim"        : "Запрос",
     "close"        : "Закрыть",
+    "days"         : "Days",
     "disclaimer"   : "ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ",
     "etherUnit"    : "ETH",
     "from"         : "из",
     "loading"      : "Загрузка, пожалуйста подождите...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "(связь с блок-цепью Ethereum)",
     "notice"       : "уведомление",
     "own"          : "Своя",

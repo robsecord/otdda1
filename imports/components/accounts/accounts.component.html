@@ -6,20 +6,24 @@
                 {{> dapp_identicon identity=getAddress class="dapp-medium"}}
             </div>
             <div class="media-body">
-                <h4 class="media-heading" data-toggle="tooltip" data-placement="right" title="{{getAddress}}" data-original-title="{{getAddress}}">{{getFriendlyName}}</h4>
-                <div class="input-group input-group-sm balance-input-group">
-                    <span class="input-group-addon">{{_ 'generic.balance'}} ({{_ 'generic.etherUnit'}})</span>
-                    <input class="form-control disabled" placeholder="###.######" value="{{getBalance}}">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button" data-action="toggle-balance">
-                            {{#if isBalanceVisible}}
-                                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                            {{else}}
-                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                            {{/if}}
-                        </button>
-                    </span>
-                </div>
+                <h4 class="media-heading">
+                    <span data-toggle="tooltip" data-placement="right" title="{{getAddress}}" data-original-title="{{getAddress}}">{{getFriendlyName}}</span>
+                </h4>
+                {{#if isCurrentUser}}
+                    <div class="input-group input-group-sm balance-input-group">
+                        <span class="input-group-addon">{{_ 'generic.balance'}} ({{_ 'generic.etherUnit'}})</span>
+                        <input class="form-control disabled" placeholder="###.######" value="{{getBalance}}">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" data-action="toggle-balance">
+                                {{#if isBalanceVisible}}
+                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                {{else}}
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                {{/if}}
+                            </button>
+                        </span>
+                    </div>
+                {{/if}}
             </div>
         </div>
 

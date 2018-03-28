@@ -267,12 +267,17 @@
     "calendar" : {
       "selectMonth" : "Sélectionnez un mois",
       "nextMonth" : "Le mois prochain",
-      "prevMonth" : "Le mois prochain..."
+      "prevMonth" : "Le mois prochain...",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "Le mois précédent...",
         "body" : "Votre anniversaire pourrait être un bon point de départ!"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -382,10 +387,12 @@
     "cancel"       : "Annuler",
     "claim"        : "Prétendre",
     "close"        : "Fermer",
+    "days"         : "Days",
     "disclaimer"   : "AVERTISSEMENT",
     "etherUnit"    : "ETH",
     "from"         : "de",
     "loading"      : "Chargement, veuillez patienter...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "(communiquant avec la blockchain Ethereum)",
     "notice"       : "Remarquer",
     "own"          : "Posséder",

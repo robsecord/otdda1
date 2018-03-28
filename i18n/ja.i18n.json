@@ -267,12 +267,17 @@
     "calendar" : {
       "selectMonth" : "月を選択",
       "nextMonth" : "来月",
-      "prevMonth" : "前の月"
+      "prevMonth" : "前の月",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "あなたは何の日も所有していません。",
         "body" : "あなたの誕生日は始まるのに良い場所かもしれません！"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -382,10 +387,12 @@
     "cancel"       : "キャンセル",
     "claim"        : "請求",
     "close"        : "閉じる",
+    "days"         : "Days",
     "disclaimer"   : "免責条項",
     "etherUnit"    : "ETH",
     "from"         : "から",
     "loading"      : "読み込み中。。。待って下さい...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "（Ethereumブロックチェーンと通信する）",
     "notice"       : "通知",
     "own"          : "自分の",

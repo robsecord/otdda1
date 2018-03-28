@@ -13,10 +13,17 @@
                     {{/each}}
                 </div>
             {{else}}
-                <div class="alert alert-warning" role="alert">
-                    <strong>{{_ 'component.account.noDays.title'}}</strong><br>
-                    {{_ 'component.account.noDays.body'}}
-                </div>
+                {{#if isCurrentUser}}
+                    <div class="alert alert-warning" role="alert">
+                        <strong>{{_ 'component.account.noDaysOwner.title'}}</strong><br>
+                        {{_ 'component.account.noDaysOwner.body'}}
+                    </div>
+                {{else}}
+                    <div class="alert alert-warning" role="alert">
+                        <strong>{{_ 'component.account.noDaysGuest.title'}}</strong><br>
+                        {{_ 'component.account.noDaysGuest.body'}}
+                    </div>
+                {{/if}}
             {{/if}}
         {{/if}}
 

@@ -54,6 +54,14 @@ Template.mostDaysComponent.helpers({
         return tplData.showLoading || false;
     },
 
+    getAddressAtIndex(index) {
+        const instance = Template.instance();
+        const ownerName = instance.ownerNames[index].get();
+        const address = _.get(DayPrices.leaders.mostDays[index], 'owner', false);
+        if (!address || Helpers.isAddressZero(address)) { return ''; }
+        return address;
+    },
+
     getMostDaysAtIndex(index) {
         const instance = Template.instance();
         const leaders = instance.mostDays.get();

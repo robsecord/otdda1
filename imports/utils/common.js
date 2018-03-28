@@ -86,6 +86,12 @@ Helpers.getFriendlyOwnerName = (contract, ownerAddress) => {
     });
 };
 
+Helpers.gotoAccount = (accountId) => {
+    if (!_.isEmpty(accountId)) {
+        Meteor.defer(() => FlowRouter.go('/account/:accountId?', {accountId}));
+    }
+};
+
 Helpers.getFriendlyErrorMessage = (err) => {
     let message = '';
     log.log(err);

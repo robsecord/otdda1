@@ -28,6 +28,7 @@ Template.calendarDayComponent.onCreated(function Template_calendarDayComponent_o
 
     instance.autorun(() => {
         const tplData = Template.currentData();
+        Session.get('accountNickname');
         instance.dayToDisplay.set(tplData.data.day);
 
         // Get Index of Day
@@ -41,10 +42,6 @@ Template.calendarDayComponent.onCreated(function Template_calendarDayComponent_o
                 .catch(log.error);
         }
     });
-});
-
-Template.calendarDayComponent.onRendered(function Template_calendarDayComponent_onRendered() {
-    Meteor.defer(() => $('[data-toggle="popover"]').popover({trigger: 'hover'}));
 });
 
 Template.calendarDayComponent.helpers({

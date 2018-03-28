@@ -3,6 +3,8 @@ import { _ } from 'lodash';
 
 // App Components
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
+import { Contract } from '/imports/contract/contract-interface';
+import { Helpers } from '/imports/utils/common';
 
 // Template Component
 import './accounts.component.html';
@@ -11,24 +13,39 @@ import './accounts.component.html';
 Template.accountsComponent.onCreated(function Template_accountsComponent_onCreated(){
     const instance = this;
     instance.eth = MeteorEthereum.instance();
+    instance.contract = Contract.instance();
+
+    let accountId = instance.data.accountId || instance.eth.coinbase || '';
+    instance.accountId = new ReactiveVar(accountId);
 
     instance.friendlyName = new ReactiveVar('');
     instance.revealBalance = new ReactiveVar(false);
 
     // balance update interval
-    const _watchBalance = () => {
+    const _watchBalance = (accountId) => {
         instance.updateBalanceTimer = Meteor.setTimeout(() => {
             if (!instance.eth.hasAccount) { return; }
-            instance.eth.web3.eth.getBalance(instance.eth.coinbase, (err, result) => {
+            if (accountId !== instance.eth.coinbase) { return; }
+            instance.eth.web3.eth.getBalance(accountId, (err, result) => {
                 Session.set('balance', String(result));
             });
-            _watchBalance();
+            _watchBalance(accountId);
         }, 1000);
     };
 
     instance.autorun(() => {
+        accountId = Template.currentData().accountId || instance.eth.coinbase || '';
+        instance.accountId.set(accountId);
+
+        if (!_.isEmpty(accountId)) {
+            Helpers.getFriendlyOwnerName(instance.contract, accountId)
+                .then(name => instance.friendlyName.set(name))
+                .catch(log.error);
+        }
+
         if (!instance.eth.hasAccount) { return; }
-        _watchBalance();
+        if (accountId !== instance.eth.coinbase) { return; }
+        _watchBalance(accountId);
     });
 });
 
@@ -49,13 +66,19 @@ Template.accountsComponent.events({
 
 Template.accountsComponent.helpers({
 
+    isCurrentUser() {
+        const instance = Template.instance();
+        return instance.accountId.get() === instance.eth.coinbase;
+    },
+
     getAddress() {
         const instance = Template.instance();
-        return instance.eth.coinbase;
+        return instance.accountId.get();
     },
 
     getFriendlyName() {
-        return Session.get('accountNickname');
+        const instance = Template.instance();
+        return instance.friendlyName.get();
     },
 
     isBalanceVisible() {

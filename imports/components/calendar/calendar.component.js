@@ -1,5 +1,6 @@
 // Meteor Components
 import { Random } from 'meteor/random';
+import { TAPi18n } from 'meteor/tap:i18n';
 import { _ } from 'lodash';
 
 // App Components
@@ -22,6 +23,7 @@ import '/imports/components/calendar-day/calendar-day.component';
 import './calendar.component.html';
 
 let _claimMonitorId;
+let _lastMonthDominator;
 
 Template.calendarComponent.onCreated(function Template_calendarComponent_onCreated() {
     const instance = this;
@@ -30,10 +32,24 @@ Template.calendarComponent.onCreated(function Template_calendarComponent_onCreat
 
     instance.dayIndexRange = [0, 31];
     instance.selectedDayIndex = 0;
+    instance.dominator = new ReactiveVar({});
+    instance.monthDominatorFriendlyName = new ReactiveVar('');
 
     // Watch changes to Calendar Month
     instance.autorun(() => {
         const selectedMonth = Session.get('selectedMonth');
+        DayPrices.leaders.changed.get();
+
+        // Get Month Dominator
+        const dominator = DayPrices.leaders.monthDominators[selectedMonth] || {};
+        instance.dominator.set(dominator);
+        if (!_.isUndefined(dominator.owner) && dominator.owner !== _lastMonthDominator) {
+            _lastMonthDominator = dominator.owner || '';
+            instance.monthDominatorFriendlyName.set(TAPi18n.__('generic.loadingShort'));
+            Helpers.getFriendlyOwnerName(instance.contract, dominator.owner)
+                .then(name => instance.monthDominatorFriendlyName.set(name))
+                .catch(log.error);
+        }
 
         // Ensure Valid Day Selected
         let day;
@@ -57,9 +73,28 @@ Template.calendarComponent.onCreated(function Template_calendarComponent_onCreat
     });
 });
 
+Template.calendarComponent.onRendered(function Template_calendarComponent_onRendered() {
+    const instance = this;
+    instance.autorun(() => {
+        const selectedMonth = Session.get('selectedMonth');
+        Meteor.setTimeout(() => {
+            const $popovers = $('.calendar-day-icon[data-toggle="popover"]');
+            $popovers.popover('destroy');
+            $popovers.popover({
+                trigger: 'hover',
+                viewport: '#calendarViewport',
+                container: 'body'
+            })
+        }, 500);
+    });
+});
+
 Template.calendarComponent.onDestroyed(function Template_calendarComponent_onDestroyed() {
     if (_claimMonitorId) {
         Meteor.clearTimeout(_claimMonitorId);
+    }
+    if (_lastMonthDominator) {
+        _lastMonthDominator = null;
     }
 });
 
@@ -99,7 +134,32 @@ Template.calendarComponent.helpers({
             day : day <= maxDays ? day : false,
             month : Session.get('selectedMonth')
         };
-    }
+    },
+
+    hasMonthDominator() {
+        const instance = Template.instance();
+        const dominator = instance.dominator.get();
+        return !_.isUndefined(dominator.owner);
+    },
+
+    getDominatorAddress() {
+        const instance = Template.instance();
+        const dominator = instance.dominator.get();
+        if (_.isUndefined(dominator.owner)) { return ''; }
+        return dominator.owner;
+    },
+
+    getDominatorNickname() {
+        const instance = Template.instance();
+        return instance.monthDominatorFriendlyName.get();
+    },
+
+    getColorFromAddress() {
+        const instance = Template.instance();
+        const dominator = instance.dominator.get();
+        if (_.isUndefined(dominator.owner)) { return ''; }
+        return Helpers.getStylesForAddress(dominator.owner);
+    },
 
 });
 
