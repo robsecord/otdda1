@@ -29,7 +29,7 @@ export class Contract {
     }
 
     connectToContract() {
-        let address = '0xf12b5dd4ead5f743c6baa640b0216200e89b60da';
+        let address = '0x345ca3e014aaf5dca488057592ee47305d9b3e10';
         if (/production/i.test(process.env.NODE_ENV)) {
             address = '0x16d790ad4e33725d44741251f100e635c323beb9';
         }
