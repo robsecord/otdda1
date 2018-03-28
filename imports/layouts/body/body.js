@@ -40,6 +40,7 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     Session.setDefaultPersistent('selectedMonth', 0);
     Session.setDefaultPersistent('selectedDay', 1);
     Session.setDefault('accountNickname', '');
+    Session.setDefault('nicknameChanged', '');
     Session.setDefault('latestClaim', {});
 
     instance.lastMostDaysLeaders = [];
@@ -69,9 +70,16 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
             instance.eth.coinbase = coinbase;
             instance.eth.hasAccount = !_.isEmpty(coinbase);
 
-            // Get Account Nickname (if any)
-            _getAccountNickname(instance);
+            // Use Address as Nickname
+            Session.set('accountNickname', Helpers.shortAddress(instance.eth.coinbase));
+            Session.set('nicknameChanged', Helpers.shortAddress(instance.eth.coinbase));
         }, ACCOUNT_WATCH_INTERVAL);
+    });
+
+    // Monitor Account Nickname
+    instance.autorun(() => {
+        Session.get('nicknameChanged');
+        _getAccountNickname(instance);
     });
 
     // Begin Monitoring All Prices
@@ -193,13 +201,34 @@ Template.bodyLayout.events({
 function _getAccountNickname(instance) {
     if (instance.view.isDestroyed || _.isEmpty(instance.eth.coinbase)) { return; }
 
-    // Use Address as Nickname
-    Session.set('accountNickname', Helpers.shortAddress(instance.eth.coinbase));
+    let currentNickname = ''; Tracker.nonreactive(() => currentNickname = Session.get('accountNickname'));
+    let newNickname = ''; Tracker.nonreactive(() => newNickname = Session.get('nicknameChanged'));
 
-    // Get Nickname from Contract
-    Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
-        .then(name => Session.set('accountNickname', name))
-        .catch(log.error);
+    // Update Owner Name of Owned Days
+    const _updateOwnedDays = (ownerName) => {
+        const ownedDayIndices = _.filter(_.map(DayPrices.owners, (obj, idx) => obj.address === instance.eth.coinbase ? idx : null), _.isNumber);
+        for (let i = 0; i < ownedDayIndices; i++) {
+            if (DayPrices.owners[ownedDayIndices[i]].name !== ownerName) {
+                DayPrices.owners[ownedDayIndices[i]].name = ownerName;
+                DayPrices.owners[ownedDayIndices[i]].changed.set(Random.id());
+            }
+        }
+    };
+
+    if (newNickname.length && currentNickname === newNickname) {
+        // Get Nickname from Contract
+        Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
+            .then(name => {
+                Session.set('accountNickname', name);
+                _updateOwnedDays(name);
+            })
+            .catch(log.error);
+    } else {
+        if (newNickname.length) {
+            Session.set('accountNickname', newNickname);
+            _updateOwnedDays(newNickname);
+        }
+    }
 }
 
 /**
@@ -213,7 +242,7 @@ const _addPrice = function Template_bodyLayout_monitorPrices_addPrice(instance, 
     return (price) => {
         if (_.isUndefined(DayPrices.prices[idx])) {
             DayPrices.prices[idx] = {price: 0, changed: new ReactiveVar('')};
-            DayPrices.owners[idx] = {address: 0, changed: new ReactiveVar('')};
+            DayPrices.owners[idx] = {address: 0, name: '', changed: new ReactiveVar('')};
         }
 
         if (!DayPrices.prices[idx].price || !price.eq(DayPrices.prices[idx].price)) {
@@ -221,9 +250,19 @@ const _addPrice = function Template_bodyLayout_monitorPrices_addPrice(instance, 
             DayPrices.prices[idx].changed.set(Random.id());
             instance.contract.getDayOwner(idx)
                 .then(owner => {
-                    DayPrices.owners[idx].address = owner;
-                    DayPrices.owners[idx].changed.set(Random.id());
-                });
+                    if (DayPrices.owners[idx].address !== owner) {
+                        DayPrices.owners[idx].address = owner;
+                        DayPrices.owners[idx].changed.set(Random.id());
+                        return Helpers.getFriendlyOwnerName(instance.contract, owner)
+                            .then(name => {
+                                if (DayPrices.owners[idx].name !== name) {
+                                    DayPrices.owners[idx].name = name;
+                                    DayPrices.owners[idx].changed.set(Random.id());
+                                }
+                            });
+                    }
+                })
+                .catch(log.error);
         }
     };
 };
@@ -407,8 +446,5 @@ function _updatePriceAfterClaim(instance, latestClaim) {
                 DayPrices.leaders.changed.set(Random.id());
             }
         })
-        .catch(err => {
-            log.error(err);
-            _monitorPrices(instance);
-        });
+        .catch(log.error);
 }
