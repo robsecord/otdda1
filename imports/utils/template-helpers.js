@@ -37,9 +37,9 @@ Template.registerHelpers({
         return eth.hasNetwork;
     },
 
-    hasValidAccountAndNetwork() {
+    hasValidAccountAndNetwork(accountId) {
         const eth = MeteorEthereum.instance();
-        return eth.hasNetwork && eth.hasAccount;
+        return eth.hasNetwork && (eth.hasAccount || accountId.length);
     },
 
     hasInvalidBrowser() {

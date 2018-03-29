@@ -3,7 +3,7 @@
 
     {{> accountWarningComponent}}
 
-    {{#if hasValidAccountAndNetwork}}
+    {{#if hasValidAccountAndNetwork getAccountId}}
         {{> accountsComponent accountId=getAccountId}}
 
         <div class="row">
