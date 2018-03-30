@@ -1,23 +1,23 @@
 {
   "page" : {
-    "title" : "Own the Day!",
-    "defaultSuffix" : "ERC20 Tokens on the blockchain!",
-    "desc" : "Own the Day or Get Paid for it! Only on the Ethereum Blockchain!"
+    "title" : "Bezit de dag!",
+    "defaultSuffix" : "ERC20 Tokens op de blockchain!",
+    "desc" : "Bezit de dag of krijg er voor betaald! Alleen op de Ethereum Blockchain!"
   },
   "body" : {
     "navbar" : {
-      "title" : "Own the Day",
+      "title" : "Bezit de dag",
       "link" : {
-        "calendar" : "Calendar",
-        "account" : "My Days",
-        "pendingTxs" : "Pending Transactions"
+        "calendar" : "Kalender",
+        "account" : "Mijn dagen",
+        "pendingTxs" : "Wachtende Transacties"
       },
-      "notConnected" : "You are not logged in",
-      "noNetwork"    : "You are not connected to the network"
+      "notConnected" : "je bent niet ingelogd",
+      "noNetwork"    : "U bent niet verbonden met het netwerk"
     }
   },
   "welcome" : {
-    "pageTitle" : "Welcome",
+    "pageTitle" : "Welkom",
     "topBanner" : {
       "title" : "Own the Day",
       "tooltip" : "on the Ethereum Blockchain",
@@ -266,14 +266,19 @@
   },
   "component" : {
     "calendar" : {
-      "selectMonth" : "Select a Month",
-      "nextMonth" : "Next Month",
-      "prevMonth" : "Previous Month"
+      "selectMonth"    : "Select a Month",
+      "nextMonth"      : "Next Month",
+      "prevMonth"      : "Previous Month",
+      "monthDominator" : "Month Dominator"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "You do not own any days.",
         "body" : "Your birthday might be a good place to start!"
+      },
+      "noDaysGuest" : {
+        "title" : "This user does not own any days.",
+        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -343,6 +348,12 @@
     "mostPopularDays" : {
       "title" : "Most Popular Days"
     },
+    "mostDays" : {
+      "title" : "Most Days Owned"
+    },
+    "monthDominators" : {
+      "title" : "Month Dominators"
+    },
     "quickInstructions" : {
       "title" : "How to Play",
       "metamask" : "MetaMask Browser Extension",
@@ -362,6 +373,8 @@
       "claimDay"   : "Own the Day!",
       "claimed"    : "You have successfully claimed __date__.",
       "claimTitle" : "You Own the Day!",
+      "errorTitle" : "Claim Failed",
+      "failed"     : "Your transaction failed for __date__.",
       "info" : {
         "line1" : "You can claim <strong>__date__</strong> for <strong>__price__</strong>",
         "line2" : "Anyone can claim this day from you at the price of <strong>__price__</strong>.",
@@ -383,10 +396,12 @@
     "cancel"       : "cancel",
     "claim"        : "Claim",
     "close"        : "Close",
+    "days"         : "Days",
     "disclaimer"   : "DISCLAIMER",
     "etherUnit"    : "ETH",
     "from"         : "from",
     "loading"      : "Loading, please wait...",
+    "loadingShort" : "loading..",
     "loadingComm"  : "(communicating with the Ethereum blockchain)",
     "notice"       : "Notice",
     "own"          : "Own",

@@ -9,7 +9,8 @@
       "title" : "나만의 날",
       "link" : {
         "calendar" : "달력",
-        "account" : "내 일"
+        "account" : "내 일",
+        "pendingTxs" : "보류중인 거래"
       },
       "notConnected" : "로그인하지 않았습니다.",
       "noNetwork"    : "네트워크에 연결되어 있지 않습니다."
@@ -21,11 +22,7 @@
       "title" : "나만의 날",
       "tooltip" : "에 에테르 블록 크로",
       "subtitle" : "또는 그것을 위해 돈을받습니다!",
-      "enterButton" : "캘린더 열기",
-      "productHunt" : {
-        "title" : "Welcome Product Hunters!",
-        "content" : "Holiday Token System coming soon with a special, limited-time reward for Product Hunters -- Stay tuned!"
-      }
+      "enterButton" : "캘린더 열기"
     },
     "intro1" : {
       "titleLine" : "블록 체인에서 가장 좋아하는 날을 즐겨보세요!",
@@ -35,41 +32,6 @@
       "line4" : "Own The Day는 ethereum 블록 체인에서 ERC20 호환 토큰으로 1 년 중 누구도 구입하고 소유 할 수있는 대화 형 게임 및 암호 수집 물입니다. 하루를 청구하자마자 그 날 토큰에 대한 소유권을 가져 오면 자동으로 가치가 상승합니다.",
       "line5" : "그러나 다른 사람은 지불 한 가격의 두 배를 지불하여 하루를 청구 할 수 있음을 기억하십시오. 그 날의 소유권을 잃게되지만 자동으로 지갑에 입금 된 ETH의 가격을 두 배까지 받으실 수 있습니다!",
       "line6" : "잃을 순 없어! 그날을 소유하거나 그 대가를 치르십시오!"
-    },
-    "intro2" : {
-      "titleLine" : "What Day is Most Important to You?",
-      "line1" : "Would you like to own your Birthday?  How about an anniversary? Or perhaps you would like to Gift a Day to a special someone?",
-      "line2" : "Our special Day-Collectibles are Ethereum Tokens that can be transferred to friends or loved-ones, making the perfect gift!",
-      "line3" : "Every day on the Calendar is available to be Claimed and Owned! But remember, anyone else can claim a day that you own by paying the price!",
-      "line4" : "Many of the Days on the Calendar are specially-marked Holidays which could cause greater desirability.  Which Day will reign supreme as the most desirable Day on the Calendar?  And will YOU be the one who Owns it?"
-    },
-    "intro3" : {
-      "titleLine" : "Greatest Value Increase!",
-      "line1" : "Own the Day has simply the best value increase model for players, earning you the greatest possible profits for your collectibles.  We achieve this by reserving extremely low commissions for our developers. When compared to other crypto-collectibles that take large commissions on each transaction, it is easy to recognize that Own The Day values the players.",
-      "line2" : "Our Smart Contract is available for anyone to read, and our entire application will be open-sourced for the public during Phase 4 of our road-map!"
-    },
-    "intro4" : {
-      "titleLine" : "Introducing Holidays!",
-      "line1" : "Many of the Calendar-Days are already marked with special Holiday icons, but it gets even more exciting during Phase 3 with the release of the Holiday Token System!",
-      "line2" : "With Holiday Tokens, players will have greater possibilities to earn profits from their Day-Collectibles! And it doesn't end there, all players will have a chance to earn ether without having to own Day-Collectibles!",
-      "line3" : "With exciting new game-play on the horizon, don't forget to keep your eye on your Calendar-Day Collectibles and Own the Day!"
-    },
-    "intro5" : {
-      "titleLine" : "Roadmap",
-      "line1" : "Phase 1",
-      "line2" : "Release of initial MVP!  Live to the world in several languages, we begin with a minimal UI and limited marketing efforts, along with the lowest initial entry prices!",
-      "line3" : "Phase 2",
-      "line4" : "Major UI/UX over-haul bringing many enhanced features and showing some much-needed love to the interface! Leaderboards like Most Popular Day, Most Days Owned, Month Dominators, and more are coming very soon!",
-      "line5" : "Phase 3",
-      "line6" : "During this phase we will see the release of the Holidays system which will add an exciting new game-play with possibilities to earn even greater profits!  This will come along with continued improvements to the UI/UX.",
-      "line7" : "Phase 4",
-      "line8" : "At this point we will be releasing the entire project as open-source. The Decentralized Application along with the Smart Contract source code will be available for everyone to read and learn from! We will also be launching our mainstream marketing campaigns to bring our Calendar to the World!"
-    },
-    "intro6" : {
-      "titleLine" : "Will You be Owner of the Greatest Day on Earth?"
-    },
-    "intro7" : {
-      "titleLine" : "Own the Day or Get Paid for it!"
     }
   },
   "calendar" : {
@@ -267,17 +229,12 @@
     "calendar" : {
       "selectMonth" : "한 달 선택",
       "nextMonth" : "다음 달",
-      "prevMonth" : "지난달",
-      "monthDominator" : "Month Dominator"
+      "prevMonth" : "지난달"
     },
     "account" : {
-      "noDaysOwner" : {
+      "noDays" : {
         "title" : "당신은 어떤 날도 소유하고 있지 않습니다.",
         "body" : "당신의 생일이 시작하기에 좋은 장소일지도 모릅니다!"
-      },
-      "noDaysGuest" : {
-        "title" : "This user does not own any days.",
-        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -294,9 +251,9 @@
         "line1" : "MetaCert로 MetaMask 브라우저 확장을 가져오고 자신의 날을 만드십시오!"
       },
       "wrongNetwork" : {
-        "title" : "Wrong Ethereum Network!",
-        "messageTest" : "Please connect your browser (or extension) to a Custom Test Network.",
-        "messageMain" : "Please connect your browser (or extension) to the Main Ethereum Network."
+        "title" : "잘못된 네트워크!",
+        "messageTest" : "테스트 네트워크에 연결하십시오.",
+        "messageMain" : "메인 에테르 네트워크에 연결하십시오."
       },
       "noAccount" : {
         "title" : "계정 없음!",
@@ -347,14 +304,6 @@
     "mostPopularDays" : {
       "title" : "Most Popular Days"
     },
-    "quickInstructions" : {
-      "title" : "How to Play",
-      "metamask" : "MetaMask Browser Extension",
-      "ethereum" : "Ethereum",
-      "line1" : "To play OwnTheDay, you will need to install the __mmbeLink__ for your browser. This will allow you to execute in-browser purchases using the __ethLink__ crypto-currency.",
-      "line2" : "Next, you will want to Purchase Ethereum and Transfer it to your MetaMask digital wallet. A popular place to purchase Ethereum (instantly) is at __coinbase__.",
-      "line3" : "See our __faq__ page for more details!"
-    },
     "footer" : {
       "social" : {
         "visitUs" : "Visit us on __social__"
@@ -387,12 +336,10 @@
     "cancel"       : "취소",
     "claim"        : "청구",
     "close"        : "닫기",
-    "days"         : "Days",
     "disclaimer"   : "부인 성명",
     "etherUnit"    : "ETH",
     "from"         : "...에서",
     "loading"      : "로딩 중 기다려주세요...",
-    "loadingShort" : "loading..",
     "loadingComm"  : "로딩 중급 생각주세요 ...",
     "notice"       : "주의",
     "own"          : "개인적인",
@@ -548,8 +495,8 @@
     },
 
     "may4" : {
-      "title" : "스타 워즈 데이",
-      "desc" : "5 월 4 일 스타 워즈 데이 (Star Wars Day)는 조지 루카스의 스타 워즈 (Star Wars)를 기념합니다. 그것은 미디어 프랜차이즈의 팬들에 의해 관찰됩니다. 기념일의 준수는 미디어 및 풀뿌리 행사를 통해 신속하게 확산되었습니다. 5 월 4 일이 너와 함께 할 것 '이라는 캐치 프레이즈의'힘은 너와 함께 할 수있다 '라는 말장난 때문에 날짜가 선택되었습니다. 비록 실제로 휴가가 루카스 필름에 의해 창안되거나 선언되지는 않았지만, 전세계 많은 스타 워즈 팬들은 휴가를 축하하기로 결정했습니다."
+        "title" : "스타 워즈 데이",
+        "desc" : "5 월 4 일 스타 워즈 데이 (Star Wars Day)는 조지 루카스의 스타 워즈 (Star Wars)를 기념합니다. 그것은 미디어 프랜차이즈의 팬들에 의해 관찰됩니다. 기념일의 준수는 미디어 및 풀뿌리 행사를 통해 신속하게 확산되었습니다. 5 월 4 일이 너와 함께 할 것 '이라는 캐치 프레이즈의'힘은 너와 함께 할 수있다 '라는 말장난 때문에 날짜가 선택되었습니다. 비록 실제로 휴가가 루카스 필름에 의해 창안되거나 선언되지는 않았지만, 전세계 많은 스타 워즈 팬들은 휴가를 축하하기로 결정했습니다."
     },
 
     "may5" : {

@@ -9,7 +9,8 @@
       "title" : "Posséder la journée",
       "link" : {
         "calendar" : "Calendrier",
-        "account" : "Mes journées"
+        "account" : "Mes journées",
+        "pendingTxs" : "Transactions en attente"
       },
       "notConnected" : "Vous n'êtes pas connecté",
       "noNetwork"    : "Vous n'êtes pas connecté au réseau"
@@ -21,11 +22,7 @@
       "title" : "Posséder la journée",
       "tooltip" : "sur la Blockchain Ethereum",
       "subtitle" : "ou se faire payer pour ça!",
-      "enterButton" : "Ouvrir le calendrier",
-      "productHunt" : {
-        "title" : "Welcome Product Hunters!",
-        "content" : "Holiday Token System coming soon with a special, limited-time reward for Product Hunters -- Stay tuned!"
-      }
+      "enterButton" : "Ouvrir le calendrier"
     },
     "intro1" : {
       "titleLine" : "Possédez votre jour préféré sur la Blockchain!",
@@ -35,41 +32,6 @@
       "line4" : "Own The Day est un jeu interactif et crypto-collectible qui permet à quiconque d'acheter et de posséder des jours de l'année en tant que jetons compatibles ERC20 sur l'Ethereum Blockchain. Dès que vous revendiquez un jour, vous prenez possession du jeton pour ce jour et sa valeur augmente automatiquement.",
       "line5" : "Mais rappelez-vous, toute autre personne peut réclamer votre journée en payant jusqu'à deux fois le prix que vous avez payé. Vous perdrez alors la propriété de ce jour, mais vous recevrez jusqu'à deux fois le prix en ETH automatiquement déposé dans votre portefeuille!",
       "line6" : "Tu ne peux pas perdre! Posséder la journée ou être payé pour cela!"
-    },
-    "intro2" : {
-      "titleLine" : "What Day is Most Important to You?",
-      "line1" : "Would you like to own your Birthday?  How about an anniversary? Or perhaps you would like to Gift a Day to a special someone?",
-      "line2" : "Our special Day-Collectibles are Ethereum Tokens that can be transferred to friends or loved-ones, making the perfect gift!",
-      "line3" : "Every day on the Calendar is available to be Claimed and Owned! But remember, anyone else can claim a day that you own by paying the price!",
-      "line4" : "Many of the Days on the Calendar are specially-marked Holidays which could cause greater desirability.  Which Day will reign supreme as the most desirable Day on the Calendar?  And will YOU be the one who Owns it?"
-    },
-    "intro3" : {
-      "titleLine" : "Greatest Value Increase!",
-      "line1" : "Own the Day has simply the best value increase model for players, earning you the greatest possible profits for your collectibles.  We achieve this by reserving extremely low commissions for our developers. When compared to other crypto-collectibles that take large commissions on each transaction, it is easy to recognize that Own The Day values the players.",
-      "line2" : "Our Smart Contract is available for anyone to read, and our entire application will be open-sourced for the public during Phase 4 of our road-map!"
-    },
-    "intro4" : {
-      "titleLine" : "Introducing Holidays!",
-      "line1" : "Many of the Calendar-Days are already marked with special Holiday icons, but it gets even more exciting during Phase 3 with the release of the Holiday Token System!",
-      "line2" : "With Holiday Tokens, players will have greater possibilities to earn profits from their Day-Collectibles! And it doesn't end there, all players will have a chance to earn ether without having to own Day-Collectibles!",
-      "line3" : "With exciting new game-play on the horizon, don't forget to keep your eye on your Calendar-Day Collectibles and Own the Day!"
-    },
-    "intro5" : {
-      "titleLine" : "Roadmap",
-      "line1" : "Phase 1",
-      "line2" : "Release of initial MVP!  Live to the world in several languages, we begin with a minimal UI and limited marketing efforts, along with the lowest initial entry prices!",
-      "line3" : "Phase 2",
-      "line4" : "Major UI/UX over-haul bringing many enhanced features and showing some much-needed love to the interface! Leaderboards like Most Popular Day, Most Days Owned, Month Dominators, and more are coming very soon!",
-      "line5" : "Phase 3",
-      "line6" : "During this phase we will see the release of the Holidays system which will add an exciting new game-play with possibilities to earn even greater profits!  This will come along with continued improvements to the UI/UX.",
-      "line7" : "Phase 4",
-      "line8" : "At this point we will be releasing the entire project as open-source. The Decentralized Application along with the Smart Contract source code will be available for everyone to read and learn from! We will also be launching our mainstream marketing campaigns to bring our Calendar to the World!"
-    },
-    "intro6" : {
-      "titleLine" : "Will You be Owner of the Greatest Day on Earth?"
-    },
-    "intro7" : {
-      "titleLine" : "Own the Day or Get Paid for it!"
     }
   },
   "calendar" : {
@@ -267,17 +229,12 @@
     "calendar" : {
       "selectMonth" : "Sélectionnez un mois",
       "nextMonth" : "Le mois prochain",
-      "prevMonth" : "Le mois prochain...",
-      "monthDominator" : "Month Dominator"
+      "prevMonth" : "Le mois prochain..."
     },
     "account" : {
-      "noDaysOwner" : {
+      "noDays" : {
         "title" : "Le mois précédent...",
         "body" : "Votre anniversaire pourrait être un bon point de départ!"
-      },
-      "noDaysGuest" : {
-        "title" : "This user does not own any days.",
-        "body" : "Perhaps you could buy a Day for them as a Gift?"
       }
     },
     "accountWarning" : {
@@ -294,9 +251,9 @@
         "line1" : "Obtenez l'extension du navigateur MetaMask par MetaCert et Own the Day!"
       },
       "wrongNetwork" : {
-        "title" : "Wrong Ethereum Network!",
-        "messageTest" : "Please connect your browser (or extension) to a Custom Test Network.",
-        "messageMain" : "Please connect your browser (or extension) to the Main Ethereum Network."
+        "title" : "Mauvais réseau!",
+        "messageTest" : "Veuillez vous connecter à un réseau de test.",
+        "messageMain" : "Veuillez vous connecter au réseau principal Ethereum."
       },
       "noAccount" : {
         "title" : "Pas de compte!",
@@ -347,14 +304,6 @@
     "mostPopularDays" : {
       "title" : "Most Popular Days"
     },
-    "quickInstructions" : {
-      "title" : "How to Play",
-      "metamask" : "MetaMask Browser Extension",
-      "ethereum" : "Ethereum",
-      "line1" : "To play OwnTheDay, you will need to install the __mmbeLink__ for your browser. This will allow you to execute in-browser purchases using the __ethLink__ crypto-currency.",
-      "line2" : "Next, you will want to Purchase Ethereum and Transfer it to your MetaMask digital wallet. A popular place to purchase Ethereum (instantly) is at __coinbase__.",
-      "line3" : "See our __faq__ page for more details!"
-    },
     "footer" : {
       "social" : {
         "visitUs" : "Visit us on __social__"
@@ -387,12 +336,10 @@
     "cancel"       : "Annuler",
     "claim"        : "Prétendre",
     "close"        : "Fermer",
-    "days"         : "Days",
     "disclaimer"   : "AVERTISSEMENT",
     "etherUnit"    : "ETH",
     "from"         : "de",
     "loading"      : "Chargement, veuillez patienter...",
-    "loadingShort" : "loading..",
     "loadingComm"  : "(communiquant avec la blockchain Ethereum)",
     "notice"       : "Remarquer",
     "own"          : "Posséder",
