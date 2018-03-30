@@ -3,6 +3,7 @@ export const  DayPrices = {
     initialLoad : new ReactiveVar(true),
     prices      : [],
     owners      : [],
+    nameCache   : {},
 
     leaders : {
         first: {

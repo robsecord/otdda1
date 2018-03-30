@@ -3,7 +3,7 @@ export const TOTAL_DAYS = 366;
 
 export const ACCOUNT_WATCH_INTERVAL = 1000;
 export const RECEIPT_WATCH_INTERVAL = 1000;
-export const PRICE_WATCH_INTERVAL   = 10000;
+export const PRICE_WATCH_INTERVAL   = 5000;
 
 export const MAX_LEADER_COUNT = 3;
 

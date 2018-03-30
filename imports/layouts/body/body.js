@@ -30,8 +30,9 @@ import './body.html';
 
 let _priceMonitorId;
 let _accountMonitorId;
-let _currentInterval = 0;
-const _forceUpdateLimit = 3;
+
+let _currentFetchCount = 0;
+let _fetchLimit = 100;
 
 Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     const instance = this;
@@ -72,14 +73,14 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
 
             // Use Address as Nickname
             Session.set('accountNickname', Helpers.shortAddress(instance.eth.coinbase));
+            _getAccountNickname(instance);
         }, ACCOUNT_WATCH_INTERVAL);
     });
 
     // Monitor Account Nickname
     instance.autorun(() => {
-        Session.get('accountNickname');
-        //if (DayPrices.initialLoad.get()) { return; }
-        _getAccountNickname(instance);
+        Session.get('latestClaim');
+        _updateOwnedDays(instance, Session.get('accountNickname'));
     });
 
     // Begin Monitoring All Prices
@@ -89,10 +90,10 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     });
 
     // Update Price after a Claim
-    instance.autorun(() => {
-        if (!instance.eth.hasNetwork) { return; }
-        _updatePriceAfterClaim(instance, Session.get('latestClaim'));
-    });
+    // instance.autorun(() => {
+    //     if (!instance.eth.hasNetwork) { return; }
+    //     _updatePriceAfterClaim(instance, Session.get('latestClaim'));
+    // });
 });
 
 Template.bodyLayout.onRendered(function Template_bodyLayout_onRendered() {
@@ -202,25 +203,26 @@ Template.bodyLayout.events({
 function _getAccountNickname(instance) {
     if (instance.view.isDestroyed || _.isEmpty(instance.eth.coinbase)) { return; }
 
-    // Update Owner Name of Owned Days
-    const _updateOwnedDays = (ownerName) => {
-        const ownedDayIndices = _.filter(_.map(DayPrices.owners, (obj, idx) => obj.address === instance.eth.coinbase ? idx : null), _.isNumber);
-        for (let i = 0; i < ownedDayIndices; i++) {
-            if (DayPrices.owners[ownedDayIndices[i]].name !== ownerName) {
-                //console.log('update owned days', ownedDayIndices[i], ownerName);
-                DayPrices.owners[ownedDayIndices[i]].name = ownerName;
-                DayPrices.owners[ownedDayIndices[i]].changed.set(Random.id());
-            }
-        }
-    };
-
     // Get Nickname from Contract
     Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
         .then(name => {
             Session.set('accountNickname', name);
-            _updateOwnedDays(name);
         })
         .catch(log.error);
+}
+
+/**
+ * @summary
+ * @param instance
+ * @private
+ */
+function _updateOwnedDays(instance, ownerName) {
+    if (instance.view.isDestroyed || _.isEmpty(instance.eth.coinbase)) { return; }
+    const ownerAddress = instance.eth.coinbase;
+    const ownedDayIndices = _.filter(_.map(DayPrices.owners, (obj, idx) => obj.address === ownerAddress ? idx : null), _.isNumber);
+    for (let i = 0; i < ownedDayIndices.length; i++) {
+        _updateOwnerName(ownedDayIndices[i], ownerAddress, ownerName);
+    }
 }
 
 /**
@@ -230,34 +232,48 @@ function _getAccountNickname(instance) {
  * @returns {function(*)}
  * @private
  */
-const _addPrice = function Template_bodyLayout_monitorPrices_addPrice(instance, idx) {
+const _addPrice = function Template_bodyLayout_monitorPrices_addPrice(instance, dayIndex) {
     return (price) => {
-        if (_.isUndefined(DayPrices.prices[idx])) {
-            DayPrices.prices[idx] = {price: 0, changed: new ReactiveVar('')};
-            DayPrices.owners[idx] = {address: 0, name: '', changed: new ReactiveVar('')};
+        if (_.isUndefined(DayPrices.prices[dayIndex])) {
+            DayPrices.prices[dayIndex] = {price: 0, changed: new ReactiveVar('')};
+            DayPrices.owners[dayIndex] = {address: 0, name: '', changed: new ReactiveVar('')};
         }
 
-        // console.log('_currentInterval', _currentInterval, _forceUpdateLimit);
-        if (!DayPrices.prices[idx].price || !price.eq(DayPrices.prices[idx].price) || _currentInterval > _forceUpdateLimit) {
-            DayPrices.prices[idx].price = price;
-            DayPrices.prices[idx].changed.set(Random.id());
-            instance.contract.getDayOwner(idx)
-                .then(owner => {
-                    DayPrices.owners[idx].address = owner;
-                    DayPrices.owners[idx].changed.set(Random.id());
-                    // console.log('fetching name for', owner);
-                    return Helpers.getFriendlyOwnerName(instance.contract, owner)
-                        .then(name => {
-                            // console.log('name', name);
-                            if (DayPrices.owners[idx].name !== name) {
-                                DayPrices.owners[idx].name = name;
-                                DayPrices.owners[idx].changed.set(Random.id());
-                            }
-                        });
-                })
-                .catch(log.error);
+        if (!DayPrices.prices[dayIndex].price || !price.eq(DayPrices.prices[dayIndex].price)) {
+            DayPrices.prices[dayIndex].price = price;
+            DayPrices.prices[dayIndex].changed.set(Random.id());
+            return instance.contract.getDayOwner(dayIndex)
+                .then(owner => _updateDayOwner(instance, dayIndex, owner));
         }
+        return Promise.resolve(true);
     };
+};
+
+const _updateDayOwner = function Template_bodyLayout_monitorPrices_updateDayOwner(instance, dayIndex, owner) {
+    DayPrices.owners[dayIndex].address = owner;
+    DayPrices.owners[dayIndex].changed.set(Random.id());
+    if (Helpers.isAddressZero(owner)) {
+        return Promise.resolve(true);
+    }
+
+    if (!_.isUndefined(DayPrices.nameCache[owner])) {
+        if (DayPrices.owners[dayIndex].name !== DayPrices.nameCache[owner]) {
+            DayPrices.owners[dayIndex].name = DayPrices.nameCache[owner];
+            DayPrices.owners[dayIndex].changed.set(Random.id());
+        }
+        return Promise.resolve(true);
+    } else {
+        return Helpers.getFriendlyOwnerName(instance.contract, owner)
+            .then(name => _updateOwnerName(dayIndex, owner, name));
+    }
+};
+
+const _updateOwnerName = function Template_bodyLayout_monitorPrices_updateDayOwner(dayIndex, owner, ownerName) {
+    if (DayPrices.owners[dayIndex].name !== ownerName) {
+        DayPrices.owners[dayIndex].name = ownerName;
+        DayPrices.nameCache[owner] = ownerName;
+        DayPrices.owners[dayIndex].changed.set(Random.id());
+    }
 };
 
 /**
@@ -340,10 +356,6 @@ const _updateLeaders = (instance) => {
     DayPrices.leaders.monthDomLeaders = _.take(_.orderBy(monthDominators, 'count', ['desc']), MAX_LEADER_COUNT);
 
     // Check if Leaders have changed
-    if (_currentInterval++ > _forceUpdateLimit) {
-        _currentInterval = 0;
-        return true;
-    }
     let hasChanges = false;
     if (!DayPrices.leaders.first.price || !DayPrices.leaders.first.price.eq(firstHigh.price)) { hasChanges = true; }
     if (!DayPrices.leaders.second.price || !DayPrices.leaders.second.price.eq(secondHigh.price)) { hasChanges = true; }
@@ -389,12 +401,16 @@ const _updateLeaders = (instance) => {
 function _monitorPrices(instance) {
     if (!instance.eth.hasNetwork || instance.view.isDestroyed) { return; }
     if (_priceMonitorId) { Meteor.clearTimeout(_priceMonitorId); }
+    const initialLoad = DayPrices.initialLoad.get();
 
     const start = (new Date).getTime();
     const promises = [];
-    for (let i = 0; i < TOTAL_DAYS; i++) {
+    const limit = initialLoad ? TOTAL_DAYS : Math.min(_currentFetchCount + _fetchLimit, TOTAL_DAYS);
+    for (let i = _currentFetchCount; i < limit; i++) {
         promises.push(instance.contract.getDayPrice(i).then(_addPrice(instance, i, true)));
     }
+    _currentFetchCount += initialLoad ? 0 : _fetchLimit;
+    if (_currentFetchCount > TOTAL_DAYS) { _currentFetchCount = 0; }
     Promise.all(promises)
         .then(result => {
             // Check if Leaders have changed
@@ -402,6 +418,9 @@ function _monitorPrices(instance) {
 
             // Finished Initial Load
             DayPrices.initialLoad.set(false);
+
+            // Clear NameCache
+            DayPrices.nameCache = {};
 
             // Trigger Leaderboard Changes
             if (hasChanges) {
