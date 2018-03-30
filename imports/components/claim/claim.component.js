@@ -61,6 +61,10 @@ Template.claimComponent.onCreated(function Template_claimComponent_onCreated() {
 
 Template.claimComponent.helpers({
 
+    isLoaded() {
+        return !DayPrices.initialLoad.get();
+    },
+
     canMakeClaim() {
         const instance = Template.instance();
         if (!instance.eth.hasAccount || !instance.eth.coinbase) { return false; }
@@ -115,13 +119,19 @@ Template.claimComponent.helpers({
     hasCurrentOwner() {
         CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
         Session.get('latestClaim'); // Day Claimed; Price/Owner changed
-        return !_.isEmpty(CurrentClaim.owner) && !Helpers.isAddressZero(CurrentClaim.owner);
+        return !_.isEmpty(CurrentClaim.owner) && !Helpers.isAddressZero(CurrentClaim.ownerAddress);
     },
 
     getCurrentOwner() {
         CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
         Session.get('latestClaim'); // Day Claimed; Price/Owner changed
         return CurrentClaim.owner;
+    },
+
+    getCurrentOwnerAddress() {
+        CurrentClaim.changeTrigger.get(); // Selected Day/Month changed
+        Session.get('latestClaim'); // Day Claimed; Price/Owner changed
+        return CurrentClaim.ownerAddress;
     },
 
     getColorFromAddress() {

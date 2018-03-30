@@ -1,8 +1,8 @@
 <template name="mostPopularDayComponent">
     <div class="component-wrapper most-popular-day-component">
-        <h3 class="page-header">{{_ 'component.mostPopularDays.title'}}</h3>
-
         {{#if isLoaded}}
+            <h3 class="page-header">{{_ 'component.mostPopularDays.title'}}</h3>
+
             <div class="most-popular-days">
                 {{> dayCardComponent day=(getHighestDayIndex 0) displayOwner=true size="first" tipPlacement=getTipPlacement}}{{!--
                 --}}{{> dayCardComponent day=(getHighestDayIndex 1) displayOwner=true size="second" tipPlacement=getTipPlacement}}{{!--
@@ -13,6 +13,5 @@
                 {{> loading}}
             {{/if}}
         {{/if}}
-
     </div>
 </template>

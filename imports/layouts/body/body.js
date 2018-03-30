@@ -31,6 +31,7 @@ import './body.html';
 let _priceMonitorId;
 let _accountMonitorId;
 let _currentInterval = 0;
+const _forceUpdateLimit = 3;
 
 Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     const instance = this;
@@ -40,7 +41,6 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     Session.setDefaultPersistent('selectedMonth', 0);
     Session.setDefaultPersistent('selectedDay', 1);
     Session.setDefault('accountNickname', '');
-    Session.setDefault('nicknameChanged', '');
     Session.setDefault('latestClaim', {});
 
     instance.lastMostDaysLeaders = [];
@@ -72,13 +72,13 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
 
             // Use Address as Nickname
             Session.set('accountNickname', Helpers.shortAddress(instance.eth.coinbase));
-            Session.set('nicknameChanged', Helpers.shortAddress(instance.eth.coinbase));
         }, ACCOUNT_WATCH_INTERVAL);
     });
 
     // Monitor Account Nickname
     instance.autorun(() => {
-        Session.get('nicknameChanged');
+        Session.get('accountNickname');
+        //if (DayPrices.initialLoad.get()) { return; }
         _getAccountNickname(instance);
     });
 
@@ -160,11 +160,12 @@ Template.bodyLayout.helpers({
     },
 
     hasPendingTxs() {
-        return PendingTransactions.getTransactionCount() > 0;
+        return false;// PendingTransactions.getTransactionCount() > 0;
     },
 
     getPendingTxs() {
-        return PendingTransactions.getTransactions(); // [{hash: '0xa80a97cd70acfd783a3ba008b1b038759702327055a2d97e080bb5a8af730c91', claimData: {day: 1}}]
+        //return [{hash: '0xa80a97cd70acfd783a3ba008b1b038759702327055a2d97e080bb5a8af730c91', claimData: {day: 1}}];
+        return PendingTransactions.getTransactions();
     },
 
     getFriendlyDate(tx) {
@@ -201,34 +202,25 @@ Template.bodyLayout.events({
 function _getAccountNickname(instance) {
     if (instance.view.isDestroyed || _.isEmpty(instance.eth.coinbase)) { return; }
 
-    let currentNickname = ''; Tracker.nonreactive(() => currentNickname = Session.get('accountNickname'));
-    let newNickname = ''; Tracker.nonreactive(() => newNickname = Session.get('nicknameChanged'));
-
     // Update Owner Name of Owned Days
     const _updateOwnedDays = (ownerName) => {
         const ownedDayIndices = _.filter(_.map(DayPrices.owners, (obj, idx) => obj.address === instance.eth.coinbase ? idx : null), _.isNumber);
         for (let i = 0; i < ownedDayIndices; i++) {
             if (DayPrices.owners[ownedDayIndices[i]].name !== ownerName) {
+                //console.log('update owned days', ownedDayIndices[i], ownerName);
                 DayPrices.owners[ownedDayIndices[i]].name = ownerName;
                 DayPrices.owners[ownedDayIndices[i]].changed.set(Random.id());
             }
         }
     };
 
-    if (newNickname.length && currentNickname === newNickname) {
-        // Get Nickname from Contract
-        Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
-            .then(name => {
-                Session.set('accountNickname', name);
-                _updateOwnedDays(name);
-            })
-            .catch(log.error);
-    } else {
-        if (newNickname.length) {
-            Session.set('accountNickname', newNickname);
-            _updateOwnedDays(newNickname);
-        }
-    }
+    // Get Nickname from Contract
+    Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
+        .then(name => {
+            Session.set('accountNickname', name);
+            _updateOwnedDays(name);
+        })
+        .catch(log.error);
 }
 
 /**
@@ -245,22 +237,23 @@ const _addPrice = function Template_bodyLayout_monitorPrices_addPrice(instance, 
             DayPrices.owners[idx] = {address: 0, name: '', changed: new ReactiveVar('')};
         }
 
-        if (!DayPrices.prices[idx].price || !price.eq(DayPrices.prices[idx].price)) {
+        // console.log('_currentInterval', _currentInterval, _forceUpdateLimit);
+        if (!DayPrices.prices[idx].price || !price.eq(DayPrices.prices[idx].price) || _currentInterval > _forceUpdateLimit) {
             DayPrices.prices[idx].price = price;
             DayPrices.prices[idx].changed.set(Random.id());
             instance.contract.getDayOwner(idx)
                 .then(owner => {
-                    if (DayPrices.owners[idx].address !== owner) {
-                        DayPrices.owners[idx].address = owner;
-                        DayPrices.owners[idx].changed.set(Random.id());
-                        return Helpers.getFriendlyOwnerName(instance.contract, owner)
-                            .then(name => {
-                                if (DayPrices.owners[idx].name !== name) {
-                                    DayPrices.owners[idx].name = name;
-                                    DayPrices.owners[idx].changed.set(Random.id());
-                                }
-                            });
-                    }
+                    DayPrices.owners[idx].address = owner;
+                    DayPrices.owners[idx].changed.set(Random.id());
+                    // console.log('fetching name for', owner);
+                    return Helpers.getFriendlyOwnerName(instance.contract, owner)
+                        .then(name => {
+                            // console.log('name', name);
+                            if (DayPrices.owners[idx].name !== name) {
+                                DayPrices.owners[idx].name = name;
+                                DayPrices.owners[idx].changed.set(Random.id());
+                            }
+                        });
                 })
                 .catch(log.error);
         }
@@ -347,7 +340,7 @@ const _updateLeaders = (instance) => {
     DayPrices.leaders.monthDomLeaders = _.take(_.orderBy(monthDominators, 'count', ['desc']), MAX_LEADER_COUNT);
 
     // Check if Leaders have changed
-    if (_currentInterval++ > 50) {
+    if (_currentInterval++ > _forceUpdateLimit) {
         _currentInterval = 0;
         return true;
     }

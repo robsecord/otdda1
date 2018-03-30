@@ -2,7 +2,7 @@
 // Meta defaults
 Meta.config({
   options: {
-	suffix: ''
+	suffix: 'or Get Paid for it!'
   }
 });
 

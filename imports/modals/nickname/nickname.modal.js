@@ -32,7 +32,7 @@ Template.nicknameModal.onCreated(function Template_nicknameModal_onCreated() {
                 instance.contract.waitForReceipt(hash, function (err, receipt) {
                     if (!err) {
                         log.log('Transaction succeeded;', receipt);
-                        Session.set('nicknameChanged', newNickname);
+                        Session.set('accountNickname', newNickname);
                     }
                 });
             })
