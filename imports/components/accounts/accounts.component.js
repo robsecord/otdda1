@@ -5,6 +5,7 @@ import { _ } from 'lodash';
 import { MeteorEthereum } from '/imports/utils/meteor-ethereum';
 import { Contract } from '/imports/contract/contract-interface';
 import { Helpers } from '/imports/utils/common';
+import { log } from '/imports/utils/logging';
 
 // Template Component
 import './accounts.component.html';

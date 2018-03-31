@@ -15,9 +15,9 @@ function _loadWeb3() {
     if (!_.isUndefined(web3Injected)) {
         log.log('Using Injected Web3 Provider');
         eth.web3 = new Web3(web3Injected.currentProvider);
-    } else {
-        log.log('No Web3 detected, using HTTP Provider');
-        eth.web3 = new Web3('https://mainnet.infura.io/');
+    // } else {
+    //     log.log('No Web3 detected, using HTTP Provider');
+    //     eth.web3 = new Web3('https://mainnet.infura.io/');
     }
     if (!_.isObject(eth.web3)) {
         eth.isReady = true;

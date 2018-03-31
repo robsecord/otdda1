@@ -1,6 +1,7 @@
 // Meteor Components
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Random } from 'meteor/random';
+import * as profanityFilter from 'profanity-filter';
 import { _ } from 'lodash';
 
 // App Components
@@ -24,14 +25,14 @@ Template.nicknameModal.onCreated(function Template_nicknameModal_onCreated() {
         const tx = {
             from : instance.eth.coinbase
         };
-        const newNickname = instance.newNickname.get();
+        const newNickname = profanityFilter.clean(instance.newNickname.get());
         instance.contract.setNickname(newNickname, tx)
             .then(hash => {
                 log.log('Transaction sent;', hash);
                 instance.contract.waitForReceipt(hash, function (err, receipt) {
                     if (!err) {
                         log.log('Transaction succeeded;', receipt);
-                        Session.set('accountNickname', newNickname);
+                        Session.set('accountNickname', profanityFilter.clean(newNickname));
                     }
                 });
             })

@@ -8,6 +8,7 @@ import { CurrentClaim } from '/imports/utils/current-claim';
 import { PendingTransactions } from '/imports/utils/pending-transactions';
 import { LocaleHelpers } from '/imports/utils/i18n-helpers';
 import { Helpers } from '/imports/utils/common';
+import { log } from '/imports/utils/logging';
 
 // Template Components
 import '/imports/components/loading/loading.component';

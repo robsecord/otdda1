@@ -1,5 +1,6 @@
 // Meteor Components
 import { TAPi18n } from 'meteor/tap:i18n';
+import * as profanityFilter from 'profanity-filter';
 import { _ } from 'lodash';
 
 // App Components
@@ -76,7 +77,7 @@ Helpers.getFriendlyOwnerName = (contract, ownerAddress) => {
         contract.getNickname(ownerAddress)
             .then(name => {
                 let friendlyName = Helpers.shortAddress(ownerAddress);
-                if (name.length) { friendlyName = name; }
+                if (name.length) { friendlyName = profanityFilter.clean(name); }
                 if (_.padEnd('0x', ADDRESS_DISPLAY_LENGTH, '0') === friendlyName) {
                     friendlyName = '';
                 }

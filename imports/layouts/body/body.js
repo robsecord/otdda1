@@ -2,6 +2,7 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { TAPi18n } from 'meteor/tap:i18n';
 import { Random } from 'meteor/random';
+import * as profanityFilter from 'profanity-filter';
 import { _ } from 'lodash';
 
 // App Components
@@ -206,7 +207,7 @@ function _getAccountNickname(instance) {
     // Get Nickname from Contract
     Helpers.getFriendlyOwnerName(instance.contract, instance.eth.coinbase)
         .then(name => {
-            Session.set('accountNickname', name);
+            Session.set('accountNickname', profanityFilter.clean(name));
         })
         .catch(log.error);
 }
@@ -269,6 +270,7 @@ const _updateDayOwner = function Template_bodyLayout_monitorPrices_updateDayOwne
 };
 
 const _updateOwnerName = function Template_bodyLayout_monitorPrices_updateDayOwner(dayIndex, owner, ownerName) {
+    ownerName = profanityFilter.clean(ownerName);
     if (DayPrices.owners[dayIndex].name !== ownerName) {
         DayPrices.owners[dayIndex].name = ownerName;
         DayPrices.nameCache[owner] = ownerName;

@@ -27,6 +27,7 @@
     "jquery": "3.3.1",
     "lodash": "4.17.4",
     "meteor-node-stubs": "0.3.2",
+    "profanity-filter": "0.2.1",
     "toastr": "2.1.2"
   },
   "devDependencies": {
