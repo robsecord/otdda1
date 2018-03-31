@@ -32,6 +32,41 @@
       "line4" : "Own The Day est un jeu interactif et crypto-collectible qui permet à quiconque d'acheter et de posséder des jours de l'année en tant que jetons compatibles ERC20 sur l'Ethereum Blockchain. Dès que vous revendiquez un jour, vous prenez possession du jeton pour ce jour et sa valeur augmente automatiquement.",
       "line5" : "Mais rappelez-vous, toute autre personne peut réclamer votre journée en payant jusqu'à deux fois le prix que vous avez payé. Vous perdrez alors la propriété de ce jour, mais vous recevrez jusqu'à deux fois le prix en ETH automatiquement déposé dans votre portefeuille!",
       "line6" : "Tu ne peux pas perdre! Posséder la journée ou être payé pour cela!"
+    },
+    "intro2" : {
+      "titleLine" : "Quel jour est le plus important pour vous?",
+      "line1" : "Aimeriez-vous posséder votre anniversaire? Que diriez-vous d'un anniversaire? Ou peut-être souhaitez-vous offrir un cadeau à quelqu'un de spécial?",
+      "line2" : "Nos Day-Collectibles spéciaux sont des jetons Ethereum qui peuvent être transférés à vos amis ou à vos proches, faisant le cadeau parfait!",
+      "line3" : "Chaque jour sur le calendrier est disponible pour être réclamé et possédé! Mais rappelez-vous, n'importe qui peut réclamer un jour que vous possédez en payant le prix!",
+      "line4" : "Beaucoup de jours sur le calendrier sont des vacances spécialement marquées qui pourraient causer une plus grande désirabilité. Quel jour règnera en tant que jour le plus souhaitable sur le calendrier? Et serez-vous celui qui le possède?"
+    },
+    "intro3" : {
+      "titleLine" : "Meilleure augmentation de la valeur!",
+      "line1" : "Own the Day a tout simplement le meilleur modèle d'augmentation de la valeur pour les joueurs, vous permettant de réaliser le plus de profits possibles pour vos objets de collection. Nous y parvenons en réservant des commissions extrêmement basses pour nos développeurs. Comparé à d'autres objets de collection crypto qui prennent d'importantes commissions sur chaque transaction, il est facile de reconnaître que Own The Day valorise les joueurs.",
+      "line2" : "Notre contrat intelligent est à la disposition de tous, et toute notre demande sera ouverte au public pendant la phase 4 de notre feuille de route!"
+    },
+    "intro4" : {
+      "titleLine" : "Présentation des vacances!",
+      "line1" : "Beaucoup des Calendar-Days sont déjà marqués avec des icônes de vacances spéciales, mais cela devient encore plus excitant pendant la phase 3 avec la sortie du système Holiday Token!",
+      "line2" : "Avec les jetons de vacances, les joueurs auront plus de possibilités de gagner des profits grâce à leurs objets de collection! Et ça ne s'arrête pas là, tous les joueurs auront une chance de gagner de l'éther sans avoir à posséder des Day-Collectibles!",
+      "line3" : "Avec de nouveaux jeux passionnants à l'horizon, n'oubliez pas de garder un œil sur vos objets de collection Calendar-Day et Own the Day!"
+    },
+    "intro5" : {
+      "titleLine" : "Feuille de route",
+      "line1" : "Phase 1",
+      "line2" : "Sortie du premier MVP! Vivre dans le monde en plusieurs langues, nous commençons avec une interface utilisateur minimale et des efforts de marketing limités, avec les prix d'entrée initiaux les plus bas!",
+      "line3" : "Phase 2",
+      "line4" : "Surcharge UI / UX majeure apportant de nombreuses fonctionnalités améliorées et montrant un peu d'amour indispensable à l'interface! Les classements comme le jour le plus populaire, la plupart des jours, dominateurs du mois, et plus viendront très bientôt!",
+      "line5" : "Phase 3",
+      "line6" : "Au cours de cette phase, nous verrons la sortie du système Vacances, qui ajoutera un nouveau jeu passionnant avec des possibilités de gagner encore plus de profits! Cela viendra avec des améliorations continues à l'interface utilisateur / UX.",
+      "line7" : "Phase 4",
+      "line8" : "À ce stade, nous publierons l'ensemble du projet en tant que logiciel libre. L'application décentralisée ainsi que le code source Smart Contract seront disponibles pour que tout le monde puisse lire et apprendre! Nous lancerons également nos campagnes de marketing grand public pour mettre notre calendrier au monde!"
+    },
+    "intro6" : {
+      "titleLine" : "Serez-vous le propriétaire du plus grand jour sur Terre?"
+    },
+    "intro7" : {
+      "titleLine" : "Posséder la journée ou être payé pour cela!"
     }
   },
   "calendar" : {
@@ -336,6 +371,7 @@
     "cancel"       : "Annuler",
     "claim"        : "Prétendre",
     "close"        : "Fermer",
+    "days"         : "Journées",
     "disclaimer"   : "AVERTISSEMENT",
     "etherUnit"    : "ETH",
     "from"         : "de",

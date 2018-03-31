@@ -32,6 +32,41 @@
       "line4" : "Own The Day es un juego interactivo y criptocobrable que permite comprar cualquier prenda como Tokens compatibles con ERC20 en el Ethereum Blockchain. Tan pronto como reclamo un día, toma posesión del Token para ese día y ahora aumenta de valor.",
       "line5" : "Pero recuerde, cualquier persona puede reclamar su día pagando hasta el doble del precio que pagó. ¡Entonces perderá la propiedad de ese día, pero recibirá hasta el doble del precio en ETH depositado automáticamente en su billetera!",
       "line6" : "No puedes perder! ¡Poseer el día o ser pagado por ello!"
+    },
+    "intro2" : {
+      "titleLine" : "¿Qué día es más importante para ti?",
+      "line1" : "¿Te gustaría tener tu cumpleaños? ¿Qué tal un aniversario? ¿O quizás le gustaría regalar un día a alguien especial?",
+      "line2" : "Nuestros Coleccionables de Día especiales son fichas de Ethereum que se pueden transferir a amigos o seres queridos, ¡lo que lo convierte en el regalo perfecto!",
+      "line3" : "Todos los días en el Calendario está disponible para ser reclamado y propiedad! ¡Pero recuerde, cualquier persona puede reclamar un día que sea suyo pagando el precio!",
+      "line4" : "Muchos de los días en el calendario son feriados especialmente marcados que podrían causar mayor deseabilidad. ¿Qué día reinará como el día más deseado del calendario? ¿Y tú serás tú el que lo posee?"
+    },
+    "intro3" : {
+      "titleLine" : "¡Mayor aumento de valor!",
+      "line1" : "Own the Day tiene simplemente el mejor modelo de aumento de valor para los jugadores, que le permite obtener los mayores beneficios posibles para sus coleccionables. Logramos esto reservando comisiones extremadamente bajas para nuestros desarrolladores. Cuando se compara con otros objetos criptográficos que toman grandes comisiones en cada transacción, es fácil reconocer que Own the Day valora a los jugadores.",
+      "line2" : "¡Nuestro Smart Contrato está disponible para que cualquiera lo lea, y toda nuestra aplicación será de fuente abierta para el público durante la Fase 4 de nuestra hoja de ruta!"
+    },
+    "intro4" : {
+      "titleLine" : "¡Presentando Vacaciones!",
+      "line1" : "Muchos de los días-calendario ya están marcados con íconos especiales de vacaciones, ¡pero se vuelven aún más emocionantes durante la Fase 3 con el lanzamiento del sistema Holiday Token!",
+      "line2" : "¡Con Holiday Tokens, los jugadores tendrán mayores posibilidades de obtener ganancias de sus Day-Collectibles! Y no termina ahí, todos los jugadores tendrán la oportunidad de ganar éter sin tener que tener Coleccionismo diurno.",
+      "line3" : "Con nuevos y excitantes juegos en el horizonte, ¡no olvides mantener a raya tus Coleccionables del Día del Calendario y el Día del Dueño!"
+    },
+    "intro5" : {
+      "titleLine" : "Mapa vial",
+      "line1" : "Fase 1",
+      "line2" : "Lanzamiento del MVP inicial! Viva el mundo en varios idiomas, comenzamos con una interfaz de usuario mínima y esfuerzos de marketing limitados, junto con los precios de entrada iniciales más bajos.",
+      "line3" : "Fase 2",
+      "line4" : "Recorrido excesivo de UI / UX con muchas funciones mejoradas y mostrando un amor muy necesario en la interfaz. Las tablas de clasificación como Día más popular, Más días poseídos, Dominadores de mes, y más están llegando muy pronto!",
+      "line5" : "Fase 3",
+      "line6" : "Durante esta fase veremos el lanzamiento del sistema de vacaciones que agregará un nuevo y emocionante juego con posibilidades de obtener aún mayores ganancias. Esto vendrá junto con mejoras continuas a la UI / UX.",
+      "line7" : "Fase 4",
+      "line8" : "En este punto, lanzaremos todo el proyecto como de código abierto. ¡La aplicación descentralizada junto con el código fuente de Smart Contract estará disponible para que todos la lean y aprendan! ¡También lanzaremos nuestras principales campañas de marketing para llevar nuestro Calendario al mundo!"
+    },
+    "intro6" : {
+      "titleLine" : "¿Serás dueño del mejor día de la Tierra?"
+    },
+    "intro7" : {
+      "titleLine" : "¡Sea el día o reciba un pago!"
     }
   },
   "calendar" : {
@@ -336,6 +371,7 @@
     "cancel"       : "cancelar",
     "claim"        : "Reclamación",
     "close"        : "Cerca",
+    "days"         : "Dias",
     "disclaimer"   : "RENUNCIA",
     "etherUnit"    : "ETH",
     "from"         : "de",
