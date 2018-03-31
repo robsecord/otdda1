@@ -35,5 +35,5 @@ if (location.host !== 'localhost:3000' && location.host !== '127.0.0.1:3000' && 
 Meteor.startup(function clientIndexStartup() {
     log.log('OwnTheDay Version 1.5.6');
     log.log('Check out our Ethereum Contract here: https://etherscan.io/address/0x16d790ad4e33725d44741251f100e635c323beb9#code');
-    log.log('Have a great Day!');
+    log.log('Have a great Day! 📆 🚀');
 });
