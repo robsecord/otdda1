@@ -6,11 +6,8 @@
                 {{> dapp_identicon identity=getAddress class="dapp-medium"}}
             </div>
             <div class="media-body">
-                <h4 class="media-heading">
-                    <span data-toggle="tooltip" data-placement="right" title="{{getAddress}}" data-original-title="{{getAddress}}">{{getFriendlyName}}</span>
-                </h4>
                 {{#if isCurrentUser}}
-                    <div class="input-group input-group-sm balance-input-group">
+                    <div class="input-group input-group-sm balance-input-group pull-right">
                         <span class="input-group-addon">{{_ 'generic.balance'}} ({{_ 'generic.etherUnit'}})</span>
                         <input class="form-control disabled" placeholder="###.######" value="{{getBalance}}">
                         <span class="input-group-btn">
@@ -24,6 +21,8 @@
                         </span>
                     </div>
                 {{/if}}
+                <h4 class="media-heading"><span title="{{getAddress}}">{{getFriendlyName}}</span></h4>
+                <a href="{{getTokenAddress}}" target="_blank">View Tokens on EtherScan</a>
             </div>
         </div>
 

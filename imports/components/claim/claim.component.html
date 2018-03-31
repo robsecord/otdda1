@@ -2,7 +2,7 @@
     <div class="component-wrapper claim-component">
         {{#if isLoaded}}
             <div class="panel panel-default claim-day-card">
-                <div class="panel-heading">
+                <div class="panel-heading {{getMonthClass}}">
                     <h3 class="panel-title">{{getDateLabel 'MMMM' getMonth false}}</h3>
                 </div>
                 <div class="panel-body">

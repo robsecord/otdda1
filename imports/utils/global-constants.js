@@ -12,6 +12,10 @@ export const DAYS_IN_MONTH    = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 export const ADDRESS_DISPLAY_LENGTH = 12;
 
+export const CONTRACT_ADDRESS_DEV = '0x345ca3e014aaf5dca488057592ee47305d9b3e10';
+export const CONTRACT_ADDRESS_PRD = '0x16d790ad4e33725d44741251f100e635c323beb9';
+
+
 export const HOLIDAY_ICON_MAP = [
     {dayIndex: 0,    classname: 'jan1',  img: '/img/holidays/jan1.svg',  title: 'holiday.jan1.title',  desc: 'holiday.jan1.desc'},
     {dayIndex: 5,    classname: 'jan6',  img: '/img/holidays/jan6.svg',  title: 'holiday.jan6.title',  desc: 'holiday.jan6.desc'},

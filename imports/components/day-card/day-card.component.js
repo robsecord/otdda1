@@ -137,6 +137,11 @@ Template.dayCardComponent.events({
         const {month, day} = Helpers.getMonthDayFromIndex(dayIndex);
         Session.set('selectedMonth', month);
         Session.set('selectedDay', day);
+        Meteor.defer(() => {
+            if (FlowRouter.current().route.name !== 'app.calendar') {
+                FlowRouter.go('app.calendar');
+            }
+        });
     }
 
 });

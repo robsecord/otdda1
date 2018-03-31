@@ -7,6 +7,12 @@ import { Contract } from '/imports/contract/contract-interface';
 import { Helpers } from '/imports/utils/common';
 import { log } from '/imports/utils/logging';
 
+// Globals
+import {
+    CONTRACT_ADDRESS_DEV,
+    CONTRACT_ADDRESS_PRD
+} from '/imports/utils/global-constants';
+
 // Template Component
 import './accounts.component.html';
 
@@ -91,5 +97,15 @@ Template.accountsComponent.helpers({
         const instance = Template.instance();
         if (!instance.eth.hasNetwork || !instance.revealBalance.get()) { return ''; }
         return instance.eth.web3.fromWei(Session.get('balance'), 'ether').toString(10);
+    },
+
+    getTokenAddress() {
+        const instance = Template.instance();
+        const accountId = instance.accountId.get();
+        let contractAddress = CONTRACT_ADDRESS_DEV;
+        if (/production/i.test(process.env.NODE_ENV)) {
+            contractAddress = CONTRACT_ADDRESS_PRD;
+        }
+        return `https://etherscan.io/token/${contractAddress}?a=${accountId}`;
     }
 });

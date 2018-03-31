@@ -107,6 +107,11 @@ Template.claimComponent.helpers({
         return Session.get('selectedMonth');
     },
 
+    getMonthClass() {
+        const month = Session.get('selectedMonth');
+        return `month${month}`;
+    },
+
     getCurrentPrice() {
         const instance = Template.instance();
         if (!instance.eth.hasNetwork) { return ''; }
