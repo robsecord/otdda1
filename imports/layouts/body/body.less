@@ -5,106 +5,144 @@
 // Body Component
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .component-wrapper {
-  &.root-component.body-layout-component {
+    &.root-component.body-layout-component {
 
-    // Top Navigation
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .navbar.navbar-default {
-      color: @white;
-      font-size: (@font-size-base - 1);
-      background-color: @brand-primary;
-      border-color: darken(@brand-primary, 5%);
-
-      &.navbar-fixed-top {
-        padding: 0 0 0 30px;
-        margin-bottom: 0;
-      }
-
-      .navbar-brand {
-        position: relative;
-        left: 30px;
-        color: @white;
-
-        .otd-logo {
-            float: left;
-            line-height: 24px;
-            margin-top: -3px;
-        }
-      }
-
-      .navbar-nav {
-        > li {
-          > a {
+        // Top Navigation
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .navbar.navbar-default {
             color: @white;
-            text-transform: uppercase;
-          }
+            font-size: (@font-size-base - 1);
+            background-color: @brand-primary;
+            border-color: darken(@brand-primary, 5%);
 
-          &.active {
-            > a {
-              background-color: lighten(@brand-primary, 7%);
+            &.navbar-fixed-top {
+                padding: 0;
+                margin-bottom: 0;
             }
-          }
 
-          &.owner-label-wrapper {
-            //display: inline-block;
-            max-width: 200px;
-
-            > a {
-              max-width: 200px;
-
-              > .label {
-                display: inline-block;
-                max-width: 170px;
-                margin-bottom: -0.3em;
-              }
+            .navbar-toggle:hover,
+            .navbar-toggle:focus {
+                background-color: lighten(@brand-primary, 7%);
             }
-          }
+
+            .navbar-brand {
+                position: relative;
+                left: 0;
+                color: @white;
+
+                .otd-logo {
+                    float: left;
+                    line-height: 24px;
+                    margin-top: -3px;
+                }
+            }
+
+            .navbar-nav {
+                > li {
+                    > a {
+                        color: @white;
+                        text-transform: uppercase;
+                    }
+
+                    &.active {
+                        > a {
+                            background-color: lighten(@brand-primary, 7%);
+                        }
+                    }
+
+                    &.owner-label-wrapper {
+                        //display: inline-block;
+                        max-width: 200px;
+
+                        > a {
+                            max-width: 200px;
+
+                            > .label {
+                                display: inline-block;
+                                max-width: 170px;
+                                margin-bottom: -0.3em;
+                            }
+                        }
+                    }
+                }
+
+                > .open {
+                    > a,
+                    > a:hover,
+                    > a:focus {
+                        background-color: lighten(@brand-primary, 7%);
+                    }
+                    .dropdown-menu {
+                        background-color: lighten(@brand-primary, 14%);
+                        > li {
+                            > a,
+                            > a:hover,
+                            > a:focus {
+                                color: @ghostwhite;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .text-large {
+                font-size: @font-size-base + 4;
+            }
+
+            .dapp-identicon.dapp-small {
+                margin: 9px 25px 0 15px;
+            }
+
         }
 
-        > .open {
-          > a,
-          > a:hover,
-          > a:focus {
-            background-color: lighten(@brand-primary, 7%);
-          }
+        // Primary Content
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .content-primary {
+            padding: 20px;
+
+            .page-header {
+                margin: 10px 0;
+                font-size: large;
+                border: 0 none;
+            }
+
+            .sub-header {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #eee;
+            }
+
         }
 
-        &.locale-selector {
-          margin: 0 30px
+        .component-wrapper > .page-header {
+            margin-top: 0 !important;
         }
-      }
-
-      .text-large {
-        font-size: @font-size-base + 4;
-      }
-
-      .dapp-identicon.dapp-small {
-        margin: 9px 25px 0 15px;
-      }
-
     }
 
-    // Primary Content
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .content-primary {
-      padding: 20px;
+}
 
-      .page-header {
-        margin: 10px 0;
-        font-size: large;
-        border: 0 none;
-      }
+@media (min-width: @screen-sm-min) {
+    .component-wrapper {
+        &.root-component.body-layout-component {
 
-      .sub-header {
-        padding-bottom: 10px;
-        border-bottom: 1px solid #eee;
-      }
+            // Top Navigation
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            .navbar.navbar-default {
+                &.navbar-fixed-top {
+                    padding: 0 0 0 30px;
+                }
 
+                .navbar-brand {
+                    left: 30px;
+                }
+
+                .navbar-nav {
+                    &.locale-selector {
+                        margin: 0 30px 0 0;
+                    }
+                }
+
+            }
+
+        }
     }
-
-    .component-wrapper > .page-header {
-      margin-top: 0 !important;
-    }
-  }
-
 }

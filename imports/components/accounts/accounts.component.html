@@ -6,23 +6,32 @@
                 {{> dapp_identicon identity=getAddress class="dapp-medium"}}
             </div>
             <div class="media-body">
-                {{#if isCurrentUser}}
-                    <div class="input-group input-group-sm balance-input-group pull-right">
-                        <span class="input-group-addon">{{_ 'generic.balance'}} ({{_ 'generic.etherUnit'}})</span>
-                        <input class="form-control disabled" placeholder="###.######" value="{{getBalance}}">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" data-action="toggle-balance">
-                                {{#if isBalanceVisible}}
-                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                                {{else}}
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                                {{/if}}
-                            </button>
-                        </span>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="media-heading"><span title="{{getAddress}}">{{getFriendlyName}}</span></h4>
+                        <a href="{{getTokenAddress}}" target="_blank">View Tokens on EtherScan</a>
                     </div>
-                {{/if}}
-                <h4 class="media-heading"><span title="{{getAddress}}">{{getFriendlyName}}</span></h4>
-                <a href="{{getTokenAddress}}" target="_blank">View Tokens on EtherScan</a>
+                    <div class="col-sm-6">
+                        {{#if isCurrentUser}}
+                            <div class="input-group input-group-sm balance-input-group pull-right">
+                                <span class="input-group-addon">
+                                    <span class="hidden-xs">{{_ 'generic.balance'}} ({{_ 'generic.etherUnit'}})</span>
+                                    <span class="visible-xs-inline">{{_ 'generic.etherUnit'}}</span>
+                                </span>
+                                <input class="form-control disabled" placeholder="###.######" value="{{getBalance}}">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" data-action="toggle-balance">
+                                        {{#if isBalanceVisible}}
+                                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                        {{else}}
+                                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                        {{/if}}
+                                    </button>
+                                </span>
+                            </div>
+                        {{/if}}
+                    </div>
+                </div>
             </div>
         </div>
 
