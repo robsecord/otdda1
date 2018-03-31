@@ -279,7 +279,8 @@
       "noDaysGuest" : {
         "title" : "Deze gebruiker bezit geen dagen.",
         "body" : "Misschien kun je een dag voor hen kopen als een geschenk?"
-      }
+      },
+      "viewTokens" : "Bekijk tokens op EtherScan"
     },
     "accountWarning" : {
       "detectingBrowser" : {

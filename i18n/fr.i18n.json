@@ -264,13 +264,19 @@
     "calendar" : {
       "selectMonth" : "Sélectionnez un mois",
       "nextMonth" : "Le mois prochain",
-      "prevMonth" : "Le mois prochain..."
+      "prevMonth" : "Le mois prochain...",
+      "monthDominator" : "Dominateur du mois"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "Le mois précédent...",
         "body" : "Votre anniversaire pourrait être un bon point de départ!"
-      }
+      },
+      "noDaysGuest" : {
+        "title" : "Cet utilisateur ne possède aucun jour.",
+        "body" : "Peut-être que vous pourriez acheter un jour pour eux comme un cadeau?"
+      },
+      "viewTokens" : "Afficher les jetons sur EtherScan"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -338,6 +344,12 @@
     },
     "mostPopularDays" : {
       "title" : "Jours les plus populaires"
+    },
+    "mostDays" : {
+      "title" : "La plupart des jours"
+    },
+    "monthDominators" : {
+      "title" : "Dominateurs du mois"
     },
     "footer" : {
       "social" : {

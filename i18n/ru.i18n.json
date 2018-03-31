@@ -264,13 +264,19 @@
     "calendar" : {
       "selectMonth" : "Выберите месяц",
       "nextMonth" : "В следующем месяце",
-      "prevMonth" : "Предыдущий месяц"
+      "prevMonth" : "Предыдущий месяц",
+      "monthDominator" : "Месяц Доминатор"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "У вас нет никаких дней.",
         "body" : "Ваш день рождения может стать хорошим местом для начала!"
-      }
+      },
+      "noDaysGuest" : {
+        "title" : "Этот пользователь не имеет никаких дней.",
+        "body" : "Возможно, вы могли бы купить День для них как подарок?"
+      },
+      "viewTokens" : "EtherScan에서 토큰보기"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -338,6 +344,12 @@
     },
     "mostPopularDays" : {
       "title" : "Самые популярные дни"
+    },
+    "mostDays" : {
+      "title" : "Большинство дней"
+    },
+    "monthDominators" : {
+      "title" : "Месячные доминанты"
     },
     "footer" : {
       "social" : {

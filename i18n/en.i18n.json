@@ -279,7 +279,8 @@
       "noDaysGuest" : {
         "title" : "This user does not own any days.",
         "body" : "Perhaps you could buy a Day for them as a Gift?"
-      }
+      },
+      "viewTokens" : "View Tokens on __link__"
     },
     "accountWarning" : {
       "detectingBrowser" : {

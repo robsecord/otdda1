@@ -264,13 +264,19 @@
     "calendar" : {
       "selectMonth" : "选择一个月",
       "nextMonth" : "下个月",
-      "prevMonth" : "前一个月"
+      "prevMonth" : "前一个月",
+      "monthDominator" : "月亮统治者"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "你不拥有任何日子。",
         "body" : "你的生日可能是一个开始的好地方！"
-      }
+      },
+      "noDaysGuest" : {
+        "title" : "该用户不拥有任何日子。",
+        "body" : "也许你可以为他们购买一天作为礼物？"
+      },
+      "viewTokens" : "在EtherScan上查看令牌"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -338,6 +344,12 @@
     },
     "mostPopularDays" : {
       "title" : "最受欢迎的日子"
+    },
+    "mostDays" : {
+      "title" : "大多数天拥有"
+    },
+    "monthDominators" : {
+      "title" : "月亮统治者"
     },
     "footer" : {
       "social" : {

@@ -264,13 +264,19 @@
     "calendar" : {
       "selectMonth" : "月を選択",
       "nextMonth" : "来月",
-      "prevMonth" : "前の月"
+      "prevMonth" : "前の月",
+      "monthDominator" : "月ドミネーター"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "あなたは何の日も所有していません。",
         "body" : "あなたの誕生日は始まるのに良い場所かもしれません！"
-      }
+      },
+      "noDaysGuest" : {
+        "title" : "このユーザーには日がありません。",
+        "body" : "おそらくあなたはギフトとして彼らのために1日を買うことができますか？"
+      },
+      "viewTokens" : "EtherScanでのトークンの表示"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -338,6 +344,12 @@
     },
     "mostPopularDays" : {
       "title" : "人気の日数"
+    },
+    "mostDays" : {
+      "title" : "ほとんどの日所有"
+    },
+    "monthDominators" : {
+      "title" : "月ドミネーター"
     },
     "footer" : {
       "social" : {

@@ -279,7 +279,8 @@
       "noDaysGuest" : {
         "title" : "Dieser Benutzer besitzt keine Tage.",
         "body" : "Vielleicht könntest du einen Tag für sie als Geschenk kaufen?"
-      }
+      },
+      "viewTokens" : "Zeigen Sie Token auf EtherScan an"
     },
     "accountWarning" : {
       "detectingBrowser" : {

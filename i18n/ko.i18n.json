@@ -264,13 +264,19 @@
     "calendar" : {
       "selectMonth" : "한 달 선택",
       "nextMonth" : "다음 달",
-      "prevMonth" : "지난달"
+      "prevMonth" : "지난달",
+      "monthDominator" : "달 통치자"
     },
     "account" : {
-      "noDays" : {
+      "noDaysOwner" : {
         "title" : "당신은 어떤 날도 소유하고 있지 않습니다.",
         "body" : "당신의 생일이 시작하기에 좋은 장소일지도 모릅니다!"
-      }
+      },
+      "noDaysGuest" : {
+        "title" : "이 사용자는 요일을 소유하지 않습니다.",
+        "body" : "아마 당신은 선물로 그들을 위해 하루를 살 수 있을까요?"
+      },
+      "viewTokens" : "EtherScan에서 토큰보기"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -338,6 +344,12 @@
     },
     "mostPopularDays" : {
       "title" : "가장 인기있는 날"
+    },
+    "mostDays" : {
+      "title" : "대부분의 일 소유"
+    },
+    "monthDominators" : {
+      "title" : "달 통치자"
     },
     "footer" : {
       "social" : {
