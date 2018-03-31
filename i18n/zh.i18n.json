@@ -302,11 +302,11 @@
       }
     },
     "mostPopularDays" : {
-      "title" : "Most Popular Days"
+      "title" : "最受欢迎的日子"
     },
     "footer" : {
       "social" : {
-        "visitUs" : "Visit us on __social__"
+        "visitUs" : "访问我们的__social__"
       }
     }
   },

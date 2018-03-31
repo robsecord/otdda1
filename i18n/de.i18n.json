@@ -1,23 +1,23 @@
 {
   "page" : {
-    "title" : "Bezit de dag!",
-    "defaultSuffix" : "ERC20 Tokens op de blockchain!",
-    "desc" : "Bezit de dag of krijg er voor betaald! Alleen op de Ethereum Blockchain!"
+    "title" : "Own the Day!",
+    "defaultSuffix" : "ERC20 Tokens on the blockchain!",
+    "desc" : "Own the Day or Get Paid for it! Only on the Ethereum Blockchain!"
   },
   "body" : {
     "navbar" : {
-      "title" : "Bezit de dag",
+      "title" : "Own the Day",
       "link" : {
-        "calendar" : "Kalender",
-        "account" : "Mijn dagen",
-        "pendingTxs" : "Wachtende Transacties"
+        "calendar" : "Calendar",
+        "account" : "My Days",
+        "pendingTxs" : "Pending Transactions"
       },
-      "notConnected" : "je bent niet ingelogd",
-      "noNetwork"    : "U bent niet verbonden met het netwerk"
+      "notConnected" : "You are not logged in",
+      "noNetwork"    : "You are not connected to the network"
     }
   },
   "welcome" : {
-    "pageTitle" : "Welkom",
+    "pageTitle" : "Welcome",
     "topBanner" : {
       "title" : "Own the Day",
       "tooltip" : "on the Ethereum Blockchain",

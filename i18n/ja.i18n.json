@@ -302,11 +302,11 @@
       }
     },
     "mostPopularDays" : {
-      "title" : "Most Popular Days"
+      "title" : "人気の日数"
     },
     "footer" : {
       "social" : {
-        "visitUs" : "Visit us on __social__"
+        "visitUs" : "__social__で私たちを訪ねてください"
       }
     }
   },
