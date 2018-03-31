@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import * as fr from 'date-fns/locale/fr';
 import * as de from 'date-fns/locale/de';
 import * as es from 'date-fns/locale/es';
+import * as nl from 'date-fns/locale/nl';
 import * as ru from 'date-fns/locale/ru';
 import * as ko from 'date-fns/locale/ko';
 import * as ja from 'date-fns/locale/ja';
@@ -14,7 +15,7 @@ import { _ } from 'lodash';
 // App Components
 import { log } from '/imports/utils/logging';
 
-const _locales = {fr, de, es, ru, ja, ko, zh: zh_cn};
+const _locales = {fr, de, es, ru, nl, ja, ko, zh: zh_cn};
 
 
 export class LocaleHelpers {
