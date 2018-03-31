@@ -39,8 +39,8 @@ Template.bodyLayout.onCreated(function Template_bodyLayout_onCreated() {
     instance.eth = MeteorEthereum.instance();
     instance.contract = Contract.instance();
 
-    Session.setDefaultPersistent('selectedMonth', 0);
-    Session.setDefaultPersistent('selectedDay', 1);
+    Session.setDefault('selectedMonth', 0);
+    Session.setDefault('selectedDay', 1);
     Session.setDefault('accountNickname', '');
     Session.setDefault('latestClaim', {});
 

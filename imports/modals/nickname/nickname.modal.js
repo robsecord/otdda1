@@ -1,5 +1,4 @@
 // Meteor Components
-import { EthBlocks } from 'meteor/ethereum:blocks';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Random } from 'meteor/random';
 import { _ } from 'lodash';

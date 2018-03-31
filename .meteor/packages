@@ -24,23 +24,19 @@ less@2.7.11
 ejson
 
 ethereum:web3
-ethereum:tools
-ethereum:dapp-styles
 ethereum:elements
-ethereum:accounts
-ethereum:blocks
+#ethereum:tools
+#ethereum:dapp-styles
+#ethereum:accounts
+#ethereum:blocks
 
 browser-policy@1.1.0
 kadira:flow-router
 kadira:blaze-layout
 arillo:flow-router-helpers
-zimme:active-route
 tap:i18n
 aldeed:template-extension
 sacha:spin
 jparker:crypto-md5
-u2622:persistent-session
 yasinuslu:blaze-meta
-frozeman:reactive-timer
-frozeman:storage
 juliancwirko:postcss

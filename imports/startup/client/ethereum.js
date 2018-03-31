@@ -13,11 +13,11 @@ function _loadWeb3() {
     let web3Injected = window.web3;
 
     if (!_.isUndefined(web3Injected)) {
-        //log.log('Using Injected Web3 Provider');
+        log.log('Using Injected Web3 Provider');
         eth.web3 = new Web3(web3Injected.currentProvider);
-    // } else {
-    //     console.log('No Web3 detected, using HTTP Provider');
-    //     eth.web3 = new Web3('https://mainnet.infura.io/');
+    } else {
+        log.log('No Web3 detected, using HTTP Provider');
+        eth.web3 = new Web3('https://mainnet.infura.io/');
     }
     if (!_.isObject(eth.web3)) {
         eth.isReady = true;
@@ -40,10 +40,6 @@ function _loadWeb3() {
         // Network Active; Connect to Contract
         eth.hasNetwork = true;
         contract.connectToContract();
-
-        // Setup EthAccounts/EthBlocks
-        EthAccounts.init();
-        EthBlocks.init();
     });
 }
 window.addEventListener('load', _loadWeb3);

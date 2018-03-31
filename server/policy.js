@@ -19,6 +19,7 @@ Meteor.startup(() => {
     BrowserPolicy.content.allowOriginForAll('https://*.cloudfront.net');
     BrowserPolicy.content.allowOriginForAll('https://*.jsdelivr.net');
     BrowserPolicy.content.allowOriginForAll('https://*.fontawesome.com');
+    BrowserPolicy.content.allowOriginForAll('https://*.cryptocompare.com');
 
     // IN-1345; Manager-App Migration
     try {

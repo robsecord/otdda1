@@ -135,8 +135,8 @@ Template.dayCardComponent.events({
         const $target = $(event.currentTarget);
         const dayIndex = $target.attr('data-jump');
         const {month, day} = Helpers.getMonthDayFromIndex(dayIndex);
-        Session.setPersistent('selectedMonth', month);
-        Session.setPersistent('selectedDay', day);
+        Session.set('selectedMonth', month);
+        Session.set('selectedDay', day);
     }
 
 });

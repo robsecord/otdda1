@@ -38,7 +38,7 @@ Template.calendarComponent.onCreated(function Template_calendarComponent_onCreat
         let day;
         Tracker.nonreactive(() => { day = Session.get('selectedDay'); });
         day = _.clamp(day, 1, DAYS_IN_MONTH[selectedMonth]);
-        Session.setPersistent('selectedDay', day);
+        Session.set('selectedDay', day);
 
         // Get Day-Index Range for Selected Month
         instance.dayIndexRange = Helpers.getDayIndexRange(selectedMonth);
@@ -145,14 +145,14 @@ Template.calendarComponent.events({
         } else {
             month = Helpers.getValidMonthIndex(month);
         }
-        Session.setPersistent('selectedMonth', month);
+        Session.set('selectedMonth', month);
     },
 
     'click [data-select-cell]' : (event, instance) => {
         const $target = $(event.currentTarget);
         let day = _.parseInt($target.attr('data-select-cell'), 10) || 0;
         day = _.clamp(day, 1, DAYS_IN_MONTH[Session.get('selectedMonth')]);
-        Session.setPersistent('selectedDay', day);
+        Session.set('selectedDay', day);
     }
 
 });
