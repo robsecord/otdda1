@@ -280,7 +280,7 @@
         "title" : "This user does not own any days.",
         "body" : "Perhaps you could buy a Day for them as a Gift?"
       },
-      "viewTokens" : "View Tokens on __link__"
+      "viewTokens" : "View Tokens on EtherScan"
     },
     "accountWarning" : {
       "detectingBrowser" : {
@@ -510,6 +510,11 @@
     "apr1" : {
       "title" : "April Fools'",
       "desc" : "April Fools' Day for the year 2018 is celebrated/ observed on Sunday, April 1. April Fools day is celebrated on April 1st each year. The day includes practical jokes and hoaxes played one another."
+    },
+
+    "apr2" : {
+      "title" : "Easter Monday",
+      "desc" : ""
     },
 
     "apr6" : {
